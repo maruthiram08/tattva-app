@@ -28,7 +28,7 @@ const KANDA_DESCRIPTIONS: Record<string, string> = {
     "Uttara Kanda": "The Final Book. The later years of Rama's reign, the story of Lava and Kusha, and the final departure of the divine avatars.",
 };
 
-const DATA_PATH = path.join(process.cwd(), 'Valmiki_Ramayan_Dataset', 'data', 'Valmiki_Ramayan_Shlokas.json');
+const DATA_PATH = path.join(process.cwd(), 'lib', 'data', 'source', 'Valmiki_Ramayan_Shlokas.json');
 
 // Cache the data in memory to avoid repeated fs reads and parsing
 let cachedData: Shloka[] | null = null;
