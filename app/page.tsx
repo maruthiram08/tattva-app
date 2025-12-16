@@ -250,6 +250,13 @@ export default function HomePage() {
           )}
 
           <div className="text-left">
+            {/* Error Message - Show here if content mode is active */}
+            {error && (
+              <div className="w-full mb-8 bg-red-50 border border-red-100 text-red-600 p-4 rounded-xl text-sm animate-in shake">
+                {error instanceof Error ? error.message : String(error)}
+              </div>
+            )}
+
             {/* Pass partial answer. AnswerDisplay must be robust. */}
             <AnswerDisplay
               answer={currentAnswer as Answer} // Use the unified answer
@@ -300,13 +307,6 @@ export default function HomePage() {
                 </button>
               ))}
             </div>
-
-            {/* Error Message */}
-            {error && (
-              <div className="w-full max-w-xl bg-red-50 border border-red-100 text-red-600 p-4 rounded-xl text-sm animate-in shake">
-                {error instanceof Error ? error.message : String(error)}
-              </div>
-            )}
           </div>
         </main>
       )}
