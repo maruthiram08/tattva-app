@@ -1,0 +1,286 @@
+#,Category,Answerability,Reason,5 Example Question Intents,Question Category Label,Revised Answerability (Data-backed)
+1,Epic overview,Answer,Canonical narrative,"full epic summary, main storyline, ramayana outline, epic structure, core plot",epic_overview,Answer
+2,Kanda overview,Answer,Canonical structure,"bala kanda summary, ayodhya kanda overview, aranya kanda plot, sundara kanda events, yuddha kanda outline",kanda_overview,Answer
+3,Story chronology,Answer,Text-grounded,"event order, timeline sequence, what happened first, chronological flow, story progression",story_chronology,Answer
+4,Timeline sequencing,Answer,Factual narrative,"event sequence, before-after events, parallel timelines, time gaps, sequence clarification",timeline_sequencing,Answer
+5,Cause–effect relationships,Answer,Textual causality,"why exile happened, cause of war, consequence of vow, chain reactions, triggering events",cause_effect,Answer
+6,Major plot turning points,Answer,Canonical events,"key moments, story pivots, decisive events, narrative shifts, major decisions",plot_turning_points,Answer
+7,Minor plot developments,Answer,Canonical detail,"side events, minor arcs, secondary plots, supporting episodes, small developments",minor_plot,Answer
+8,Narrative setup events,Answer,Story foundation,"initial conflicts, setup phase, background events, early motivations, premise building",narrative_setup,Answer
+9,Climactic events,Answer,Canonical climax,"war climax, decisive battle, final confrontation, peak conflict, turning climax",climactic_events,Answer
+10,Resolution events,Answer,Textual closure,"war aftermath, story resolution, closure events, consequences shown, ending sequence",resolution_events,Answer
+11,Flashback narratives,Answer,Textual narrative device,"past events recall, backstory narration, character history, earlier incidents, remembered episodes",flashback_narrative,Answer
+12,Foreshadowing elements,Answer,Literary analysis,"early hints, symbolic warnings, prophetic signs, narrative foreshadowing, future signals",foreshadowing,Answer
+13,Narrative pacing,Answer,Literary structure,"slow vs fast sections, pacing variation, narrative tempo, time compression, elongated scenes",narrative_pacing,Answer
+14,Story arcs,Answer,Structural analysis,"character arcs, plot arcs, transformation arcs, journey structure, arc completion",story_arcs,Answer
+15,Episodic storytelling,Answer,Canonical form,"episodic flow, standalone episodes, segmented narration, episode transitions, narrative blocks",episodic_story,Answer
+16,Frame narratives,Answer,Textual structure,"narrator framing, layered narration, storytelling context, sage narration, transmission frame",frame_narrative,Answer
+17,Narrative omissions,Answer,Honest textual limits,"missing details, silent gaps, unstated events, unexplained transitions, narrative silence",narrative_omission,Answer
+18,Narrative transitions,Answer,Textual flow,"location shifts, scene changes, time jumps, phase transitions, narrative movement",narrative_transition,Answer
+19,Parallel storylines,Answer,Canonical structure,"multiple arcs, parallel journeys, simultaneous events, intersecting stories, dual narratives",parallel_story,Answer
+20,Repeated motifs,Answer,Literary motif,"exile motif, loyalty theme, trial repetition, vow patterns, symbolic repetition",repeated_motif,Answer
+21,Story symmetry,Answer,Structural pattern,"mirrored events, cyclical structure, narrative balance, repeated outcomes, symmetry",story_symmetry,Answer
+22,Narrative contrasts,Answer,Literary analysis,"city vs forest, duty vs desire, power vs restraint, light vs darkness, moral contrast",narrative_contrast,Answer
+23,Story continuity,Answer,Canonical consistency,"continuity check, event consistency, narrative coherence, internal logic, plot alignment",story_continuity,Answer
+24,Narrative inconsistencies,Answer with Constraints,Acknowledge ambiguity,"conflicting details, variation explanation, inconsistency handling, text variance, editorial issues",narrative_inconsistency,Answer
+25,Canonical story boundaries,Answer,Scope definition,"where ramayana starts, where it ends, canonical limits, epic boundary, text scope",canonical_boundary,Answer
+26,Birth-related episodes,Answer,Canonical event,"divine birth, birth stories, lineage origin, incarnation events, prophecy fulfillment",birth_episode,Answer
+27,Exile-related episodes,Answer,Canonical event,"exile decision, forest departure, banishment details, reasons for exile, exile duration",exile_episode,Answer
+28,Forest life episodes,Answer,Narrative content,"forest dwelling, hermitage life, encounters in forest, exile experiences, ascetic interaction",forest_episode,Answer
+29,Abduction-related episodes,Answer,Canonical event,"kidnapping narrative, deception methods, turning point, violation moment, abduction cause",abduction_episode,Answer
+30,Search journey episodes,Answer,Canonical arc,"search for sita, exploration phase, allies formation, journey hardships, discovery attempts",search_episode,Answer
+31,Alliance formation episodes,Answer,Canonical politics,"alliances built, monkey army, treaties formed, cooperation events, strategic bonds",alliance_episode,Answer
+32,Trial or test episodes,Answer,Narrative device,"tests of virtue, loyalty trials, skill challenges, moral tests, worthiness checks",trial_episode,Answer
+33,Revelation episodes,Answer,Canonical disclosure,"identity reveal, truth disclosure, realization moments, secret revealed, recognition scenes",revelation_episode,Answer
+34,Conflict initiation episodes,Answer,Canonical causality,"war trigger, dispute escalation, hostility start, challenge declaration, confrontation setup",conflict_initiation,Answer
+35,Duel episodes,Answer,Canonical combat,"one-on-one battles, champion duels, personal combat, decisive duels, warrior confrontations",duel_episode,Answer
+36,War strategy episodes,Answer,Descriptive only,"tactics used, strategic planning, battlefield decisions, formations, military counsel",war_strategy,Answer
+37,Battle episodes,Answer,Canonical event,"major battles, combat descriptions, army clashes, war phases, battlefield outcomes",battle_episode,Answer
+38,Death episodes,Answer,Canonical event,"deaths of characters, final moments, causes of death, narrative significance, aftermath",death_episode,Answer
+39,Rescue episodes,Answer,Canonical event,"rescue actions, liberation moments, saving characters, recovery efforts, intervention",rescue_episode,Answer
+40,Return episodes,Answer,Canonical closure,"return journey, homecoming, reintegration, restoration, post-exile return",return_episode,Answer
+41,Coronation episodes,Answer,Canonical ritual,"coronation ceremony, kingship assumption, royal transition, enthronement, rule beginning",coronation_episode,Answer
+42,Post-war episodes,Answer,Canonical aftermath,"post-conflict order, restoration, reconciliation, aftermath events, peace phase",postwar_episode,Answer
+43,Moral trial episodes,Answer,Textual ethics,"tests of virtue, moral scrutiny, ethical examination, public trial moments, judgment scenes",moral_trial,Answer
+44,Divine intervention episodes,Answer,Canonical belief,"divine aid, supernatural events, godly assistance, miraculous acts, divine signs",divine_intervention,Answer
+45,Closure episodes,Answer,Narrative completion,"endings, final resolutions, life conclusions, closure arcs, last events",closure_episode,Answer
+46,Protagonist identity,Answer,Canonical role,"main hero identity, central figure, narrative focus, protagonist definition, hero role",protagonist_identity,Answer
+47,Antagonist identity,Answer,Canonical role,"main adversary, villain role, opposition figure, antagonist purpose, conflict source",antagonist_identity,Answer
+48,Supporting character identity,Answer,Canonical role,"supporting cast roles, secondary characters, helper figures, minor roles, allies",supporting_identity,Answer
+49,Divine character identity,Answer,Canonical theology,"divine figures, incarnations, gods’ roles, celestial beings, divine presence",divine_identity,Answer
+50,Human vs divine role,Answer with Constraints,Interpretive tension,"divinity vs humanity, avatar question, human traits, divine agency, dual nature",human_divine_role,Answer
+51,Character lineage,Answer,Canonical genealogy,"ancestry, family line, dynastic origin, parentage, heritage",character_lineage,Answer
+52,Character titles & epithets,Answer,Textual reference,"honorifics, names used, titles meaning, epithets context, naming conventions",character_titles,Answer
+53,Character social role,Answer,Canonical context,"societal position, caste role, community standing, social duty, hierarchy",social_role,Answer
+54,Character political role,Answer,Canonical governance,"kingly role, political authority, ruler duties, leadership role, governance",political_role,Do Not Answer
+55,Character familial role,Answer,Canonical relationship,"son role, brother role, spouse role, parental role, family obligation",familial_role,Answer
+56,Character narrative function,Answer,Literary role,"catalyst role, foil role, messenger role, moral anchor, narrative driver",narrative_function,Answer
+57,Character symbolic role,Answer with Constraints,Interpretive,"symbolism attribution, archetypal role, allegorical reading, representational meaning, symbolic status",symbolic_role,Answer with Constraints
+58,Character evolution,Answer,Textual progression,"character change, growth arc, transformation, development over time, arc progression",character_evolution,Answer
+59,Static character roles,Answer,Canonical depiction,"unchanging traits, consistent behavior, fixed archetypes, stable identity, constancy",static_character,Answer
+60,Dynamic character roles,Answer,Canonical progression,"evolving behavior, role shifts, changing responsibilities, adaptive identity, development",dynamic_character,Answer
+61,Motivation for action,Answer,Text-based inference,"reason for action, decision motive, why acted, driving cause, intent behind act",motivation_action,Answer
+62,Motivation for inaction,Answer,Textual silence + inference,"why did not act, restraint reason, silence cause, non-action motive, withheld response",motivation_inaction,Answer
+63,Moral decision drivers,Answer,Dharma framework,"moral choice basis, ethical driver, duty influence, value-based choice, righteousness motive",moral_decision,Answer
+64,Emotional restraint decisions,Answer,Textual behavior,"controlled emotion, restraint choice, calm response, suppressed feeling, composure",emotional_restraint,Answer
+65,Desire-driven decisions,Answer,Canonical cause,"desire influence, temptation effect, longing-based act, craving motive, wish fulfillment",desire_driven,Answer
+66,Fear-driven decisions,Answer,Textual cause,"fear influence, threat response, avoidance motive, insecurity-driven act, danger reaction",fear_driven,Answer
+67,Duty-driven decisions,Answer,Central theme,"duty priority, dharma-driven act, obligation choice, vow fulfillment, responsibility",duty_driven,Answer
+68,Power-driven decisions,Answer,Canonical motive,"authority use, dominance motive, control-based act, power assertion, rule enforcement",power_driven,Answer
+69,Loyalty-driven decisions,Answer,Canonical virtue,"loyalty choice, allegiance motive, devotion-based act, fidelity, faithfulness",loyalty_driven,Answer
+70,Ego-driven decisions,Answer,Textual flaw,"pride motive, ego influence, arrogance-based act, self-importance, hubris",ego_driven,Answer
+71,Revenge motivations,Answer,Canonical conflict,"vengeance motive, retaliation, revenge trigger, retribution intent, grievance response",revenge_motive,Answer
+72,Compassion-based decisions,Answer,Canonical virtue,"mercy act, compassion motive, kindness decision, empathy-based choice, forgiveness",compassion_decision,Answer
+73,Strategic decisions,Answer,Descriptive only,"strategy choice, tactical move, planning decision, calculated act, foresight",strategic_decision,Answer
+74,Sacrificial choices,Answer,Canonical value,"self-sacrifice, renunciation act, loss acceptance, giving up power, personal cost",sacrifice_choice,Answer
+75,Obedience-based decisions,Answer,Textual obedience,"obedience act, command following, authority compliance, parental command, rule adherence",obedience_decision,Answer
+76,Conflicted motivations,Answer with Constraints,Ambiguity,"mixed motives, internal conflict, competing duties, tension in choice, dilemma",conflicted_motivation,Answer
+77,Impulsive decisions,Answer,Narrative behavior,"sudden action, rash decision, unplanned act, impulse response, quick reaction",impulsive_decision,Answer
+78,Calculated decisions,Answer,Strategic reasoning,"deliberate act, planned decision, forethought, measured response, reasoning",calculated_decision,Answer
+79,Regret-driven decisions,Answer,Textual aftermath,"remorse action, regret response, corrective act, repentance motive, guilt",regret_driven,Answer
+80,Consequences of decisions,Answer,Textual causality,"outcome of choice, repercussions, effects of action, result chain, consequences",decision_consequence,Answer
+81,Moral qualities,Answer,Canonical traits,"virtue description, moral nature, ethical quality, righteousness traits, integrity",moral_quality,Answer
+82,Ethical qualities,Answer,Canonical traits,"ethical conduct, fairness, justice orientation, moral balance, principled behavior",ethical_quality,Answer
+83,Emotional traits,Answer,Behavioral reading,"emotional disposition, temperament, sensitivity, emotional control, expression",emotional_trait,Answer
+84,Intellectual traits,Answer,Canonical depiction,"wisdom, intelligence, learning, strategic thinking, knowledge",intellectual_trait,Answer
+85,Leadership traits,Answer,Canonical role,"leadership quality, ruler traits, command style, governance approach, authority",leadership_trait,Answer
+86,Warrior qualities,Answer,Canonical role,"bravery, combat skill, valor, martial ability, heroism",warrior_quality,Answer
+87,Devotional qualities,Answer,Canonical virtue,"devotion, faithfulness, service attitude, reverence, dedication",devotional_quality,Answer
+88,Ascetic qualities,Answer,Canonical lifestyle,"austerity, restraint, discipline, renunciation, simplicity",ascetic_quality,Answer
+89,Royal qualities,Answer,Canonical kingship,"kingly virtues, royal conduct, rulership ideals, sovereignty traits, majesty",royal_quality,Answer
+90,Parental qualities,Answer,Canonical role,"parental duty, care behavior, fatherhood, motherhood, guardianship",parental_quality,Answer
+91,Spousal qualities,Answer,Canonical role,"marital duty, fidelity, partnership, spousal conduct, loyalty",spousal_quality,Answer
+92,Friendship qualities,Answer,Canonical theme,"friendship traits, alliance loyalty, companionship, mutual support, trust",friendship_quality,Answer
+93,Strengths,Answer,Textual depiction,"abilities, advantages, strong traits, competencies, talents",character_strength,Answer
+94,Weaknesses,Answer,Textual flaw,"limitations, vulnerabilities, flaws, shortcomings, failures",character_weakness,Answer
+95,Virtues,Answer,Canonical values,"virtue listing, moral excellence, ideal traits, goodness, nobility",virtue,Answer
+96,Flaws,Answer,Canonical realism,"moral flaws, errors, imperfections, mistakes, human limits",flaw,Answer
+97,Inner conflicts,Answer with Constraints,Interpretive,"inner struggle, moral tension, conflicting impulses, doubt, hesitation",inner_conflict,Answer with Constraints
+98,Consistency of character,Answer,Textual analysis,"behavioral consistency, character stability, trait continuity, reliability",character_consistency,Answer
+99,Contradictory traits,Answer with Constraints,Interpretive,"conflicting traits, paradoxical behavior, dual nature, inconsistency",contradictory_trait,Answer
+100,Transformation of traits,Answer,Narrative arc,"change in traits, growth, moral evolution, development, maturation",trait_transformation,Answer
+101,Spousal relationships,Answer,Canonical relation,"marriage bond, husband-wife dynamic, conjugal duty, partnership",spousal_relationship,Answer
+102,Sibling relationships,Answer,Canonical relation,"brotherhood, sibling loyalty, rivalry, familial bond, support",sibling_relationship,Answer
+103,Parent–child relationships,Answer,Canonical relation,"filial duty, parental authority, obedience, affection, lineage bond",parent_child,Answer
+104,Mentor–disciple relationships,Answer,Canonical teaching,"guidance bond, instruction role, teacher-student, counsel",mentor_disciple,Answer
+105,Ally relationships,Answer,Canonical alliance,"cooperation bond, alliance trust, partnership, support network",ally_relationship,Answer
+106,Rival relationships,Answer,Canonical conflict,"rivalry dynamic, competition, opposition tension, adversarial relation",rival_relationship,Answer
+107,Enemy relationships,Answer,Canonical conflict,"hostility bond, enmity, war relation, antagonism",enemy_relationship,Answer
+108,Loyalty dynamics,Answer,Canonical virtue,"loyalty testing, allegiance strength, faithfulness dynamics, trust",loyalty_dynamics,Answer
+109,Betrayal dynamics,Answer,Canonical breach,"betrayal act, broken trust, disloyalty, treachery",betrayal_dynamics,Answer
+110,Power dynamics,Answer,Descriptive,"authority imbalance, dominance relations, control structure, hierarchy",power_dynamics,Answer
+111,Dependency dynamics,Answer,Canonical reliance,"reliance relationships, dependence, support dependency, need-based bond",dependency_dynamics,Answer
+112,Emotional bonds,Answer,Canonical affection,"emotional connection, attachment, affection bond, closeness",emotional_bond,Answer
+113,Duty-based relationships,Answer,Canonical role,"obligation-based bond, role duty, responsibility relation",duty_relationship,Answer
+114,Political alliances,Answer,Canonical politics,"inter-kingdom ties, diplomatic bonds, treaties, alliances",political_alliance,Do Not Answer
+115,Familial conflicts,Answer,Canonical tension,"family disputes, domestic conflict, inheritance tension, rivalry",familial_conflict,Answer
+116,Hierarchical relationships,Answer,Canonical order,"authority ladder, rank relations, command structure, hierarchy",hierarchical_relation,Answer
+117,Gender-based roles,Answer with Constraints,Contextual,"gender duties, role expectations, social norms, contextual framing",gender_roles,Answer with Constraints
+118,Social hierarchy relations,Answer,Canonical society,"class relations, social order, hierarchy interaction, status roles",social_hierarchy,Answer
+119,Inter-kingdom relations,Answer,Canonical geopolitics,"diplomacy, war relations, treaties, rivalry, alliances",interkingdom_relation,Answer
+120,Conflict escalation dynamics,Answer,Canonical causality,"conflict growth, escalation pattern, tension buildup, war progression",conflict_escalation,Answer
+121,Definition of dharma,Answer,Core textual concept,"meaning of dharma, dharma definition, what is dharma, dharma explained, dharma concept",dharma_definition,Answer
+122,Personal dharma,Answer,Textual framework,"individual duty, personal obligation, role-based duty, self-duty, personal righteousness",personal_dharma,Answer
+123,Familial dharma,Answer,Canonical roles,"family duty, son duty, brother duty, spouse duty, household dharma",familial_dharma,Answer
+124,Royal dharma,Answer,Canonical governance,"king duty, ruler responsibility, royal obligation, governance dharma, rajadharma",royal_dharma,Answer
+125,Social dharma,Answer,Textual society,"societal duty, social order, community obligation, collective dharma",social_dharma,Answer
+126,Moral obligation,Answer,Ethical framing,"moral responsibility, obligation basis, duty binding, ethical requirement",moral_obligation,Answer
+127,Duty vs desire,Answer,Core conflict,"duty conflict, desire tension, dharma vs wish, moral struggle",duty_vs_desire,Answer
+128,Duty vs emotion,Answer,Textual restraint,"emotion control, feeling vs duty, emotional sacrifice, restraint choice",duty_vs_emotion,Answer
+129,Duty vs justice,Answer,Ethical complexity,"fairness conflict, justice tension, rule vs compassion, lawful duty",duty_vs_justice,Answer
+130,Law vs compassion,Answer,Ethical balance,"mercy vs law, compassion limit, justice mercy balance, ethical tradeoff",law_vs_compassion,Answer
+131,Vows and promises,Answer,Canonical binding,"vow keeping, promise obligation, oath significance, word given",vows_promises,Answer
+132,Honor codes,Answer,Canonical ethics,"honor principle, reputation value, dignity code, respect norms",honor_code,Answer
+133,Justice principles,Answer,Textual justice,"justice meaning, fairness rule, punishment logic, moral order",justice_principles,Answer
+134,Moral dilemmas,Answer,Canonical tension,"ethical dilemma, conflicting duties, moral choice, dilemma resolution",moral_dilemma,Answer
+135,Ethical trade-offs,Answer,Textual realism,"compromise ethics, tradeoff decision, loss vs gain, moral cost",ethical_tradeoff,Answer
+136,Consequences of adharma,Answer,Canonical causality,"effects of wrongdoing, adharma results, moral consequences, downfall",adharma_consequence,Answer
+137,Moral ambiguity,Answer with Constraints,Interpretive,"unclear morality, grey ethics, ambiguous duty, mixed outcomes",moral_ambiguity,Answer with Constraints
+138,Ethical hierarchy,Answer,Canonical prioritization,"higher duty, priority of obligations, dharma ranking, moral order",ethical_hierarchy,Answer
+139,Moral authority,Answer,Canonical source,"who decides dharma, authority source, moral legitimacy, ethical leadership",moral_authority,Answer
+140,Dharma in conflict situations,Answer,Textual application,"war dharma, conflict ethics, battle conduct, crisis duty",conflict_dharma,Answer
+141,Detachment (vairagya),Answer,Philosophical core,"detachment meaning, vairagya concept, non-attachment, renunciation",detachment,Answer
+142,Attachment,Answer,Philosophical contrast,"attachment role, emotional binding, clinging, dependence",attachment,Answer
+143,Desire,Answer,Philosophical driver,"desire influence, craving, longing effect, kama concept",desire,Answer
+144,Ego,Answer,Philosophical flaw,"ego role, pride, self-importance, ahamkara",ego,Answer
+145,Self-control,Answer,Canonical virtue,"restraint practice, discipline, control of senses, moderation",self_control,Answer
+146,Free will,Answer,Textual tension,"choice agency, decision freedom, willpower, autonomy",free_will,Answer
+147,Fate / destiny,Answer,Canonical worldview,"destiny role, fate influence, divine plan, inevitability",destiny,Answer
+148,Action (karma),Answer,Philosophical law,"action principle, karma concept, deed consequence, moral causality",karma,Answer
+149,Consequence,Answer,Textual result,"result of actions, outcome chain, cause effect, repercussions",consequence,Answer
+150,Suffering,Answer,Canonical experience,"pain role, hardship meaning, suffering depiction, endurance",suffering,Answer
+151,Endurance,Answer,Canonical virtue,"patience, tolerance, resilience, perseverance",endurance,Answer
+152,Compassion,Answer,Canonical virtue,"mercy, empathy, kindness, benevolence",compassion,Answer
+153,Forgiveness,Answer,Canonical virtue,"pardon act, mercy decision, reconciliation, forgiveness value",forgiveness,Answer
+154,Renunciation within life,Answer,Philosophical balance,"inner renunciation, detachment in action, duty with restraint",inner_renunciation,Answer
+155,Power and restraint,Answer,Ethical ideal,"authority control, restraint of power, moderation, balance",power_restraint,Answer
+156,Inner conflict,Answer with Constraints,Interpretive,"mental struggle, moral tension, hesitation, doubt",inner_conflict_philo,Answer with Constraints
+157,Balance,Answer,Philosophical ideal,"harmony principle, equilibrium, moderation, middle path",balance,Answer
+158,Ideal conduct,Answer,Canonical model,"ideal behavior, righteous living, exemplary conduct",ideal_conduct,Answer
+159,Moral order,Answer,Canonical worldview,"cosmic order, moral structure, righteousness system",moral_order,Answer
+160,Meaning of righteousness,Answer,Textual definition,"righteousness meaning, right conduct, dharma essence",righteousness,Answer
+161,Explicit textual statements,Answer,Textual clarity,"stated facts, explicit lines, clear assertions, direct claims",explicit_text,Answer
+162,Implied meanings,Answer with Constraints,Interpretive,"implied ideas, inferred meaning, unstated intent, suggestion",implied_meaning,Answer with Constraints
+163,Narrative silence,Answer with Constraints,Honest gap,"silence explanation, absence meaning, no mention cases",narrative_silence,Answer
+164,Unstated motivations,Answer with Constraints,Interpretive,"hidden motives, inferred intent, assumed reason",unstated_motivation,Answer with Constraints
+165,Interpretive disagreements,Answer,Scholarly variation,"differing views, interpretation conflict, commentary divergence",interpretive_disagreement,Answer with Constraints
+166,Commentarial interpretations,Answer,Traditional lens,"commentator views, classical explanations, interpretive tradition",commentary,Answer with Constraints
+167,Symbolic readings,Answer with Constraints,Interpretive,"symbolism analysis, allegorical meaning, metaphor reading",symbolic_reading,Answer with Constraints
+168,Literal vs symbolic tension,Answer with Constraints,Interpretive,"literal reading, symbolic tension, meaning layers",literal_symbolic,Answer with Constraints
+169,Multiple valid readings,Answer,Hermeneutic,"plural interpretations, multiple views, coexisting meanings",multiple_readings,Answer
+170,Textual ambiguity,Answer with Constraints,Honest uncertainty,"ambiguous text, unclear meaning, uncertainty acknowledgment",textual_ambiguity,Answer with Constraints
+171,Ethical ambiguity,Answer with Constraints,Interpretive,"unclear ethics, mixed moral outcome, grey area",ethical_ambiguity,Answer with Constraints
+172,Character ambiguity,Answer with Constraints,Interpretive,"complex character, mixed traits, unclear motivation",character_ambiguity,Answer with Constraints
+173,Narrative gaps,Answer with Constraints,Textual limits,"missing information, gap explanation, incomplete narration",narrative_gap,Answer
+174,Conflicting passages,Answer with Constraints,Textual criticism,"conflicting lines, internal contradiction, reconciliation attempts",conflicting_passage,Answer with Constraints
+175,Resolution of ambiguity,Answer,Interpretive synthesis,"resolving ambiguity, reconciliation logic, balanced view",ambiguity_resolution,Answer with Constraints
+176,Limits of interpretation,Answer,Guardrail,"interpretation boundary, overreach prevention, limit explanation",interpretation_limits,Answer with Constraints
+177,Authority of commentators,Answer,Tradition,"commentator legitimacy, authority basis, classical weight",commentator_authority,Answer
+178,Reader perspective differences,Answer,Hermeneutics,"reader lens, perspective variance, interpretive angle",reader_perspective,Answer
+179,Context-dependent meanings,Answer,Hermeneutics,"context-based meaning, situational interpretation",context_meaning,Answer
+180,Interpretive restraint,Answer,Trust principle,"restraint practice, careful interpretation, avoidance of speculation",interpretive_restraint,Answer with Constraints
+181,Valmiki Ramayana focus,Answer,Primary canonical source,"valmiki focus, original ramayana, primary text, canonical source, base version",valmiki_focus,Answer
+182,Canonical boundaries,Answer,Scope control,"canonical limits, text boundary, included scope, excluded parts, authority boundary",canonical_scope,Answer
+183,Textual consistency,Answer,Canonical analysis,"consistency check, internal logic, coherent narrative, aligned events",textual_consistency,Answer
+184,Kanda-level differences,Answer,Textual structure,"kanda variation, emphasis differences, structural contrast, kanda comparison",kanda_difference,Answer
+185,Later interpolations,Answer with Constraints,Scholarly debate,"interpolations, later additions, disputed verses, later inserts",later_interpolation,Answer with Constraints
+186,Retelling variations,Answer with Constraints,Tradition diversity,"retelling variation, narrative changes, popular versions, story variants",retelling_variation,Answer
+187,Regional narrative emphasis,Answer with Constraints,Cultural context,"regional focus, local emphasis, cultural retelling, regional style",regional_emphasis,Answer with Constraints
+188,Poetic liberties,Answer with Constraints,Literary license,"poetic addition, embellishment, creative liberty, stylistic expansion",poetic_liberty,Answer with Constraints
+189,Story expansion over time,Answer,Transmission history,"expansion history, narrative growth, additions timeline, evolution",story_expansion,Answer
+190,Oral tradition influence,Answer,Transmission method,"oral transmission, storytelling evolution, memory tradition, oral effects",oral_tradition,Answer
+191,Transmission history,Answer,Textual history,"manuscript tradition, preservation, transmission path, copying",transmission_history,Answer
+192,Editorial decisions,Answer,Scholarly process,"editing choices, compilation logic, version editing, redaction",editorial_decision,Answer
+193,Narrative omissions in versions,Answer with Constraints,Textual variance,"omitted episodes, missing parts, abridgment, exclusions",narrative_omission_versions,Answer with Constraints
+194,Emphasis shifts across versions,Answer,Comparative lens,"emphasis shift, theme focus change, narrative weight change",emphasis_shift,Answer with Constraints
+195,Language evolution,Answer,Linguistic history,"language change, evolution, semantic shift, historical language",language_evolution,Answer
+196,Stylistic differences,Answer,Literary analysis,"style contrast, tone difference, poetic style, narrative voice",stylistic_difference,Answer
+197,Authority of versions,Answer with Constraints,Scholarly debate,"version authority, canonical status, textual legitimacy",version_authority,Answer with Constraints
+198,Canon vs popular belief,Answer,Clarification,"popular myth vs text, belief correction, folklore distinction",canon_vs_popular,Answer
+199,Textual authenticity debates,Answer with Constraints,Academic debate,"authenticity question, disputed sections, scholarly disagreement",textual_authenticity,Answer
+200,Limits of textual certainty,Answer,Honest limitation,"uncertainty boundary, unknown aspects, textual limits",textual_limits,Answer
+201,Key Sanskrit terms,Answer,Linguistic grounding,"term meaning, key word definition, usage context, semantic role",sanskrit_terms,Answer
+202,Contextual term meanings,Answer,Usage-based,"contextual meaning, situational usage, semantic nuance",contextual_term,Answer
+203,Polysemous words,Answer,Linguistic nuance,"multiple meanings, word ambiguity, semantic variation",polysemy,Answer
+204,Metaphorical language,Answer,Literary device,"metaphor use, figurative language, symbolic phrasing",metaphor_language,Answer
+205,Symbolic actions,Answer with Constraints,Interpretive,"symbolic acts, action symbolism, metaphorical deed",symbolic_action,Answer with Constraints
+206,Symbolic characters,Answer with Constraints,Interpretive,"character symbolism, archetypal role, representational figure",symbolic_character,Answer with Constraints
+207,Symbolic locations,Answer with Constraints,Interpretive,"place symbolism, location meaning, spatial metaphor",symbolic_location,Answer with Constraints
+208,Ritual symbolism,Answer with Constraints,Interpretive,"ritual meaning, symbolic ritual, metaphorical rite",ritual_symbolism,Answer with Constraints
+209,Weapon symbolism,Answer with Constraints,Interpretive,"weapon meaning, symbolic arms, power metaphor",weapon_symbolism,Answer with Constraints
+210,Animal symbolism,Answer with Constraints,Interpretive,"animal role, creature symbolism, allegorical animal",animal_symbolism,Answer with Constraints
+211,Nature symbolism,Answer with Constraints,Interpretive,"forest symbolism, river meaning, natural metaphor",nature_symbolism,Answer with Constraints
+212,Names and epithets,Answer,Textual reference,"name meaning, epithet significance, title context",names_epithets,Answer
+213,Cultural idioms,Answer,Cultural context,"idiomatic phrase, cultural expression, traditional saying",cultural_idiom,Answer
+214,Poetic devices,Answer,Literary analysis,"simile usage, meter role, poetic structure, stylistic device",poetic_device,Answer with Constraints
+215,Allegorical elements,Answer with Constraints,Interpretive,"allegory reading, layered meaning, symbolic narrative",allegory,Answer with Constraints
+216,Literal vs figurative language,Answer,Linguistic clarity,"literal meaning, figurative sense, language mode",literal_vs_figurative,Answer
+217,Translation ambiguity,Answer with Constraints,Linguistic limits,"translation variance, meaning shift, translator choice",translation_ambiguity,Answer with Constraints
+218,Cultural connotations,Answer,Cultural grounding,"implied meaning, cultural sense, social connotation",cultural_connotation,Answer
+219,Semantic shifts,Answer,Linguistic history,"meaning change, word evolution, semantic drift",semantic_shift,Answer
+220,Linguistic constraints,Answer,Language limits,"untranslatable terms, linguistic gap, language boundary",linguistic_constraint,Answer
+221,Beginner-level explanation,Answer,Pedagogical,"simple explanation, basic overview, beginner learning",beginner_explanation,Answer
+222,Intermediate-level explanation,Answer,Pedagogical,"mid-level detail, intermediate learning, concept expansion",intermediate_explanation,Answer
+223,Advanced-level explanation,Answer,Pedagogical,"deep explanation, advanced learner, nuanced discussion",advanced_explanation,Answer
+224,Child-friendly explanation,Answer,Pedagogical,"kid explanation, simplified language, child framing",child_explanation,Answer
+225,Teen-friendly explanation,Answer,Pedagogical,"teen framing, age-appropriate explanation, adolescent",teen_explanation,Answer
+226,Adult learner explanation,Answer,Pedagogical,"adult framing, mature explanation, general audience",adult_explanation,Answer
+227,Teacher-oriented explanation,Answer,Pedagogical,"teaching support, educator framing, instructional view",teacher_explanation,Answer
+228,Concept-by-story explanation,Answer,Pedagogical,"concept via narrative, story-based learning",concept_story,Answer
+229,Story-by-concept explanation,Answer,Pedagogical,"narrative via concept, theme-driven explanation",story_concept,Answer
+230,Simplified summaries,Answer,Pedagogical,"concise summary, simplified overview, short explanation",simplified_summary,Answer
+231,Structured learning sequences,Answer,Pedagogical,"learning order, curriculum flow, progression design",learning_sequence,Answer
+232,Educational framing,Answer,Pedagogical,"educational lens, teaching frame, didactic view",educational_framing,Answer
+233,Value-neutral teaching,Answer,Trust principle,"neutral instruction, non-preachy teaching",value_neutral,Answer
+234,Discussion facilitation,Answer,Pedagogical,"discussion prompts, guided talk, reflection support",discussion_facilitation,Answer
+235,Guided reflection,Answer,Pedagogical,"reflective learning, guided thinking, contemplation",guided_reflection,Answer
+236,Question-based learning,Answer,Pedagogical,"inquiry learning, question-driven teaching",inquiry_learning,Answer
+237,Curriculum mapping,Answer,Pedagogical,"syllabus alignment, curriculum design, mapping content",curriculum_mapping,Answer
+238,Learning progression,Answer,Pedagogical,"progression logic, concept scaffolding",learning_progression,Answer
+239,Concept reinforcement,Answer,Pedagogical,"reinforce ideas, repetition logic, memory aid",concept_reinforcement,Answer
+240,Knowledge scaffolding,Answer,Pedagogical,"scaffold learning, layered understanding",knowledge_scaffold,Answer
+241,Source transparency,Answer,Trust requirement,"sources used, textual basis, reference origin, authority sources, citations",source_transparency,Answer
+242,Authority declaration,Answer,Trust clarity,"who decides answers, authority basis, source legitimacy, canon authority",authority_declaration,Answer
+243,Confidence disclosure,Answer,Honest AI behavior,"confidence level, certainty indication, unsure areas, reliability signal",confidence_disclosure,Answer
+244,Explicit vs inferred clarification,Answer,Trust discipline,"explicit vs inferred, text vs interpretation, stated vs implied",explicit_inferred,Answer
+245,Refusal reasoning,Answer,User trust,"why refusal, reason for no answer, scope explanation",refusal_reasoning,Answer
+246,Scope explanation,Answer,Product clarity,"what app covers, scope limits, domain boundary",scope_explanation,Answer
+247,Accuracy assurance,Answer,Trust expectation,"how accuracy ensured, validation method, correctness process",accuracy_assurance,Answer
+248,Error acknowledgement,Answer,Trust repair,"mistake handling, correction policy, error response",error_acknowledgement,Answer
+249,Answer limitations,Answer,Honest framing,"limits of answer, uncertainty disclosure, partial knowledge",answer_limitations,Answer
+250,Methodology explanation,Answer,Transparency,"how answers formed, process explanation, reasoning method",methodology_explanation,Answer
+251,Classification explanation,Answer,System clarity,"question classification, routing logic, category assignment",classification_explanation,Answer
+252,Bias avoidance explanation,Answer,Trust safeguard,"bias control, neutrality process, fairness policy",bias_avoidance,Answer
+253,Interpretive policy explanation,Answer,Consistency,"interpretation rules, policy basis, hermeneutic limits",interpretive_policy,Answer with Constraints
+254,Why ambiguity exists,Answer,Education,"ambiguity cause, textual uncertainty, interpretive limits",ambiguity_explanation,Answer with Constraints
+255,How to ask better questions,Answer,User guidance,"rephrasing advice, better queries, scope alignment",question_guidance,Answer
+256,System boundaries,Answer,Guardrail clarity,"system limits, refusal zones, boundary conditions",system_boundaries,Answer
+257,Trust philosophy,Answer,Product principle,"trust-first approach, design philosophy, care principle",trust_philosophy,Answer
+258,Ethical guardrails,Answer,Safety,"ethical limits, safeguard rules, boundary enforcement",ethical_guardrails,Answer
+259,Safety policies,Answer,Compliance,"safety rules, abuse prevention, moderation",safety_policies,Answer
+260,Product scope limitations,Answer,Clarity,"what is excluded, non-goals, limits",product_limits,Answer
+261,Modern political framing,Do Not Answer,Anachronistic,"political ideology, modern politics, governance debates",modern_politics,Do Not Answer
+262,Modern gender ideology,Do Not Answer,Anachronistic,"gender ideology, modern gender lens, social activism",modern_gender,Do Not Answer
+263,Contemporary moral judgment,Do Not Answer,Misrepresents text,"modern ethics, today’s standards, presentism",modern_morality,Answer
+264,Psychological diagnosis,Do Not Answer,Speculative,"mental disorders, psychology labels, diagnosis",psychological_diagnosis,Do Not Answer
+265,Psychiatric labeling,Do Not Answer,Speculative,"clinical labels, psychiatric terms, pathology",psychiatric_label,Do Not Answer
+266,Modern self-help application,Do Not Answer,Not product role,"self-help tips, life hacks, personal coaching",self_help,Do Not Answer
+267,Productivity optimization,Do Not Answer,Modern overlay,"productivity hacks, efficiency advice, optimization",productivity,Do Not Answer
+268,Leadership hacks,Do Not Answer,Modern framing,"leadership tricks, management advice, hacks",leadership_hacks,Do Not Answer
+269,Life coaching prescriptions,Do Not Answer,Prescriptive,"personal advice, coaching plans, directives",life_coaching,Do Not Answer
+270,Historical proof claims,Do Not Answer,Controversial,"historical proof, factual existence, evidence claims",historicity_claim,Do Not Answer
+271,Archaeological validation,Do Not Answer,Outside scope,"archaeological evidence, excavation proof",archaeology,Do Not Answer
+272,Scientific verification,Do Not Answer,Outside scope,"scientific testing, empirical proof",scientific_verification,Do Not Answer
+273,Comparative religion supremacy,Do Not Answer,Conflict risk,"superiority claims, religious ranking",religion_supremacy,Do Not Answer
+274,Inter-religious polemics,Do Not Answer,Conflict risk,"debate attacks, polemical questions",religious_polemics,Do Not Answer
+275,Fan-fiction speculation,Do Not Answer,Non-canonical,"what-if scenarios, alternate history",fan_fiction,Do Not Answer
+276,Counterfactual narratives,Do Not Answer,Speculative,"alternative outcomes, hypothetical changes",counterfactual,Do Not Answer
+277,Modernized retellings,Do Not Answer,Distortion,"modern setting, reimagined story",modern_retelling,Do Not Answer
+278,Devotional persuasion,Do Not Answer,Neutral stance,"conversion persuasion, devotional push",devotional_persuasion,Answer
+279,Hate justification,Do Not Answer,Safety,"violence justification, hatred",hate_justification,Do Not Answer
+280,Incitement or abuse,Do Not Answer,Safety,"harm encouragement, abuse",incitement,Do Not Answer
+281,Political mobilization,Do Not Answer,Safety,"political rallying, mobilization",political_mobilization,Do Not Answer
+282,Extremist ideology,Do Not Answer,Safety,"extremist framing, radical ideology",extremist_content,Do Not Answer
+283,Defamation,Do Not Answer,Safety,"false allegations, character attacks",defamation,Do Not Answer
+284,Harassment targeting,Do Not Answer,Safety,"harassment, targeting individuals",harassment,Do Not Answer
+285,Malicious prompt manipulation,Do Not Answer,Safety,"prompt hacking, system bypass",prompt_attack,Do Not Answer

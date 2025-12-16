@@ -1,0 +1,53 @@
+{
+  "name": "tattvaapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "validate-data": "tsx scripts/validate-data.ts",
+    "cleanup-pinecone": "tsx scripts/cleanup-pinecone.ts",
+    "extract-tags": "tsx scripts/extract-tags.ts",
+    "extract-tags:no-llm": "tsx scripts/extract-tags.ts --no-llm",
+    "generate-embeddings": "tsx scripts/generate-embeddings.ts",
+    "upload-pinecone": "tsx scripts/upload-to-pinecone.ts",
+    "phase1:full": "npm run validate-data && npm run extract-tags && npm run generate-embeddings && npm run cleanup-pinecone && npm run upload-pinecone"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^2.0.87",
+    "@ai-sdk/react": "^2.0.115",
+    "@anthropic-ai/sdk": "^0.32.0",
+    "@google/generative-ai": "^0.24.1",
+    "@hookform/resolvers": "^3.9.0",
+    "@pinecone-database/pinecone": "^3.0.0",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@radix-ui/react-tooltip": "^1.2.8",
+    "ai": "^5.0.113",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.2.3",
+    "lucide-react": "^0.561.0",
+    "next": "^14.2.0",
+    "openai": "^4.75.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-hook-form": "^7.54.0",
+    "tailwind-merge": "^3.4.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "tailwindcss-animate": "^1.0.7",
+    "tsx": "^4.21.0",
+    "typescript": "^5.6.0"
+  }
+}
