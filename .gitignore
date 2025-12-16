@@ -1,49 +1,37 @@
-# Dependencies
+# dependencies
 /node_modules
 /.pnp
 .pnp.js
-.yarn/install-state.gz
 
-# Testing
+# testing
 /coverage
 
-# Next.js
+# next.js
 /.next/
 /out/
 
-# Production
+# production
 /build
 
-# Misc
+# misc
 .DS_Store
 *.pem
 
-# Debug
+# debug
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
+ts-debug.log*
 
-# Local env files
+# local env files
 .env*.local
 .env
-.env.development
-.env.production
 
-# Vercel
+# vercel
 .vercel
 
-# TypeScript
+# typescript
 *.tsbuildinfo
 next-env.d.ts
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Phase 1 Generated Files (can be regenerated)
-scripts/validation-report.json
-scripts/enhanced-shlokas.json
-scripts/vectors.json
+# large data files (optional, but keeping the main 24MB one is fine)
+# lib/data/source/Valmiki_Ramayan_Shlokas.json
