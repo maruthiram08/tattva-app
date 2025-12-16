@@ -35,3 +35,5 @@ next-env.d.ts
 
 # large data files (optional, but keeping the main 24MB one is fine)
 # lib/data/source/Valmiki_Ramayan_Shlokas.json
+scripts/*.json
+scripts/*.jsonl
