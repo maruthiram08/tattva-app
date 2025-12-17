@@ -836,3 +836,24 @@ npm run dev
 4. **Phase 6 (Evaluation)** - Production readiness
 
 Good luck! 🚀
+
+
+## 🔄 Session Update (Dec 17, 2025)
+
+### ✅ Completed Tasks
+
+1. **Refactoring (Service Extraction)**
+   - Extracted `api/classify` logic to `lib/services/classification-service.ts`
+   - Extracted `api/retrieve` logic to `lib/services/retrieval-service.ts`
+   - Updated `answer-service.ts` to use direct service calls instead of internal HTTP fetch
+   - **Result**: Fixed production `fetch failed` / `ECONNREFUSED` error on Vercel.
+
+2. **UI Improvements**
+   - **Loading States**: Implemented `TattvaLoader` (Spinning Favicon) for global transitions (Root, Explorer, About).
+   - **Mobile Header**: Fixed clipping issue by increasing padding (`pl-6 pr-9`) and gap.
+   - **Search Bar**: Implemented "Expand on Tap" animation and updated placeholder to "Ask Tattva...".
+   - **Sarga Page**: Added loading spinner for transitions between Kanda and Sarga pages.
+
+3. **Deployment**
+   - Successfully deployed to Vercel (needs manual push for final confirmation).
+
