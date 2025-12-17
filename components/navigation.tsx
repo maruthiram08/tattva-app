@@ -46,7 +46,7 @@ export function Navigation() {
 
   return (
     <nav className={`absolute top-6 left-1/2 -translate-x-1/2 z-50 w-fit max-w-[95vw] transition-all duration-500 ease-in-out ${isHidden ? 'opacity-0 -translate-y-full pointer-events-none' : 'opacity-100 translate-y-0'}`}>
-      <div className="bg-white/90 backdrop-blur-md rounded-full shadow-2xl border border-white/20 ring-1 ring-stone-900/5 px-2 py-1.5 md:px-2 md:py-2 flex items-center justify-between pl-2 pr-4 md:pl-6 md:pr-6 transition-all duration-300 hover:shadow-xl">
+      <div className="bg-white/90 backdrop-blur-md rounded-full shadow-2xl border border-white/20 ring-1 ring-stone-900/5 px-2 py-1.5 md:px-2 md:py-2 flex items-center justify-between pl-3 pr-6 md:pl-6 md:pr-6 transition-all duration-300 hover:shadow-xl">
 
         {/* Brand Logo */}
         <Link
