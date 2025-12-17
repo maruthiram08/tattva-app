@@ -67,7 +67,7 @@ export function FloatingQuestionInput({ onSubmit, isLoading }: FloatingQuestionI
                         onChange={(e) => setValue(e.target.value)}
                         disabled={isLoading}
                         className="flex-grow bg-transparent border-none focus:ring-0 text-base md:text-lg font-serif placeholder:text-stone-400/70 text-stone-100 placeholder:italic outline-none disabled:opacity-50 min-w-0"
-                        placeholder="Inquire into the Ramayana..."
+                        placeholder="Ask Tattva..."
                     />
                 )}
 

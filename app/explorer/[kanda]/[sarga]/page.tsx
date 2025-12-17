@@ -23,6 +23,9 @@ export default async function SargaPage({ params }: Props) {
     const kandaName = decodeURIComponent(params.kanda);
     const sargaNum = parseInt(params.sarga, 10);
 
+    // TEMPORARY: Artificial delay to test loading spinner
+    await new Promise(resolve => setTimeout(resolve, 2000));
+
     const shlokas = await getShlokas(kandaName, sargaNum);
 
     if (!shlokas || shlokas.length === 0) {
