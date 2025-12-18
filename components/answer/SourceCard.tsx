@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { ChevronDown, ChevronUp, BookOpen, ExternalLink, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { RetrievalResult, RetrievedShloka } from '@/lib/types/retrieval';
+import { RetrievalResult, RetrievedShloka, ShlokaMetadata } from '@/lib/types/retrieval';
 
 interface SourceCardProps {
     shloka: RetrievedShloka;
     index: number;
+    onCitationClick?: (data: ShlokaMetadata) => void;
 }
 
-export function SourceCard({ shloka, index }: SourceCardProps) {
+export function SourceCard({ shloka, index, onCitationClick }: SourceCardProps) {
     const [isOpen, setIsOpen] = useState(false);
     const meta = shloka.metadata;
 
@@ -70,13 +71,23 @@ export function SourceCard({ shloka, index }: SourceCardProps) {
 
                     {/* Context Link */}
                     <div className="flex justify-end pt-2">
-                        <Link
-                            href={linkHref}
-                            className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-800 uppercase tracking-wider group/link"
-                        >
-                            Read Context
-                            <ArrowRight className="w-3 h-3 group-hover/link:translate-x-0.5 transition-transform" />
-                        </Link>
+                        {onCitationClick ? (
+                            <button
+                                onClick={() => onCitationClick(meta)}
+                                className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-800 uppercase tracking-wider group/link"
+                            >
+                                Read Context
+                                <ArrowRight className="w-3 h-3 group-hover/link:translate-x-0.5 transition-transform" />
+                            </button>
+                        ) : (
+                            <Link
+                                href={linkHref}
+                                className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-800 uppercase tracking-wider group/link"
+                            >
+                                Read Context
+                                <ArrowRight className="w-3 h-3 group-hover/link:translate-x-0.5 transition-transform" />
+                            </Link>
+                        )}
                     </div>
                 </div>
             </div>
