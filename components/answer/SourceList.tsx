@@ -24,18 +24,6 @@ export function SourceList({ citations, retrieval, onCitationClick }: SourceList
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {uniqueCitations.map((citation, idx) => {
-                    // Try to find metadata for this citation
-                    // formatting expectation: "Bala Kanda 1.1" -> kanda="Bala", sarga=1, shloka=1
-                    // But our retrieval has simple objects. Let's try to find match.
-                    // For now, simpler matching:
-                    const match = retrieval?.shlokas.find(s => {
-                        // very naive match for demo. 
-                        // In real app, we need robust parsing.
-                        // Let's assume citation string contains the kanda name and sarga/shloka numbers.
-                        // We can just rely on the displayed citation string for the title.
-                        return false;
-                    });
-
                     // Helper to get snippet if possible, or generic text
                     // For now, we will link to explorer placeholder
                     // Parse citation to build link: [Kanda] Kanda [Sarga].[Shloka]

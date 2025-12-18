@@ -6,10 +6,9 @@ import {
     SheetContent,
     SheetHeader,
     SheetTitle,
-    SheetDescription,
 } from '@/components/ui/sheet';
 import { ShlokaMetadata } from '@/lib/types/retrieval';
-import { ExternalLink, BookOpen } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 

@@ -6,7 +6,6 @@ import {
     DialogContent,
     DialogHeader,
     DialogTitle,
-    DialogDescription,
 } from '@/components/ui/dialog';
 import { ShlokaMetadata } from '@/lib/types/retrieval';
 import { ExternalLink } from 'lucide-react';

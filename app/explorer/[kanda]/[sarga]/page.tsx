@@ -8,14 +8,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 import { ScrollToHash } from "@/components/explorer/ScrollToHash";
 import { BackToTop } from "@/components/ui/back-to-top";
-import {
-    Pagination,
-    PaginationContent,
-    PaginationItem,
-    PaginationLink,
-    PaginationNext,
-    PaginationPrevious,
-} from "@/components/ui/pagination";
+
 
 interface Props {
     params: {
