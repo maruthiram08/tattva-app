@@ -28,7 +28,7 @@ async function main() {
         if (!groups.has(key)) {
             groups.set(key, []);
         }
-        groups.get(key).push(s);
+        groups.get(key)!.push(s);
     });
 
     console.log(`Found ${groups.size} distinct sargas.`);
