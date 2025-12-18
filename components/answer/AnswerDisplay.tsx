@@ -1,34 +1,70 @@
-
 'use client';
 
-import { Answer, T1Answer, T2Answer, T3Answer } from '@/lib/types/templates';
+import { useState } from 'react';
+import { T1Answer, T2Answer, T3Answer } from '@/lib/types/templates';
+import { RetrievalResult, ShlokaMetadata } from '@/lib/types/retrieval';
 import { T1AnswerCard } from './T1AnswerCard';
 import { T2AnswerCard } from './T2AnswerCard';
 import { T3RefusalCard } from './T3RefusalCard';
-import { AnswerSkeleton } from './AnswerSkeleton';
+import { VerseDialog } from './VerseDialog';
 
 interface AnswerDisplayProps {
-    answer: Answer;
+    answer: T1Answer | T2Answer | T3Answer;
     question: string;
-    onQuestionClick?: (q: string) => void;
+    retrieval?: RetrievalResult;
+    onQuestionClick?: (question: string) => void;
 }
 
-export function AnswerDisplay({ answer, question, onQuestionClick }: AnswerDisplayProps) {
-    if (!answer) return null;
-    if (!answer.templateType) return <AnswerSkeleton />;
+export function AnswerDisplay({ answer, question, retrieval, onQuestionClick }: AnswerDisplayProps) {
+    const [selectedShloka, setSelectedShloka] = useState<ShlokaMetadata | null>(null);
+    const [isOverlayOpen, setIsOverlayOpen] = useState(false);
 
-    switch (answer.templateType) {
-        case 'T1':
-            return <T1AnswerCard data={answer as T1Answer} question={question} />;
-        case 'T2':
-            return <T2AnswerCard data={answer as T2Answer} question={question} />;
-        case 'T3':
-            return <T3RefusalCard data={answer as T3Answer} onQuestionClick={onQuestionClick} />;
-        default:
-            return (
-                <div className="bg-red-50 p-4 rounded-lg text-red-600">
-                    Error: Unknown answer template type
-                </div>
-            );
+    const handleCitationClick = (metadata: ShlokaMetadata) => {
+        setSelectedShloka(metadata);
+        setIsOverlayOpen(true);
+    };
+
+    if (!answer) return null;
+
+    if (answer.templateType === 'T3') {
+        const t3Data = answer as T3Answer;
+        return <T3RefusalCard data={t3Data} onQuestionClick={onQuestionClick} />;
     }
+
+    if (answer.templateType === 'T2') {
+        const t2Data = answer as T2Answer;
+        return (
+            <>
+                <T2AnswerCard
+                    data={t2Data}
+                    question={question}
+                    retrieval={retrieval}
+                    onCitationClick={handleCitationClick}
+                />
+                <VerseDialog
+                    open={isOverlayOpen}
+                    onOpenChange={setIsOverlayOpen}
+                    data={selectedShloka}
+                />
+            </>
+        );
+    }
+
+    // Default T1
+    const t1Data = answer as T1Answer;
+    return (
+        <>
+            <T1AnswerCard
+                data={t1Data}
+                question={question}
+                retrieval={retrieval}
+                onCitationClick={handleCitationClick}
+            />
+            <VerseDialog
+                open={isOverlayOpen}
+                onOpenChange={setIsOverlayOpen}
+                data={selectedShloka}
+            />
+        </>
+    );
 }

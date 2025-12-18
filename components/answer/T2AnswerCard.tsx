@@ -1,16 +1,54 @@
 
 'use client';
 
+
 import { T2Answer } from '@/lib/types/templates';
-import { MessageCircle, Feather, AlertCircle, Copy, Share2 } from 'lucide-react';
+import { RetrievalResult, ShlokaMetadata } from '@/lib/types/retrieval';
+import { MessageCircle, Feather, AlertCircle, Copy, Share2, Library } from 'lucide-react';
+import { CitationTooltip } from './CitationTooltip';
+import { SourceList } from './SourceList';
 
 interface T2AnswerCardProps {
     data: T2Answer;
     question: string;
+    retrieval?: RetrievalResult;
+    onCitationClick?: (data: ShlokaMetadata) => void;
 }
 
-export function T2AnswerCard({ data, question }: T2AnswerCardProps) {
+export function T2AnswerCard({ data, question, retrieval, onCitationClick }: T2AnswerCardProps) {
     if (!data) return null;
+
+    // Helper to render text with interactive citations
+    const renderWithCitations = (text: string) => {
+        if (!text) return null;
+        // Regex to capture [Source X.Y], (Source X.Y) or inline Source X.Y patterns. Explicit Kanda names.
+        const parts = text.split(/([\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)\s+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?)/g);
+
+        return parts.map((part, index) => {
+            const isCitation = /^[\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)\s+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?$/.test(part);
+
+            if (isCitation) {
+                const citationText = part.replace(/^[\[\(]|[\]\)]$/g, '');
+                // Naive matcher for now
+                const shlokaData = retrieval?.shlokas.find(s =>
+                    citationText.toLowerCase().includes(s.metadata.kanda.toLowerCase().split(' ')[0]) &&
+                    citationText.includes(String(s.metadata.sarga)) &&
+                    citationText.includes(String(s.metadata.shloka))
+                )?.metadata;
+
+                return (
+                    <CitationTooltip
+                        key={index}
+                        citation={part}
+                        data={shlokaData}
+                        className="mx-0.5"
+                        onCitationClick={onCitationClick}
+                    />
+                );
+            }
+            return part;
+        });
+    };
 
     return (
         <div className="bg-white rounded-3xl shadow-medium border border-stone-100 overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-700">
@@ -34,10 +72,11 @@ export function T2AnswerCard({ data, question }: T2AnswerCardProps) {
                 {data.answer && (
                     <div className="prose prose-stone prose-lg max-w-none">
                         <div className="font-serif text-xl md:text-2xl font-medium leading-relaxed text-stone-900 whitespace-pre-wrap">
-                            {data.answer}
+                            {renderWithCitations(data.answer)}
                         </div>
                     </div>
                 )}
+
 
                 {/* Main Answer Layout: Side-by-Side on Desktop - Progressive Disclosure */}
                 {(data.whatTextStates?.length > 10 || data.traditionalInterpretations?.length > 10) && (
@@ -49,7 +88,7 @@ export function T2AnswerCard({ data, question }: T2AnswerCardProps) {
                                     <Feather className="w-3.5 h-3.5 text-stone-400" /> What the Text States
                                 </h4>
                                 <div className="font-serif text-lg leading-relaxed text-stone-700 whitespace-pre-wrap">
-                                    {data.whatTextStates}
+                                    {renderWithCitations(data.whatTextStates)}
                                 </div>
                             </div>
                         )}
@@ -58,19 +97,17 @@ export function T2AnswerCard({ data, question }: T2AnswerCardProps) {
                         {data.traditionalInterpretations && data.traditionalInterpretations.length > 5 && (
                             <div className="space-y-4">
                                 <h4 className="text-xs font-semibold text-stone-900 uppercase tracking-wide flex items-center gap-2 border-b border-stone-100 pb-2">
-                                    <Feather className="w-3.5 h-3.5 text-violet-500" /> Interpretations
+                                    <Library className="w-3.5 h-3.5 text-violet-500" /> Interpretations
                                 </h4>
-                                <div className="prose prose-stone prose-sm">
-                                    <p className="text-stone-600 leading-relaxed whitespace-pre-wrap">
-                                        {data.traditionalInterpretations}
-                                    </p>
+                                <div className="text-sm text-stone-600 leading-relaxed">
+                                    {renderWithCitations(data.traditionalInterpretations)}
                                 </div>
                             </div>
                         )}
                     </div>
                 )}
 
-                {/* Limit of Certainty (MANDATORY for T2) - Moved to bottom */}
+                {/* Limit of Certainty (MANDATORY for T2) */}
                 {data.limitOfCertainty && data.limitOfCertainty.length > 5 && (
                     <div className="bg-amber-50/60 border border-amber-100 rounded-2xl p-5 animate-in fade-in slide-in-from-bottom-2 duration-700">
                         <div className="flex items-center gap-2 mb-2">
@@ -82,6 +119,12 @@ export function T2AnswerCard({ data, question }: T2AnswerCardProps) {
                         </p>
                     </div>
                 )}
+
+                <SourceList citations={(() => {
+                    const allText = (data.answer || '') + (data.whatTextStates || '');
+                    const matches = allText.match(/([\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)\s+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?)/g);
+                    return matches ? Array.from(new Set(matches.map(s => s.replace(/^[\[\(]|[\]\)]$/g, '')))) : [];
+                })()} retrieval={retrieval} onCitationClick={onCitationClick} />
 
             </div>
 
@@ -101,3 +144,4 @@ export function T2AnswerCard({ data, question }: T2AnswerCardProps) {
         </div>
     );
 }
+

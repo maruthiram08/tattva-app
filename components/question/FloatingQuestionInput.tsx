@@ -30,7 +30,7 @@ export function FloatingQuestionInput({ onSubmit, isLoading }: FloatingQuestionI
     return (
         <div className={cn(
             "fixed bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 z-50 w-full px-4 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200 transition-all duration-500 ease-out",
-            isExpanded ? "max-w-xl" : "max-w-[220px] md:max-w-[260px]"
+            isExpanded ? "max-w-md" : "max-w-[220px] md:max-w-[260px]"
         )}>
             <form
                 onSubmit={handleSubmit}
@@ -66,7 +66,7 @@ export function FloatingQuestionInput({ onSubmit, isLoading }: FloatingQuestionI
 
                 {isLoading ? (
                     <span className="flex-grow text-base md:text-lg font-serif text-stone-300 italic animate-pulse whitespace-nowrap overflow-hidden text-ellipsis">
-                        Consulting the Rishis...
+                        Consulting Valmiki's Wisdom...
                     </span>
                 ) : (
                     <input

@@ -1,18 +1,61 @@
 
 'use client';
 
+
 import { T1Answer } from '@/lib/types/templates';
+import { RetrievalResult, ShlokaMetadata } from '@/lib/types/retrieval';
 import { MessageCircle, Feather, Copy, Share2 } from 'lucide-react';
-import { Citation } from './Citation';
+import { CitationTooltip } from './CitationTooltip';
+import { SourceList } from './SourceList';
 
 interface T1AnswerCardProps {
     data: T1Answer;
     question: string;
+    retrieval?: RetrievalResult;
+    onCitationClick?: (data: ShlokaMetadata) => void;
 }
 
-export function T1AnswerCard({ data, question }: T1AnswerCardProps) {
+export function T1AnswerCard({ data, question, retrieval, onCitationClick }: T1AnswerCardProps) {
     // Simple check to ensure we have valid data
     if (!data) return null;
+
+    // Helper to render text with interactive citations
+    const renderAnswerWithCitations = (text: string) => {
+        if (!text) return null;
+        // Regex to capture [Source X.Y], (Source X.Y) or inline Source X.Y patterns.
+        // matches explicit Kanda names to avoid capturing preceding text like "as stated in".
+        const parts = text.split(/([\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)\s+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?)/g);
+
+        return parts.map((part, index) => {
+            // Check if this part is a citation tag
+            const isCitation = /^[\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)\s+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?$/.test(part);
+
+            if (isCitation) {
+                // Remove brackets/parentheses
+                const citationText = part.replace(/^[\[\(]|[\]\)]$/g, '');
+
+                // Find matching shloka data if available
+                const shlokaData = retrieval?.shlokas.find(s => {
+                    // Normalize to check text
+                    const kandaMatch = citationText.toLowerCase().includes(s.metadata.kanda.toLowerCase().split(' ')[0]);
+                    const sargaMatch = citationText.includes(String(s.metadata.sarga));
+                    const shlokaMatch = citationText.includes(String(s.metadata.shloka));
+                    return kandaMatch && sargaMatch && shlokaMatch;
+                })?.metadata;
+
+                return (
+                    <CitationTooltip
+                        key={index}
+                        citation={part}
+                        data={shlokaData}
+                        className="mx-0.5"
+                        onCitationClick={onCitationClick}
+                    />
+                );
+            }
+            return part;
+        });
+    };
 
     return (
         <div className="bg-white rounded-3xl shadow-medium border border-stone-100 overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-700">
@@ -35,9 +78,10 @@ export function T1AnswerCard({ data, question }: T1AnswerCardProps) {
                 {/* Main Answer */}
                 <div className="prose prose-stone prose-lg max-w-none">
                     <div className="font-serif text-xl md:text-2xl font-medium leading-relaxed text-stone-900 whitespace-pre-wrap">
-                        {data.answer}
+                        {renderAnswerWithCitations(data.answer)}
                     </div>
                 </div>
+
 
                 {/* Textual Basis / Explanations - Progressive Disclosure */}
                 {data.explanation && data.explanation.length > 10 && (
@@ -52,17 +96,8 @@ export function T1AnswerCard({ data, question }: T1AnswerCardProps) {
                     </div>
                 )}
 
-                {/* Citations Grid - Progressive Disclosure */}
-                {data.textualBasis?.citations && data.textualBasis.citations.length > 0 && (
-                    <div className="border-t border-stone-100 pt-6 animate-in fade-in duration-700">
-                        <h4 className="text-xs font-semibold text-stone-400 uppercase tracking-wider mb-4">Referenced Verses</h4>
-                        <div className="flex flex-wrap gap-2">
-                            {data.textualBasis.citations.map((cite, idx) => (
-                                <Citation key={idx} citation={cite} />
-                            ))}
-                        </div>
-                    </div>
-                )}
+                {/* Sources Footer */}
+                <SourceList citations={data.textualBasis?.citations || []} retrieval={retrieval} onCitationClick={onCitationClick} />
 
             </div>
 

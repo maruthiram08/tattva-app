@@ -75,6 +75,7 @@ export interface SargaInfo {
     sargaNum: number;
     title: string | null;
     summary: string | null;
+    shlokaCount: number;
 }
 
 import sargaTitlesData from './sarga_titles.json';
@@ -91,16 +92,15 @@ export async function getSargas(kandaName: string): Promise<SargaInfo[]> {
     const data = getData();
     const kandaNameDecoded = decodeURIComponent(kandaName);
 
-    // Group by sarga to ensure we have a list of all existing sargas
-    const sargaSet = new Set<number>();
+    // Group by sarga to calculate counts
+    const sargaCounts = new Map<number, number>();
 
-    // Also capture summaries for context if we ever need them back, 
-    // though strictly specific task requirement is to use the titles from JSON.
     data.filter(item => item.kanda === kandaNameDecoded).forEach(item => {
-        sargaSet.add(item.sarga);
+        const current = sargaCounts.get(item.sarga) || 0;
+        sargaCounts.set(item.sarga, current + 1);
     });
 
-    return Array.from(sargaSet)
+    return Array.from(sargaCounts.keys())
         .sort((a, b) => a - b)
         .map(sargaNum => {
             // Find title from JSON
@@ -111,7 +111,8 @@ export async function getSargas(kandaName: string): Promise<SargaInfo[]> {
             return {
                 sargaNum,
                 title,
-                summary: null
+                summary: null,
+                shlokaCount: sargaCounts.get(sargaNum) || 0
             };
         });
 }
@@ -123,4 +124,26 @@ export async function getShlokas(kandaName: string, sargaNum: number): Promise<S
     return data
         .filter(item => item.kanda === kandaNameDecoded && item.sarga === sargaNum)
         .sort((a, b) => a.shloka - b.shloka);
+}
+
+const SUMMARIES_PATH = path.join(process.cwd(), 'lib', 'data', 'sarga_summaries.json');
+
+export interface SargaSummary {
+    kanda: string;
+    sarga: number;
+    summary: string;
+    generatedAt: string;
+}
+
+export async function getSargaSummary(kandaName: string, sargaNum: number): Promise<string | null> {
+    try {
+        if (!fs.existsSync(SUMMARIES_PATH)) return null;
+        const content = fs.readFileSync(SUMMARIES_PATH, 'utf-8');
+        const summaries = JSON.parse(content) as SargaSummary[];
+        const match = summaries.find(s => s.kanda === decodeURIComponent(kandaName) && s.sarga === sargaNum);
+        return match ? match.summary : null;
+    } catch (e) {
+        console.error('Error reading summaries', e);
+        return null;
+    }
 }

@@ -32,6 +32,7 @@ export function SargaGrid({ kandaName, sargas }: SargaGridProps) {
                         kandaName={kandaName}
                         sargaNum={sarga.sargaNum}
                         title={sarga.title}
+                        shlokaCount={sarga.shlokaCount}
                     />
                 ))}
             </div>

@@ -60,12 +60,35 @@ export default function HomePage() {
   // History State
   const [history, setHistory] = useState<HistoryItem[]>([]);
   const [showHistory, setShowHistory] = useState(false);
+
   const [staticAnswer, setStaticAnswer] = useState<Answer | null>(null);
+  const [retrievalData, setRetrievalData] = useState<any>(undefined); // Typing as any to avoid import circles for now, or import RetrievalResult
+
+  const customFetch = async (input: RequestInfo | URL, init?: RequestInit) => {
+    const response = await fetch(input, init);
+    const retrievalHeader = response.headers.get("x-tattva-retrieval-json");
+    if (retrievalHeader) {
+      try {
+        // Decode Base64 (Robust for UTF-8)
+        const binaryString = atob(retrievalHeader);
+        const bytes = Uint8Array.from(binaryString, c => c.charCodeAt(0));
+        const jsonString = new TextDecoder().decode(bytes);
+
+        const data = JSON.parse(jsonString);
+        console.log("Retrieval data intercepted:", data);
+        setRetrievalData(data);
+      } catch (e) {
+        console.error("Failed to parse retrieval header", e);
+      }
+    }
+    return response;
+  }
 
   // Initialize Streaming Hook
   const { object, submit, isLoading, error, stop } = useObject({
     api: '/api/answer',
     schema: AnswerSchema,
+    fetch: customFetch,
     onFinish: ({ object }) => {
       // Optional: Save interaction
       if (object) {
@@ -126,6 +149,7 @@ export default function HomePage() {
     saveCurrentToHistory();
     stop(); // Stop any active stream
     setStaticAnswer(null); // Clear static
+    setRetrievalData(undefined); // Clear retrieval
     setDisplayedQuestion('');
     // setResetKey(prev => prev + 1); // Force re-mount of hook/state if needed, or just rely on new submission.
     // Actually useObject state persists. To clear it, we might need a key on the component using it, or just ignore it.
@@ -136,11 +160,6 @@ export default function HomePage() {
     // Or simpler: `window.location.reload()` is too harsh.
     // Let's TRY: `submit(undefined)`? No.
     // Let's use a wrapper component for the Answer part?
-    // For now, let's just Refresh suggestions and rely on `displayedQuestion` to guide UI?
-    // No, `answer` (object) will still be there.
-    // Let's use `window.location.href = '/'`? No.
-    // `useObject` doesn't have a clear `reset` function in early versions.
-    // WORKAROUND: We will wrap the `useObject` inside a sub-component `<AnswerStreamer />` that we mount/unmount.
     // This is the cleanest way to reset hook state.
 
     // BUT refactoring to sub-component is large.
@@ -261,6 +280,7 @@ export default function HomePage() {
             <AnswerDisplay
               answer={currentAnswer as Answer} // Use the unified answer
               question={displayedQuestion}
+              retrieval={retrievalData}
               onQuestionClick={handleExampleClick}
             />
           </div>

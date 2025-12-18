@@ -40,16 +40,25 @@ export async function POST(req: Request) {
     const context = await prepareAnswerContext(question);
     console.log('Context prepared, prompt length:', context.prompt.length);
 
+
+    // Send retrieval context via headers since StreamData is not supported in streamObject v5 yet
+    // Must encode to Base64 to handle Unicode (Sanskrit) characters in headers
+    const retrievalJson = JSON.stringify(context.retrieval);
+    const encodedRetrieval = Buffer.from(retrievalJson).toString('base64');
+
     const result = await streamObject({
       model: openai('gpt-4o'),
       // @ts-expect-error mode:'json' is valid in AI SDK v3.1+ but types might be lagging
       mode: 'json',
       schema: UnifiedSchema,
       prompt: "IMPORTANT: You MUST output the 'templateType' field FIRST. " + context.prompt,
-      // onFinish: ({ object }) => saveToDb(object) // Optional future step
     });
 
-    return result.toTextStreamResponse();
+    return result.toTextStreamResponse({
+      headers: {
+        'x-tattva-retrieval-json': encodedRetrieval
+      }
+    });
   } catch (error) {
     console.error('API Error:', error);
     return new Response(JSON.stringify({ error: String(error) }), { status: 500 });
