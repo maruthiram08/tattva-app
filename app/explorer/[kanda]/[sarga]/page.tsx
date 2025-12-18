@@ -22,8 +22,23 @@ interface Props {
 
 export async function generateMetadata({ params }: Props) {
     const kandaName = decodeURIComponent(params.kanda);
+    const sargaNum = parseInt(params.sarga, 10);
+
+    const storySummary = await getSargaSummary(kandaName, sargaNum);
+    const summaryText = storySummary
+        ? storySummary.slice(0, 160) + '...'
+        : `Read Valmiki Ramayana ${kandaName} Sarga ${sargaNum} with original Sanskrit shlokas, word-by-word meanings, and English translation.`;
+
     return {
-        title: `Sarga ${params.sarga} | ${kandaName}`,
+        title: `${kandaName} Sarga ${sargaNum} | Tattva`,
+        description: summaryText,
+        openGraph: {
+            title: `${kandaName} Sarga ${sargaNum} | Tattva`,
+            description: summaryText,
+            siteName: 'Tattva - Valmiki Ramayana',
+            locale: 'en_US',
+            type: 'article',
+        }
     };
 }
 

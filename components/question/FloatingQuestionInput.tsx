@@ -65,7 +65,7 @@ export function FloatingQuestionInput({ onSubmit, isLoading }: FloatingQuestionI
                 </div>
 
                 {isLoading ? (
-                    <span className="flex-grow text-base md:text-lg font-serif text-stone-300 italic animate-pulse whitespace-nowrap overflow-hidden text-ellipsis">
+                    <span className="flex-grow text-base md:text-lg font-serif text-amber-100/80 italic animate-pulse tracking-wide whitespace-nowrap overflow-hidden text-ellipsis drop-shadow-md">
                         Consulting Valmiki&apos;s Wisdom...
                     </span>
                 ) : (
