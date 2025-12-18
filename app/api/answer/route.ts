@@ -1,5 +1,4 @@
-import { openai } from '@ai-sdk/openai';
-import { streamObject } from 'ai';
+import { smartStreamObject } from '@/lib/ai/smart-generation';
 import { z } from 'zod';
 import { prepareAnswerContext } from '@/lib/services/answer-service';
 
@@ -43,12 +42,10 @@ export async function POST(req: Request) {
 
     // Removed Header logic since client has retrieval
 
-    const result = await streamObject({
-      model: openai('gpt-4o'),
-      // @ts-expect-error mode:'json' is valid in AI SDK v3.1+ but types might be lagging
-      mode: 'json',
+    const result = await smartStreamObject({
       schema: UnifiedSchema,
       prompt: "IMPORTANT: You MUST output the 'templateType' field FIRST. " + context.prompt,
+      mode: 'json',
     });
 
     return result.toTextStreamResponse();

@@ -1,0 +1,51 @@
+[
+    {
+        "id": "wisdom-1",
+        "sanskrit": "रामो विग्रहवान् धर्मः साधुः सत्य पराक्रमः ।\nराजा सर्वस्य लोकस्य देवानाम् इव वासवः ॥",
+        "translation": "Rama is the embodiment of Dharma (Righteousness), a sage, and of true valor. He is the king of all the worlds, just as Indra is to the gods.",
+        "source": "Aranya Kanda, 37.13",
+        "theme": "Dharma"
+    },
+    {
+        "id": "wisdom-2",
+        "sanskrit": "सुलभाः पुरुषा राजन् सततं प्रियवादिनः ।\nअप्रियस्य च पथ्यस्य वक्ता श्रोता च दुर्लभः ॥",
+        "translation": "O King, men who always speak pleasing words are easy to find. But he who speaks words that are unpleasant but beneficial, and he who listens to them, are rare indeed.",
+        "source": "Yuddha Kanda, 16.21",
+        "theme": "Truth"
+    },
+    {
+        "id": "wisdom-3",
+        "sanskrit": "न कश्चिन्नापराध्यति ।",
+        "translation": "There is no one who has never committed an offense.",
+        "source": "Kishkindha Kanda, 36.11",
+        "theme": "Forgiveness"
+    },
+    {
+        "id": "wisdom-4",
+        "sanskrit": "उत्साहो बलवान् आर्य नास्त्युत्साहात् परं बलम् ।\nसोत्साहस्य हि लोकेषु न किंचिदपि दुर्लभम् ॥",
+        "translation": "Enthusiasm is powerful, O Noble One under the sun there is no strength greater than enthusiasm. For one who is enthusiastic, nothing is difficult to achieve in this world.",
+        "source": "Kishkindha Kanda, 1.121",
+        "theme": "Motivation"
+    },
+    {
+        "id": "wisdom-5",
+        "sanskrit": "देशे देशे कलत्राणि देशे देशे च बान्धवाः ।\nतं तु देशं न पश्यामि यत्र भ्राता सहोदरः ॥",
+        "translation": "Wives may be found in every land, kinsmen too in every land. But I see no land where a brother like my own blood brother can be found.",
+        "source": "Yuddha Kanda, 101.14",
+        "theme": "Brotherhood"
+    },
+    {
+        "id": "wisdom-6",
+        "sanskrit": "यः करोति वधोदर्कां श्लाध्यां सम्भाषते गिरम् ।\nविपरीतं महद् भाति धैर्यं तस्य वचस्यपि ॥",
+        "translation": "One who speaks praiseworthy words that result in destruction (of enemies) is brave. But rare is the patience of one who speaks beneficial words even when they contradict his own nature.",
+        "source": "Sundara Kanda",
+        "theme": "Wisdom"
+    },
+    {
+        "id": "wisdom-7",
+        "sanskrit": "अनिर्वेदः श्रियो मूलं अनिवेर्दः परं सुखम् ।",
+        "translation": "Lack of despondency (Hope/Cheerfulness) is the root of prosperity; it is the supreme happiness.",
+        "source": "Sundara Kanda, 12.10",
+        "theme": "Hope"
+    }
+]

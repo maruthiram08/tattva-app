@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import { ChevronLeft, Clock, X } from 'lucide-react';
 import { Answer } from '@/lib/types/templates';
 import { FloatingQuestionInput } from '@/components/question/FloatingQuestionInput';
+import { DailyWisdom } from '@/components/home/DailyWisdom';
 import { AnswerDisplay } from '@/components/answer/AnswerDisplay';
 import { AnswerSkeleton } from '@/components/answer/AnswerSkeleton';
 
@@ -296,6 +297,9 @@ export default function HomePage() {
                 Explore the intricate dharma, characters, and verses of the Ramayana through a text-grounded lens.
               </p>
             </div>
+
+            {/* Daily Wisdom Widget */}
+            <DailyWisdom />
 
             {/* Quick Prompts - Show if no answer */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full max-w-xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-100">

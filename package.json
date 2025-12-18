@@ -16,6 +16,8 @@
     "phase1:full": "npm run validate-data && npm run extract-tags && npm run generate-embeddings && npm run cleanup-pinecone && npm run upload-pinecone"
   },
   "dependencies": {
+    "@ai-sdk/anthropic": "^2.0.56",
+    "@ai-sdk/google": "^2.0.49",
     "@ai-sdk/openai": "^2.0.87",
     "@ai-sdk/react": "^2.0.115",
     "@anthropic-ai/sdk": "^0.32.0",
