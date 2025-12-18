@@ -43,7 +43,7 @@ export type AnswerContext = {
 /**
  * Prepare all context needed for generation (Classify -> Retrieve -> Prompt)
  */
-export async function prepareAnswerContext(question: string): Promise<AnswerContext> {
+export async function prepareAnswerContext(question: string, existingRetrieval?: RetrievalResult): Promise<AnswerContext> {
     // Step 1: Classification
     console.log('\n📊 Service: Classification...');
     const classification = await classifyQuestion(question);
@@ -51,7 +51,11 @@ export async function prepareAnswerContext(question: string): Promise<AnswerCont
 
     // Step 2: Retrieval
     let retrieval: RetrievalResult = { shlokas: [], totalRetrieved: 0 };
-    if (classification.shouldAnswer && classification.template !== 'T3') {
+
+    if (existingRetrieval) {
+        console.log('\n📚 Service: Using existing retrieval context...');
+        retrieval = existingRetrieval;
+    } else if (classification.shouldAnswer && classification.template !== 'T3') {
         console.log('\n📚 Service: Retrieval...');
         retrieval = await retrieveContext(question, classification.categoryId);
     }

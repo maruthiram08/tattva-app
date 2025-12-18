@@ -1,69 +1,32 @@
-import { NextRequest, NextResponse } from 'next/server';
-import { z } from 'zod';
 import { retrieveContext } from '@/lib/services/retrieval-service';
-import { CategoryId } from '@/lib/types/templates';
+import { classifyQuestion } from '@/lib/services/classification-service';
+import { RetrievalResult } from '@/lib/types/retrieval';
 
-/**
- * Request schema
- */
-const RetrieveRequestSchema = z.object({
-  question: z.string().min(1),
-  categoryId: z.number().int().min(1).max(45),
-  filters: z
-    .object({
-      kanda: z.string().optional(),
-      sarga: z.number().optional(),
-      shloka: z.number().optional(),
-    })
-    .optional(),
-});
+export const maxDuration = 60;
+export const runtime = 'nodejs';
 
-/**
- * POST /api/retrieve
- */
-export async function POST(request: NextRequest) {
+export async function POST(req: Request) {
   try {
-    const body = await request.json();
+    const { question } = await req.json();
 
-    // Validate request
-    const { question, categoryId, filters } = RetrieveRequestSchema.parse(body);
+    // 1. Classify
+    console.log('\n📊 API Retrieve: Classification...');
+    const classification = await classifyQuestion(question);
 
-    console.log('Retrieving context:', { question, categoryId, filters });
-
-    // Use shared service
-    const result = await retrieveContext(question, categoryId as CategoryId, filters);
-
-    console.log(`Retrieved ${result.totalRetrieved} shlokas`);
-    if (result.warning) {
-      console.warn(result.warning);
+    // 2. Retrieve
+    let retrieval: RetrievalResult = { shlokas: [], totalRetrieved: 0 };
+    if (classification.shouldAnswer && classification.template !== 'T3') {
+      console.log('\n📚 API Retrieve: Retrieval...');
+      retrieval = await retrieveContext(question, classification.categoryId);
     }
 
-    return NextResponse.json({
-      success: true,
-      result,
-      categoryId,
+    return Response.json({
+      retrieval,
+      classification // Useful for debugging or frontend hints
     });
-  } catch (error: unknown) {
-    console.error('Retrieval API error:', error);
 
-    if (error instanceof z.ZodError) {
-      return NextResponse.json(
-        {
-          success: false,
-          error: 'Invalid request',
-          details: error.errors,
-        },
-        { status: 400 }
-      );
-    }
-
-    return NextResponse.json(
-      {
-        success: false,
-        error: 'Retrieval failed',
-        message: error instanceof Error ? error.message : 'Unknown error',
-      },
-      { status: 500 }
-    );
+  } catch (error) {
+    console.error('Retrieve API Error:', error);
+    return new Response(JSON.stringify({ error: String(error) }), { status: 500 });
   }
 }

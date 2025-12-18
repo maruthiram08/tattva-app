@@ -35,16 +35,13 @@ const UnifiedSchema = z.object({
 export async function POST(req: Request) {
   console.log('API /api/answer called');
   try {
-    const { question } = await req.json();
+    const { question, retrieval } = await req.json();
 
-    const context = await prepareAnswerContext(question);
+    const context = await prepareAnswerContext(question, retrieval);
     console.log('Context prepared, prompt length:', context.prompt.length);
 
 
-    // Send retrieval context via headers since StreamData is not supported in streamObject v5 yet
-    // Must encode to Base64 to handle Unicode (Sanskrit) characters in headers
-    const retrievalJson = JSON.stringify(context.retrieval);
-    const encodedRetrieval = Buffer.from(retrievalJson).toString('base64');
+    // Removed Header logic since client has retrieval
 
     const result = await streamObject({
       model: openai('gpt-4o'),
@@ -54,11 +51,7 @@ export async function POST(req: Request) {
       prompt: "IMPORTANT: You MUST output the 'templateType' field FIRST. " + context.prompt,
     });
 
-    return result.toTextStreamResponse({
-      headers: {
-        'x-tattva-retrieval-json': encodedRetrieval
-      }
-    });
+    return result.toTextStreamResponse();
   } catch (error) {
     console.error('API Error:', error);
     return new Response(JSON.stringify({ error: String(error) }), { status: 500 });

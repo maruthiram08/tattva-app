@@ -64,31 +64,12 @@ export default function HomePage() {
   const [staticAnswer, setStaticAnswer] = useState<Answer | null>(null);
   const [retrievalData, setRetrievalData] = useState<any>(undefined); // Typing as any to avoid import circles for now, or import RetrievalResult
 
-  const customFetch = async (input: RequestInfo | URL, init?: RequestInit) => {
-    const response = await fetch(input, init);
-    const retrievalHeader = response.headers.get("x-tattva-retrieval-json");
-    if (retrievalHeader) {
-      try {
-        // Decode Base64 (Robust for UTF-8)
-        const binaryString = atob(retrievalHeader);
-        const bytes = Uint8Array.from(binaryString, c => c.charCodeAt(0));
-        const jsonString = new TextDecoder().decode(bytes);
-
-        const data = JSON.parse(jsonString);
-        console.log("Retrieval data intercepted:", data);
-        setRetrievalData(data);
-      } catch (e) {
-        console.error("Failed to parse retrieval header", e);
-      }
-    }
-    return response;
-  }
+  const [isRetrieving, setIsRetrieving] = useState(false);
 
   // Initialize Streaming Hook
   const { object, submit, isLoading, error, stop } = useObject({
     api: '/api/answer',
     schema: AnswerSchema,
-    fetch: customFetch,
     onFinish: ({ object }) => {
       // Optional: Save interaction
       if (object) {
@@ -108,7 +89,7 @@ export default function HomePage() {
   const streamingAnswer = object as Answer | undefined;
   // Prefer static answer (restored from history) over streaming answer,
   // but if loading, prefer streaming (since static is cleared on new search)
-  const currentAnswer = isLoading ? streamingAnswer : (staticAnswer || streamingAnswer);
+  const currentAnswer = isLoading || isRetrieving ? streamingAnswer : (staticAnswer || streamingAnswer);
 
   useEffect(() => {
     // ... suggestions logic ...
@@ -128,15 +109,15 @@ export default function HomePage() {
   // Manage Focus Mode (Header Visibility)
   useEffect(() => {
     // Hide header if we have an answer OR if we are currently loading (Focus Mode)
-    if (!!currentAnswer || isLoading) {
+    if (!!currentAnswer || isLoading || isRetrieving) {
       window.dispatchEvent(new CustomEvent('toggle-focus-mode', { detail: { hidden: true } }));
     } else {
       window.dispatchEvent(new CustomEvent('toggle-focus-mode', { detail: { hidden: false } }));
     }
-  }, [currentAnswer, isLoading]);
+  }, [currentAnswer, isLoading, isRetrieving]);
 
   const saveCurrentToHistory = () => {
-    if (currentAnswer && displayedQuestion && !isLoading) {
+    if (currentAnswer && displayedQuestion && !isLoading && !isRetrieving) {
       // Avoid duplicates at the top
       setHistory(prev => {
         if (prev.length > 0 && prev[0].question === displayedQuestion) return prev;
@@ -151,44 +132,46 @@ export default function HomePage() {
     setStaticAnswer(null); // Clear static
     setRetrievalData(undefined); // Clear retrieval
     setDisplayedQuestion('');
-    // setResetKey(prev => prev + 1); // Force re-mount of hook/state if needed, or just rely on new submission.
-    // Actually useObject state persists. To clear it, we might need a key on the component using it, or just ignore it.
-    // Better way: Re-mount the component or `submit` clears it?
-    // Usually submit clears. But we want to go back to "Empty" state.
-    // Let's us `resetKey` to force re-render of the hook? No hooks can't be conditional.
-    // We can just set a local `isCleared` flag?
-    // Or simpler: `window.location.reload()` is too harsh.
-    // Let's TRY: `submit(undefined)`? No.
-    // Let's use a wrapper component for the Answer part?
-    // This is the cleanest way to reset hook state.
-
-    // BUT refactoring to sub-component is large.
-    // Alternative: `setDisplayedQuestion('')` is done.
-    // We can ignore `object` if `displayedQuestion` is empty.
-
-    setDisplayedQuestion('');
-    // setError(''); // Handled by hook?
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
     // Show Header
     window.dispatchEvent(new CustomEvent('toggle-focus-mode', { detail: { hidden: false } }));
-
-    // Refresh suggestions...
   };
 
-  const handleSearch = (question: string) => {
+  const handleSearch = async (question: string) => {
     saveCurrentToHistory(); // Save current before starting a new search
     setStaticAnswer(null); // Clear static so streaming takes over
+    setRetrievalData(undefined);
     setDisplayedQuestion(question);
-    // Ensure header is visible during loading (start)
-    // Actually prompt triggers "Focus Mode"? No, loading triggers it?
-    // Previous logic: "Ensure header is visible during loading".
-    // "Hide Header on Success" -> `onFinish`.
-    // Let's keep existing behavior.
 
+    // Ensure header is visible during loading (start)
     window.dispatchEvent(new CustomEvent('toggle-focus-mode', { detail: { hidden: false } }));
 
-    submit({ question });
+    try {
+      setIsRetrieving(true);
+      // Step 1: Specific Retrieval
+      const retrieveRes = await fetch('/api/retrieve', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question })
+      });
+
+      if (!retrieveRes.ok) throw new Error("Retrieval failed");
+
+      const data = await retrieveRes.json();
+      const retrieval = data.retrieval;
+
+      console.log("Retrieval completed:", retrieval);
+      setRetrievalData(retrieval);
+
+      // Step 2: Generate Answer
+      submit({ question, retrieval });
+    } catch (e) {
+      console.error("Search flow failed:", e);
+      setIsRetrieving(false);
+    } finally {
+      setIsRetrieving(false);
+    }
   };
 
   const handleExampleClick = (q: string) => {
@@ -332,7 +315,7 @@ export default function HomePage() {
       )}
 
       {/* Loading Skeleton - Only show if loading AND no data yet (Skeleton disappears once stream starts) */}
-      {isLoading && !object && (
+      {(isLoading || isRetrieving) && !object && (
         <div className="w-full text-left mb-20 animate-in fade-in duration-500">
           <AnswerSkeleton />
         </div>
@@ -341,7 +324,7 @@ export default function HomePage() {
       {/* Floating Input Fixed at Bottom */}
       <FloatingQuestionInput
         onSubmit={handleSearch}
-        isLoading={isLoading}
+        isLoading={isLoading || isRetrieving}
       />
 
     </div>
