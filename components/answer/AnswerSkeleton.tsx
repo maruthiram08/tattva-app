@@ -8,21 +8,38 @@ export function AnswerSkeleton() {
             {/* Shloka Typing Animation Overlay */}
             <ShlokaTyping />
 
-            {/* Skeleton Content - Hidden as per user request */}
-            {/* The container gives height, but we don't show the bars */}
-            <div className="p-8 space-y-6 opacity-0 pointer-events-none">
-                {/* Invisible spacer content to maintain height if needed, 
-                     or just rely on min-h-[400px] from container. 
-                     Let's keep the structure but invisible to ensure layout matching 
-                     if we ever turn it back on, but opacity-0 hides it effectively. */}
-                <div className="space-y-2">
-                    <div className="h-4 bg-stone-200 rounded w-1/4"></div>
-                    <div className="h-8 bg-stone-200 rounded w-3/4"></div>
-                </div>
-                <div className="h-px bg-stone-100 w-full"></div>
+            {/* Skeleton Content - Hidden but reserves space to prevent layout shift */}
+            <div className="p-5 md:p-8 space-y-8 opacity-0 pointer-events-none">
+
+                {/* Text Body Placeholders */}
                 <div className="space-y-4">
-                    <div className="h-24 bg-stone-200 rounded"></div>
-                    <div className="h-24 bg-stone-200 rounded"></div>
+                    <div className="h-4 bg-stone-200/50 rounded w-1/4 mb-6"></div> {/* Question Label */}
+                    <div className="h-8 bg-stone-300/50 rounded w-3/4 mb-8"></div> {/* Heading */}
+
+                    <div className="space-y-3">
+                        <div className="h-4 bg-stone-200 rounded w-full"></div>
+                        <div className="h-4 bg-stone-200 rounded w-[98%]"></div>
+                        <div className="h-4 bg-stone-200 rounded w-[95%]"></div>
+                        <div className="h-4 bg-stone-200 rounded w-[90%]"></div>
+                    </div>
+                    <div className="space-y-3 pt-4">
+                        <div className="h-4 bg-stone-200 rounded w-[96%]"></div>
+                        <div className="h-4 bg-stone-200 rounded w-full"></div>
+                        <div className="h-4 bg-stone-200 rounded w-[92%]"></div>
+                    </div>
+                </div>
+
+                <div className="h-px bg-stone-200 w-full my-8"></div>
+
+                {/* Evidence Grid Placeholders */}
+                <div className="space-y-4">
+                    <div className="h-5 bg-stone-300/50 rounded w-48 mb-4"></div> {/* "Scriptural Evidence" Header */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="h-32 bg-stone-100 rounded-xl border border-stone-200/50"></div>
+                        <div className="h-32 bg-stone-100 rounded-xl border border-stone-200/50"></div>
+                        <div className="h-32 bg-stone-100 rounded-xl border border-stone-200/50 hidden md:block"></div>
+                        <div className="h-32 bg-stone-100 rounded-xl border border-stone-200/50 hidden md:block"></div>
+                    </div>
                 </div>
             </div>
         </div>

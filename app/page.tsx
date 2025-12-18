@@ -2,8 +2,8 @@
 
 import { experimental_useObject as useObject } from '@ai-sdk/react';
 import { z } from 'zod';
-import { useState, useEffect } from 'react';
-import { ChevronLeft, Clock, X } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import { ChevronLeft, Clock, X, ArrowRight } from 'lucide-react';
 import { Answer } from '@/lib/types/templates';
 import { FloatingQuestionInput } from '@/components/question/FloatingQuestionInput';
 import { DailyWisdom } from '@/components/home/DailyWisdom';
@@ -67,15 +67,18 @@ export default function HomePage() {
 
   const [isRetrieving, setIsRetrieving] = useState(false);
 
+  // Track if we're in content mode to prevent header hide on home return
+  const isInContentMode = useRef(false);
+
   // Initialize Streaming Hook
   const { object, submit, isLoading, error, stop } = useObject({
     api: '/api/answer',
     schema: AnswerSchema,
     onFinish: ({ object }) => {
-      // Optional: Save interaction
-      if (object) {
+      // Only hide header if we're actually in content mode
+      if (object && isInContentMode.current) {
         window.dispatchEvent(new CustomEvent('toggle-focus-mode', { detail: { hidden: true } }));
-      } else {
+      } else if (!object) {
         console.warn("Stream finished with empty object");
         // Ensure header stays visible if failed
         window.dispatchEvent(new CustomEvent('toggle-focus-mode', { detail: { hidden: false } }));
@@ -90,7 +93,8 @@ export default function HomePage() {
   const streamingAnswer = object as Answer | undefined;
   // Prefer static answer (restored from history) over streaming answer,
   // but if loading, prefer streaming (since static is cleared on new search)
-  const currentAnswer = isLoading || isRetrieving ? streamingAnswer : (staticAnswer || streamingAnswer);
+  // If retrieving, force null to hide stale content
+  const currentAnswer = isRetrieving ? null : (isLoading ? streamingAnswer : (staticAnswer || streamingAnswer));
 
   useEffect(() => {
     // ... suggestions logic ...
@@ -105,6 +109,33 @@ export default function HomePage() {
     });
 
     setSuggestions(newSuggestions);
+  }, []);
+
+  // Load history from localStorage on mount
+  useEffect(() => {
+    const saved = localStorage.getItem('tattva-history');
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        setHistory(parsed);
+      } catch (e) {
+        console.error('Failed to parse history:', e);
+      }
+    }
+  }, []);
+
+  // Notify Navigation component when history changes
+  useEffect(() => {
+    window.dispatchEvent(new CustomEvent('history-updated', {
+      detail: { hasHistory: history.length > 0 }
+    }));
+  }, [history]);
+
+  // Listen for show-history event from Navigation
+  useEffect(() => {
+    const handleShowHistory = () => setShowHistory(true);
+    window.addEventListener('show-history', handleShowHistory);
+    return () => window.removeEventListener('show-history', handleShowHistory);
   }, []);
 
   // Manage Focus Mode (Header Visibility)
@@ -133,10 +164,13 @@ export default function HomePage() {
     setStaticAnswer(null); // Clear static
     setRetrievalData(undefined); // Clear retrieval
     setDisplayedQuestion('');
+    isInContentMode.current = false; // Exit content mode
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    // Show Header
-    window.dispatchEvent(new CustomEvent('toggle-focus-mode', { detail: { hidden: false } }));
+    // Show Header - use setTimeout to ensure this fires AFTER any onFinish callbacks
+    setTimeout(() => {
+      window.dispatchEvent(new CustomEvent('toggle-focus-mode', { detail: { hidden: false } }));
+    }, 0);
   };
 
   const handleSearch = async (question: string) => {
@@ -144,6 +178,7 @@ export default function HomePage() {
     setStaticAnswer(null); // Clear static so streaming takes over
     setRetrievalData(undefined);
     setDisplayedQuestion(question);
+    isInContentMode.current = true; // Enter content mode
 
     // Ensure header is visible during loading (start)
     window.dispatchEvent(new CustomEvent('toggle-focus-mode', { detail: { hidden: false } }));
@@ -185,10 +220,12 @@ export default function HomePage() {
     setDisplayedQuestion(item.question);
     setStaticAnswer(item.answer);
     setShowHistory(false);
-    window.dispatchEvent(new CustomEvent('toggle-focus-mode', { detail: { hidden: true } })); // Hide header for answer
+    isInContentMode.current = true; // Enter content mode
+    // Don't hide header - let the content wrapper handle visibility
   };
 
-  const showContent = !!displayedQuestion && (isLoading || !!currentAnswer || !!error); // Keep content visible on error
+  // Show content mode whenever we have a question - prevents layout flicker
+  const showContent = !!displayedQuestion;
 
   return (
     <div className="min-h-screen flex flex-col relative">
@@ -229,28 +266,26 @@ export default function HomePage() {
       {/* Answer Display */}
       {showContent && (
         <div className="w-full max-w-3xl mx-auto flex flex-col mb-40 px-4 md:px-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
-          {/* Top Controls - Show when answer is ready or streaming starts */}
-          {(!isLoading || !!object) && (
-            <div className="self-start mt-12 mb-8 flex items-center gap-3">
-              <button
-                onClick={resetState}
-                className="flex items-center gap-2 px-4 py-2 bg-white border border-stone-200 rounded-full shadow-sm hover:shadow-md transition-all duration-300 text-stone-600 hover:text-stone-900 group"
-              >
-                <ChevronLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />
-                <span className="text-sm font-medium">Home</span>
-              </button>
+          {/* Top Controls - Hide during initial loading to prevent visual clutter */}
+          <div className={`self-start mt-12 mb-8 flex items-center gap-3 transition-opacity duration-300 ${!currentAnswer ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
+            <button
+              onClick={resetState}
+              className="flex items-center gap-2 px-4 py-2 bg-white border border-stone-200 rounded-full shadow-sm hover:shadow-md transition-all duration-300 text-stone-600 hover:text-stone-900 group"
+            >
+              <ChevronLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />
+              <span className="text-sm font-medium">Home</span>
+            </button>
 
-              {history.length > 0 && (
-                <button
-                  onClick={() => setShowHistory(true)}
-                  className="flex items-center gap-2 px-4 py-2 bg-white border border-stone-200 rounded-full shadow-sm hover:shadow-md transition-all duration-300 text-stone-600 hover:text-stone-900"
-                >
-                  <Clock className="w-4 h-4" />
-                  <span className="text-sm font-medium">History ({history.length})</span>
-                </button>
-              )}
-            </div>
-          )}
+            {false && history.length > 0 && (
+              <button
+                onClick={() => setShowHistory(true)}
+                className="flex items-center gap-2 px-4 py-2 bg-white border border-stone-200 rounded-full shadow-sm hover:shadow-md transition-all duration-300 text-stone-600 hover:text-stone-900"
+              >
+                <Clock className="w-4 h-4" />
+                <span className="text-sm font-medium">Recents</span>
+              </button>
+            )}
+          </div>
 
           <div className="text-left">
             {/* Error Message - Show here if content mode is active */}
@@ -273,33 +308,33 @@ export default function HomePage() {
 
       {/* Hero / Landing (Only if NO content) */}
       {!showContent && (
-        <main className={`flex-grow flex flex-col w-full max-w-3xl mx-auto px-4 md:px-6 pb-24 md:pb-40 transition-all duration-500 ease-in-out ${currentAnswer || isLoading ? 'pt-8 md:pt-12' : 'pt-24 md:pt-36'}`}>
-          <div className="flex flex-col items-center text-center space-y-8 py-4">
-            {/* History Button on Home if history exists */}
-            {history.length > 0 && (
-              <div className="relative mt-20 md:mt-0 md:absolute md:top-6 md:right-6 animate-in fade-in slide-in-from-top-4 duration-700">
-                <button
-                  onClick={() => setShowHistory(true)}
-                  className="flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-sm border border-stone-200 rounded-full shadow-sm hover:shadow-md transition-all text-stone-600"
-                >
-                  <Clock className="w-4 h-4" />
-                  <span className="text-sm font-medium">Recents</span>
-                </button>
-              </div>
-            )}
-
+        <main className="flex-grow flex flex-col w-full max-w-3xl mx-auto px-4 md:px-6 pb-24 md:pb-40 pt-24 md:pt-36 transition-all duration-500 ease-in-out">
+          <div className="flex flex-col items-center text-center py-4">
             {/* Hero - Only show completely if no interaction yet */}
-            <div className="space-y-4 max-w-xl animate-in fade-in slide-in-from-bottom-4 duration-700 mb-6 mt-12">
+            <div className="space-y-4 max-w-xl animate-in fade-in slide-in-from-bottom-4 duration-700 mb-6">
               <h1 className="font-serif text-4xl md:text-6xl font-medium tracking-tight text-stone-900 leading-[1.1]">
                 Wisdom from the <br /> <span className="italic text-stone-800/80">Adi Kavya.</span>
               </h1>
               <p className="text-stone-500 text-sm md:text-base font-normal tracking-wide max-w-md mx-auto leading-relaxed">
-                Explore the intricate dharma, characters, and verses of the Ramayana through a text-grounded lens.
+                Explore the 24,000 verses of Valmiki&apos;s Ramayana. Ask about characters, dharma, or specific shlokas.
               </p>
             </div>
 
-            {/* Daily Wisdom Widget */}
-            <DailyWisdom />
+            {/* Centered Search Bar with Glow */}
+            <div className="w-full max-w-4xl mx-auto mt-12 mb-8">
+              <FloatingQuestionInput
+                variant="inline"
+                onSubmit={handleSearch}
+                isLoading={isLoading}
+              />
+            </div>
+
+            {/* Guiding Text */}
+            <div className="w-full max-w-xl text-left animate-in fade-in slide-in-from-bottom-6 duration-700 delay-75 mt-12 mb-6">
+              <p className="text-xs font-semibold text-stone-600 uppercase tracking-widest pl-1">
+                Don&apos;t Know What to Ask? Try our Curated Threads
+              </p>
+            </div>
 
             {/* Quick Prompts - Show if no answer */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full max-w-xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-100">
@@ -307,29 +342,49 @@ export default function HomePage() {
                 <button
                   key={idx}
                   onClick={() => handleExampleClick(s.text)}
-                  className="text-left p-4 rounded-xl bg-white border border-stone-100 shadow-sm hover:shadow-md hover:border-amber-200/50 transition-all duration-300 group"
+                  className="text-left p-4 rounded-xl bg-white border border-stone-100 shadow-sm hover:shadow-lg hover:border-stone-300 hover:-translate-y-1 transition-all duration-300 group cursor-pointer"
                 >
-                  <span className="text-xs font-semibold text-stone-400 uppercase tracking-wider mb-1 block group-hover:text-amber-600 transition-colors">{s.category}</span>
-                  <span className="font-serif text-stone-800 text-sm">{s.text}</span>
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="flex-1">
+                      <span className="text-xs font-semibold text-stone-400 uppercase tracking-wider mb-1 block group-hover:text-amber-600 transition-colors">{s.category}</span>
+                      <span className="font-serif text-stone-800 text-sm">{s.text}</span>
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-stone-300 group-hover:text-amber-600 group-hover:translate-x-1 transition-all flex-shrink-0 mt-0.5" />
+                  </div>
                 </button>
               ))}
+            </div>
+
+            {/* Daily Wisdom Widget - Moved below curated threads */}
+            <DailyWisdom />
+
+            {/* Footer Seal */}
+            <div className="mt-20 text-center">
+              <div className="inline-flex items-center gap-4 text-[10px] uppercase tracking-[0.3em] text-stone-400 font-medium">
+                <span className="w-8 h-px bg-stone-300"></span>
+                || Sri Rama Jayam ||
+                <span className="w-8 h-px bg-stone-300"></span>
+              </div>
             </div>
           </div>
         </main>
       )}
 
-      {/* Loading Skeleton - Only show if loading AND no data yet (Skeleton disappears once stream starts) */}
-      {(isLoading || isRetrieving) && !object && (
+      {/* Loading Skeleton - Show when in content mode and no answer yet */}
+      {showContent && !currentAnswer && (
         <div className="w-full text-left mb-20 animate-in fade-in duration-500">
           <AnswerSkeleton />
         </div>
       )}
 
-      {/* Floating Input Fixed at Bottom */}
-      <FloatingQuestionInput
-        onSubmit={handleSearch}
-        isLoading={isLoading || isRetrieving}
-      />
+
+      {/* Floating Input Fixed at Bottom - Only show on answer page */}
+      {showContent && (
+        <FloatingQuestionInput
+          onSubmit={handleSearch}
+          isLoading={isLoading || isRetrieving}
+        />
+      )}
 
     </div>
   );

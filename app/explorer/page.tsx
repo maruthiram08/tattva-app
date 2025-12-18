@@ -21,11 +21,11 @@ export default async function ExplorerPage() {
 
     return (
         <div className="min-h-screen pb-24">
-            <div className="max-w-6xl mx-auto px-4 md:px-6 pt-24 pb-32">
+            <div className="max-w-6xl mx-auto px-4 md:px-6 pt-24 md:pt-36 pb-32">
 
                 {/* Hero Header with Seal */}
                 <div className="flex flex-col items-center text-center mb-16 relative space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
-                    <div className="space-y-3 max-w-2xl">
+                    <div className="space-y-3 max-w-5xl">
                         <h1 className="text-4xl md:text-6xl font-medium font-serif tracking-tight text-stone-900">
                             The Valmiki Ramayana
                         </h1>
@@ -35,7 +35,7 @@ export default async function ExplorerPage() {
 
                         <div className="w-24 h-px bg-gradient-to-r from-transparent via-stone-300 to-transparent mx-auto my-6 opacity-60"></div>
 
-                        <p className="text-lg text-stone-500 font-sans leading-relaxed max-w-lg mx-auto">
+                        <p className="text-lg text-stone-500 font-sans leading-relaxed mx-auto">
                             Immerse yourself in the eternal stream of Dharma. Traverse the seven Kandas of the Ramayana,
                             exploring the original Sanskrit verses alongside their word-for-word meanings and translations.
                             From the banks of the Sarayu to the shores of Lanka, follow the path of Sri Rama.

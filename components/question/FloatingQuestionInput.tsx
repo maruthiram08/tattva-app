@@ -4,6 +4,15 @@ import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { ArrowRight, Loader2, Mic, MicOff } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useTypewriter } from '@/lib/hooks/use-typewriter';
+
+const PLACEHOLDERS = [
+    "Who is Hanuman?",
+    "Why was Sita exiled?",
+    "What is the definition of Dharma?",
+    "Tell me about Jatayu...",
+    "Ask Tattva...",
+];
 
 // Types for Web Speech API
 interface IWindow extends Window {
@@ -12,15 +21,19 @@ interface IWindow extends Window {
 }
 
 interface FloatingQuestionInputProps {
+    variant?: 'fixed' | 'inline';
     onSubmit: (question: string) => void;
     isLoading: boolean;
 }
 
-export function FloatingQuestionInput({ onSubmit, isLoading }: FloatingQuestionInputProps) {
+export function FloatingQuestionInput({ onSubmit, isLoading, variant = 'fixed' }: FloatingQuestionInputProps) {
     const [value, setValue] = useState('');
     const inputRef = useRef<HTMLInputElement>(null);
     const [isListening, setIsListening] = useState(false);
     const recognitionRef = useRef<any>(null);
+
+    // Typewriter effect for placeholder
+    const placeholderText = useTypewriter(PLACEHOLDERS);
 
     // Initialize Speech Recognition
     useEffect(() => {
@@ -82,8 +95,9 @@ export function FloatingQuestionInput({ onSubmit, isLoading }: FloatingQuestionI
 
     return (
         <div className={cn(
-            "fixed bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 z-50 w-full px-4 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200 transition-all duration-500 ease-out",
-            isExpanded ? "max-w-md" : "max-w-[220px] md:max-w-[260px]"
+            "w-full px-4 transition-all duration-500 ease-out",
+            variant === 'fixed' ? "fixed bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 z-50 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200" : "relative mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300",
+            isLoading ? "max-w-sm md:max-w-md" : (isExpanded ? "max-w-[1008px] md:max-w-[1512px]" : "max-w-[495px] md:max-w-[585px]")
         )}>
             <form
                 onSubmit={handleSubmit}
@@ -92,6 +106,7 @@ export function FloatingQuestionInput({ onSubmit, isLoading }: FloatingQuestionI
                     "relative flex items-center gap-2 pl-4 pr-2 py-2 rounded-full shadow-2xl transition-all duration-500 ease-out border border-stone-700/50 cursor-text",
                     "bg-stone-900/95 backdrop-blur-md text-stone-50",
                     "hover:shadow-stone-900/20 hover:border-stone-600",
+                    variant === 'inline' && "shadow-[0_0_30px_rgba(251,191,36,0.15)] hover:shadow-[0_0_40px_rgba(251,191,36,0.25)]",
                     isExpanded ? "ring-1 ring-stone-500/50 border-stone-500" : ""
                 )}
             >
@@ -134,7 +149,7 @@ export function FloatingQuestionInput({ onSubmit, isLoading }: FloatingQuestionI
                             "flex-grow bg-transparent border-none focus:ring-0 text-base md:text-lg font-serif placeholder:text-stone-400/70 text-stone-100 placeholder:italic outline-none disabled:opacity-50 min-w-0 transition-opacity duration-300",
                             isExpanded ? "opacity-100" : "opacity-0 md:opacity-100 md:w-auto w-0"
                         )}
-                        placeholder={isListening ? "Listening..." : (isExpanded ? "Ask Tattva..." : "Ask...")}
+                        placeholder={isListening ? "Listening..." : placeholderText}
                     />
                 )}
 
@@ -143,41 +158,37 @@ export function FloatingQuestionInput({ onSubmit, isLoading }: FloatingQuestionI
                 */}
                 {!isExpanded && !isLoading && (
                     <span className="absolute left-16 top-1/2 -translate-y-1/2 text-stone-400/70 font-serif italic pointer-events-none whitespace-nowrap md:hidden">
-                        Ask Tattva...
+                        {placeholderText}
                     </span>
                 )}
 
                 <div className="flex items-center gap-1">
-                    {/* Voice Search Button */}
+                    {/* Dynamic Action Button: Mic or Send */}
                     {!isLoading && (
-                        <button
-                            type="button"
-                            onClick={(e) => {
-                                e.stopPropagation();
-                                toggleListening();
-                            }}
-                            className={cn(
-                                "p-2 rounded-full transition-all duration-300 hover:bg-stone-800",
-                                isListening ? "text-red-400 animate-pulse bg-red-950/30" : "text-stone-400 hover:text-stone-200"
-                            )}
-                            title="Voice Search"
-                        >
-                            {isListening ? <MicOff size={20} /> : <Mic size={20} />}
-                        </button>
+                        hasValue ? (
+                            <button
+                                type="submit"
+                                className="p-2 rounded-full transition-all duration-300 bg-amber-600 text-white hover:bg-amber-500 shadow-lg shadow-amber-900/20 animate-in zoom-in spin-in-90"
+                            >
+                                <ArrowRight className="w-5 h-5" />
+                            </button>
+                        ) : (
+                            <button
+                                type="button"
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    toggleListening();
+                                }}
+                                className={cn(
+                                    "p-2 rounded-full transition-all duration-300 hover:bg-stone-800",
+                                    isListening ? "text-red-400 animate-pulse bg-red-950/30" : "text-stone-400 hover:text-stone-200"
+                                )}
+                                title="Voice Search"
+                            >
+                                {isListening ? <MicOff size={20} /> : <Mic size={20} />}
+                            </button>
+                        )
                     )}
-
-                    <button
-                        type="submit"
-                        disabled={!value.trim() || isLoading}
-                        className={cn(
-                            "p-2 rounded-full transition-all duration-300 flex items-center justify-center",
-                            value.trim() && !isLoading
-                                ? "bg-amber-600 text-white hover:bg-amber-500 shadow-lg shadow-amber-900/20"
-                                : "bg-stone-800 text-stone-500 cursor-not-allowed"
-                        )}
-                    >
-                        {isLoading ? <Loader2 className="w-5 h-5 animate-spin" /> : <ArrowRight className="w-5 h-5" />}
-                    </button>
                 </div>
             </form>
         </div>

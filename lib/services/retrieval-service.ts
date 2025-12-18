@@ -11,11 +11,59 @@ const openai = new OpenAI({
 /**
  * Generate embedding for the question
  */
+/**
+ * Expand query using LLM to improve retrieval context
+ * e.g., "Dadhimukha" -> "Dadhimukha, the monkey guardian of Madhuvana, Sugriva's uncle"
+ */
+async function expandQuery(question: string): Promise<string> {
+    try {
+        const completion = await openai.chat.completions.create({
+            model: "gpt-4o-mini",
+            messages: [
+                {
+                    role: "system",
+                    content: `You are a Valmiki Ramayana retrieval expert. Your goal is to rewrite the user's search query to maximize similarity with the source text (which contains English translations and explanations).
+
+Rules:
+1. If the query references a specific identifier (e.g., "Ma Nishada", "Gayatri Mantra", "Aditya Hridayam"), explicitly state what it is and its context.
+2. Define proper nouns (characters, places, weapons) with their relationships (e.g., "Dadhimukha -> Sugriva's uncle, keeper of Madhuvana").
+3. If the query is a specific Sanskrit phrase, provide its English translation and significance.
+4. Keep the expansion concise (under 40 words).
+
+Example 1:
+Input: "Ma Nishada"
+Output: "Ma Nishada is the first shloka (verse) uttered by Sage Valmiki cursing a hunter (nishada) for killing a krauncha bird. Bala Kanda."
+
+Example 2:
+Input: "Dadhimukha"
+Output: "Dadhimukha is the monkey guardian of the Madhuvana honey garden and the maternal uncle of Sugriva."`
+                },
+                { role: "user", content: question }
+            ],
+            temperature: 0.1, // Lower temperature for more deterministic facts
+            max_tokens: 100,
+        });
+
+        const expanded = completion.choices[0].message.content || question;
+        console.log(`🔍 Query Expansion: "${question}" -> "${expanded}"`);
+        return expanded;
+    } catch (error) {
+        console.warn("Query expansion failed, using original query:", error);
+        return question;
+    }
+}
+
+/**
+ * Generate embedding for the question
+ */
 async function generateQueryEmbedding(question: string): Promise<number[]> {
     try {
+        // Expand the query first for better semantic match
+        const expandedQuery = await expandQuery(question);
+
         const response = await openai.embeddings.create({
             model: 'text-embedding-3-small',
-            input: question,
+            input: expandedQuery,
             dimensions: 1536,
         });
 

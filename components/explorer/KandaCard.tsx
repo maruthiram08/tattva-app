@@ -40,7 +40,7 @@ export function KandaCard({ name, description, totalSargas, index, className = "
         title: variant === 'dark' ? "text-stone-100 group-hover:text-white" : "text-stone-800 group-hover:text-amber-700",
         desc: variant === 'dark' ? "text-stone-400" : "text-stone-500",
         meta: variant === 'dark' ? "text-stone-500" : "text-stone-400",
-        roman: variant === 'dark' ? "text-stone-100 mix-blend-overlay opacity-20" : variant === 'featured' ? "text-amber-900 opacity-10" : "text-stone-400 opacity-10"
+        roman: variant === 'dark' ? "text-stone-100 mix-blend-overlay opacity-20" : variant === 'featured' ? "text-amber-900 opacity-10" : "text-stone-400 opacity-15"
     };
 
     return (
@@ -48,7 +48,7 @@ export function KandaCard({ name, description, totalSargas, index, className = "
             <div className={`h-full rounded-xl border p-6 md:p-8 transition-all duration-500 cursor-pointer overflow-hidden flex flex-col justify-between relative ${containerClasses[variant]} group-hover:-translate-y-0.5 group-hover:shadow-medium`}>
 
                 {/* Roman Numeral Background */}
-                <div className={`absolute pointer-events-none transition-transform duration-700 group-hover:scale-110 ${variant === 'dark' ? 'top-0 right-0 p-8' : variant === 'featured' ? '-top-2 -right-2' : '-bottom-4 -right-4 rotate-12'}`}>
+                <div className={`absolute pointer-events-none transition-transform duration-700 group-hover:scale-110 ${variant === 'dark' ? 'top-0 right-0 p-8' : variant === 'featured' ? '-top-2 -right-2' : '-bottom-2 -right-0 rotate-12'}`}>
                     <span className={`font-serif leading-none select-none ${textClasses.roman} ${variant === 'featured' ? 'text-7xl' : 'text-8xl'}`}>
                         {RomanNumeral}
                     </span>

@@ -58,7 +58,7 @@ export function ShlokaTyping() {
     }, [currentShlokaIndex]);
 
     return (
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10 p-8">
+        <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-10 p-8">
             <div className="text-center max-w-2xl min-h-[3rem]">
                 <span className={cn(
                     "font-serif text-2xl md:text-3xl text-stone-600 transition-opacity duration-500",
