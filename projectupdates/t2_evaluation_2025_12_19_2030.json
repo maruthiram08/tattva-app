@@ -1,0 +1,93 @@
+{
+  "results": [
+    {
+      "question": "Why did Lakshmana get angry at Dharma?",
+      "openai_citations": 1,
+      "openai_wts_cites": 1,
+      "openai_answer_cites": 0
+    },
+    {
+      "question": "Analyze the 'Golden Deer' incident as a failure of judgment.",
+      "openai_citations": 2,
+      "openai_wts_cites": 2,
+      "openai_answer_cites": 0
+    },
+    {
+      "question": "Who faced the dilemma of killing a woman (Tataka)?",
+      "openai_citations": 2,
+      "openai_wts_cites": 2,
+      "openai_answer_cites": 0
+    },
+    {
+      "question": "Why might Valmiki leave Interpretation Narrative Silence unresolved?",
+      "openai_citations": 3,
+      "openai_wts_cites": 3,
+      "openai_answer_cites": 0
+    },
+    {
+      "question": "Describe the debate between Sita and Rama regarding the carrying of weapons in the forest.",
+      "openai_citations": 2,
+      "openai_wts_cites": 2,
+      "openai_answer_cites": 0
+    },
+    {
+      "question": "Did Rama know he was God throughout the Valmiki Ramayana?",
+      "openai_citations": 3,
+      "openai_wts_cites": 3,
+      "openai_answer_cites": 0
+    },
+    {
+      "question": "How did Sita's character change from the palace to the Ashoka Vatika?",
+      "openai_citations": 5,
+      "openai_wts_cites": 5,
+      "openai_answer_cites": 0
+    },
+    {
+      "question": "Trace the evolution of Sugriva from a terrified fugitive to a King.",
+      "openai_citations": 4,
+      "openai_wts_cites": 4,
+      "openai_answer_cites": 0
+    },
+    {
+      "question": "How did Rama justify the 'Agni Pariksha' in Valmiki's text?",
+      "openai_citations": 2,
+      "openai_wts_cites": 2,
+      "openai_answer_cites": 0
+    },
+    {
+      "question": "Discuss the conflict between 'Pati Dharma' (Husband) and 'Raja Dharma' (King) regarding Sita's banishment.",
+      "openai_citations": 3,
+      "openai_wts_cites": 3,
+      "openai_answer_cites": 0
+    },
+    {
+      "question": "What motivated Ravana: Duty or Desire?",
+      "openai_citations": 3,
+      "openai_wts_cites": 3,
+      "openai_answer_cites": 0
+    },
+    {
+      "question": "How did Bharata handle the emotion of his mother's betrayal?",
+      "openai_citations": 3,
+      "openai_wts_cites": 3,
+      "openai_answer_cites": 0
+    },
+    {
+      "question": "What was Maricha's dilemma?",
+      "openai_citations": 3,
+      "openai_wts_cites": 3,
+      "openai_answer_cites": 0
+    },
+    {
+      "question": "Analyze the dilemma of Vibhishana: Traitor or Saint?",
+      "openai_citations": 4,
+      "openai_wts_cites": 4,
+      "openai_answer_cites": 0
+    }
+  ],
+  "summary": {
+    "with_citations": 14,
+    "total": 14,
+    "rate": 100.0
+  }
+}

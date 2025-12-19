@@ -56,7 +56,7 @@ Output: "Dadhimukha is the monkey guardian of the Madhuvana honey garden and the
 /**
  * Generate embedding for the question
  */
-async function generateQueryEmbedding(question: string): Promise<number[]> {
+async function generateQueryEmbedding(question: string): Promise<{ embedding: number[], expandedQuery: string }> {
     try {
         // Expand the query first for better semantic match
         const expandedQuery = await expandQuery(question);
@@ -67,7 +67,7 @@ async function generateQueryEmbedding(question: string): Promise<number[]> {
             dimensions: 1536,
         });
 
-        return response.data[0].embedding;
+        return { embedding: response.data[0].embedding, expandedQuery };
     } catch (error) {
         console.error('Error generating embedding:', error);
         throw new Error('Failed to generate query embedding');
@@ -181,6 +181,11 @@ export async function retrieveContext(
         shloka?: number;
     }
 ): Promise<RetrievalResult> {
-    const embedding = await generateQueryEmbedding(question);
-    return await queryPinecone(embedding, categoryId, filters);
+    const { embedding, expandedQuery } = await generateQueryEmbedding(question);
+    const result = await queryPinecone(embedding, categoryId, filters);
+
+    return {
+        ...result,
+        expandedQuery
+    };
 }

@@ -1,6 +1,6 @@
 import { openai } from '@ai-sdk/openai';
 import { anthropic } from '@ai-sdk/anthropic';
-import { streamObject, streamText, generateText, LanguageModel, CoreMessage } from 'ai';
+import { streamObject, streamText, generateText, generateObject, LanguageModel, CoreMessage } from 'ai';
 import { z } from 'zod';
 
 export type ProviderKey = 'openai' | 'anthropic';
@@ -31,6 +31,7 @@ const DEFAULT_ORDER: ProviderKey[] = ['openai', 'anthropic'];
 
 function getProviderOrder(preferred?: ProviderKey): ProviderConfig[] {
     const providers = getProviders();
+    console.log('[SmartAI] Providers available:', Object.keys(providers));
     const keys = [...DEFAULT_ORDER];
     if (preferred && keys.includes(preferred)) {
         // Move preferred to front
@@ -38,7 +39,12 @@ function getProviderOrder(preferred?: ProviderKey): ProviderConfig[] {
         keys.splice(idx, 1);
         keys.unshift(preferred);
     }
-    return keys.map(k => providers[k]);
+
+    const ordered = keys.map(k => providers[k]).filter(p => !!p); // Filter out undefined
+    if (ordered.length === 0) {
+        console.error('[SmartAI] No valid providers found!');
+    }
+    return ordered;
 }
 
 interface SmartStreamOptions<T> {
@@ -48,6 +54,7 @@ interface SmartStreamOptions<T> {
     system?: string;
     mode?: 'json' | 'tool'; // For streamObject
     preferredProvider?: ProviderKey;
+    onFinish?: (event: { usage: any; object?: T | undefined; error?: unknown }) => void | Promise<void>;
 }
 
 /**
@@ -96,10 +103,48 @@ export async function smartStreamObject<T>(options: SmartStreamOptions<T>) {
                 schema: options.schema,
                 system: options.system,
                 mode: options.mode || 'json',
+                onFinish: options.onFinish,
                 ...input
             });
         } catch (error) {
             console.error(`[SmartAI] ${provider.key} Failed:`, error);
+            lastError = error;
+            // Continue to next provider
+        }
+    }
+
+    throw lastError || new Error("All AI providers failed.");
+}
+
+/**
+ * Generates specific structured output with fallback (Non-Streaming).
+ */
+export async function smartGenerateObject<T>(options: SmartStreamOptions<T>) {
+    if (!options.schema) throw new Error("Schema required for smartGenerateObject");
+    const input = options.prompt ? { prompt: options.prompt } : { messages: options.messages! };
+    const orderedProviders = getProviderOrder(options.preferredProvider);
+
+    let lastError: any;
+
+    for (const provider of orderedProviders) {
+        try {
+            console.log(`[SmartAI] Trying ${provider.key} (${provider.modelId})...`);
+            // Note: generateObject returns { object, usage, ... } directly
+            const result = await generateObject({
+                model: provider.instance,
+                schema: options.schema,
+                system: options.system,
+                mode: options.mode || 'json',
+                ...input
+            });
+
+            // Add provider model info to the result for tracing
+            return {
+                ...result,
+                providerModel: provider.modelId
+            };
+        } catch (error) {
+            console.error(`[SmartAI] ${provider.key} Failed:`, String(error));
             lastError = error;
             // Continue to next provider
         }

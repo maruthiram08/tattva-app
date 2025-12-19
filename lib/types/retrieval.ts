@@ -29,4 +29,5 @@ export interface RetrievalResult {
   shlokas: RetrievedShloka[];
   totalRetrieved: number;
   warning?: string; // e.g., "Some shlokas missing translations"
+  expandedQuery?: string;
 }

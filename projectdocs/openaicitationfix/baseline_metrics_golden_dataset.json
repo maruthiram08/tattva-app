@@ -1,0 +1,50 @@
+{
+  "timestamp": "2025-12-19T12:59:56.795687",
+  "dataset": "golden_dataset.csv",
+  "total_questions": 60,
+  "template_distribution": {
+    "T1": 38,
+    "T2": 14,
+    "T3": 8
+  },
+  "outcome_distribution": {
+    "BOTH_PASS": 6,
+    "BOTH_FAIL": 35,
+    "OPENAI_ONLY": 6,
+    "CLAUDE_ONLY": 13
+  },
+  "citation_metrics": {
+    "openai_cites_pass": 15,
+    "openai_cites_fail": 44,
+    "claude_cites_pass": 24,
+    "claude_cites_fail": 34,
+    "openai_citation_rate": 0.25,
+    "claude_citation_rate": 0.4
+  },
+  "model_pass_rates": {
+    "openai_passed_count": 12,
+    "claude_passed_count": 19,
+    "openai_pass_rate": 0.2,
+    "claude_pass_rate": 0.3167
+  },
+  "t3_metrics": {
+    "t3_total": 8,
+    "t3_both_pass": 1,
+    "t3_both_fail": 7,
+    "t3_pass_rate": 0.125
+  },
+  "check_failures": {
+    "openai_routing_check_fail": 0,
+    "openai_retrieval_check_fail": 4,
+    "openai_answers_question_fail": 12,
+    "openai_cites_shlokas_fail": 44,
+    "openai_follows_template_fail": 0,
+    "openai_no_hallucination_fail": 4,
+    "claude_routing_check_fail": 0,
+    "claude_retrieval_check_fail": 5,
+    "claude_answers_question_fail": 14,
+    "claude_cites_shlokas_fail": 34,
+    "claude_follows_template_fail": 2,
+    "claude_no_hallucination_fail": 1
+  }
+}

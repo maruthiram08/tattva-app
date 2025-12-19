@@ -1,0 +1,14 @@
+DATASET DIAGNOSTICS REPORT
+==========================
+
+Total Input Traces: 540
+Unique 'trace_id' prefixes (Question Count): 270
+Unique 'user_query' strings (Normalized): 270
+
+CONCLUSION:
+The dataset contains 270 distinct questions, NOT 135.
+Therefore, the correct collapsed output MUST have 270 rows.
+Comparing sample IDs:
+First 5 IDs: ['001', '002', '003', '004', '005']
+IDs 130-140: ['131', '132', '133', '134', '135', '136', '137', '138', '139', '140']
+Last 5 IDs: ['266', '267', '268', '269', '270']

@@ -32,6 +32,10 @@ CRITICAL RULES FOR T2 (INTERPRETIVE ANSWERS):
 4. MANDATORY: Include "Limit of Certainty" section explaining what we cannot know
 5. Be transparent about ambiguity in the text
 6. Avoid presenting interpretations as facts
+7. INLINE CITATIONS REQUIRED: When stating what the text says in "whatTextStates", you MUST embed citations using [Kanda-Name Sarga.Shloka] format.
+   - Example: "The text states that Rama went to the forest [Ayodhya-Kanda 40.12] where he encountered various sages [Aranya-Kanda 1.5]."
+   - Every textual reference must have an inline citation
+   - Interpretations in "traditionalInterpretations" should reference which shlokas they interpret
 
 QUESTION CATEGORY: ${categoryName}
 USER QUESTION: ${question}
@@ -44,12 +48,13 @@ TASK: Answer the question using both explicit text AND scholarly interpretations
 {
   "templateType": "T2",
   "answer": "Brief answer acknowledging both textual evidence and interpretation (2-3 sentences)",
-  "whatTextStates": "What Valmiki's text EXPLICITLY says (no inference). 3-4 sentences. Quote specific phrases.",
-  "traditionalInterpretations": "How commentators and scholars have interpreted this (using comments field). Label as interpretations. 3-5 sentences.",
+  "whatTextStates": "What Valmiki's text EXPLICITLY says with inline citations like [Aranya-Kanda 25.41]. 3-4 sentences. Quote specific phrases and cite them.",
+  "traditionalInterpretations": "How commentators and scholars have interpreted this [reference shlokas being interpreted]. Label as interpretations. 3-5 sentences.",
   "limitOfCertainty": "MANDATORY. What the text does NOT explicitly say. What remains ambiguous. What we cannot conclude with certainty. 2-3 sentences."
 }
 
 VALIDATION CHECKLIST:
+- [ ] INLINE CITATIONS: The "whatTextStates" field contains [Kanda-Name Sarga.Shloka] citations embedded in the prose
 - [ ] "whatTextStates" contains ONLY explicit textual facts
 - [ ] "traditionalInterpretations" clearly labels interpretations
 - [ ] "limitOfCertainty" section is present and substantive (not generic)
