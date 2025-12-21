@@ -5,7 +5,7 @@ import { TraceData, TraceRepository } from '@/lib/types/trace';
 const LOG_DIR = path.join(process.cwd(), 'logs');
 const TRACE_FILE = path.join(LOG_DIR, 'traces.jsonl');
 
-import { sql } from '@vercel/postgres';
+import { createClient } from '@vercel/postgres';
 
 export class FileTraceRepository implements TraceRepository {
     constructor() {
@@ -24,16 +24,29 @@ export class FileTraceRepository implements TraceRepository {
 
 export class PostgresTraceRepository implements TraceRepository {
     async saveTrace(trace: TraceData): Promise<void> {
+        // Use prefixed env var from "tattva" database, fallback to generic
+        const connectionString = process.env.tattva_POSTGRES_URL || process.env.POSTGRES_URL;
+
+        if (!connectionString) {
+            console.error('[TraceService] No POSTGRES_URL found, skipping DB save');
+            console.log('[TraceService Fallback]', JSON.stringify(trace));
+            return;
+        }
+
+        const client = createClient({ connectionString });
         try {
-            await sql`
-                INSERT INTO traces (trace_id, timestamp, data)
-                VALUES (${trace.trace_id}, ${trace.timestamp}, ${JSON.stringify(trace)}::jsonb)
-            `;
+            await client.connect();
+            await client.query(
+                `INSERT INTO traces (trace_id, timestamp, data) VALUES ($1, $2, $3::jsonb)`,
+                [trace.trace_id, trace.timestamp, JSON.stringify(trace)]
+            );
             console.log(`[TraceService] Saved trace ${trace.trace_id} to DB`);
         } catch (error) {
             console.error('[TraceService] DB Save Error:', error);
             // Fallback to console if DB fails
             console.log('[TraceService Fallback]', JSON.stringify(trace));
+        } finally {
+            await client.end().catch(() => { });
         }
     }
 }
