@@ -33,7 +33,7 @@ async function main() {
             console.log("⚠️ 'traces' table DOES NOT exist.");
             console.log("   Please run scripts/db/init_traces.sql");
         }
-    } catch (error) {
+    } catch (error: any) {
         console.error("❌ DB Connection Failed:", error);
         console.error("   Details:", error.message);
     }
