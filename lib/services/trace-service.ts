@@ -5,7 +5,7 @@ import { TraceData, TraceRepository } from '@/lib/types/trace';
 const LOG_DIR = path.join(process.cwd(), 'logs');
 const TRACE_FILE = path.join(LOG_DIR, 'traces.jsonl');
 
-import { createClient } from '@vercel/postgres';
+import { createPool } from '@vercel/postgres';
 
 export class FileTraceRepository implements TraceRepository {
     constructor() {
@@ -33,10 +33,10 @@ export class PostgresTraceRepository implements TraceRepository {
             return;
         }
 
-        const client = createClient({ connectionString });
+        // Use createPool for pooled connections (serverless-friendly)
+        const pool = createPool({ connectionString });
         try {
-            await client.connect();
-            await client.query(
+            await pool.query(
                 `INSERT INTO traces (trace_id, timestamp, data) VALUES ($1, $2, $3::jsonb)`,
                 [trace.trace_id, trace.timestamp, JSON.stringify(trace)]
             );
@@ -46,7 +46,7 @@ export class PostgresTraceRepository implements TraceRepository {
             // Fallback to console if DB fails
             console.log('[TraceService Fallback]', JSON.stringify(trace));
         } finally {
-            await client.end().catch(() => { });
+            await pool.end().catch(() => { });
         }
     }
 }
