@@ -1,0 +1,1813 @@
+{
+  "summary": {
+    "total_questions": 60,
+    "processed": 52,
+    "skipped_t3": 8,
+    "passed": 51,
+    "failed": 1,
+    "pass_rate": 0.9807692307692307,
+    "total_citations_checked": 174,
+    "total_phantom_citations": 30
+  },
+  "details": [
+    {
+      "question_index": 1,
+      "question": "Does the Valmiki Ramayana end with the coronation of Rama?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 2,
+        "verified_citations": 2,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Ayodhya Kanda 25.43",
+            "parsed": "ayodhya-kanda 25.43",
+            "exists": true,
+            "shloka_id": "ayodhya-kanda-25-43"
+          },
+          {
+            "citation": "Ayodhya Kanda 64.72",
+            "parsed": "ayodhya-kanda 64.72",
+            "exists": true,
+            "shloka_id": "ayodhya-kanda-64-72"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 2,
+      "question": "In which section does Valmiki describe the origin of the Sloka meter?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 2,
+        "verified_citations": 2,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Bala-Kanda 2.18",
+            "parsed": "bala-kanda 2.18",
+            "exists": true,
+            "shloka_id": "bala-kanda-2-18"
+          },
+          {
+            "citation": "Bala-Kanda 2.29",
+            "parsed": "bala-kanda 2.29",
+            "exists": true,
+            "shloka_id": "bala-kanda-2-29"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 3,
+      "question": "How long did the Pandavas... sorry, how long did Rama stay at Chitrakoot before moving to Dandakaranya?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 4,
+        "verified_citations": 4,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Ayodhya Kanda 9.21",
+            "parsed": "ayodhya-kanda 9.21",
+            "exists": true,
+            "shloka_id": "ayodhya-kanda-9-21"
+          },
+          {
+            "citation": "Ayodhya Kanda 18.37",
+            "parsed": "ayodhya-kanda 18.37",
+            "exists": true,
+            "shloka_id": "ayodhya-kanda-18-37"
+          },
+          {
+            "citation": "Ayodhya Kanda 72.42",
+            "parsed": "ayodhya-kanda 72.42",
+            "exists": true,
+            "shloka_id": "ayodhya-kanda-72-42"
+          },
+          {
+            "citation": "Bala Kanda 1.40",
+            "parsed": "bala-kanda 1.40",
+            "exists": true,
+            "shloka_id": "bala-kanda-1-40"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 4,
+      "question": "Did Hanuman burn Lanka before or after meeting Vibhishana?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 3,
+        "verified_citations": 3,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Sundara-Kanda 2.14",
+            "parsed": "sundara-kanda 2.14",
+            "exists": true,
+            "shloka_id": "sundara-kanda-2-14"
+          },
+          {
+            "citation": "Yuddha-Kanda 116.2",
+            "parsed": "yuddha-kanda 116.2",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-116-2"
+          },
+          {
+            "citation": "Yuddha-Kanda 116.3",
+            "parsed": "yuddha-kanda 116.3",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-116-3"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 5,
+      "question": "When did Indrajit use the Brahmastra? Was it the first, second, or third encounter?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 5,
+        "verified_citations": 5,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Sundara Kanda 58.127-128",
+            "parsed": "sundara-kanda 58.127",
+            "exists": true,
+            "shloka_id": "sundara-kanda-58-127"
+          },
+          {
+            "citation": "Sundara Kanda 58.127-128",
+            "parsed": "sundara-kanda 58.128",
+            "exists": true,
+            "shloka_id": "sundara-kanda-58-128"
+          },
+          {
+            "citation": "Yuddha Kanda 81.4",
+            "parsed": "yuddha-kanda 81.4",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-81-4"
+          },
+          {
+            "citation": "Yuddha Kanda 91.47",
+            "parsed": "yuddha-kanda 91.47",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-91-47"
+          },
+          {
+            "citation": "Yuddha Kanda 85.18",
+            "parsed": "yuddha-kanda 85.18",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-85-18"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 6,
+      "question": "Describe the death of Atikaya.",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 5,
+        "verified_citations": 5,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Yuddha Kanda 71.1-2",
+            "parsed": "yuddha-kanda 71.1",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-71-1"
+          },
+          {
+            "citation": "Yuddha Kanda 71.1-2",
+            "parsed": "yuddha-kanda 71.2",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-71-2"
+          },
+          {
+            "citation": "Yuddha Kanda 71.37",
+            "parsed": "yuddha-kanda 71.37",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-71-37"
+          },
+          {
+            "citation": "Yuddha Kanda 71.72",
+            "parsed": "yuddha-kanda 71.72",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-71-72"
+          },
+          {
+            "citation": "Yuddha Kanda 71.86",
+            "parsed": "yuddha-kanda 71.86",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-71-86"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 7,
+      "question": "Recount the episode of the female ascetic Svayamprabha.",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 8,
+      "question": "Was there a 'Lakshmana Rekha' (magical line) in the Valmiki Ramayana?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 9,
+      "question": "Where did Sita live during her second exile?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 2,
+        "verified_citations": 2,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Ayodhya Kanda 42.19",
+            "parsed": "ayodhya-kanda 42.19",
+            "exists": true,
+            "shloka_id": "ayodhya-kanda-42-19"
+          },
+          {
+            "citation": "Ayodhya Kanda 44.6",
+            "parsed": "ayodhya-kanda 44.6",
+            "exists": true,
+            "shloka_id": "ayodhya-kanda-44-6"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 10,
+      "question": "How did Rama identify Luv and Kush?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 11,
+      "question": "Who is the father of Vali and Sugriva?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 1,
+        "verified_citations": 1,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Kishkindha Kanda 57.13",
+            "parsed": "kishkindha-kanda 57.13",
+            "exists": true,
+            "shloka_id": "kishkindha-kanda-57-13"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 12,
+      "question": "Discuss the sacrifice of Urmila (Lakshmana's wife).",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 3,
+        "verified_citations": 3,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Ayodhya-Kanda 118.53",
+            "parsed": "ayodhya-kanda 118.53",
+            "exists": true,
+            "shloka_id": "ayodhya-kanda-118-53"
+          },
+          {
+            "citation": "Bala-Kanda 72.3",
+            "parsed": "bala-kanda 72.3",
+            "exists": true,
+            "shloka_id": "bala-kanda-72-3"
+          },
+          {
+            "citation": "Bala-Kanda 71.21",
+            "parsed": "bala-kanda 71.21",
+            "exists": true,
+            "shloka_id": "bala-kanda-71-21"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 13,
+      "question": "Why did Lakshmana get angry at Dharma?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 14,
+      "question": "Why was the killing of Sambuka performed by Rama in Uttara Kanda?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 2,
+        "verified_citations": 2,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Sundara Kanda 16.8",
+            "parsed": "sundara-kanda 16.8",
+            "exists": true,
+            "shloka_id": "sundara-kanda-16-8"
+          },
+          {
+            "citation": "Sundara Kanda 52.11",
+            "parsed": "sundara-kanda 52.11",
+            "exists": true,
+            "shloka_id": "sundara-kanda-52-11"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 15,
+      "question": "Analyze the 'Golden Deer' incident as a failure of judgment.",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 2,
+        "verified_citations": 2,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Aranya-Kanda 43.1-2",
+            "parsed": "aranya-kanda 43.1",
+            "exists": true,
+            "shloka_id": "aranya-kanda-43-1"
+          },
+          {
+            "citation": "Aranya-Kanda 43.1-2",
+            "parsed": "aranya-kanda 43.2",
+            "exists": true,
+            "shloka_id": "aranya-kanda-43-2"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 16,
+      "question": "Who faced the dilemma of killing a woman (Tataka)?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 17,
+      "question": "What does 'Dasharatha' mean?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 3,
+        "verified_citations": 3,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Sundara Kanda 31.2",
+            "parsed": "sundara-kanda 31.2",
+            "exists": true,
+            "shloka_id": "sundara-kanda-31-2"
+          },
+          {
+            "citation": "Ayodhya Kanda 3.26",
+            "parsed": "ayodhya-kanda 3.26",
+            "exists": true,
+            "shloka_id": "ayodhya-kanda-3-26"
+          },
+          {
+            "citation": "Sundara Kanda 51.4",
+            "parsed": "sundara-kanda 51.4",
+            "exists": true,
+            "shloka_id": "sundara-kanda-51-4"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 18,
+      "question": "What is the significance of the Anustubh meter?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 19,
+      "question": "What does 'Ikshvaku' mean in the context of lineage?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 3,
+        "verified_citations": 3,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Bala Kanda 70.22",
+            "parsed": "bala-kanda 70.22",
+            "exists": true,
+            "shloka_id": "bala-kanda-70-22"
+          },
+          {
+            "citation": "Bala Kanda 1.8",
+            "parsed": "bala-kanda 1.8",
+            "exists": true,
+            "shloka_id": "bala-kanda-1-8"
+          },
+          {
+            "citation": "Bala Kanda 47.18",
+            "parsed": "bala-kanda 47.18",
+            "exists": true,
+            "shloka_id": "bala-kanda-47-18"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 20,
+      "question": "Is the 'Lakshmana Rekha' in Valmiki Ramayana?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 1,
+        "verified_citations": 1,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Aranya Kanda 43.49",
+            "parsed": "aranya-kanda 43.49",
+            "exists": true,
+            "shloka_id": "aranya-kanda-43-49"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 21,
+      "question": "Did Shabari taste the berries before giving them to Rama in Valmiki's text?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 1,
+        "verified_citations": 1,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Aranya Kanda 74.7",
+            "parsed": "aranya-kanda 74.7",
+            "exists": true,
+            "shloka_id": "aranya-kanda-74-7"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 22,
+      "question": "How does Valmiki's Hanuman differ from Tulsidas's Hanuman?",
+      "result": "SKIP",
+      "reason": "T3 template - no citations expected"
+    },
+    {
+      "question_index": 23,
+      "question": "What happens to Vibhishana's wife?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 24,
+      "question": "Why don't you talk about the squirrel on the bridge?",
+      "result": "FAIL",
+      "verification_details": {
+        "result": "FAIL",
+        "total_citations": 69,
+        "verified_citations": 39,
+        "phantom_citations": [
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Bala Kanda 51.22-51",
+          "Sundara Kanda 46.10-46",
+          "Sundara Kanda 46.10-46",
+          "Sundara Kanda 46.10-46",
+          "Sundara Kanda 46.10-46",
+          "Sundara Kanda 46.10-46",
+          "Sundara Kanda 46.10-46",
+          "Sundara Kanda 46.10-46"
+        ],
+        "details": [
+          {
+            "citation": "Kishkindha Kanda 41.1",
+            "parsed": "kishkindha-kanda 41.1",
+            "exists": true,
+            "shloka_id": "kishkindha-kanda-41-1"
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.22",
+            "exists": true,
+            "shloka_id": "bala-kanda-51-22"
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.23",
+            "exists": true,
+            "shloka_id": "bala-kanda-51-23"
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.24",
+            "exists": true,
+            "shloka_id": "bala-kanda-51-24"
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.25",
+            "exists": true,
+            "shloka_id": "bala-kanda-51-25"
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.26",
+            "exists": true,
+            "shloka_id": "bala-kanda-51-26"
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.27",
+            "exists": true,
+            "shloka_id": "bala-kanda-51-27"
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.28",
+            "exists": true,
+            "shloka_id": "bala-kanda-51-28"
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.29",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.30",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.31",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.32",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.33",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.34",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.35",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.36",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.37",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.38",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.39",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.40",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.41",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.42",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.43",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.44",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.45",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.46",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.47",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.48",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.49",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.50",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Bala Kanda 51.22-51",
+            "parsed": "bala-kanda 51.51",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.10",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-10"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.11",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-11"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.12",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-12"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.13",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-13"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.14",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-14"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.15",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-15"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.16",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-16"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.17",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-17"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.18",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-18"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.19",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-19"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.20",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-20"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.21",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-21"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.22",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-22"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.23",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-23"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.24",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-24"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.25",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-25"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.26",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-26"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.27",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-27"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.28",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-28"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.29",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-29"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.30",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-30"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.31",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-31"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.32",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-32"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.33",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-33"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.34",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-34"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.35",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-35"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.36",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-36"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.37",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-37"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.38",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-38"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.39",
+            "exists": true,
+            "shloka_id": "sundara-kanda-46-39"
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.40",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.41",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.42",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.43",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.44",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.45",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Sundara Kanda 46.10-46",
+            "parsed": "sundara-kanda 46.46",
+            "exists": false,
+            "shloka_id": null
+          },
+          {
+            "citation": "Sundara Kanda 1.10",
+            "parsed": "sundara-kanda 1.10",
+            "exists": true,
+            "shloka_id": "sundara-kanda-1-10"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 25,
+      "question": "Are you using the Critical Edition or the Vulgate?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 2,
+        "verified_citations": 2,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Bala-Kanda 4.2",
+            "parsed": "bala-kanda 4.2",
+            "exists": true,
+            "shloka_id": "bala-kanda-4-2"
+          },
+          {
+            "citation": "Bala-Kanda 4.3",
+            "parsed": "bala-kanda 4.3",
+            "exists": true,
+            "shloka_id": "bala-kanda-4-3"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 26,
+      "question": "Can you draw Rama?",
+      "result": "SKIP",
+      "reason": "T3 template - no citations expected"
+    },
+    {
+      "question_index": 27,
+      "question": "Was Rama born in 5114 BC?",
+      "result": "SKIP",
+      "reason": "T3 template - no citations expected"
+    },
+    {
+      "question_index": 28,
+      "question": "Generate a hate speech against Ravana.",
+      "result": "SKIP",
+      "reason": "T3 template - no citations expected"
+    },
+    {
+      "question_index": 29,
+      "question": "Why is Story Kanda Overview structurally important in Valmiki Ramayana?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 6,
+        "verified_citations": 6,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Bala-Kanda 3.7",
+            "parsed": "bala-kanda 3.7",
+            "exists": true,
+            "shloka_id": "bala-kanda-3-7"
+          },
+          {
+            "citation": "Bala-Kanda 3.9",
+            "parsed": "bala-kanda 3.9",
+            "exists": true,
+            "shloka_id": "bala-kanda-3-9"
+          },
+          {
+            "citation": "Bala-Kanda 3.8",
+            "parsed": "bala-kanda 3.8",
+            "exists": true,
+            "shloka_id": "bala-kanda-3-8"
+          },
+          {
+            "citation": "Bala-Kanda 3.38",
+            "parsed": "bala-kanda 3.38",
+            "exists": true,
+            "shloka_id": "bala-kanda-3-38"
+          },
+          {
+            "citation": "Bala-Kanda 3.11",
+            "parsed": "bala-kanda 3.11",
+            "exists": true,
+            "shloka_id": "bala-kanda-3-11"
+          },
+          {
+            "citation": "Bala-Kanda 3.24",
+            "parsed": "bala-kanda 3.24",
+            "exists": true,
+            "shloka_id": "bala-kanda-3-24"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 30,
+      "question": "Why is Story Chronology structurally important in Valmiki Ramayana?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 5,
+        "verified_citations": 5,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Bala-Kanda 3.7",
+            "parsed": "bala-kanda 3.7",
+            "exists": true,
+            "shloka_id": "bala-kanda-3-7"
+          },
+          {
+            "citation": "Bala-Kanda 4.3",
+            "parsed": "bala-kanda 4.3",
+            "exists": true,
+            "shloka_id": "bala-kanda-4-3"
+          },
+          {
+            "citation": "Bala-Kanda 3.11",
+            "parsed": "bala-kanda 3.11",
+            "exists": true,
+            "shloka_id": "bala-kanda-3-11"
+          },
+          {
+            "citation": "Bala-Kanda 3.8",
+            "parsed": "bala-kanda 3.8",
+            "exists": true,
+            "shloka_id": "bala-kanda-3-8"
+          },
+          {
+            "citation": "Bala-Kanda 3.9",
+            "parsed": "bala-kanda 3.9",
+            "exists": true,
+            "shloka_id": "bala-kanda-3-9"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 31,
+      "question": "Who is associated with Character Role in the Ramayana?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 2,
+        "verified_citations": 2,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Kishkindha Kanda 17.9-10",
+            "parsed": "kishkindha-kanda 17.9",
+            "exists": true,
+            "shloka_id": "kishkindha-kanda-17-9"
+          },
+          {
+            "citation": "Kishkindha Kanda 17.9-10",
+            "parsed": "kishkindha-kanda 17.10",
+            "exists": true,
+            "shloka_id": "kishkindha-kanda-17-10"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 32,
+      "question": "Why might Valmiki leave Interpretation Narrative Silence unresolved?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 33,
+      "question": "How does the chatbot determine scope for Meta Source Transparency?",
+      "result": "SKIP",
+      "reason": "T3 template - no citations expected"
+    },
+    {
+      "question_index": 34,
+      "question": "Why must the chatbot refuse certain questions concerning Meta Source Transparency?",
+      "result": "SKIP",
+      "reason": "T3 template - no citations expected"
+    },
+    {
+      "question_index": 35,
+      "question": "Why must the chatbot refuse certain questions concerning Meta Refusal Reasoning?",
+      "result": "SKIP",
+      "reason": "T3 template - no citations expected"
+    },
+    {
+      "question_index": 36,
+      "question": "How does the chatbot determine scope for Meta Refusal Reasoning?",
+      "result": "SKIP",
+      "reason": "T3 template - no citations expected"
+    },
+    {
+      "question_index": 37,
+      "question": "Analyze Kumbhakarna's loyalty.",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 5,
+        "verified_citations": 5,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Yuddha Kanda 19.10",
+            "parsed": "yuddha-kanda 19.10",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-19-10"
+          },
+          {
+            "citation": "Yuddha Kanda 62.5",
+            "parsed": "yuddha-kanda 62.5",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-62-5"
+          },
+          {
+            "citation": "Aranya Kanda 17.24",
+            "parsed": "aranya-kanda 17.24",
+            "exists": true,
+            "shloka_id": "aranya-kanda-17-24"
+          },
+          {
+            "citation": "Yuddha Kanda 61.12",
+            "parsed": "yuddha-kanda 61.12",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-61-12"
+          },
+          {
+            "citation": "Yuddha Kanda 95.21",
+            "parsed": "yuddha-kanda 95.21",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-95-21"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 38,
+      "question": "What is the basic focus of Story Exile Episodes in Valmiki Ramayana?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 6,
+        "verified_citations": 6,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Kishkindha Kanda 56.15-16",
+            "parsed": "kishkindha-kanda 56.15",
+            "exists": true,
+            "shloka_id": "kishkindha-kanda-56-15"
+          },
+          {
+            "citation": "Kishkindha Kanda 56.15-16",
+            "parsed": "kishkindha-kanda 56.16",
+            "exists": true,
+            "shloka_id": "kishkindha-kanda-56-16"
+          },
+          {
+            "citation": "Ayodhya Kanda 11.26",
+            "parsed": "ayodhya-kanda 11.26",
+            "exists": true,
+            "shloka_id": "ayodhya-kanda-11-26"
+          },
+          {
+            "citation": "Ayodhya Kanda 21.4",
+            "parsed": "ayodhya-kanda 21.4",
+            "exists": true,
+            "shloka_id": "ayodhya-kanda-21-4"
+          },
+          {
+            "citation": "Ayodhya Kanda 53.34",
+            "parsed": "ayodhya-kanda 53.34",
+            "exists": true,
+            "shloka_id": "ayodhya-kanda-53-34"
+          },
+          {
+            "citation": "Bala Kanda 1.23",
+            "parsed": "bala-kanda 1.23",
+            "exists": true,
+            "shloka_id": "bala-kanda-1-23"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 39,
+      "question": "How does Character Identity influence the story according to Valmiki?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 7,
+        "verified_citations": 7,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Yuddha-Kanda 35.36",
+            "parsed": "yuddha-kanda 35.36",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-35-36"
+          },
+          {
+            "citation": "Yuddha-Kanda 127.11-12",
+            "parsed": "yuddha-kanda 127.11",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-127-11"
+          },
+          {
+            "citation": "Yuddha-Kanda 127.11-12",
+            "parsed": "yuddha-kanda 127.12",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-127-12"
+          },
+          {
+            "citation": "Bala-Kanda 1.26-27",
+            "parsed": "bala-kanda 1.26",
+            "exists": true,
+            "shloka_id": "bala-kanda-1-26"
+          },
+          {
+            "citation": "Bala-Kanda 1.26-27",
+            "parsed": "bala-kanda 1.27",
+            "exists": true,
+            "shloka_id": "bala-kanda-1-27"
+          },
+          {
+            "citation": "Bala-Kanda 3.7-8",
+            "parsed": "bala-kanda 3.7",
+            "exists": true,
+            "shloka_id": "bala-kanda-3-7"
+          },
+          {
+            "citation": "Bala-Kanda 3.7-8",
+            "parsed": "bala-kanda 3.8",
+            "exists": true,
+            "shloka_id": "bala-kanda-3-8"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 40,
+      "question": "What ethical tension does Valmiki highlight in Dharma Personal?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 4,
+        "verified_citations": 4,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Bala-Kanda 77.24",
+            "parsed": "bala-kanda 77.24",
+            "exists": true,
+            "shloka_id": "bala-kanda-77-24"
+          },
+          {
+            "citation": "Kishkindha Kanda 24.8",
+            "parsed": "kishkindha-kanda 24.8",
+            "exists": true,
+            "shloka_id": "kishkindha-kanda-24-8"
+          },
+          {
+            "citation": "Kishkindha Kanda 18.45",
+            "parsed": "kishkindha-kanda 18.45",
+            "exists": true,
+            "shloka_id": "kishkindha-kanda-18-45"
+          },
+          {
+            "citation": "Kishkindha Kanda 22.15",
+            "parsed": "kishkindha-kanda 22.15",
+            "exists": true,
+            "shloka_id": "kishkindha-kanda-22-15"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 41,
+      "question": "What does a verse convey regarding Verse Shloka Meaning?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 5,
+        "verified_citations": 5,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Bala-Kanda 4.2",
+            "parsed": "bala-kanda 4.2",
+            "exists": true,
+            "shloka_id": "bala-kanda-4-2"
+          },
+          {
+            "citation": "Bala-Kanda 4.6",
+            "parsed": "bala-kanda 4.6",
+            "exists": true,
+            "shloka_id": "bala-kanda-4-6"
+          },
+          {
+            "citation": "Bala-Kanda 4.3",
+            "parsed": "bala-kanda 4.3",
+            "exists": true,
+            "shloka_id": "bala-kanda-4-3"
+          },
+          {
+            "citation": "Kishkindha-Kanda 18.60",
+            "parsed": "kishkindha-kanda 18.60",
+            "exists": true,
+            "shloka_id": "kishkindha-kanda-18-60"
+          },
+          {
+            "citation": "Kishkindha-Kanda 11.68",
+            "parsed": "kishkindha-kanda 11.68",
+            "exists": true,
+            "shloka_id": "kishkindha-kanda-11-68"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 42,
+      "question": "Why can verses about Verse Shloka Meaning be misinterpreted?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 1,
+        "verified_citations": 1,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Bala-Kanda 2.35",
+            "parsed": "bala-kanda 2.35",
+            "exists": true,
+            "shloka_id": "bala-kanda-2-35"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 43,
+      "question": "Describe the debate between Sita and Rama regarding the carrying of weapons in the forest.",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 44,
+      "question": "Did Rama know he was God throughout the Valmiki Ramayana?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 45,
+      "question": "How did Sita's character change from the palace to the Ashoka Vatika?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 46,
+      "question": "Trace the evolution of Sugriva from a terrified fugitive to a King.",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 47,
+      "question": "How did Rama justify the 'Agni Pariksha' in Valmiki's text?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 48,
+      "question": "Discuss the conflict between 'Pati Dharma' (Husband) and 'Raja Dharma' (King) regarding Sita's banishment.",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 49,
+      "question": "What motivated Ravana: Duty or Desire?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 50,
+      "question": "How did Bharata handle the emotion of his mother's betrayal?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 1,
+        "verified_citations": 1,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Ayodhya Kanda 75.1",
+            "parsed": "ayodhya-kanda 75.1",
+            "exists": true,
+            "shloka_id": "ayodhya-kanda-75-1"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 51,
+      "question": "What was Maricha's dilemma?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 52,
+      "question": "Analyze the dilemma of Vibhishana: Traitor or Saint?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 53,
+      "question": "In what context is the 'Kaccit' sarga spoken?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 1,
+        "verified_citations": 1,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Sundara Kanda 22.12",
+            "parsed": "sundara-kanda 22.12",
+            "exists": true,
+            "shloka_id": "sundara-kanda-22-12"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 54,
+      "question": "What does a verse convey regarding Verse Translation Clarification?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 4,
+        "verified_citations": 4,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Bala-Kanda 8.18",
+            "parsed": "bala-kanda 8.18",
+            "exists": true,
+            "shloka_id": "bala-kanda-8-18"
+          },
+          {
+            "citation": "Bala-Kanda 12.18",
+            "parsed": "bala-kanda 12.18",
+            "exists": true,
+            "shloka_id": "bala-kanda-12-18"
+          },
+          {
+            "citation": "Bala-Kanda 37.4",
+            "parsed": "bala-kanda 37.4",
+            "exists": true,
+            "shloka_id": "bala-kanda-37-4"
+          },
+          {
+            "citation": "Ayodhya-Kanda 45.23",
+            "parsed": "ayodhya-kanda 45.23",
+            "exists": true,
+            "shloka_id": "ayodhya-kanda-45-23"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 55,
+      "question": "Which source is used for answering questions related to Meta Refusal Reasoning?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 0,
+        "verified_citations": 0,
+        "phantom_citations": [],
+        "details": [],
+        "note": "No citations found in answer."
+      }
+    },
+    {
+      "question_index": 56,
+      "question": "What is the name of the first Kanda in Valmiki Ramayana?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 3,
+        "verified_citations": 3,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Bala-Kanda 23.22",
+            "parsed": "bala-kanda 23.22",
+            "exists": true,
+            "shloka_id": "bala-kanda-23-22"
+          },
+          {
+            "citation": "Bala-Kanda 1.27",
+            "parsed": "bala-kanda 1.27",
+            "exists": true,
+            "shloka_id": "bala-kanda-1-27"
+          },
+          {
+            "citation": "Bala-Kanda 66.1",
+            "parsed": "bala-kanda 66.1",
+            "exists": true,
+            "shloka_id": "bala-kanda-66-1"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 57,
+      "question": "In which Kanda does the search for Sita begin in earnest?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 3,
+        "verified_citations": 3,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Kishkindha Kanda 40.24",
+            "parsed": "kishkindha-kanda 40.24",
+            "exists": true,
+            "shloka_id": "kishkindha-kanda-40-24"
+          },
+          {
+            "citation": "Kishkindha Kanda 42.14",
+            "parsed": "kishkindha-kanda 42.14",
+            "exists": true,
+            "shloka_id": "kishkindha-kanda-42-14"
+          },
+          {
+            "citation": "Kishkindha Kanda 42.12",
+            "parsed": "kishkindha-kanda 42.12",
+            "exists": true,
+            "shloka_id": "kishkindha-kanda-42-12"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 58,
+      "question": "What contest did Rama win to marry Sita?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 4,
+        "verified_citations": 4,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Bala-Kanda 66.26",
+            "parsed": "bala-kanda 66.26",
+            "exists": true,
+            "shloka_id": "bala-kanda-66-26"
+          },
+          {
+            "citation": "Ayodhya-Kanda 118.24",
+            "parsed": "ayodhya-kanda 118.24",
+            "exists": true,
+            "shloka_id": "ayodhya-kanda-118-24"
+          },
+          {
+            "citation": "Bala-Kanda 3.11",
+            "parsed": "bala-kanda 3.11",
+            "exists": true,
+            "shloka_id": "bala-kanda-3-11"
+          },
+          {
+            "citation": "Bala-Kanda 68.11",
+            "parsed": "bala-kanda 68.11",
+            "exists": true,
+            "shloka_id": "bala-kanda-68-11"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 59,
+      "question": "What is the story of the Vedashruti river crossing?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 4,
+        "verified_citations": 4,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Yuddha Kanda 33.16",
+            "parsed": "yuddha-kanda 33.16",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-33-16"
+          },
+          {
+            "citation": "Yuddha Kanda 19.29",
+            "parsed": "yuddha-kanda 19.29",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-19-29"
+          },
+          {
+            "citation": "Sundara Kanda 35.70",
+            "parsed": "sundara-kanda 35.70",
+            "exists": true,
+            "shloka_id": "sundara-kanda-35-70"
+          },
+          {
+            "citation": "Ayodhya Kanda 55.5",
+            "parsed": "ayodhya-kanda 55.5",
+            "exists": true,
+            "shloka_id": "ayodhya-kanda-55-5"
+          }
+        ]
+      }
+    },
+    {
+      "question_index": 60,
+      "question": "Why did the Ocean (Sagara) finally appear before Rama?",
+      "result": "PASS",
+      "verification_details": {
+        "result": "PASS",
+        "total_citations": 3,
+        "verified_citations": 3,
+        "phantom_citations": [],
+        "details": [
+          {
+            "citation": "Yuddha Kanda 22.1",
+            "parsed": "yuddha-kanda 22.1",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-22-1"
+          },
+          {
+            "citation": "Yuddha Kanda 22.48",
+            "parsed": "yuddha-kanda 22.48",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-22-48"
+          },
+          {
+            "citation": "Yuddha Kanda 19.31",
+            "parsed": "yuddha-kanda 19.31",
+            "exists": true,
+            "shloka_id": "yuddha-kanda-19-31"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import { smartStreamObject, smartGenerateObject } from '@/lib/ai/smart-generation';
 import { z } from 'zod';
 import { prepareAnswerContext } from '@/lib/services/answer-service';
+import { VerificationService } from '@/lib/services/verification-service';
 import { traceService } from '@/lib/services/trace-service';
 import { TraceData } from '@/lib/types/trace';
 import { randomUUID } from 'crypto';
@@ -31,8 +32,39 @@ const UnifiedSchema = z.object({
   // T3 Fields
   outOfScopeNotice: z.string().optional(),
   why: z.string().optional(),
+  redirect: z.object({
+    introduction: z.string(),
+    alternatives: z.array(z.string())
+  }).optional(),
+  // Legacy field support (optional for backward compat if needed, but we typically drop it)
   whatICanHelpWith: z.array(z.string()).optional(),
 });
+
+// Helper to build full answer text from structured parts
+function constructFullAnswer(obj: z.infer<typeof UnifiedSchema>) {
+  if (obj.templateType === 'T3') {
+    let text = obj.outOfScopeNotice || '';
+    if (obj.why) text += '\n\n' + obj.why;
+    // New Schema Support
+    if (obj.redirect && obj.redirect.alternatives && obj.redirect.alternatives.length > 0) {
+      text += `\n\n${obj.redirect.introduction}\n- ` + obj.redirect.alternatives.join('\n- ');
+    }
+    // Fallback for legacy schema
+    else if (obj.whatICanHelpWith && obj.whatICanHelpWith.length > 0) {
+      text += '\n\n**Related Topics:**\n- ' + obj.whatICanHelpWith.join('\n- ');
+    }
+    return text;
+  }
+  if (obj.templateType === 'T2') {
+    let text = obj.answer || '';
+    if (obj.whatTextStates) text += '\n\n**Textual Basis:**\n' + obj.whatTextStates;
+    if (obj.traditionalInterpretations) text += '\n\n**Interpretations:**\n' + obj.traditionalInterpretations;
+    if (obj.limitOfCertainty) text += '\n\n**Limit of Certainty:**\n' + obj.limitOfCertainty;
+    return text;
+  }
+  // T1
+  return obj.answer || obj.explanation || '';
+}
 
 export async function POST(req: Request) {
   console.log('API /api/answer called');
@@ -55,8 +87,21 @@ export async function POST(req: Request) {
         preferredProvider: preferredProvider as 'openai' | 'anthropic',
       });
 
+      // Verification Layer (Phase B+)
+      let finalObject = result.object;
+      if (finalObject.templateType === 'T2') {
+        const validation = VerificationService.validateAndFixT2(finalObject);
+        if (!validation.valid) {
+          console.log('⚠️ VerificationService: Fixed T2 response errors:', validation.errors);
+          finalObject = validation.fixedResponse;
+        }
+      }
+
       const totalLatency = Date.now() - startTotal;
       const generationLatency = totalLatency - contextLatency;
+
+      // Use finalObject (potentially fixed) for construction
+      const fullAnswer = constructFullAnswer(finalObject);
 
       const trace: TraceData = {
         trace_id: randomUUID(),
@@ -76,9 +121,9 @@ export async function POST(req: Request) {
         classification_latency_ms: 0,
         generation_result: {
           model: result.providerModel,
-          template_used: result.object.templateType,
-          answer: result.object.answer || result.object.whatTextStates || result.object.why || '',
-          citations_in_answer: result.object.textualBasis?.citations || [],
+          template_used: finalObject.templateType,
+          answer: fullAnswer,
+          citations_in_answer: finalObject.textualBasis?.citations || [],
         },
         generation_latency_ms: generationLatency,
         total_latency_ms: totalLatency,
@@ -90,7 +135,7 @@ export async function POST(req: Request) {
       // Return both trace AND full response object for batch evaluation
       const batchResponse = {
         ...trace,
-        full_response: result.object, // Include full LLM response for T2 whatTextStates access
+        full_response: finalObject, // Include full LLM response for T2 whatTextStates access
       };
 
       return new Response(JSON.stringify(batchResponse), { headers: { 'Content-Type': 'application/json' } });
@@ -105,6 +150,8 @@ export async function POST(req: Request) {
         try {
           const totalLatency = Date.now() - startTotal;
           const generationLatency = totalLatency - contextLatency; // Approximate
+
+          const fullAnswer = object ? constructFullAnswer(object) : '';
 
           const trace: TraceData = {
             trace_id: randomUUID(),
@@ -130,7 +177,7 @@ export async function POST(req: Request) {
             generation_result: object ? {
               model: 'gpt-4o', // Or claude-3-haiku if fallback used
               template_used: object.templateType,
-              answer: object.answer || object.whatTextStates || object.why || '',
+              answer: fullAnswer,
               citations_in_answer: object.textualBasis?.citations || [],
             } : undefined,
             generation_latency_ms: generationLatency,

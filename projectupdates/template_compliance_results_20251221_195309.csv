@@ -1,0 +1,31 @@
+index,user_query,system_model,assigned_template,structural_result,semantic_result,overall_compliance,failures,summary
+1,What happens to Vibhishana's wife?,openai,T1,FAIL,FAIL,FAIL,"- Missing citations/references section.
+</evaluation_results>","The answer fails to comply with the T1 template due to missing citations and references section, despite correctly asserting the absence of specific information.
+</scratchpad>
+
+<evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - Contains ""**Answer:**""
+- Inline citation: PASS - Meets exception for absence-of-evidence claim
+- Citations/references section: FAIL - Missing citations section.
+
+**Structural Result:** FAIL
+
+**Layer 2: Semantic Checks** (T1 only)
+- Claim: ""The provided citations do not explicitly mention what happens to Vibhishana's wife after the war.""
+- Citation: None
+- Shloka text: N/A
+- Judgment: SUPPORTED - Correctly states that the text does not contain the information.
+- Claim: ""The text mainly focuses on the events and characters surrounding Rama and does not provide specific details about Vibhishana's wife in the retrieved citations.""
+- Citation: None
+- Shloka text: N/A
+- Judgment: SUPPORTED - Correctly states that the text does not contain the information.
+
+**Semantic Result:** FAIL
+
+**Overall Compliance:** FAIL
+
+**Summary:**
+The answer fails to comply with the T1 template because it lacks the required citations section, even though it correctly states that the provided text does not contain the requested information."

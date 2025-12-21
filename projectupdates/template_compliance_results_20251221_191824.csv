@@ -1,0 +1,25 @@
+index,user_query,system_model,assigned_template,structural_result,semantic_result,overall_compliance,failures,summary
+47,How did Rama justify the 'Agni Pariksha' in Valmiki's text?,openai,T2,PASS,SKIP,PASS,"None
+</evaluation_results>
+<evaluation_results>
+**Template:** T2
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - Contains ""**Answer:**""
+- Presence of uncertainty/limit section: PASS - Contains ""**Limit of Certainty:**""
+- Use of hedging language: PASS - Includes phrases like ""Traditionally, interpretations have viewed...""
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+SKIP
+
+**Semantic Result:** SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The AI-generated answer fully complies with the structural requirements of the T2 template. It has all the necessary sections and uses hedging language appropriately.
+
+**Failures:** None
+</evaluation_results>","The answer adheres to all structural requirements of the T2 template. It includes an answer section, a limit of certainty section, and appropriate hedging language regarding interpretations."

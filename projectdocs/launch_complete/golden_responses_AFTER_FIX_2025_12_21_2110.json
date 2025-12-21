@@ -1,0 +1,1571 @@
+[
+  {
+    "index": 1,
+    "user_query": "How did Rama justify the 'Agni Pariksha' in Valmiki's text?",
+    "classification": "Duty-driven decisions",
+    "expected_template": "T2",
+    "openai": {
+      "status": "OK",
+      "template_used": "T1",
+      "answer": "**Answer:** Rama justified the 'Agni Pariksha' by expressing his desire to demonstrate Sita's purity to the world. The fire god acted as a witness to Sita's sinlessness, declaring that she did not know any sin [Yuddha-Kanda 121.5]. Rama was exceedingly pleased to know of Sita’s sinless nature through the testimony of the fire god, which the gods also adored [Bala-Kanda 1.83]. Sita herself declared that if her heart had never abandoned Rama, and if she had always followed a righteous path, the fire god and the world would witness her purity, seeking protection from the fire [Yuddha-Kanda 119.25, Yuddha-Kanda 119.27].",
+      "whatTextStates": "",
+      "citations": [
+        "[Yuddha-Kanda 121.5]",
+        "[Bala-Kanda 1.83]"
+      ],
+      "citation_count": 2,
+      "has_inline_citations": true,
+      "answer_citations": 2,
+      "wts_citations": 0,
+      "textual_basis_citations": [
+        "Yuddha-Kanda 121.5",
+        "Bala-Kanda 1.83",
+        "Yuddha-Kanda 119.25",
+        "Yuddha-Kanda 119.27"
+      ],
+      "retrieved_count": 20,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** Rama justified the 'Agni Pariksha' by expressing his desire to demonstrate Sita's purity to the world. The fire god acted as a witness to Sita's sinlessness, declaring that she did not know any sin [Yuddha-Kanda 121.5]. Rama was exceedingly pleased to know of Sita’s sinless nature through the testimony of the fire god, which the gods also adored [Bala-Kanda 1.83]. Sita herself declared that if her heart had never abandoned Rama, and if she had always followed a righteous path, the fire god and the world would witness her purity, seeking protection from the fire [Yuddha-Kanda 119.25, Yuddha-Kanda 119.27].",
+        "textualBasis": {
+          "kanda": "Yuddha-Kanda",
+          "sarga": [
+            119,
+            121
+          ],
+          "shloka": [
+            25,
+            26,
+            27,
+            5
+          ],
+          "citations": [
+            "Yuddha-Kanda 121.5",
+            "Bala-Kanda 1.83",
+            "Yuddha-Kanda 119.25",
+            "Yuddha-Kanda 119.27"
+          ]
+        },
+        "explanation": "The retrieved shlokas describe that Rama was pleased to learn of Sita's purity from the testimony of the fire god. The gods’ adoration of Rama following this event underscores the divine acknowledgment of her purity [Bala-Kanda 1.83]. In the Yuddha-Kanda, Sita's statements further assert that her heart had remained loyal, and she invoked the fire as a witness to her righteousness [Yuddha-Kanda 119.25, Yuddha-Kanda 119.27]. The fire god explicitly declared to Rama that Sita was sinless [Yuddha-Kanda 121.5]."
+      }
+    },
+    "claude": {
+      "status": "OK",
+      "template_used": "T2",
+      "answer": "One interpretation is that Rama justified the 'Agni Pariksha' as a necessary test of Sita's purity and faithfulness, given the circumstances of her abduction by the demon Ravana. The text suggests that Rama was tormented by Sita's disappearance and sought to assuage his doubts about her fidelity, though he initially refused to take her to the forest due to the hardships of forest life [Ayodhya-Kanda 28.1].\n\n**Textual Basis:**\nThe text explicitly states that when Rama returned from exile, he was \"tormented and emaciated due to Sita's abduction, resembling the fire at the time of dissolution of the creation, ready to destroy the world\" [Aranya-Kanda 65.1-2]. It also describes how Rama \"looked at his bow strung again and again, breathing hot sighs like Lord Siva at the end of the creation, wishing to burn down the world in a rage\" [Aranya-Kanda 65.2]. This suggests Rama was deeply troubled by Sita's disappearance and sought to reestablish her purity.\n\n**Interpretations:**\nScholars have interpreted the 'Agni Pariksha' as Rama's way of publicly restoring Sita's honor and reputation after her abduction by Ravana. Commentators note that Rama was bound by his duty as a righteous king to ensure the purity of his queen, even though he privately never doubted Sita's fidelity [Yuddha-Kanda 121.1]. The text can be understood as portraying Rama's anguish at having to subject Sita to this ordeal despite his love for her.\n\n**Limit of Certainty:**\nWhile the text describes Rama's words and actions, it does not fully reveal his internal emotional state or the reasoning behind his decision to subject Sita to the 'Agni Pariksha'. The text remains ambiguous on whether Rama truly doubted Sita's purity or if he performed this ritual for public perception as the righteous king. Alternative interpretations suggest Rama acted primarily to restore Sita's reputation, rather than out of personal doubt.",
+      "whatTextStates": "The text explicitly states that when Rama returned from exile, he was \"tormented and emaciated due to Sita's abduction, resembling the fire at the time of dissolution of the creation, ready to destroy the world\" [Aranya-Kanda 65.1-2]. It also describes how Rama \"looked at his bow strung again and again, breathing hot sighs like Lord Siva at the end of the creation, wishing to burn down the world in a rage\" [Aranya-Kanda 65.2]. This suggests Rama was deeply troubled by Sita's disappearance and sought to reestablish her purity.",
+      "citations": [
+        "[Yuddha-Kanda 121.1]",
+        "[Aranya-Kanda 65.1-2]",
+        "[Aranya-Kanda 65.2]",
+        "[Ayodhya-Kanda 28.1]"
+      ],
+      "citation_count": 4,
+      "has_inline_citations": true,
+      "answer_citations": 4,
+      "wts_citations": 2,
+      "textual_basis_citations": [],
+      "retrieved_count": 20,
+      "full_response": {
+        "templateType": "T2",
+        "answer": "One interpretation is that Rama justified the 'Agni Pariksha' as a necessary test of Sita's purity and faithfulness, given the circumstances of her abduction by the demon Ravana. The text suggests that Rama was tormented by Sita's disappearance and sought to assuage his doubts about her fidelity, though he initially refused to take her to the forest due to the hardships of forest life [Ayodhya-Kanda 28.1].",
+        "whatTextStates": "The text explicitly states that when Rama returned from exile, he was \"tormented and emaciated due to Sita's abduction, resembling the fire at the time of dissolution of the creation, ready to destroy the world\" [Aranya-Kanda 65.1-2]. It also describes how Rama \"looked at his bow strung again and again, breathing hot sighs like Lord Siva at the end of the creation, wishing to burn down the world in a rage\" [Aranya-Kanda 65.2]. This suggests Rama was deeply troubled by Sita's disappearance and sought to reestablish her purity.",
+        "traditionalInterpretations": "Scholars have interpreted the 'Agni Pariksha' as Rama's way of publicly restoring Sita's honor and reputation after her abduction by Ravana. Commentators note that Rama was bound by his duty as a righteous king to ensure the purity of his queen, even though he privately never doubted Sita's fidelity [Yuddha-Kanda 121.1]. The text can be understood as portraying Rama's anguish at having to subject Sita to this ordeal despite his love for her.",
+        "limitOfCertainty": "While the text describes Rama's words and actions, it does not fully reveal his internal emotional state or the reasoning behind his decision to subject Sita to the 'Agni Pariksha'. The text remains ambiguous on whether Rama truly doubted Sita's purity or if he performed this ritual for public perception as the righteous king. Alternative interpretations suggest Rama acted primarily to restore Sita's reputation, rather than out of personal doubt.",
+        "whatICanHelpWith": [
+          "How did Sita's abduction impact Rama's character and choices?",
+          "What were the sociopolitical pressures on Rama as a ruler that influenced his treatment of Sita?",
+          "How have later commentators and traditions interpreted the 'Agni Pariksha' incident?"
+        ]
+      }
+    },
+    "openai_trace": {
+      "trace_id": "c53ec20e-1164-4b67-88c5-3ec909218a3c",
+      "timestamp": "2025-12-21T15:40:30.950Z",
+      "user_query": "How did Rama justify the 'Agni Pariksha' in Valmiki's text?",
+      "expanded_query": "Rama justified the 'Agni Pariksha' (fire test) as a means to prove Sita's purity and fidelity after her abduction by Ravana. He believed it was necessary to uphold his dharma as a king and maintain the trust of his subjects. Ayodhya Kanda.",
+      "query_expansion_latency_ms": 0,
+      "retrieval_results": {
+        "shlokas": [
+          {
+            "id": "bala-kanda-1-83",
+            "score": 0.622275352,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "vanara_search",
+                "sita_found",
+                "lanka_burning",
+                "sita_agnipariksha",
+                "fire_testimony",
+                "sita_proven_sinless"
+              ],
+              "explanation": "With the of testimony of the firegod, Rama was exceedingly pleased to know that Sita was sinless. All the gods adored him.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 1,
+              "shloka": 83,
+              "shloka_text": "ततोऽग्निवचनात्सीतां ज्ञात्वा विगतकल्मषाम् । बभौ रामस्सम्प्रहृष्ट: पूजितस्सर्वदैवतै: ।।1.1.83।।",
+              "themes": [
+                "pride",
+                "divine",
+                "truth",
+                "divine_validation",
+                "joy"
+              ],
+              "translation": "तत: thereafter, अग्निवचनात् because of the testimony of firegod, सीताम् Sita, विगतकल्मषाम् sinless, ज्ञात्वा having known, राम: Rama, सम्प्रहृष्ट: exceedingly pleased, सर्वदैवतै: by all gods, पूजित: was adored,  बभौ shone."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-21-17",
+            "score": 0.598641396,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "exile_announcement",
+                "lanka_entry",
+                "lanka_burning",
+                "sita_agnipariksha",
+                "loyalty_pledge"
+              ],
+              "explanation": "O mother rest assured should Rama enter a blazing fire or a forest I must have already entered it.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 21,
+              "shloka": 17,
+              "shloka_text": "दीप्तमग्निमरण्यं वा यदि रामः प्रवेक्ष्यति। प्रविष्टं तत्र मां देवि त्वं पूर्वमवधारय।।2.21.17।।",
+              "themes": [
+                "exile",
+                "unconditional_support",
+                "brotherhood",
+                "protection"
+              ],
+              "translation": "देवि O mother, रामः Rama, दीप्तम् blazing, अग्निम् fire, अरण्यं वा or to the forest, प्रवेक्ष्यति यदि if  he enters, पूर्वम् prior, माम् me, तत्र there, प्रविष्टम् one who entered, त्वम् you, अवधारय know."
+            }
+          },
+          {
+            "id": "yuddha-kanda-119-26",
+            "score": 0.597145081,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "lanka_burning",
+                "sita_agnipariksha",
+                "impeccable_conduct_claim"
+              ],
+              "explanation": "\"If in Rama's view, I am of impeccable conduct and so also if what he is seeing is not known to be true, let the world witness and fire god protect me.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 119,
+              "shloka": 26,
+              "shloka_text": "यथामांशुद्धचरितांदुष्टांजानातिराघवः । तथालोकस्यसाक्षीमांसर्वतःपातुपावकः ।।6.119.26।।",
+              "themes": [
+                "divine",
+                "integrity",
+                "truth"
+              ],
+              "translation": "शुद्धचरिताम् unimpeachable conduct, माम् me, राघवः Raghava, दुष्टाम् seeing, जानाति not know, यथा similarly, तथा that way, लोकस्य world, साक्षी witness, पावकः fire, सर्वतः all sides, माम् me, पातु protect me"
+            }
+          },
+          {
+            "id": "ayodhya-kanda-25-27",
+            "score": 0.596951485,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "lanka_burning",
+                "sita_agnipariksha"
+              ],
+              "explanation": "After collecting the sacred fire through great brahmins she duly offered oblations to the gods for the welfare of Rama.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 25,
+              "shloka": 27,
+              "shloka_text": "ज्वलनं समुपादाय ब्राह्मणेन महात्मना। हावयामास विधिना राममङ्गलकारणात्।।2.25.27।।",
+              "themes": [
+                "divine",
+                "sacrifice",
+                "welfare"
+              ],
+              "translation": "ज्वलनम् the sacred fire, समुपादाय having arranged, राममङ्गल कारणात् for the welfare of Rama, महात्मना great, ब्राह्मणेन by the brahmin (priest), विधिना duly, हावयामास offered oblations."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-54-11",
+            "score": 0.593536377,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "agastya_visit",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "sita_agnipariksha",
+                "meeting_sage_bharadwaja",
+                "paying_respects"
+              ],
+              "explanation": "Rama entered the hermitage and saw that highsouled Bharadwaja surrounded by his disciples. He was a distinguished sage who (himself) kindled sacrficial fires and acquired spiritual insight by practising rigid austerities with concentration of mind and ascetic powers. Rama, Lakshmana and Sita paid their obeisance to that great sage.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 54,
+              "shloka": 11,
+              "shloka_text": "स प्रविश्य महात्मानमृषिं शिष्यगणैर्वृतम्। संशितव्रतमेकाग्रं तपसा लब्धचक्षुषम्।।2.54.11।। हुताग्निहोत्रं दृष्ट्वैव महाभागं कृताञ्जलिः। रामः सौमित्रिणा सार्धं सीतया चाभ्यवादयत्।।2.54.12।।",
+              "themes": [
+                "brotherhood",
+                "spiritual_discipline",
+                "devotion",
+                "asceticism"
+              ],
+              "translation": "सः रामः Rama, प्रविश्य having entered, संशितव्रतम् one practising rigorous austerities, एकाग्रम् with concentration of mind, तपसा with asceticism, लब्दचक्षुषम् one who has obtained spiritual insight, हुताग्निहोत्रम् one who has kindled fire in sacrificial rituals, महाभागम् distinguished, शिष्यगणैः with disciples, वृतम् surrounded by, महात्मानम् highsouled, ऋषिम् sage, दृष्ट्वैव having seen, सौमित्रिणा Lakshmana, सार्धम् along with, सीतया च Sita too, अभ्यवादयत् paid obeisance."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-54-12",
+            "score": 0.592439651,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "agastya_visit",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "sita_agnipariksha"
+              ],
+              "explanation": "Rama entered the hermitage and saw that highsouled Bharadwaja surrounded by his disciples. He was a distinguished sage who (himself) kindled sacrficial fires and acquired spiritual insight by practising rigid austerities with concentration of mind and ascetic powers. Rama, Lakshmana and Sita paid their obeisance to that great sage.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 54,
+              "shloka": 12,
+              "shloka_text": "स प्रविश्य महात्मानमृषिं शिष्यगणैर्वृतम्। संशितव्रतमेकाग्रं तपसा लब्धचक्षुषम्।।2.54.11।। हुताग्निहोत्रं दृष्ट्वैव महाभागं कृताञ्जलिः। रामः सौमित्रिणा सार्धं सीतया चाभ्यवादयत्।।2.54.12।।",
+              "themes": [
+                "brotherhood"
+              ],
+              "translation": "सः रामः Rama, प्रविश्य having entered, संशितव्रतम् one practising rigorous austerities, एकाग्रम् with concentration of mind, तपसा with asceticism, लब्दचक्षुषम् one who has obtained spiritual insight, हुताग्निहोत्रम् one who has kindled fire in sacrificial rituals, महाभागम् distinguished, शिष्यगणैः with disciples, वृतम् surrounded by, महात्मानम् highsouled, ऋषिम् sage, दृष्ट्वैव having seen, सौमित्रिणा Lakshmana, सार्धम् along with, सीतया च Sita too, अभ्यवादयत् paid obeisance."
+            }
+          },
+          {
+            "id": "yuddha-kanda-121-5",
+            "score": 0.590706825,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "lanka_burning",
+                "sita_agnipariksha",
+                "fire_god_speaks_to_rama"
+              ],
+              "explanation": "Then the fire god who is a witness in the world, spoke to Rama,\" Here is your wife Vaidehi and she does not know any sin.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 121,
+              "shloka": 5,
+              "shloka_text": "अब्रवीत्तुतदारामंसाक्षीलोकस्यपावकः । एषातेराम वैदेहीपापमस्यां न विद्यते ।।6.121.5।।",
+              "themes": [
+                "marriage",
+                "divine",
+                "purity",
+                "divine_witness"
+              ],
+              "translation": "तदा then, लोकस्य in the world, साक्षी witness, पावकः fire god, रामम् to Rama, अब्रवीत् spoke तु you, राम Rama, एषा this way, ते you, वैदेही Vaidehi, अस्याम् she, पापम् sin, न विद्यते not know"
+            }
+          },
+          {
+            "id": "ayodhya-kanda-45-1",
+            "score": 0.585659087,
+            "metadata": {
+              "characters": [],
+              "comments": "Rama reaches the banks of Tamasa river.",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "rama_forest_journey"
+              ],
+              "explanation": "When the highsouled Rama whose strength was his sense of truth set out for the forest, the faithful people followed him.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 45,
+              "shloka": 1,
+              "shloka_text": "अनुरक्ता महात्मानं रामं सत्यपराक्रमम्। अनुजग्मुः प्रयान्तं तं वनवासाय मानवाः।।2.45.1।।",
+              "themes": [
+                "loyalty",
+                "truth",
+                "exile",
+                "devotion",
+                "sacrifice"
+              ],
+              "translation": "अनुरक्ताः devoted, मानवाः men, वनवासाय to dwell in the forest, प्रयान्तम् setting out, महात्मानम् great, सत्यपराक्रमम् to one whose truth is his power, तं रामम् that Rama, अनुजग्मुः followed him."
+            }
+          },
+          {
+            "id": "bala-kanda-1-82",
+            "score": 0.583827078,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "sita_agnipariksha",
+                "harsh_words",
+                "sita_fire_entry"
+              ],
+              "explanation": "Rama spoke harsh words about Sita in the assembly. Sita, incapable of enduring such words, entered fire.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 1,
+              "shloka": 82,
+              "shloka_text": "तामुवाच ततो राम: परुषं जनसंसदि । अमृष्यमाणा सा सीता विवेश ज्वलनं सती ।।1.1.82।।",
+              "themes": [
+                "filial_dharma",
+                "sacrifice",
+                "chastity",
+                "suffering"
+              ],
+              "translation": "तत: for that reason, राम: Rama, जनसंसदि in the assembly of men, ताम् about Sita, परुषम् harsh words, उवाच spoke, सती chaste, सा सीता Sita, अमृष्यमाणा incapable of enduring those words, ज्वलनं विवेश entered flaming fire."
+            }
+          },
+          {
+            "id": "yuddha-kanda-119-25",
+            "score": 0.58025074,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "lanka_burning",
+                "sita_agnipariksha",
+                "fire_god_invocation"
+              ],
+              "explanation": "\"If it is true that my heart has never slid from Raghava at all, may the fire god protect me always and so also the world witness.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 119,
+              "shloka": 25,
+              "shloka_text": "यथामेहृदयंनित्यंनापसर्पतिराघवात् । तथालोकस्यसाक्षीमांसर्वतःपातुपावकः ।।6.119.25।।",
+              "themes": [
+                "divine",
+                "faith",
+                "purity"
+              ],
+              "translation": "मे my, हृदयम् mind, राघवात् at Raghava, नापसर्पतियथा never slid at all, तथा so also, लोकस्य world's, साक्षी witness, पावकः fire god, माम् me, सर्वतःalways, पातु protect me"
+            }
+          },
+          {
+            "id": "yuddha-kanda-119-27",
+            "score": 0.580208778,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "lanka_burning",
+                "sita_agnipariksha",
+                "righteousness_claim"
+              ],
+              "explanation": "'If I have ever acted or been unfaithful at heart or in speech and did not follow a righteous path with Rama, who is a knower of all virtues, let the fire god protect me.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 119,
+              "shloka": 27,
+              "shloka_text": "कर्मणामनसावाचायथानातिचराम्यहम् । राघवंसर्वधर्मज्ञंतथामांपातुपावकः ।।6.119.27।।",
+              "themes": [
+                "dharma",
+                "loyalty",
+                "justice",
+                "divine",
+                "virtue",
+                "self_reflection"
+              ],
+              "translation": "अहम् I, कर्मणा by action, मनसा at heart, वाचा in speech, सर्वधर्मज्ञम् knower of all virtues, राघवम् Raghava, यथानातिचरामि that way not walked the path of virtue, यथा so also, माम् me, पावकः fire god, पातु protect me"
+            }
+          },
+          {
+            "id": "aranya-kanda-47-43",
+            "score": 0.57777977,
+            "metadata": {
+              "characters": [],
+              "comments": "",
+              "events": [
+                "lanka_burning",
+                "sita_agnipariksha",
+                "sita_assault_threat"
+              ],
+              "explanation": "You intend to assaut the wife of Rama, who is a lady of virtuous conduct. You wish to hold blazing fire in your cloth.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Aranya Kanda",
+              "kanda_number": 3,
+              "sarga": 47,
+              "shloka": 43,
+              "shloka_text": "अग्निं प्रज्वलितं दृष्ट्वा वस्त्रेणाहर्तुमिच्छसि।।3.47.43।। काल्याणवृत्तां रामस्य यो भार्यांहर्तुमिच्छसि।",
+              "themes": [
+                "marriage",
+                "virtue",
+                "courage"
+              ],
+              "translation": "यः one who, रामस्य Rama's, कल्याणवृत्ताम् a woman of virtuous conduct, भार्याम् wife, हर्तुम् to seize, इच्छसि you intend to, प्रज्वलितम् blazing, अग्निम् fire, दृष्ट्वा after seeing that, वस्त्रेण by cloth, आहर्तुम् to hold, इच्छसि desiring."
+            }
+          },
+          {
+            "id": "bala-kanda-1-45",
+            "score": 0.577106535,
+            "metadata": {
+              "characters": [],
+              "comments": "",
+              "events": [
+                "exile_announcement",
+                "lanka_burning",
+                "battle_begins",
+                "sita_agnipariksha",
+                "promise_to_ascetics"
+              ],
+              "explanation": "Rama promised those ascetics, who resembled flaming fire in lustre living in Dandakaranya inhabited by rakshasas to slay them.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 1,
+              "shloka": 45,
+              "shloka_text": "स तेषां प्रतिशुश्राव राक्षसानां तथा वने ।।1.1.44।। प्रतिज्ञातश्च रामेण वधस्संयति रक्षसाम् । ऋषीणामग्निकल्पानां दण्डकारण्यवासिनाम् ।।1.1.45।।",
+              "themes": [
+                "promise",
+                "exile",
+                "war",
+                "death",
+                "devotion",
+                "dharma",
+                "commitment"
+              ],
+              "translation": "स: Rama, राक्षसानाम् for rakshsas (abode of), वने in that forest, तेषां to those asetics, तथा that prayer, प्रतिशुश्राव assented, ऋषीणाम् of the ascetics, अग्निकल्पानाम् in lustre resembling flaming fire, दण्डकारण्यवासिनाम् inhabitants of Dandakaranya, संयति in the battle, रक्षसाम् of rakshasas, वधश्च slaying also, रामेण by Rama, प्रतिज्ञातः was promised."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-99-24",
+            "score": 0.574873,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "bharata_return",
+                "lanka_burning",
+                "sita_agnipariksha",
+                "altar_discovery"
+              ],
+              "explanation": "Bharata beheld at Rama's residence a sacred and spacious altar sloping to the northeast, with a burning fire upon it.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 99,
+              "shloka": 24,
+              "shloka_text": "प्रागुदक्प्रवणां वेदिं विशालां दीप्तपावकाम्। ददर्श भरतस्तत्र पुण्यां रामनिवेशने।।2.99.24।।",
+              "themes": [
+                "brotherhood",
+                "sacredness"
+              ],
+              "translation": "भरतः Bharata, तत्र there, रामनिवेशने at Rama's residence, प्रागुदक्प्रवणाम् sloping to the northeast, विशालाम् spacious, दीप्तपावकाम् having flaming fire, पुण्याम् sacred, वेदिम् altar, ददर्श beheld."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-56-33",
+            "score": 0.572112083,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "lanka_burning",
+                "sita_agnipariksha",
+                "rama_coronation",
+                "altar_construction"
+              ],
+              "explanation": "Rama, son of the Raghus, made altars in all the quarters, places of worship and sacred spots for fire befitting a hermitage.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 56,
+              "shloka": 33,
+              "shloka_text": "वेदिस्थलविधानानि चैत्यान्यायतनानि च। आश्रमस्यानुरूपाणि स्थापयामास राघवः।।2.56.33।।",
+              "themes": [
+                "rajadharma",
+                "filial_dharma",
+                "devotion",
+                "spirituality"
+              ],
+              "translation": "राघव: the scion of the Raghus (Rama), आश्रमस्य of the hermitage, अनुरूपाणि befitting, वेदिस्थलविधानानि making of altars, चैत्यानि places of worship, आयतनानि च sacred places for fire, स्थापयामास established."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-20-16",
+            "score": 0.571433067,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "lanka_entry",
+                "lanka_burning",
+                "sita_agnipariksha",
+                "rama_enters_inner_apartment"
+              ],
+              "explanation": "Rama entered the auspicious inner apartment of his mother and saw her exhorting the priests to offer sacrificial oblations to Agni (firegod).",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 20,
+              "shloka": 16,
+              "shloka_text": "प्रविश्य च तदा रामो मातुरन्त:पुरं शुभम्। ददर्श मातरं तत्र हावयन्तीं हुताशनम्।।2.20.16।।",
+              "themes": [
+                "pride",
+                "divine",
+                "devotion",
+                "family"
+              ],
+              "translation": "तदा then, रामः Rama, शुभम् auspicious, मातु: अन्तःपुरम् inner apartment of his mother, प्रविश्य having entered, तत्र there, हुताशनम् to Agni, हावयन्तीम् exhorting the priests to offer sacrificial oblations, मातरम् to mother, ददर्श saw."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-100-12",
+            "score": 0.571323454,
+            "metadata": {
+              "characters": [],
+              "comments": "",
+              "events": [
+                "lanka_burning",
+                "sita_agnipariksha",
+                "rama_checking_ritual_practices"
+              ],
+              "explanation": "I trust, the sagacious priest who knows ritual precepts, who is upright and is employed to take care of your sacred fires, informs you always regarding what was offered and what is to be offered as oblation at appropriate time.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 100,
+              "shloka": 12,
+              "shloka_text": "कच्चिदग्निषु ते युक्तो विधिज्ञो मतिमानृजुः। हुतं च होष्यमाणं च काले वेदयते सदा।।2.100.12।।",
+              "themes": [
+                "dharma",
+                "justice",
+                "religious_duty",
+                "tradition",
+                "spiritual_discipline"
+              ],
+              "translation": "ते your, अग्निषु sacred fires, युक्तः employed, विधिज्ञः knower of ritual precepts, मतिमान्  sagacious, ऋजुः upright, सदा always, हुतं च what was offered as oblation, होष्यमाणं च what is going to be offered as oblation, काले at an appropriate time, वेदयते कच्चित् I trust he informs."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-99-28",
+            "score": 0.570971549,
+            "metadata": {
+              "characters": [],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "vanara_search",
+                "ocean_crossing",
+                "sita_found",
+                "lanka_burning",
+                "bridge_construction",
+                "battle_begins",
+                "sita_agnipariksha",
+                "bharata_sees_rama"
+              ],
+              "explanation": "He saw Rama, lord of the oceanbound earth, seated like blazing fire, clad in antelope skin and garment of bark, with long arms and shoulders like a lion and eyes like white lotuses. The mightyarmed warrior seemed like Brahma, the creator and the eternal, protector of righteousness. Accompanied by Sita and Lakshmana Rama sat on the bare ground strewn with darbha grass.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 99,
+              "shloka": 28,
+              "shloka_text": "तं तु कृष्णाजिनधरं चीरवल्कलवाससम्। ददर्श राममासीनमभितः पावकोपमम्।।2.99.26।। सिंहस्कन्धं महाबाहुं पुण्डरीकनिभेक्षणम्। पृथिव्यास्सागरान्तायाः भर्तारं धर्मचारिणम्।।2.99.27।। उपविष्टं महाबाहुं ब्रह्माणमिव शाश्वतम्। स्थण्डिले दर्भसंस्तीर्णे सीतया लक्ष्मणेन च।।2.99.28।।",
+              "themes": [
+                "dharma",
+                "brotherhood",
+                "justice",
+                "war",
+                "righteousness",
+                "sacrifice"
+              ],
+              "translation": "कृष्णाजिनधरम् clad in antelope skin, चीरवल्कलवासम् dressed in garments made of bark, अभितः near him, पावकोपमम् resembling blazing fire, आसीनम् seated, सिंहस्कन्दम् with his  shoulders like that of a lion, महाबाहुम् longarmed, पुण्डरीकनिभेक्षणम् with eyes like white lotus, सागरान्तायाः bounded by the ocean, पृथिव्याः of the earth, भर्तारम् the lord, धर्मचारिणम् follower of righteouness, तं रामम् that Rama, ददर्श saw, महाबाहुम् of longarmed one, शाश्वतम् eternal, ब्रह्माणमिव like the creator Brahma, सीतया with Sita, लक्ष्मणेन along with Lakshmana, दर्भसंस्तीर्णे on the ground strewn with darbha grass, स्थण्डिले on the bare ground, उपविष्टम् seated."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-35-15",
+            "score": 0.570954382,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "lanka_burning",
+                "sita_agnipariksha",
+                "banishing_rama"
+              ],
+              "explanation": "It is a wonder that while bent upon banishing Rama, you are  not destroyed by frightening fire created by great brahmarsis, crying, 'Shame, shame'",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 35,
+              "shloka": 15,
+              "shloka_text": "महाब्रह्मर्षिसृष्टाः वा ज्वलन्तो भीमदर्शनाः। धिग्वाग्दण्डा न हिंसन्ति रामप्रव्राजने स्थिताम्।।2.35.15।।",
+              "themes": [
+                "dharma",
+                "justice",
+                "exile",
+                "search",
+                "shame",
+                "evil"
+              ],
+              "translation": "रामप्रव्राजने in banishing Rama, स्थिताम् bent upon, महाब्रह्मर्षिसृष्टाः created by great brahmarshis, ज्वलन्तः burning, भीमदर्शनाः fearful to look at, धिक् वाग्दण्डाः reproachful words of shame, न हिंसन्ति are not destroying."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-12-30",
+            "score": 0.569646895,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "sita_agnipariksha"
+              ],
+              "explanation": "Truth, munificence, asceticism, renunciation, purity, uprightness, learning and service to his superiors all those (virtues) are firmly planted in this descendant of the Raghus.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 12,
+              "shloka": 30,
+              "shloka_text": "सत्यं दानं तपस्त्यागो मित्रता शौचमार्जवम्। विद्या च गुरुशुश्रूषा ध्रुवाण्येतानि राघवे।।2.12.30।।",
+              "themes": [
+                "dharma",
+                "truth",
+                "justice",
+                "virtue",
+                "character"
+              ],
+              "translation": "सत्यम् truth, दानम् munificence, तपः asceticism, त्यागः renunciation, शौचम् purity, आर्जवम् uprightness, विद्या च also learning, गुरुशुश्रूषा service to his superiors, एतानि all these, राघवे in Rama, ध्रुवाणि are firmly fixed."
+            }
+          }
+        ],
+        "totalRetrieved": 20,
+        "expandedQuery": "Rama justified the 'Agni Pariksha' (fire test) as a means to prove Sita's purity and fidelity after her abduction by Ravana. He believed it was necessary to uphold his dharma as a king and maintain the trust of his subjects. Ayodhya Kanda."
+      },
+      "retrieval_latency_ms": 0,
+      "classification_result": {
+        "model": "gpt-4o",
+        "category": "Duty-driven decisions",
+        "category_id": 21,
+        "confidence": 1,
+        "template_selected": "T1"
+      },
+      "classification_latency_ms": 0,
+      "generation_result": {
+        "model": "gpt-4o",
+        "template_used": "T1",
+        "answer": "**Answer:** Rama justified the 'Agni Pariksha' by expressing his desire to demonstrate Sita's purity to the world. The fire god acted as a witness to Sita's sinlessness, declaring that she did not know any sin [Yuddha-Kanda 121.5]. Rama was exceedingly pleased to know of Sita’s sinless nature through the testimony of the fire god, which the gods also adored [Bala-Kanda 1.83]. Sita herself declared that if her heart had never abandoned Rama, and if she had always followed a righteous path, the fire god and the world would witness her purity, seeking protection from the fire [Yuddha-Kanda 119.25, Yuddha-Kanda 119.27].",
+        "citations_in_answer": [
+          "Yuddha-Kanda 121.5",
+          "Bala-Kanda 1.83",
+          "Yuddha-Kanda 119.25",
+          "Yuddha-Kanda 119.27"
+        ]
+      },
+      "generation_latency_ms": 8781,
+      "total_latency_ms": 20021,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** Rama justified the 'Agni Pariksha' by expressing his desire to demonstrate Sita's purity to the world. The fire god acted as a witness to Sita's sinlessness, declaring that she did not know any sin [Yuddha-Kanda 121.5]. Rama was exceedingly pleased to know of Sita’s sinless nature through the testimony of the fire god, which the gods also adored [Bala-Kanda 1.83]. Sita herself declared that if her heart had never abandoned Rama, and if she had always followed a righteous path, the fire god and the world would witness her purity, seeking protection from the fire [Yuddha-Kanda 119.25, Yuddha-Kanda 119.27].",
+        "textualBasis": {
+          "kanda": "Yuddha-Kanda",
+          "sarga": [
+            119,
+            121
+          ],
+          "shloka": [
+            25,
+            26,
+            27,
+            5
+          ],
+          "citations": [
+            "Yuddha-Kanda 121.5",
+            "Bala-Kanda 1.83",
+            "Yuddha-Kanda 119.25",
+            "Yuddha-Kanda 119.27"
+          ]
+        },
+        "explanation": "The retrieved shlokas describe that Rama was pleased to learn of Sita's purity from the testimony of the fire god. The gods’ adoration of Rama following this event underscores the divine acknowledgment of her purity [Bala-Kanda 1.83]. In the Yuddha-Kanda, Sita's statements further assert that her heart had remained loyal, and she invoked the fire as a witness to her righteousness [Yuddha-Kanda 119.25, Yuddha-Kanda 119.27]. The fire god explicitly declared to Rama that Sita was sinless [Yuddha-Kanda 121.5]."
+      }
+    },
+    "claude_trace": {
+      "trace_id": "5bbf1a07-274d-4689-9b2a-073a8b294455",
+      "timestamp": "2025-12-21T15:40:46.593Z",
+      "user_query": "How did Rama justify the 'Agni Pariksha' in Valmiki's text?",
+      "expanded_query": "Rama justified the 'Agni Pariksha' (fire test) as a means to prove Sita's chastity and purity after her abduction by Ravana. He believed it was necessary to uphold his dharma as a king and maintain his reputation. Ayodhya Kanda.",
+      "query_expansion_latency_ms": 0,
+      "retrieval_results": {
+        "shlokas": [
+          {
+            "id": "ayodhya-kanda-45-1",
+            "score": 0.578558,
+            "metadata": {
+              "characters": [],
+              "comments": "Rama reaches the banks of Tamasa river.",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "rama_forest_journey"
+              ],
+              "explanation": "When the highsouled Rama whose strength was his sense of truth set out for the forest, the faithful people followed him.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 45,
+              "shloka": 1,
+              "shloka_text": "अनुरक्ता महात्मानं रामं सत्यपराक्रमम्। अनुजग्मुः प्रयान्तं तं वनवासाय मानवाः।।2.45.1।।",
+              "themes": [
+                "loyalty",
+                "truth",
+                "exile",
+                "devotion",
+                "sacrifice"
+              ],
+              "translation": "अनुरक्ताः devoted, मानवाः men, वनवासाय to dwell in the forest, प्रयान्तम् setting out, महात्मानम् great, सत्यपराक्रमम् to one whose truth is his power, तं रामम् that Rama, अनुजग्मुः followed him."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-25-1",
+            "score": 0.563968718,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "Kausalya performs benedictory rites for Rama and offers prayers to all gods to protect him Rama departs for the palace of Sita.",
+              "events": [
+                "ritual_preparation"
+              ],
+              "explanation": "Highminded mother Kausalya, her anguish subdued, performed the sipping rite (achamana) and her self rendered pure, performed auspicious ceremonies for Rama.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 25,
+              "shloka": 1,
+              "shloka_text": "साऽवनीय तमायासमुपस्पृश्य जलं शुचिः। चकार माता रामस्य मङ्गलानि मनस्विनी।।2.25.1।।",
+              "themes": [
+                "spiritual_purification",
+                "maternal_blessing"
+              ],
+              "translation": "मनस्विनी highminded lady, माता mother, सा she, तम् आयासम् such anguish, अवनीय restraining, जलम् water, उपस्पृश्य having performed the sipping (achamana), शुचिः rite sure, रामस्य of Rama, मङ्गलानि auspicious ceremonies, चकार performed."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-33-1",
+            "score": 0.562855721,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "lakshmana"
+              ],
+              "comments": "Rama along with Sita and Lakshmana goes to the residence of Kaikeyi--hears comments on the way.",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation",
+                "charity_completion",
+                "journey_to_father"
+              ],
+              "explanation": "After giving away plenty of wealth to brahmins in charity, Rama and Lakshmana along with Sita set out to see their father, king Dasaratha.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 33,
+              "shloka": 1,
+              "shloka_text": "दत्त्वा तु सह वैदेह्या ब्राह्मणेभ्यो धनं बहु। जग्मतुः पितरं द्रष्टुं सीतया सह राघवौ।।2.33.1।।",
+              "themes": [
+                "rajadharma",
+                "filial_dharma",
+                "brotherhood",
+                "family_duty",
+                "respect"
+              ],
+              "translation": "राघवौ Rama and Lakshmana, वैदेह्या सह along with Sita, ब्राह्मणेभ्यः to brahmins, बहु plenty, धनम् wealth, दत्वा having given (in charity), पितरम् to father, द्रष्टुम् to see, सीतया सह along with Sita, जग्मतुः both of them set out."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-6-1",
+            "score": 0.556993544,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "Rama and Sita observe the prescribed rites--rejoiced citizens of Ayodhya express their gratitude to the king--people from villages arrive in multitudes.",
+              "events": [
+                "sita_marriage",
+                "vanara_search",
+                "sita_found",
+                "morning_worship"
+              ],
+              "explanation": "With the family priest (Vasistha) gone, Rama had his bath, and with his mind under control came to Lord Narayana along with his largeeyed consort, Sita. (with an intention to worship him)",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 6,
+              "shloka": 1,
+              "shloka_text": "गते पुरोहिते रामः स्नातो नियतमानसः। सह पत्न्या विशालाक्ष्या नारायणमुपागमत्।।2.6.1।।",
+              "themes": [
+                "marriage",
+                "devotion",
+                "spiritual_discipline"
+              ],
+              "translation": "पुरोहिते the family priest, गते (सति) having gone, रामः Rama, स्नातः  bathed, नियतमानसः with  mind under control, विशालाक्ष्या largeeyed (large eyes are marks of beauty), पत्न्या सह with (his) wife, नारायणम् to (lord) Narayana, उपागमत् approached."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-94-1",
+            "score": 0.553040564,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "indra"
+              ],
+              "comments": "Rama shares with Sita his delight of the beautiful nature around Chitrakuta mountain.",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "exile_announcement",
+                "chitrakuta",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation",
+                "showing_chitrakuta"
+              ],
+              "explanation": "Rama, resembling the gods, who had been living there for long developed a liking for the mountains and forests. With a desire to please Sita and his own mind, he showed her the wonderful Chitrakuta mountain as Indra did to his wife Sachi.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 94,
+              "shloka": 1,
+              "shloka_text": "दीर्घकालोषित स्तस्मिन्गिरौ गिरिवनप्रियः। वैदेह्याः प्रियमाकाङ्क्षन्स्वं च चित्तं विलोभयन्।।2.94.1।। अथ दाशरथिश्चित्रं चित्रकूटमदर्शयत्। भार्याममरसङ्काश श्शचीमिव पुरन्दरः।।2.94.2।।",
+              "themes": [
+                "rajadharma",
+                "duty_vs_desire",
+                "marriage",
+                "exile",
+                "divine",
+                "nature",
+                "affection"
+              ],
+              "translation": "अथ thereafter, अमरसङ्काशः one who resembles the gods, गिरिवनप्रियः one fond of mountains and forests, तस्मिन् in that, गिरौ on the mountain, दीर्घकालोषितः who had been living for a long time, दाशरथिः Rama, वैदेह्याः Sita's, प्रियम् pleasure, आकाङ्क्षन् desiring, स्वम् own, चित्तम् mind, विलोभयन् to please, चित्रम् wonderful, चित्रकूटम् Chitrakuta mountain, भार्याम् to his consort, पुरन्दरः Indra (breaker of fortresses), शचीमिव like Sachi, अदर्शयत् showed."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-40-1",
+            "score": 0.543552458,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "lakshmana"
+              ],
+              "comments": "Rama, Lakshmana and Sita set out for the forest--wailing of citizens, queens and the king.",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation",
+                "circumambulation"
+              ],
+              "explanation": "Thereafter, Sita, Rama and Lakshmana with folded palms in a forlom state touched (the feet of) the king and circumambulated him.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 40,
+              "shloka": 1,
+              "shloka_text": "अथ रामश्च सीता च लक्ष्मणश्च कृताञ्जलिः। उपसङ्गृह्य राजानं चक्रुर्दीना: प्रदक्षिणम्।।2.40.1।।",
+              "themes": [
+                "rajadharma",
+                "brotherhood",
+                "devotion"
+              ],
+              "translation": "अथ thereafter, कृताज्ञलिः folded hands, रामश्च Rama also, सीता च  Sita also, लक्ष्मणश्च Lakshmana also, राजानम् king, उपसङ्गृह्य holding, दीनाः forlom, प्रदक्षिणं चक्रुः circumambulated him."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-28-1",
+            "score": 0.537783682,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "Rama relates to Sita the hardships of forest life-- dissuades her from accompanying him to the forest.",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation",
+                "sita_pleading"
+              ],
+              "explanation": "Rama, who knew his duties and was devoted to righteousness, reflected on the difficulties of forest (life) and did not agree to take Sita even though she was pleading the way she did.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 28,
+              "shloka": 1,
+              "shloka_text": "स एवं ब्रुवतीं सीतां धर्मज्ञो धर्मवत्सलः। न नेतुं कुरुते बुद्धिं वने दुःखानि चिन्तयन्।।2.28.1।।",
+              "themes": [
+                "dharma",
+                "rajadharma",
+                "loyalty",
+                "justice",
+                "exile",
+                "devotion",
+                "righteousness",
+                "duty"
+              ],
+              "translation": "धर्मज्ञः knower of righteousness, धर्मवत्सलः devoted to righteousness, सः he, एवम् thus, ब्रुवतीम् speaking, सीताम् to Sita, नेतुम् to take, बुद्धिम् decision, वने in the forest, दुःखानि difficulties, चिन्तयन् while reflecting so, न कुरुते did not make."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-24-1",
+            "score": 0.530842841,
+            "metadata": {
+              "characters": [
+                "rama",
+                "kaushalya"
+              ],
+              "comments": "Kausalya insists on Rama to take her along with him to the forest --Rama tells her that service to one's husband is the supreme virtue--Kauslaya allows Rama to proceed.",
+              "events": [
+                "shurpanakha",
+                "exile_preparation"
+              ],
+              "explanation": "Having perceived that Rama was determined to carry out his father's command, Kausalya with her throat choked with tears said these words of piety:",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 24,
+              "shloka": 1,
+              "shloka_text": "तं समीक्ष्य त्ववहितं पितुर्निर्देश पालने। कौशल्या बाष्पसंरुद्धा वचो धर्मिष्ठमब्रवीत्।।2.24.1।।",
+              "themes": [
+                "filial_dharma",
+                "obedience",
+                "emotional_pain"
+              ],
+              "translation": "तम् him, पितुः father's, निर्देशपालने in carrying out the command, अवहितम्  determined, समीक्ष्य having perceived, कौशल्या Kausalya, बाष्पसंरुध्दा with choked tears, धर्मिष्ठम् pious, वचः words, अब्रवीत् said."
+            }
+          },
+          {
+            "id": "kishkindha-kanda-6-3",
+            "score": 0.527958,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "Sugriva speaks about the abduction of Sita by Ravana -- shows to Rama the veil and ornament dropped down by Sita -- Rama eager to killl Ravana, seeks further details of the enemy from Sugriva",
+              "events": [
+                "bow_breaking",
+                "sita_marriage",
+                "coronation_plan",
+                "exile_announcement",
+                "viradha_encounter",
+                "jatayu_fight",
+                "meet_hanuman",
+                "sugriva_alliance",
+                "vali_duel",
+                "vali_death",
+                "ravana_death",
+                "sita_agnipariksha",
+                "rama_coronation"
+              ],
+              "explanation": "Sugriva was pleased to say to Rama, delight of the Raghu race once again, 'O Rama, Hanuman, jewel among Ministers, has told me the cause of your coming to this desolate forest. While you were residing in the forest, a demon who was looking for an opportunity carried off your wife, the princess from Mithila, daughter of Janaka, finding her alone. While she was crying (piteously) he killed Jatayu. (the vulture who pretested).",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Kishkindha Kanda",
+              "kanda_number": 4,
+              "sarga": 6,
+              "shloka": 3,
+              "shloka_text": "पुनरेवाब्रवीत्प्रीतो राघवं रघुनन्दनम्। अयमाख्याति मे राम सचिवो मन्त्रिसत्तमः4.6.1।। हनुमान्यन्निमित्तं त्वं निर्जनं वनमागतः। लक्ष्मणेन सह भ्रात्रा वसतश्च वने तव4.6.2।। रक्षसाऽपहृता भार्या मैथिली जनकात्मजा। त्वया वियुक्ता रुदती लक्ष्मणेन च धीमता4.6.3।। अन्तरप्रेप्सुना तेन हत्वा गृध्रं जटायुषम्4.6.4।।",
+              "themes": [
+                "rajadharma",
+                "filial_dharma",
+                "brotherhood",
+                "marriage",
+                "exile",
+                "search",
+                "death"
+              ],
+              "translation": "प्रीतः pleased, रघुनन्दनम् delight of the Raghu dynasty, राघवम् to Rama, पुनरेव again, अब्रवीत् said, राम Rama, त्वम् you, भ्रात्रा your brother, लक्ष्मणेन सह along with Lakshmana यन्निमित्तं the reason, निर्जनम् desolate, वनम् forest, आगतः has come, मे my, सचिव: counsellor, मन्त्रिसत्तमः jewel among ministers, अयम् this, हनुमान् Hanuman, आख्याति has told, वने in the forest, वसतः residing, तव your, भार्या wife, त्वया by you, धीमता a wise person, लक्ष्मणेन च and by Lakshmana, वियुक्ता alone, रुदती crying, जनकात्मजा daughter of Janaka, मैथिली Maithili, रक्षसा by the demon, अपहृता was carried off, अन्तरप्रेप्सुना seeking a chance, तेन by him, जटायुषम् Jatayu, गृध्रम् vulture, हत्वा having killed"
+            }
+          },
+          {
+            "id": "aranya-kanda-7-1",
+            "score": 0.526770651,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "Rama, Sita and Lakshmana reach the hermitage of Sutikshna.",
+              "events": [
+                "sita_marriage",
+                "agastya_visit",
+                "vanara_search",
+                "sita_found",
+                "journey_to_hermitage"
+              ],
+              "explanation": "Rama, the scorcher of enemies, along with his brother Lakshmana and Sita and the sages went to Sutikshna's hermitage.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Aranya Kanda",
+              "kanda_number": 3,
+              "sarga": 7,
+              "shloka": 1,
+              "shloka_text": "रामस्तु सहितो भ्रात्रा सीतया च परन्तपः। सुतीक्ष्णस्याश्रमपदं जगाम सह तैर्द्विजैः।।3.7.1।।",
+              "themes": [
+                "brotherhood",
+                "companionship",
+                "dharma"
+              ],
+              "translation": "परन्तपः scorcher of enemies, रामस्तु Rama, भ्रात्रा with brother (Lakshmana), सीतया Sita, च and, सहितः accompanied, तैः by them, द्विजैः सह with the brahmin sages, सुतीक्ष्णस्य Sutikshna's, आश्रमपदम्  site of hermitage, जगाम went."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-46-1",
+            "score": 0.525158,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "lakshmana",
+                "sumitra"
+              ],
+              "comments": "Rama, Sita and Lakshmana stay on the bank of Tamasa river -- at dawn they proceed,  leaving behind the citizens of Ayodhya.",
+              "events": [
+                "sita_marriage",
+                "vanara_search",
+                "sita_found",
+                "forest_journey"
+              ],
+              "explanation": "The scion of the Raghus (Rama), having taken shelter on the lovely bank of Tamasa, glanced at Sita and said to Lakshmana thus:",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 46,
+              "shloka": 1,
+              "shloka_text": "ततस्तु तमसातीरं रम्यमाश्रित्य राघवः। सीतामुद्वीक्ष्य सौमित्रिमिदं वचनमब्रवीत्।।2.46.1।।",
+              "themes": [
+                "filial_dharma",
+                "duty_vs_emotion",
+                "brotherhood",
+                "love",
+                "search",
+                "companionship"
+              ],
+              "translation": "ततः then, राघवः scion of the Raghus (Rama), रम्यम् lovely, तमसातीरम् bank of Tamasa, आश्रित्य having taken refuge, सीताम् Sita, उद्वीक्ष्य having looked at, सौमित्रिम् Sumitra's son (Lakshmana), इदं वचनम् these words, अब्रवीत् said."
+            }
+          },
+          {
+            "id": "yuddha-kanda-121-1",
+            "score": 0.525027335,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "brahma"
+              ],
+              "comments": "The Fire god restores Sita to Sri Rama testifying her purity.",
+              "events": [
+                "coronation_plan",
+                "lanka_burning",
+                "sita_agnipariksha",
+                "rama_coronation",
+                "fire_god_emerges"
+              ],
+              "explanation": "On hearing creator Brahma's address to Rama, fire god emerged picking auspicious Vaidehi in his arms.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 121,
+              "shloka": 1,
+              "shloka_text": "एतच्छ्रुत्वाशुभंवाक्यंपितामहसमीरितम् । अङ्केनादायवैदेहिमुत्पपातविभावसुः ।।6.121.1।।",
+              "themes": [
+                "rajadharma",
+                "divine",
+                "auspiciousness",
+                "divine_intervention"
+              ],
+              "translation": "विभावसुः fire god, पितामहसमीरितम् address of Brahma, शुभम् auspicious, एतत् these, वाक्यम् words, श्रुत्वा hearing, वैदेहीम् Vaidehi, अङ्केन under arms, आदाय picking, उत्पपात arose"
+            }
+          },
+          {
+            "id": "ayodhya-kanda-16-1",
+            "score": 0.522536337,
+            "metadata": {
+              "characters": [],
+              "comments": "Sumantra reaches Rama's palace and conveys to him  Dasaratha's messageRama accompanied by Lakshmana proceeds to his father's palace-- comments of men and women on his way to the king.",
+              "events": [
+                "bow_breaking",
+                "coronation_plan",
+                "agastya_visit",
+                "shurpanakha",
+                "rama_coronation",
+                "sumantra_enters_inner_apartment"
+              ],
+              "explanation": "Sumantra, who was conversant with ancient traditions, passed through the entrance of the inner apartment full of people and reached the sparsely crowded courtyard. There alert, loyal young men were attentively guarding the frontyard, armed with spears and bows and wearing shining earrings.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 16,
+              "shloka": 1,
+              "shloka_text": "तदन्तःपुरद्वारं समतीत्य जनाकुलम्। प्रविविक्तां ततः कक्ष्यामाससाद पुराणवित्।।2.16.1।। प्रासकार्मुकबिभ्रद्भिर्युवभिर्मृष्टकुण्डलैः। अप्रमादिभिरेकाग्रै स्स्वनुरक्तैरधिष्ठिताम्।।2.16.2।।",
+              "themes": [
+                "rajadharma",
+                "loyalty",
+                "love",
+                "devotion",
+                "tradition"
+              ],
+              "translation": "पुराणवित् conversant with ancient traditions, सः he (Sumantra), जनाकुलं तद् crowded with people, अन्तःपुरद्वारम् the door of the inner apartment, समतीत्य having passed through, ततः after that, प्रासकार्मुकबिभ्रद्भिः carrying spears and bows, मृष्टकुंडलैः wearing shining ear rings, अप्रमादिभिः alert, एकाग्रैः attentive, स्वनुरक्तै: with utmost devotion (to the king), युवभिः by young men, अधिष्ठिताम् guarding, प्रविविक्ताम् sparsely crowded, कक्ष्याम् courtyard, आससाद reached."
+            }
+          },
+          {
+            "id": "aranya-kanda-65-3",
+            "score": 0.521697104,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "Lakshmana pacifies Rama -- explains that destruction of the world is not proper -- initiates the search.",
+              "events": [
+                "bow_breaking",
+                "sita_marriage",
+                "agastya_visit",
+                "sita_abduction",
+                "vanara_search",
+                "sita_found",
+                "lanka_burning",
+                "sita_agnipariksha"
+              ],
+              "explanation": "Tormented and emaciated due to Sita's abduction, resembling the fire at the time of dissolution of the creation, ready to destroy the world, Rama looked at his bow strung again and again, breathing hot sighs like Lord Siva at the end of the creation, wishing to burn down the world in a rage. Lakshmana who had never seen Rama in such anger before said to him with folded hands and parched throat.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Aranya Kanda",
+              "kanda_number": 3,
+              "sarga": 65,
+              "shloka": 3,
+              "shloka_text": "तप्यमानं तथा रामं सीताहरणकर्शितम्। लोकानामभवे युक्तं सांवर्तकमिवानलम्।।3.65.1।। वीक्षमाणं धनुस्सज्यं निश्श्वसन्तं पुनः पुनः। दग्धुकामं जगत्सर्वं युगान्ते च यथा हरम्।।3.65.2।। अदृष्टपूर्वं सङ्क्रुद्धं दृष्ट्वा रामं तु लक्ष्मणः। अब्रवीत्प्राञ्जलिर्वाक्यं मुखेन परिशुष्यता।।3.65.3।।",
+              "themes": [
+                "brotherhood",
+                "anger",
+                "search",
+                "destruction",
+                "suffering"
+              ],
+              "translation": "तथा that way, तप्यमानम् tormented by pain, रामम् Rama, सीताहरणकर्शितम् emaciated by Sita's abduction, सांवर्तकम् pertaining to dissolution of the world, अनलमिव the fire like, लोकानाम् of the worlds, अभवे to annihilate, युक्तम् ready, सज्यम् strung, धनुः bow, वीक्षमाणम् while seeing, पुनः पुनः again and again, निश्श्वसन्तम् sighing hot breath, युगान्ते at the end of the world, हरं यथा like Lord Siva, सर्वम् all, जगत् world, दग्धुकामम् desiring to burn, अदृष्टपूर्वम् never seen before, संक्रुद्धम् enraged, रामम् Rama, दृष्ट्वा seeing, लक्ष्मणः Lakshmana, प्राञ्जलिः with folded palms, परिशुष्यता mouth dried up, मुखेन face, अब्रवीत् said."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-61-1",
+            "score": 0.521001875,
+            "metadata": {
+              "characters": [
+                "rama",
+                "kaushalya"
+              ],
+              "comments": "Kausalya condemns Dasaratha's action -- Dasaratha loses his senses out of intense grief.",
+              "events": [
+                "exile_announcement",
+                "sita_agnipariksha",
+                "rama_leaving_for_forest"
+              ],
+              "explanation": "When Rama, the greatest among those who please the people, he who was conscious of his duty left for the forest. Kausalya, sobbing in bitter anguish, said to her husband:",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 61,
+              "shloka": 1,
+              "shloka_text": "वनं गते धर्मपरे रामे रमयतां वरे। कौसल्या रुदती स्वार्ता भर्तारमिदमब्रवीत्।।2.61.1।।",
+              "themes": [
+                "dharma",
+                "duty_vs_desire",
+                "duty_vs_emotion",
+                "marriage",
+                "exile",
+                "duty",
+                "sacrifice"
+              ],
+              "translation": "धर्मपरे dutiful, रमयताम् pleasing others, वरे greatest, रामे Rama, वनम् forest, गते had gone, कौशल्या Kausalya, स्वार्ता in bitter anguish, रुदती sobbing, भर्तारम् to her husband, इदम् these words, अब्रवीत् said."
+            }
+          },
+          {
+            "id": "aranya-kanda-65-2",
+            "score": 0.519730628,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "lakshmana"
+              ],
+              "comments": "Lakshmana pacifies Rama -- explains that destruction of the world is not proper -- initiates the search.",
+              "events": [
+                "bow_breaking",
+                "sita_marriage",
+                "agastya_visit",
+                "sita_abduction",
+                "vanara_search",
+                "sita_found",
+                "lanka_burning",
+                "sita_agnipariksha"
+              ],
+              "explanation": "Tormented and emaciated due to Sita's abduction, resembling the fire at the time of dissolution of the creation, ready to destroy the world, Rama looked at his bow strung again and again, breathing hot sighs like Lord Siva at the end of the creation, wishing to burn down the world in a rage. Lakshmana who had never seen Rama in such anger before said to him with folded hands and parched throat.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Aranya Kanda",
+              "kanda_number": 3,
+              "sarga": 65,
+              "shloka": 2,
+              "shloka_text": "तप्यमानं तथा रामं सीताहरणकर्शितम्। लोकानामभवे युक्तं सांवर्तकमिवानलम्।।3.65.1।। वीक्षमाणं धनुस्सज्यं निश्श्वसन्तं पुनः पुनः। दग्धुकामं जगत्सर्वं युगान्ते च यथा हरम्।।3.65.2।। अदृष्टपूर्वं सङ्क्रुद्धं दृष्ट्वा रामं तु लक्ष्मणः। अब्रवीत्प्राञ्जलिर्वाक्यं मुखेन परिशुष्यता।।3.65.3।।",
+              "themes": [
+                "brotherhood",
+                "anger",
+                "search",
+                "destruction",
+                "suffering"
+              ],
+              "translation": "तथा that way, तप्यमानम् tormented by pain, रामम् Rama, सीताहरणकर्शितम् emaciated by Sita's abduction, सांवर्तकम् pertaining to dissolution of the world, अनलमिव the fire like, लोकानाम् of the worlds, अभवे to annihilate, युक्तम् ready, सज्यम् strung, धनुः bow, वीक्षमाणम् while seeing, पुनः पुनः again and again, निश्श्वसन्तम् sighing hot breath, युगान्ते at the end of the world, हरं यथा like Lord Siva, सर्वम् all, जगत् world, दग्धुकामम् desiring to burn, अदृष्टपूर्वम् never seen before, संक्रुद्धम् enraged, रामम् Rama, दृष्ट्वा seeing, लक्ष्मणः Lakshmana, प्राञ्जलिः with folded palms, परिशुष्यता mouth dried up, मुखेन face, अब्रवीत् said."
+            }
+          },
+          {
+            "id": "aranya-kanda-65-1",
+            "score": 0.519485533,
+            "metadata": {
+              "characters": [
+                "rama",
+                "lakshmana"
+              ],
+              "comments": "Lakshmana pacifies Rama -- explains that destruction of the world is not proper -- initiates the search.",
+              "events": [
+                "bow_breaking",
+                "sita_marriage",
+                "agastya_visit",
+                "sita_abduction",
+                "vanara_search",
+                "sita_found",
+                "lanka_burning",
+                "sita_agnipariksha"
+              ],
+              "explanation": "Tormented and emaciated due to Sita's abduction, resembling the fire at the time of dissolution of the creation, ready to destroy the world, Rama looked at his bow strung again and again, breathing hot sighs like Lord Siva at the end of the creation, wishing to burn down the world in a rage. Lakshmana who had never seen Rama in such anger before said to him with folded hands and parched throat.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Aranya Kanda",
+              "kanda_number": 3,
+              "sarga": 65,
+              "shloka": 1,
+              "shloka_text": "तप्यमानं तथा रामं सीताहरणकर्शितम्। लोकानामभवे युक्तं सांवर्तकमिवानलम्।।3.65.1।। वीक्षमाणं धनुस्सज्यं निश्श्वसन्तं पुनः पुनः। दग्धुकामं जगत्सर्वं युगान्ते च यथा हरम्।।3.65.2।। अदृष्टपूर्वं सङ्क्रुद्धं दृष्ट्वा रामं तु लक्ष्मणः। अब्रवीत्प्राञ्जलिर्वाक्यं मुखेन परिशुष्यता।।3.65.3।।",
+              "themes": [
+                "brotherhood",
+                "anger",
+                "search",
+                "destruction",
+                "suffering"
+              ],
+              "translation": "तथा that way, तप्यमानम् tormented by pain, रामम् Rama, सीताहरणकर्शितम् emaciated by Sita's abduction, सांवर्तकम् pertaining to dissolution of the world, अनलमिव the fire like, लोकानाम् of the worlds, अभवे to annihilate, युक्तम् ready, सज्यम् strung, धनुः bow, वीक्षमाणम् while seeing, पुनः पुनः again and again, निश्श्वसन्तम् sighing hot breath, युगान्ते at the end of the world, हरं यथा like Lord Siva, सर्वम् all, जगत् world, दग्धुकामम् desiring to burn, अदृष्टपूर्वम् never seen before, संक्रुद्धम् enraged, रामम् Rama, दृष्ट्वा seeing, लक्ष्मणः Lakshmana, प्राञ्जलिः with folded palms, परिशुष्यता mouth dried up, मुखेन face, अब्रवीत् said."
+            }
+          },
+          {
+            "id": "kishkindha-kanda-6-1",
+            "score": 0.517601073,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "lakshmana",
+                "hanuman",
+                "janaka",
+                "jatayu"
+              ],
+              "comments": "Sugriva speaks about the abduction of Sita by Ravana -- shows to Rama the veil and ornament dropped down by Sita -- Rama eager to killl Ravana, seeks further details of the enemy from Sugriva",
+              "events": [
+                "bow_breaking",
+                "sita_marriage",
+                "coronation_plan",
+                "exile_announcement",
+                "viradha_encounter",
+                "jatayu_fight",
+                "meet_hanuman",
+                "sugriva_alliance",
+                "vali_duel",
+                "vali_death",
+                "ravana_death",
+                "sita_agnipariksha",
+                "rama_coronation",
+                "sita_abduction",
+                "jatayu_death"
+              ],
+              "explanation": "Sugriva was pleased to say to Rama, delight of the Raghu race once again, 'O Rama, Hanuman, jewel among Ministers, has told me the cause of your coming to this desolate forest. While you were residing in the forest, a demon who was looking for an opportunity carried off your wife, the princess from Mithila, daughter of Janaka, finding her alone. While she was crying (piteously) he killed Jatayu. (the vulture who pretested).",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Kishkindha Kanda",
+              "kanda_number": 4,
+              "sarga": 6,
+              "shloka": 1,
+              "shloka_text": "पुनरेवाब्रवीत्प्रीतो राघवं रघुनन्दनम्। अयमाख्याति मे राम सचिवो मन्त्रिसत्तमः4.6.1।। हनुमान्यन्निमित्तं त्वं निर्जनं वनमागतः। लक्ष्मणेन सह भ्रात्रा वसतश्च वने तव4.6.2।। रक्षसाऽपहृता भार्या मैथिली जनकात्मजा। त्वया वियुक्ता रुदती लक्ष्मणेन च धीमता4.6.3।। अन्तरप्रेप्सुना तेन हत्वा गृध्रं जटायुषम्4.6.4।।",
+              "themes": [
+                "rajadharma",
+                "filial_dharma",
+                "brotherhood",
+                "marriage",
+                "exile",
+                "search",
+                "death",
+                "loss",
+                "tragedy"
+              ],
+              "translation": "प्रीतः pleased, रघुनन्दनम् delight of the Raghu dynasty, राघवम् to Rama, पुनरेव again, अब्रवीत् said, राम Rama, त्वम् you, भ्रात्रा your brother, लक्ष्मणेन सह along with Lakshmana यन्निमित्तं the reason, निर्जनम् desolate, वनम् forest, आगतः has come, मे my, सचिव: counsellor, मन्त्रिसत्तमः jewel among ministers, अयम् this, हनुमान् Hanuman, आख्याति has told, वने in the forest, वसतः residing, तव your, भार्या wife, त्वया by you, धीमता a wise person, लक्ष्मणेन च and by Lakshmana, वियुक्ता alone, रुदती crying, जनकात्मजा daughter of Janaka, मैथिली Maithili, रक्षसा by the demon, अपहृता was carried off, अन्तरप्रेप्सुना seeking a chance, तेन by him, जटायुषम् Jatayu, गृध्रम् vulture, हत्वा having killed"
+            }
+          },
+          {
+            "id": "bala-kanda-44-1",
+            "score": 0.517353117,
+            "metadata": {
+              "characters": [],
+              "comments": "King Bhagiratha performs funeral rites of his ancestors.",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "ocean_crossing",
+                "lanka_entry",
+                "sita_found",
+                "bridge_construction",
+                "rama_coronation",
+                "sagara_sons_restoration"
+              ],
+              "explanation": "Thereupon that king followed by Ganga reached the ocean and entered the lower regions of the earth where the sons of Sagara were found reduced to ashes.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 44,
+              "shloka": 1,
+              "shloka_text": "स गत्वा सागरं राजा गङ्गयाऽनुगतस्तदा । प्रविवेश तलं भूमेर्यत्र ते भस्मसात्कृता:।।1.44.1।।",
+              "themes": [
+                "rajadharma",
+                "filial_dharma",
+                "divine_intervention",
+                "ancestral_salvation"
+              ],
+              "translation": "स: राजा that king, तदा then, गङ्गया by Ganga, अनुगत: followed by, सागरम् ocean, गत्वा having gone, यत्र where, ते they (sons of Sagara), भस्मसात् into ashes, कृता: had been made, भूमे: earth's, तलम् lower regions, प्रविवेश entered."
+            }
+          },
+          {
+            "id": "aranya-kanda-5-1",
+            "score": 0.517178595,
+            "metadata": {
+              "characters": [
+                "sita",
+                "lakshmana"
+              ],
+              "comments": "Rama, Sita and Lakshmana meet sage Sarabhanga -- Rama enquires about Devendra's visit -- Sarabhanga advises Rama to go to the hermitage of  Sutikshna -- with the desire to go to the world of the Brahman, Sarabhanga enters the fire.",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "viradha_encounter",
+                "jatayu_fight",
+                "vali_death",
+                "vanara_search",
+                "sita_found",
+                "lanka_burning",
+                "ravana_death",
+                "sita_agnipariksha",
+                "viradha_defeat",
+                "sita_consolation"
+              ],
+              "explanation": "On killing Viradha, the demon of terrific strength, heroic Rama embraced Sita, consoled her and said to his brother Lakshmana, glowing like fire:",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Aranya Kanda",
+              "kanda_number": 3,
+              "sarga": 5,
+              "shloka": 1,
+              "shloka_text": "हत्वा तु तं भीमबलं विराधं राक्षसं वने। ततस्सीतां परिष्वज्य समाश्वास्य च वीर्यवान्।।3.5.1।। अब्रवील्लक्ष्मणं रामो भ्रातरं दीप्ततेजसम्।",
+              "themes": [
+                "brotherhood",
+                "exile",
+                "victory",
+                "death",
+                "heroism",
+                "protection"
+              ],
+              "translation": "वीर्यवान् heroic, रामः Rama, भीमबलम् of terrific strength, राक्षसम् demon, तं विराधम् that Viradha, वने in the forest, हत्वा on killing, ततः thereafter, सीताम् Sita, परिष्वज्य embraced, समाश्वास्य च connsoled, दीप्ततेजसम् glowing like fire, भ्रातरम्  brother,  अब्रवीत् said."
+            }
+          }
+        ],
+        "totalRetrieved": 20,
+        "expandedQuery": "Rama justified the 'Agni Pariksha' (fire test) as a means to prove Sita's chastity and purity after her abduction by Ravana. He believed it was necessary to uphold his dharma as a king and maintain his reputation. Ayodhya Kanda."
+      },
+      "retrieval_latency_ms": 0,
+      "classification_result": {
+        "model": "gpt-4o",
+        "category": "Moral dilemmas in text",
+        "category_id": 33,
+        "confidence": 1,
+        "template_selected": "T2"
+      },
+      "classification_latency_ms": 0,
+      "generation_result": {
+        "model": "claude-3-haiku-20240307",
+        "template_used": "T2",
+        "answer": "One interpretation is that Rama justified the 'Agni Pariksha' as a necessary test of Sita's purity and faithfulness, given the circumstances of her abduction by the demon Ravana. The text suggests that Rama was tormented by Sita's disappearance and sought to assuage his doubts about her fidelity, though he initially refused to take her to the forest due to the hardships of forest life [Ayodhya-Kanda 28.1].\n\n**Textual Basis:**\nThe text explicitly states that when Rama returned from exile, he was \"tormented and emaciated due to Sita's abduction, resembling the fire at the time of dissolution of the creation, ready to destroy the world\" [Aranya-Kanda 65.1-2]. It also describes how Rama \"looked at his bow strung again and again, breathing hot sighs like Lord Siva at the end of the creation, wishing to burn down the world in a rage\" [Aranya-Kanda 65.2]. This suggests Rama was deeply troubled by Sita's disappearance and sought to reestablish her purity.\n\n**Interpretations:**\nScholars have interpreted the 'Agni Pariksha' as Rama's way of publicly restoring Sita's honor and reputation after her abduction by Ravana. Commentators note that Rama was bound by his duty as a righteous king to ensure the purity of his queen, even though he privately never doubted Sita's fidelity [Yuddha-Kanda 121.1]. The text can be understood as portraying Rama's anguish at having to subject Sita to this ordeal despite his love for her.\n\n**Limit of Certainty:**\nWhile the text describes Rama's words and actions, it does not fully reveal his internal emotional state or the reasoning behind his decision to subject Sita to the 'Agni Pariksha'. The text remains ambiguous on whether Rama truly doubted Sita's purity or if he performed this ritual for public perception as the righteous king. Alternative interpretations suggest Rama acted primarily to restore Sita's reputation, rather than out of personal doubt.",
+        "citations_in_answer": []
+      },
+      "generation_latency_ms": 6249,
+      "total_latency_ms": 15034,
+      "full_response": {
+        "templateType": "T2",
+        "answer": "One interpretation is that Rama justified the 'Agni Pariksha' as a necessary test of Sita's purity and faithfulness, given the circumstances of her abduction by the demon Ravana. The text suggests that Rama was tormented by Sita's disappearance and sought to assuage his doubts about her fidelity, though he initially refused to take her to the forest due to the hardships of forest life [Ayodhya-Kanda 28.1].",
+        "whatTextStates": "The text explicitly states that when Rama returned from exile, he was \"tormented and emaciated due to Sita's abduction, resembling the fire at the time of dissolution of the creation, ready to destroy the world\" [Aranya-Kanda 65.1-2]. It also describes how Rama \"looked at his bow strung again and again, breathing hot sighs like Lord Siva at the end of the creation, wishing to burn down the world in a rage\" [Aranya-Kanda 65.2]. This suggests Rama was deeply troubled by Sita's disappearance and sought to reestablish her purity.",
+        "traditionalInterpretations": "Scholars have interpreted the 'Agni Pariksha' as Rama's way of publicly restoring Sita's honor and reputation after her abduction by Ravana. Commentators note that Rama was bound by his duty as a righteous king to ensure the purity of his queen, even though he privately never doubted Sita's fidelity [Yuddha-Kanda 121.1]. The text can be understood as portraying Rama's anguish at having to subject Sita to this ordeal despite his love for her.",
+        "limitOfCertainty": "While the text describes Rama's words and actions, it does not fully reveal his internal emotional state or the reasoning behind his decision to subject Sita to the 'Agni Pariksha'. The text remains ambiguous on whether Rama truly doubted Sita's purity or if he performed this ritual for public perception as the righteous king. Alternative interpretations suggest Rama acted primarily to restore Sita's reputation, rather than out of personal doubt.",
+        "whatICanHelpWith": [
+          "How did Sita's abduction impact Rama's character and choices?",
+          "What were the sociopolitical pressures on Rama as a ruler that influenced his treatment of Sita?",
+          "How have later commentators and traditions interpreted the 'Agni Pariksha' incident?"
+        ]
+      }
+    }
+  }
+]

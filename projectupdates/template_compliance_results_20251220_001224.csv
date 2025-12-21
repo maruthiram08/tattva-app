@@ -1,0 +1,53 @@
+index,user_query,system_model,assigned_template,structural_result,semantic_result,overall_compliance,failures,summary
+1,Does the Valmiki Ramayana end with the coronation of Rama?,openai,T1,FAIL,FAIL,FAIL,"- Missing Citations/References section
+- Unsupported claim by cited shloka (Ayodhya Kanda 100.76)
+- Unsupported connection of Ayodhya Kanda 67.38 to the Ramayana conclusion.
+</evaluation_results>","The answer fails to comply with the T1 template due to a missing citations/references section and unsupported claims by cited shlokas. Specifically, the claim about the ending of Ayodhya Kanda is not supported by shloka 100.76. Additionally, Ayodhya Kanda 67.38 doesn't address the Ramayana conclusion."
+2,In which section does Valmiki describe the origin of the Sloka meter?,openai,T1,FAIL,PASS,FAIL,"- Missing Citations/References section.
+</evaluation_results>","The answer generally complies with the semantic rules of T1, with claims supported by cited shlokas. The main failure is the lack of a dedicated ""Citations"" or ""References"" section, which is a structural requirement. The phrase ""first of its kind"" is interpretive and could be seen as a failure."
+3,"How long did the Pandavas... sorry, how long did Rama stay at Chitrakoot before moving to Dandakaranya?",openai,T1,FAIL,PASS,FAIL,"- Missing ""Citations/References"" section
+</evaluation_results>","The answer provides a factually correct response supported by shlokas. However, it fails to comply with the structural requirements of the T1 template because it lacks a ""Citations/References"" section."
+4,Did Hanuman burn Lanka before or after meeting Vibhishana?,openai,T1,FAIL,FAIL,FAIL,"- Structural: Missing ""Citations:"" section
+- Semantic: Claims about Hanuman meeting Vibhishana and the sequence of events are not directly supported by cited shlokas.
+</evaluation_results>","The answer attempts to follow the T1 template, but fails structurally because it lacks a clearly labeled citations section. More importantly, it makes claims that are not directly supported by the cited verses, thereby failing semantically. The sequence of events and Hanuman being commanded by Vibhishana are not explicitly stated."
+5,"When did Indrajit use the Brahmastra? Was it the first, second, or third encounter?",openai,T1,FAIL,PASS,FAIL,"- Missing Citations/References section
+</evaluation_results>","The answer provides a factual summary of Indrajit's use of divine weapons as described in the Ramayana, supported by cited shlokas. The structural requirement for a dedicated Citations/References section is missing.
+</evaluation_results>
+
+<evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - The provided text acts as the answer.
+- At least one inline citation: PASS - Citations are inline.
+- Presence of citations/references section: FAIL - Not present.
+
+**Structural Result:** FAIL
+
+**Layer 2: Semantic Checks** (T1 only)
+- Claim: ""Indrajit first used the Brahmastra against the son of the Windgod, Hanuman, realizing he could not be killed and caught him with Brahma's divine weapon""
+- Citation: Sundara Kanda 48.37
+- Shloka text: ""अवध्योऽयमिति ज्ञात्वा तमस्त्रेणास्त्रतत्त्ववित्। निजग्राह महाबाहुर्मारुतात्मजमिन्द्रजित्।।5.48.37।।""
+- Judgment: SUPPORTED - The shloka states Indrajit captured Hanuman with a divine weapon because he knew Hanuman was unkillable.
+
+- Claim: ""In subsequent encounters, Indrajit is noted for his mastery in using different divine weapons, including those conferred by Brahma""
+- Citation: Yuddha Kanda 85.18
+- Shloka text: ""स हिब्रह्मास्त्रवित्प्राज्ञोमहामायोमहाबल. । करोत्यसंज्ञान् सङ्ग्रामेदेवान्सवरुणानपि ।।6.85.18।।""
+- Judgment: SUPPORTED - The shloka describes Indrajit as skilled in using Brahma's weapon.
+
+- Claim: ""He also remained concealed, exhibiting his prowess multiple times against the Vanara army""
+- Citation: Yuddha Kanda 73.34
+- Shloka text: ""स तुनालीकनाराचैर्गदाभिर्मुसलैरपि । रक्षोभिस्सम्वृतस्सङ्ख्येवानरान् विचकर्त ह ।।6.73.34।।""
+- Judgment: SUPPORTED - The shloka mentions Indrajit surrounded by Rakshasas fighting the Vanaras. This implies concealment.
+
+- Claim: ""It's clear that Indrajit's encounters involved various uses of divine weapons, but the text specifically denotes his use of the Brahmastra against Hanuman early on""
+- Citation: Sundara Kanda 48.37
+- Shloka text: ""अवध्योऽयमिति ज्ञात्वा तमस्त्रेणास्त्रतत्त्ववित्। निजग्राह महाबाहुर्मारुतात्मजमिन्द्रजित्।।5.48.37।।""
+- Judgment: SUPPORTED - As before, the shloka confirms use of Brahmastra against Hanuman.
+
+**Semantic Result:** PASS
+
+**Overall Compliance:** FAIL
+
+**Summary:**
+The answer correctly utilizes inline citations to support factual claims about Indrajit's use of divine weapons according to the Ramayana. However, the response fails to include a dedicated ""Citations"" or ""References"" section, a structural requirement for T1."

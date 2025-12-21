@@ -1,0 +1,1633 @@
+[
+  {
+    "index": 1,
+    "user_query": "Why was the killing of Sambuka performed by Rama in Uttara Kanda?",
+    "classification": "Duty-driven decisions",
+    "expected_template": "T1",
+    "openai": {
+      "status": "OK",
+      "template_used": "T1",
+      "answer": "**Answer:** The killing of Shambuka by Rama is not explicitly detailed in the retrieved citations. The provided verses do not mention Shambuka or provide context regarding incidents involving him. The text mentions other events such as Rama slaying Ravana and other demons [Yuddha-Kanda 128.38], but does not specifically address the incident involving Shambuka. Based on the available text, I cannot find explicit reference to this event.",
+      "whatTextStates": "",
+      "citations": [
+        "[Yuddha-Kanda 128.38]"
+      ],
+      "citation_count": 1,
+      "has_inline_citations": true,
+      "answer_citations": 1,
+      "wts_citations": 0,
+      "textual_basis_citations": [
+        "Sundara-Kanda 16.8",
+        "Sundara-Kanda 30.30",
+        "Sundara-Kanda 52.11"
+      ],
+      "retrieved_count": 20,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The killing of Shambuka by Rama is not explicitly detailed in the retrieved citations. The provided verses do not mention Shambuka or provide context regarding incidents involving him. The text mentions other events such as Rama slaying Ravana and other demons [Yuddha-Kanda 128.38], but does not specifically address the incident involving Shambuka. Based on the available text, I cannot find explicit reference to this event.",
+        "textualBasis": {
+          "kanda": "Sundara-Kanda",
+          "sarga": [
+            16,
+            30,
+            52
+          ],
+          "shloka": [
+            8,
+            30,
+            11
+          ],
+          "citations": [
+            "Sundara-Kanda 16.8",
+            "Sundara-Kanda 30.30",
+            "Sundara-Kanda 52.11"
+          ]
+        },
+        "explanation": "The retrieved citations focus on various battles and moral justifications of killing sinners, but do not mention Shambuka or the specific reasons for his death at the hands of Rama. Citations discuss the killing of Ravana and other demons, highlighting Rama's prowess and moral justifications for killing those labeled as sinners [Sundara-Kanda 52.11]. Without more specific verses mentioning Shambuka, the text does not provide details on this incident."
+      }
+    },
+    "claude": {
+      "status": "OK",
+      "template_used": "T1",
+      "answer": "**Answer:** The killing of Sambuka by Rama is not directly mentioned in the provided citations. However, the text frequently addresses the justification for killing sinners, such as in a situation where it is stated that there is no sin in the killing of those who commit sins [Sundara Kanda 52.11]. Furthermore, the text alludes to actions and decisions guided by dharma and the accordance with scripture [Bala Kanda 66.2]. These principles suggest a pattern where killing is justified within the rules of dharma as understood by the text.",
+      "whatTextStates": "The text states that there is no sin in the killing of sinners [Sundara Kanda 52.11] and emphasizes actions in accordance with scriptures [Bala Kanda 66.2].",
+      "citations": [
+        "[Bala Kanda 66.2]",
+        "[Sundara Kanda 52.11]"
+      ],
+      "citation_count": 2,
+      "has_inline_citations": true,
+      "answer_citations": 2,
+      "wts_citations": 2,
+      "textual_basis_citations": [
+        "Sundara Kanda 52.11",
+        "Bala Kanda 66.2"
+      ],
+      "retrieved_count": 20,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The killing of Sambuka by Rama is not directly mentioned in the provided citations. However, the text frequently addresses the justification for killing sinners, such as in a situation where it is stated that there is no sin in the killing of those who commit sins [Sundara Kanda 52.11]. Furthermore, the text alludes to actions and decisions guided by dharma and the accordance with scripture [Bala Kanda 66.2]. These principles suggest a pattern where killing is justified within the rules of dharma as understood by the text.",
+        "textualBasis": {
+          "kanda": "Sundara Kanda",
+          "sarga": [
+            52
+          ],
+          "shloka": [
+            11
+          ],
+          "citations": [
+            "Sundara Kanda 52.11",
+            "Bala Kanda 66.2"
+          ]
+        },
+        "explanation": "The Sundara Kanda states that there is no sin in killing a sinner as per the text's understanding of dharma [Sundara Kanda 52.11]. Bala Kanda illustrates adherence to dharma and scriptural guidance in sacred acts [Bala Kanda 66.2]. Therefore, while the specific event of Sambuka's killing is not mentioned, the broader context within the text provides justification principles.",
+        "whatTextStates": "The text states that there is no sin in the killing of sinners [Sundara Kanda 52.11] and emphasizes actions in accordance with scriptures [Bala Kanda 66.2].",
+        "traditionalInterpretations": "Traditional interpretations often view Rama's adherence to dharma as crucial, and his actions are generally understood within the framework of dharma as illustrated in the text.",
+        "limitOfCertainty": "Based on the citations, the killing of Sambuka is not explicitly detailed in the text.",
+        "outOfScopeNotice": "The provided citations do not detail the killing of Sambuka or its specific moral reasoning.",
+        "why": "The question addresses the killing of Sambuka, which is not explicitly mentioned in the retrieved excerpts; however, broader principles of dharma are addressed, which might contextualize similar actions.",
+        "redirect": {
+          "introduction": "For details on actions justified by dharma, consider looking into sections that discuss scriptural adherence and ethical conduct.",
+          "alternatives": [
+            "Examples of dharma adherence in killing sinners",
+            "Consequences of adharmic acts"
+          ]
+        },
+        "whatICanHelpWith": [
+          "Providing textual examples of dharma",
+          "Explaining justifications for actions according to the text"
+        ]
+      }
+    },
+    "openai_trace": {
+      "trace_id": "840b19e6-594c-4d40-a8df-80779e709c23",
+      "timestamp": "2025-12-21T15:34:30.083Z",
+      "user_query": "Why was the killing of Sambuka performed by Rama in Uttara Kanda?",
+      "expanded_query": "The killing of Sambuka occurs in Uttara Kanda, where Rama slays the demon Sambuka, who was performing penance in the guise of a Brahmin. This act was to restore dharma, as Sambuka's penance was deemed improper, disrupting the social order.",
+      "query_expansion_latency_ms": 0,
+      "retrieval_results": {
+        "shlokas": [
+          {
+            "id": "sundara-kanda-16-8",
+            "score": 0.584954262,
+            "metadata": {
+              "characters": [
+                "rama",
+                "indra"
+              ],
+              "comments": "",
+              "events": [
+                "exile_announcement",
+                "viradha_encounter",
+                "shurpanakha",
+                "vali_death",
+                "battle_begins",
+                "ravana_death",
+                "rama_killing_viradha"
+              ],
+              "explanation": "\"Rama  killed Viradha of fearsome valour in the forest like Sambara by Indra.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 16,
+              "shloka": 8,
+              "shloka_text": "विराधश्च हतः सङ्ख्ये राक्षसो भीमविक्रमः। वने रामेण विक्रम्य महेन्द्रेणेव शम्बरः।।5.16.8।।",
+              "themes": [
+                "exile",
+                "war",
+                "death",
+                "heroism",
+                "valor"
+              ],
+              "translation": "वने in the forest, सङ्ख्ये in a war, रामेण by Rama, विक्रम्य by advancing with valour, महेन्द्रेण by Indra, शम्बरः Sambara , इव like, भीमविक्रमः a hero of  fearsome valour, विराधः Viradha, हतः slayed."
+            }
+          },
+          {
+            "id": "bala-kanda-24-18",
+            "score": 0.58302021,
+            "metadata": {
+              "characters": [
+                "rama",
+                "indra"
+              ],
+              "comments": "",
+              "events": [
+                "vali_death",
+                "ravana_death",
+                "sita_agnipariksha",
+                "indra_sin"
+              ],
+              "explanation": "O Rama, in ancient times after killing Vritrasura, Indra was overpowered by the sin of slaying a brahmin and was affected by impurity and hunger.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 24,
+              "shloka": 18,
+              "shloka_text": "पुरा वृत्रवधे राम मलेन समभिप्लुतम्। क्षुधा चैव सहस्राक्षं ब्रह्महत्या समाविशत्।।1.24.18।।",
+              "themes": [
+                "death",
+                "divine_consequences",
+                "spiritual_purification"
+              ],
+              "translation": "राम O Rama, पुरा in ancient times, वृत्रवधे at the time of destruction of Vritrasura, मलेन by impurity, क्षुधा चैव by hunger also, समभिप्लुतम् overpowered, सहस्राक्षम् Indra, ब्रह्महत्या sin arising out of slaying Brahmin, समाविशत्  attacked."
+            }
+          },
+          {
+            "id": "yuddha-kanda-95-17",
+            "score": 0.559928894,
+            "metadata": {
+              "characters": [
+                "rama",
+                "vali",
+                "indra"
+              ],
+              "comments": "",
+              "events": [
+                "vali_duel",
+                "vali_death",
+                "ravana_death",
+                "vali_killing"
+              ],
+              "explanation": "\"Mighty Rama killed the son of thousand eyed Indra, Vali, who resembled mountain Meru. That example is sufficient proof.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 95,
+              "shloka": 17,
+              "shloka_text": "जघानबलिनंरामस्सहस्रनयनात्मजम् । वालिनंमेरुसङ्काशंपर्याप्तंतन्निदर्शनम् ।।6.95.17।।",
+              "themes": [
+                "filial_dharma",
+                "death",
+                "divine_justice",
+                "heroism",
+                "strength"
+              ],
+              "translation": "रामः Rama, बलिनम्mighty, सहस्रनयनात्मजम् son of thousand eyed Indra, मेरुसङ्काशम् resembled mountain Meru, वालिनम् Vali, जघान killed, तत् that, पर्याप्तम् sufficient, निदर्शनम् example"
+            }
+          },
+          {
+            "id": "sundara-kanda-30-30",
+            "score": 0.5597592,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sugriva",
+                "janaka"
+              ],
+              "comments": "",
+              "events": [
+                "bow_breaking",
+                "sita_marriage",
+                "viradha_encounter",
+                "sugriva_alliance",
+                "vali_duel",
+                "threat_to_sita"
+              ],
+              "explanation": "\"These demons who are keen on indulging in violence will harm Janaka's daughter. Then the mission of Rama and Sugriva will also fail.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 30,
+              "shloka": 30,
+              "shloka_text": "हिंसाभिरुचयो हिंस्युरिमां वा जनकात्मजाम्।।5.30.30।। विपन्नं स्यात्ततः कार्यं रामसुग्रीवयोरिदम्।",
+              "themes": [
+                "violence",
+                "mission_failure"
+              ],
+              "translation": "वा or, हिंसाभिरुचयः keen on indulging in violence, इमाम् this lady, जनकात्मजाम् daughter of Janaka, हिंस्युः harm her, ततः then, रामसुग्रीवयोः of Rama and Sugriva, इदम् this, कार्यम् mission, विपन्नं स्यात् will fail."
+            }
+          },
+          {
+            "id": "sundara-kanda-52-11",
+            "score": 0.559296608,
+            "metadata": {
+              "characters": [],
+              "comments": "",
+              "events": [
+                "vali_death",
+                "vanara_search",
+                "rama_army",
+                "ravana_death",
+                "sinner_killing_decision"
+              ],
+              "explanation": "\"O slayer of foes it is not wrong to kill a sinner. I shall, therefore, kill the sinful vanara.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 52,
+              "shloka": 11,
+              "shloka_text": "न पापानां वधे पापं विद्यते शत्रुसूदन। तस्मादेनं वधिष्यामि वानरं पापचारिणम्।।5.52.11।।",
+              "themes": [
+                "justice",
+                "death",
+                "sin"
+              ],
+              "translation": "शत्रुसूदन O slayer of foes, पापानाम् of sinners, वधे in killing, पापम् sin, न विद्यते not incurred, तस्मात् so, पापचारिणम् this sinner, एनम् him, वानरम् vanara, वधिष्यामि will slay."
+            }
+          },
+          {
+            "id": "sundara-kanda-54-45",
+            "score": 0.557272911,
+            "metadata": {
+              "characters": [
+                "rama",
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "viradha_encounter",
+                "meet_hanuman",
+                "vali_death",
+                "lanka_burning",
+                "ravana_death",
+                "sita_agnipariksha",
+                "rama_coronation",
+                "demon_killing",
+                "garden_destruction"
+              ],
+              "explanation": "Great Hanuman, sought Rama's presence in his mind after killing many demons, breaking down many trees of the garden, and setting fire to the mansions of demons.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 54,
+              "shloka": 45,
+              "shloka_text": "स राक्षसांस्तान्सुबहूंश्च हत्वा वनं च भङ्क्त्वा बहुपादपं तत्। विसृज्य रक्षोभवनेषु चाग्निं जगाम रामं मनसा महात्मा।।5.54.45।।",
+              "themes": [
+                "rajadharma",
+                "death",
+                "mission",
+                "devotion",
+                "remembrance"
+              ],
+              "translation": "महात्मा a great self, सः he, सुबहून् many of them, तान् राक्षसान् the demons, हत्वा having killed, बहुपादपम् having many trees, तत् वनं च that garden also, भङ्क्त्वा after breaking, रक्षोभवनेषु in the mansions of demons, अग्निम् fire, विसृज्य after setting, मनसा in his mind, रामम् Rama, जगाम reached."
+            }
+          },
+          {
+            "id": "yuddha-kanda-101-10",
+            "score": 0.555841446,
+            "metadata": {
+              "characters": [
+                "rama",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "sita_abduction",
+                "ravana_death",
+                "rama_coronation",
+                "ravana_arrow_attack"
+              ],
+              "explanation": "Rakshasa king, frustrated on seeing the missiles, pierced Rama in his private parts with shafts.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 101,
+              "shloka": 10,
+              "shloka_text": "तदस्त्रंतुहतंदृष्टवारावणोराक्षसाधिपः । विव्याथदशभिर्बाणैरामंसर्वेषुमर्मसु ।।6.101.10।।",
+              "themes": [
+                "rajadharma",
+                "frustration",
+                "violence"
+              ],
+              "translation": "राक्षसाधिपः Rakshasa king, रावणः Ravana, तत् that, अस्त्रम् missile, हतम् frustrated, दृष्टवा seeing, दशभिः ten, बाणैः shafts, रामम् at Rama, सर्वेषु all sides, मर्मसु private parts, विव्याध pierced"
+            }
+          },
+          {
+            "id": "bala-kanda-1-56",
+            "score": 0.554050446,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "vali_death",
+                "ravana_death",
+                "killing_kabandha"
+              ],
+              "explanation": "Mightyarmed Rama, having killed Kabandha, consigned his body to flames. While leaving for heavens he informed him saying, 'O Raghava, there is a female ascetic in Sabara community, performing religious duties and proficient in practising austerities. You may visit her'.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 1,
+              "shloka": 56,
+              "shloka_text": "तं निहत्य महाबाहुर्ददाह स्वर्गतश्च  स: । स चास्य कथयामास शबरीं धर्मचारिणीम् ।।1.1.56।। श्रमणीं धर्मनिपुणामभिगच्छेति राघव । 1151",
+              "themes": [
+                "death",
+                "courage",
+                "guidance"
+              ],
+              "translation": "महाबाहु: mightyarmed Rama, तम् that Kabandha, निहत्य having killed, ददाह consigned him to flames, स: he (his soul), स्वर्गतश्च ascended heaven, स च Kabandha (while leaving for heavens), राघव O Raghava,  धर्मचारिणीम् performing religious duties, धर्मनिपुणाम् proficient in practising austerities duties, श्रमणीम् female ascetic, शबरीम् belonging to Sabara community, अभिगच्छ visit her, अस्य to Rama, इति कथयामास informed."
+            }
+          },
+          {
+            "id": "yuddha-kanda-67-161",
+            "score": 0.553514421,
+            "metadata": {
+              "characters": [
+                "rama",
+                "indra"
+              ],
+              "comments": "",
+              "events": [
+                "bow_breaking",
+                "coronation_plan",
+                "agastya_visit",
+                "vali_death",
+                "kumbhakarna_death",
+                "rama_coronation",
+                "arm_cutting"
+              ],
+              "explanation": "Then Rama yoking his bow with an arrow charged with Indra's mantra and decked with gold severed Kumbhakarna's arm which was like coils of serpent and held the palmyra tree.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 67,
+              "shloka": 161,
+              "shloka_text": "स तस्यबाहुंसहतालवृक्षंसमुद्यतंपन्नगभोगकल्पम् । इन्द्रास्त्रयुक्तेनजघानरामोबाणेनजाम्भूनदचित्रितेन ।।6.67.161।।",
+              "themes": [
+                "rajadharma",
+                "divine_weapon",
+                "warrior_skill"
+              ],
+              "translation": "सःरामः that Rama, इन्द्रास्त्रयुक्तेन yoking bow charged with Indra's mantra, जाम्भूनदचित्रितेन decked with gold, बाणेन arrow, तस्य of his, पन्नगभोगकल्पम् like coils of serpent, समुद्यतम् held, सतालवृक्षम् the Palmyra tree, बाहुम् arms, जघान severed."
+            }
+          },
+          {
+            "id": "bala-kanda-42-1",
+            "score": 0.552984238,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "Anshuman performs penance to bring Ganga to the earth-- Bhagiratha follows --receives boon from Brahma--Brahma informs Anshuman that only lord Siva is capable to hold Ganga.",
+              "events": [
+                "coronation_plan",
+                "dasharatha_grief",
+                "vali_death",
+                "kumbhakarna_death",
+                "ravana_death",
+                "rama_coronation",
+                "anshuman_installed_as_king"
+              ],
+              "explanation": "\"O Rama when Sagara died, the subjects installed the highly virtuous Anshuman as king.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 42,
+              "shloka": 1,
+              "shloka_text": "कालधर्मं गते राम सगरे प्रकृतीजना:। राजानं रोचयामासुरंशुमन्तं सुधार्मिकम्।।1.42.1।।",
+              "themes": [
+                "dharma",
+                "rajadharma",
+                "duty_vs_desire",
+                "duty_vs_emotion",
+                "death",
+                "virtue",
+                "leadership"
+              ],
+              "translation": "राम O Rama, सगरे when king Sagara, कालधर्मम् duty of nature, death, गते obtained, प्रकृतीजना: ministers and subjects, सुधार्मिकम् highly virtuous, अंशुमन्तम् Anshuman, राजानम् as king, रोचयामासु: accepted."
+            }
+          },
+          {
+            "id": "yuddha-kanda-129-50",
+            "score": 0.55229187,
+            "metadata": {
+              "characters": [
+                "rama",
+                "lakshmana",
+                "ravana",
+                "kumbhakarna",
+                "nila"
+              ],
+              "comments": "",
+              "events": [
+                "sita_abduction",
+                "vali_death",
+                "kumbhakarna_death",
+                "indrajit_battle",
+                "ravana_death",
+                "key_battle_deaths"
+              ],
+              "explanation": "\"Prahastha was killed by Nila. Rama killed Kumbhakarna. Lakshmana killed Indrajith, the son of Ravana.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 129,
+              "shloka": 50,
+              "shloka_text": "प्रहस्तम्वधीन्नीलःकुम्भकर्णंतुराघवः ।।6.129.50।। लक्ष्मणोरावणसुतंस्वयंरामस्तुरावणम् ।",
+              "themes": [
+                "filial_dharma",
+                "brotherhood",
+                "death",
+                "warfare",
+                "heroism"
+              ],
+              "translation": "नीलः Nila, प्रहस्तम् Prahastha, अवधीत् killed, राघवः Raghava, रामः Rama, कुम्भकर्णम् Kumbhakarna, रावणम् Ravana, स्वयम् himself, लक्ष्मणः Lakshmana, रावणसुतम् Ravana's son"
+            }
+          },
+          {
+            "id": "yuddha-kanda-65-45",
+            "score": 0.55225569,
+            "metadata": {
+              "characters": [
+                "rama",
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "vali_duel",
+                "vali_death",
+                "lanka_entry",
+                "lanka_burning",
+                "ravana_death",
+                "battle_objective"
+              ],
+              "explanation": "\"The root cause of besieging Lanka is Rama and Lakshmana. I will kill them in combat.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 65,
+              "shloka": 45,
+              "shloka_text": "पुररोधस्यमूलंतुराघवस्सहलक्ष्मणः । हतेतस्मिन् हतंसर्वंतंवधिष्यामिसंयुगे ।।6.65.45।।",
+              "themes": [
+                "brotherhood",
+                "war",
+                "death",
+                "revenge",
+                "targeted_elimination"
+              ],
+              "translation": "सहलक्ष्मणः accompanied by Lakshmana, राघवः Raghava, पुररोधस्य be seized, मूलम् root cause, तस्मिन् their, हते killed, सर्वम् all, हतम् killed, संयुगे in combat, तम् them, वधिष्यामि destroy."
+            }
+          },
+          {
+            "id": "aranya-kanda-2-8",
+            "score": 0.551545143,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "dasharatha_grief",
+                "vali_death",
+                "vanara_search",
+                "sita_found",
+                "battle_begins",
+                "kumbhakarna_death",
+                "ravana_death",
+                "rama_coronation",
+                "demon_attack"
+              ],
+              "explanation": "Looking extremely furious, he ran towards Rama, Lakshmana and Sita like the god of death rushes towards the (dying) people.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Aranya Kanda",
+              "kanda_number": 3,
+              "sarga": 2,
+              "shloka": 8,
+              "shloka_text": "स रामं लक्ष्मणं चैव सीतां दृष्ट्वा च मैथिलीम्। अभ्यधावत्सुसङ्कृद्धः प्रजाः काल इवान्तकः।।3.2.8।।",
+              "themes": [
+                "rajadharma",
+                "brotherhood",
+                "anger",
+                "war",
+                "search",
+                "death",
+                "divine",
+                "threat",
+                "protection"
+              ],
+              "translation": "सः that, रामम् Rama, लक्ष्मणं च and Lakshmana, मैथिलीम् princess of Mithila, सीतां च and to Sita, दृष्ट्वा seeing सुसङ्कृद्धः he was with anger, अन्तकः god of death, कालः Yama, प्रजाः इव like the people, अभ्यधावत् ran towards."
+            }
+          },
+          {
+            "id": "yuddha-kanda-67-157",
+            "score": 0.551159859,
+            "metadata": {
+              "characters": [
+                "rama",
+                "kumbhakarna"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "agastya_visit",
+                "kumbhakarna_death",
+                "rama_coronation",
+                "arm_severing"
+              ],
+              "explanation": "Thereupon taking up the weapon of Wind God, Rama discharged on the night ranger and severed his right arm with the mace. His arm torn off, Kumbhakarna made uproarious noise.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 67,
+              "shloka": 157,
+              "shloka_text": "वायव्यमादायततोमहास्त्रंरामःप्रचिक्षेपनिशाचराय । समुद्गरंतेनजघानबाहुं स कृत्तबाहुस्तुमुलंनाद ।।6.67.157।।",
+              "themes": [
+                "dharma",
+                "rajadharma",
+                "justice",
+                "anger",
+                "victory",
+                "divine",
+                "warrior_skill",
+                "battle_injury"
+              ],
+              "translation": "ततः there upon, रामः Rama, वायव्यम् wind god, महास्त्रम् weapon, आदाय taking निशाचराय night ranger, प्रचिक्षेप severed, तेन his, समुद्गरम् with the mace, बाहुम् from arm, जघान torn, कृत्तबाहुः arm cut off, सः he, तुमुलम् uproarious, ननाद noise."
+            }
+          },
+          {
+            "id": "bala-kanda-24-28",
+            "score": 0.549789429,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "tataka_depredations"
+              ],
+              "explanation": "\"O Rama that wicked than Tataka carried on her depredations at regular intervals in these locations, Malada and Karusha.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 24,
+              "shloka": 28,
+              "shloka_text": "इमौ जनपदौ नित्यं विनाशयति राघव। मलदांश्च करूशांश्च ताटका दुष्टचारिणी।।1.24.28।।",
+              "themes": [
+                "wickedness",
+                "destruction"
+              ],
+              "translation": "राघव O Rama, दुष्टचारिणी a woman with wicked deeds, ताटका Tataka, मलदांश्च Malada, करूशांश्च Karusha, इमौ जनपदौ these two townships, नित्यम् always, विनाशयति destroys ."
+            }
+          },
+          {
+            "id": "yuddha-kanda-128-38",
+            "score": 0.549348831,
+            "metadata": {
+              "characters": [
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_abduction",
+                "sugriva_alliance",
+                "vali_death",
+                "ravana_death",
+                "ravan_killing",
+                "mythili_recovery"
+              ],
+              "explanation": "\"Rama killed Ravana and recovered Mythili. He, having accomplished the purpose, is coming with his mighty friends.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 128,
+              "shloka": 38,
+              "shloka_text": "निहत्यरावणंरामःप्रतिलभ्य च मैथिलीम् ।।6.128.38।। उपयातिसमृद्धार्थःसहमित्रैर्महाबलैः ।",
+              "themes": [
+                "death",
+                "victory",
+                "heroism"
+              ],
+              "translation": "रामः Rama, रावणम् Ravana, निहत्य killed, मैथिलीम्Mythili, प्रतिलभ्य recovered, समृद्धार्थः having accomplished the purpose, महाबलैः mighty, मित्रैःसह with friends, उपयाति coming"
+            }
+          },
+          {
+            "id": "aranya-kanda-30-24",
+            "score": 0.549213409,
+            "metadata": {
+              "characters": [],
+              "comments": "",
+              "events": [
+                "jatayu_fight",
+                "vali_death",
+                "lanka_burning",
+                "battle_begins",
+                "ravana_death",
+                "sita_agnipariksha",
+                "weapon_selection"
+              ],
+              "explanation": "Rama took a dart glowing like fire which resembled another Brahmadanda to kill Khara in the war.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Aranya Kanda",
+              "kanda_number": 3,
+              "sarga": 30,
+              "shloka": 24,
+              "shloka_text": "ततः पावकसङ्काशं वधाय समरे शरम्। खरस्य रामो जग्राह ब्रह्मदण्डमिवापरम्।।3.30.24।।",
+              "themes": [
+                "war",
+                "victory",
+                "death",
+                "divine_weapon"
+              ],
+              "translation": "ततः thereafter, रामः Rama, खरस्य Khara's, वधाय to kill, पावकसङ्काशम् glowing like fire, अपरम् इव like another, ब्रह्मदण्डमिव like Brahmadanda, शरम् dart, समरे in war, जग्राह took."
+            }
+          },
+          {
+            "id": "yuddha-kanda-67-153",
+            "score": 0.548624039,
+            "metadata": {
+              "characters": [
+                "rama",
+                "kumbhakarna"
+              ],
+              "comments": "",
+              "events": [
+                "vali_death",
+                "kumbhakarna_death",
+                "arrow_attack"
+              ],
+              "explanation": "On hearing Kumbhakarna's words Rama was bewildered. He discharged plumed arrows at a speed of thunderbolt. Struck by the arrows the enemy of Devatas was not shaken or agonized.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 67,
+              "shloka": 153,
+              "shloka_text": "स कुम्भकर्णस्यवचोनिशम्यरामस्सुपुङ्खान् विससर्जन् । तैराहतोवज्रसमवेगैर्नचुक्षुभे न व्यथतेसुरारिः ।।6.67.153।।",
+              "themes": [
+                "warrior_skill",
+                "battle_resilience"
+              ],
+              "translation": "सःरामः that Rama, कुम्भकर्णस्य Kumbhakarna's, वचः words, निशम्य bewildered, सपुङ्खान् plumed arrows, बाणान् arrows, विससर्ज discharged, वज्रसमवेगैः at the speed of thunderbolt, तैः those, आहतः having been struck, सुरारिः enemy of Devatas, न चुक्षुभे न व्यथते not shaken or agonized."
+            }
+          },
+          {
+            "id": "bala-kanda-1-81",
+            "score": 0.547540665,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "sita_abduction",
+                "vali_death",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "rama_army",
+                "bridge_construction",
+                "battle_begins",
+                "ravana_death",
+                "ravana_killing",
+                "sita_recovery"
+              ],
+              "explanation": "Rama entered the city of Lanka by means of that bridge, killed Ravana in the battle and recovered Sita. Thereafter he felt greatly embarassed (for accepting his wife who had stayed in an others.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 1,
+              "shloka": 81,
+              "shloka_text": "तेन गत्वा पुरीं लङ्कां हत्वा रावणमाहवे । राम: सीतामनुप्राप्य परां व्रीडामुपागमत् ।।1.1.81।।",
+              "themes": [
+                "marriage",
+                "war",
+                "death",
+                "courage",
+                "victory",
+                "dharma"
+              ],
+              "translation": "राम: Rama, तेन through that bridge, लङ्कापुरीं city of Lanka, गत्वा having reached, आहवे in the battle, रावणम् Ravana, हत्वा after slaying, सीताम् Sita, प्राप्य having recovered, अनु thereafter, पराम् great, व्रीडाम् embarassment, उपागमत् experienced (pursuant to her stay in others' house for a long time)."
+            }
+          },
+          {
+            "id": "yuddha-kanda-80-28",
+            "score": 0.547135353,
+            "metadata": {
+              "characters": [
+                "rama",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "kaikeyi_boons",
+                "sita_abduction",
+                "vali_death",
+                "ravana_death",
+                "rama_injury"
+              ],
+              "explanation": "In that conflict, the enraged son of Ravana, pierced all over Rama's limbs, with arrows bestowed to him, which were as effulgent as the Sun.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 80,
+              "shloka": 28,
+              "shloka_text": "स रामंसूर्यसङ्काशैश्शरैर्धत्तवरोर्भृशम् । विव्याधसमरेक्रुद्धःसर्वगात्रेषुरावणिः ।।6.80.28।।",
+              "themes": [
+                "filial_dharma",
+                "duty_vs_desire",
+                "anger",
+                "combat_intensity",
+                "divine_weapons"
+              ],
+              "translation": "समरे in conflict, क्रुद्धःangry, सः he, रावणिः Ravana's son, दत्तवरैःboons bestowed, सूर्यसङ्काशैः effulgent as the sun, शरैः arrows, रामम् on Rama, सर्वगात्रेषु all over the limbs, भृशम् grievously, विव्याध pierced"
+            }
+          }
+        ],
+        "totalRetrieved": 20,
+        "expandedQuery": "The killing of Sambuka occurs in Uttara Kanda, where Rama slays the demon Sambuka, who was performing penance in the guise of a Brahmin. This act was to restore dharma, as Sambuka's penance was deemed improper, disrupting the social order."
+      },
+      "retrieval_latency_ms": 0,
+      "classification_result": {
+        "model": "gpt-4o",
+        "category": "Duty-driven decisions",
+        "category_id": 21,
+        "confidence": 1,
+        "template_selected": "T1"
+      },
+      "classification_latency_ms": 0,
+      "generation_result": {
+        "model": "gpt-4o",
+        "template_used": "T1",
+        "answer": "**Answer:** The killing of Shambuka by Rama is not explicitly detailed in the retrieved citations. The provided verses do not mention Shambuka or provide context regarding incidents involving him. The text mentions other events such as Rama slaying Ravana and other demons [Yuddha-Kanda 128.38], but does not specifically address the incident involving Shambuka. Based on the available text, I cannot find explicit reference to this event.",
+        "citations_in_answer": [
+          "Sundara-Kanda 16.8",
+          "Sundara-Kanda 30.30",
+          "Sundara-Kanda 52.11"
+        ]
+      },
+      "generation_latency_ms": 6711,
+      "total_latency_ms": 16830,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The killing of Shambuka by Rama is not explicitly detailed in the retrieved citations. The provided verses do not mention Shambuka or provide context regarding incidents involving him. The text mentions other events such as Rama slaying Ravana and other demons [Yuddha-Kanda 128.38], but does not specifically address the incident involving Shambuka. Based on the available text, I cannot find explicit reference to this event.",
+        "textualBasis": {
+          "kanda": "Sundara-Kanda",
+          "sarga": [
+            16,
+            30,
+            52
+          ],
+          "shloka": [
+            8,
+            30,
+            11
+          ],
+          "citations": [
+            "Sundara-Kanda 16.8",
+            "Sundara-Kanda 30.30",
+            "Sundara-Kanda 52.11"
+          ]
+        },
+        "explanation": "The retrieved citations focus on various battles and moral justifications of killing sinners, but do not mention Shambuka or the specific reasons for his death at the hands of Rama. Citations discuss the killing of Ravana and other demons, highlighting Rama's prowess and moral justifications for killing those labeled as sinners [Sundara-Kanda 52.11]. Without more specific verses mentioning Shambuka, the text does not provide details on this incident."
+      }
+    },
+    "claude_trace": {
+      "trace_id": "1ea8d5ef-42fd-4dcf-b7c6-b94921e491c5",
+      "timestamp": "2025-12-21T15:34:59.919Z",
+      "user_query": "Why was the killing of Sambuka performed by Rama in Uttara Kanda?",
+      "expanded_query": "The killing of Sambuka is a significant event in Uttara Kanda, where Rama slays Sambuka, a Shudra ascetic, for performing penance improperly and disrupting the social order. This act emphasizes the importance of dharma (righteousness) in Valmiki Ramayana.",
+      "query_expansion_latency_ms": 0,
+      "retrieval_results": {
+        "shlokas": [
+          {
+            "id": "sundara-kanda-16-8",
+            "score": 0.601216316,
+            "metadata": {
+              "characters": [
+                "rama",
+                "indra"
+              ],
+              "comments": "",
+              "events": [
+                "exile_announcement",
+                "viradha_encounter",
+                "shurpanakha",
+                "vali_death",
+                "battle_begins",
+                "ravana_death",
+                "rama_killing_viradha"
+              ],
+              "explanation": "\"Rama  killed Viradha of fearsome valour in the forest like Sambara by Indra.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 16,
+              "shloka": 8,
+              "shloka_text": "विराधश्च हतः सङ्ख्ये राक्षसो भीमविक्रमः। वने रामेण विक्रम्य महेन्द्रेणेव शम्बरः।।5.16.8।।",
+              "themes": [
+                "exile",
+                "war",
+                "death",
+                "heroism",
+                "valor"
+              ],
+              "translation": "वने in the forest, सङ्ख्ये in a war, रामेण by Rama, विक्रम्य by advancing with valour, महेन्द्रेण by Indra, शम्बरः Sambara , इव like, भीमविक्रमः a hero of  fearsome valour, विराधः Viradha, हतः slayed."
+            }
+          },
+          {
+            "id": "yuddha-kanda-95-17",
+            "score": 0.579238892,
+            "metadata": {
+              "characters": [
+                "rama",
+                "vali",
+                "indra"
+              ],
+              "comments": "",
+              "events": [
+                "vali_duel",
+                "vali_death",
+                "ravana_death",
+                "vali_killing"
+              ],
+              "explanation": "\"Mighty Rama killed the son of thousand eyed Indra, Vali, who resembled mountain Meru. That example is sufficient proof.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 95,
+              "shloka": 17,
+              "shloka_text": "जघानबलिनंरामस्सहस्रनयनात्मजम् । वालिनंमेरुसङ्काशंपर्याप्तंतन्निदर्शनम् ।।6.95.17।।",
+              "themes": [
+                "filial_dharma",
+                "death",
+                "divine_justice",
+                "heroism",
+                "strength"
+              ],
+              "translation": "रामः Rama, बलिनम्mighty, सहस्रनयनात्मजम् son of thousand eyed Indra, मेरुसङ्काशम् resembled mountain Meru, वालिनम् Vali, जघान killed, तत् that, पर्याप्तम् sufficient, निदर्शनम् example"
+            }
+          },
+          {
+            "id": "sundara-kanda-52-11",
+            "score": 0.576566696,
+            "metadata": {
+              "characters": [],
+              "comments": "",
+              "events": [
+                "vali_death",
+                "vanara_search",
+                "rama_army",
+                "ravana_death",
+                "sinner_killing_decision"
+              ],
+              "explanation": "\"O slayer of foes it is not wrong to kill a sinner. I shall, therefore, kill the sinful vanara.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 52,
+              "shloka": 11,
+              "shloka_text": "न पापानां वधे पापं विद्यते शत्रुसूदन। तस्मादेनं वधिष्यामि वानरं पापचारिणम्।।5.52.11।।",
+              "themes": [
+                "justice",
+                "death",
+                "sin"
+              ],
+              "translation": "शत्रुसूदन O slayer of foes, पापानाम् of sinners, वधे in killing, पापम् sin, न विद्यते not incurred, तस्मात् so, पापचारिणम् this sinner, एनम् him, वानरम् vanara, वधिष्यामि will slay."
+            }
+          },
+          {
+            "id": "bala-kanda-38-24",
+            "score": 0.575465202,
+            "metadata": {
+              "characters": [
+                "rama",
+                "valmiki"
+              ],
+              "comments": "",
+              "events": [
+                "narada_visit",
+                "agastya_visit",
+                "battle_begins",
+                "sacrifice_preparation"
+              ],
+              "explanation": "O Rama having determined to perform a sacrifice, he (Sagara) versed in the Vedas, started the initiatory rites for the sacrifice in the company of high priests\". इत्यार्षे श्रीमद्रामायणे वाल्मीकीय आदिकाव्ये बालकाण्डे अष्टात्रिंशस्सर्ग: 2 Thus ends the thirtyeighth sarga of Balakanda of the holy Ramayana the first epic composed by sage Valmiki.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 38,
+              "shloka": 24,
+              "shloka_text": "स कृत्वा निश्चयं राम सोपाध्यायगणस्तदा।।1.38.24।। यज्ञकर्मणि वेदज्ञो यष्टुं समुपचक्रमे।",
+              "themes": [
+                "sacrifice",
+                "ritual",
+                "devotion"
+              ],
+              "translation": "राम O Rama, तदा then, वेदज्ञ: wellversed in vedas, स: he, सोपाध्यायगण: in the company of high priests, यज्ञकर्मणि initiatory rites relating to sacrifice, निश्चयम् determination, कृत्वा having made, यष्टुम् to perform sacrifice, समुपचक्रमे commenced."
+            }
+          },
+          {
+            "id": "bala-kanda-24-18",
+            "score": 0.575171471,
+            "metadata": {
+              "characters": [
+                "rama",
+                "indra"
+              ],
+              "comments": "",
+              "events": [
+                "vali_death",
+                "ravana_death",
+                "sita_agnipariksha",
+                "indra_sin"
+              ],
+              "explanation": "O Rama, in ancient times after killing Vritrasura, Indra was overpowered by the sin of slaying a brahmin and was affected by impurity and hunger.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 24,
+              "shloka": 18,
+              "shloka_text": "पुरा वृत्रवधे राम मलेन समभिप्लुतम्। क्षुधा चैव सहस्राक्षं ब्रह्महत्या समाविशत्।।1.24.18।।",
+              "themes": [
+                "death",
+                "divine_consequences",
+                "spiritual_purification"
+              ],
+              "translation": "राम O Rama, पुरा in ancient times, वृत्रवधे at the time of destruction of Vritrasura, मलेन by impurity, क्षुधा चैव by hunger also, समभिप्लुतम् overpowered, सहस्राक्षम् Indra, ब्रह्महत्या sin arising out of slaying Brahmin, समाविशत्  attacked."
+            }
+          },
+          {
+            "id": "yuddha-kanda-30-29",
+            "score": 0.566253662,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "dasharatha_grief",
+                "viradha_encounter",
+                "vali_death",
+                "kumbhakarna_death",
+                "ravana_death",
+                "demon_killing"
+              ],
+              "explanation": "\"Viradha and even Kabhanda who was like the Lord of death were killed by Rama. Perhaps there is none equal to Rama in valour in this world.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 30,
+              "shloka": 29,
+              "shloka_text": "नास्तिरामस्यसदृशोविक्रमेभुविकश्चन । विराधोनिहतोयेनकबन्धश्चान्तकोपमः ।।6.30.29।।",
+              "themes": [
+                "death",
+                "rama_heroism",
+                "divine_valor"
+              ],
+              "translation": "येन by whom, विराध Viradha, निहत was killed, अन्तकोपम one like Lord of death, कबन्धश्च even Kabhanda, रामस्य Rama's, विक्रमे by valour, सदृश equal, कश्चन perhaps, भूवि in this world, नास्ति not."
+            }
+          },
+          {
+            "id": "yuddha-kanda-42-47",
+            "score": 0.565623343,
+            "metadata": {
+              "characters": [
+                "valmiki"
+              ],
+              "comments": "",
+              "events": [
+                "narada_visit",
+                "agastya_visit",
+                "vanara_search",
+                "rama_army",
+                "battle_conclusion",
+                "intense_conflict"
+              ],
+              "explanation": "The conflict that happened between the Rakshasas and Vanaras was amazing and intense and left a mire of flesh and blood. ।। इत्यार्षेश्रीमद्वाल्मीकिरामायणेआदिकाव्येयुद्धकाण्डेद्विचत्वारिंशस्सर्गः ।। This is the end of the forty second sarga of Yuddha Kanda of the first epic the holy Ramayana composed by sage Valmiki.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 42,
+              "shloka": 47,
+              "shloka_text": "ससम्प्रहारस्तुमुलोमांसशोणितकर्दमः । रक्षसांवानराणांचसम्बभूवाद्भुतोपमाः।।6.42.47।।",
+              "themes": [
+                "duty_vs_desire",
+                "brutality_of_war",
+                "bloodshed"
+              ],
+              "translation": "स that, सम्प्रहार conflict, रक्षसां of Rakshasas, वानराणांच and Vanaras, तमुलो intense, मांस flesh, शोणित blood, कर्दमः like mire, सम्बभूवा that happened, अद्भुतोपमाः was amazing."
+            }
+          },
+          {
+            "id": "bala-kanda-66-2",
+            "score": 0.564941406,
+            "metadata": {
+              "characters": [
+                "rama",
+                "lakshmana",
+                "janaka"
+              ],
+              "comments": "",
+              "events": [
+                "bow_breaking",
+                "sita_marriage",
+                "paying_respects"
+              ],
+              "explanation": "The virtuous Janaka paid respects to Viswamitra and the highsouled Rama and Lakshmana in accordance with the sastras and spoke:",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 66,
+              "shloka": 2,
+              "shloka_text": "तमर्चयित्वा धर्मात्मा शास्त्रदृष्टेन कर्मणा। राघवौ च महात्मानौ तदा वाक्यमुवाच ह।।1.66.2।।",
+              "themes": [
+                "filial_dharma",
+                "brotherhood",
+                "honor",
+                "virtue",
+                "scriptural_adherence"
+              ],
+              "translation": "धर्मात्मा virtuous Janaka, तम् that, Visvamitra, महात्मानौ magnanimous, राघवौ च Rama and Lakshmana, शास्त्रदृष्टेन in accordance with scriptures, कर्मणा acts, अर्चयित्वा having paid homage, तदा then, वाक्यम् words, उवाच ह spoke."
+            }
+          },
+          {
+            "id": "yuddha-kanda-8-24",
+            "score": 0.564264297,
+            "metadata": {
+              "characters": [
+                "rama",
+                "lakshmana",
+                "hanuman",
+                "valmiki",
+                "sugriva",
+                "angada"
+              ],
+              "comments": "",
+              "events": [
+                "narada_visit",
+                "agastya_visit",
+                "meet_hanuman",
+                "sugriva_alliance",
+                "vali_duel",
+                "vali_death",
+                "vanara_search",
+                "rama_army",
+                "ravana_death",
+                "battle_challenge"
+              ],
+              "explanation": "\"I alone will kill that Rama with Lakshmana, Sugriva, that Angada, Hanuman and the Vanara army.\" ।।इत्यार्षेवाल्मीकीयेश्रीमद्रामायणेआदिकाव्येयुद्धकाण्डेअष्टमस्सर्गः।। This is the end of the eighth sarga of Yuddha Kanda of the first epic the holy Ramayana composed by sage Valmiki.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 8,
+              "shloka": 24,
+              "shloka_text": "अहमेकोवधिष्यामिसुग्रीवंसहलक्ष्मणम् । साङ्गदंचहनूमन्तंरामंचरणकुञ्जरम् ।।6.8.24।।",
+              "themes": [
+                "brotherhood",
+                "death",
+                "warrior_boasting",
+                "aggression"
+              ],
+              "translation": "अहम् I, एकः alone, सहलक्ष्मणम् with Lakshmana, सुग्रीवम् and Sugriva, साङ्गदम् that Angada, हनूमन्तम् Hanuman, रणकुञ्जरम् army, रामम् च: and Rama, वधिष्यामि: will kill."
+            }
+          },
+          {
+            "id": "yuddha-kanda-101-10",
+            "score": 0.564240456,
+            "metadata": {
+              "characters": [
+                "rama",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "sita_abduction",
+                "ravana_death",
+                "rama_coronation",
+                "ravana_arrow_attack"
+              ],
+              "explanation": "Rakshasa king, frustrated on seeing the missiles, pierced Rama in his private parts with shafts.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 101,
+              "shloka": 10,
+              "shloka_text": "तदस्त्रंतुहतंदृष्टवारावणोराक्षसाधिपः । विव्याथदशभिर्बाणैरामंसर्वेषुमर्मसु ।।6.101.10।।",
+              "themes": [
+                "rajadharma",
+                "frustration",
+                "violence"
+              ],
+              "translation": "राक्षसाधिपः Rakshasa king, रावणः Ravana, तत् that, अस्त्रम् missile, हतम् frustrated, दृष्टवा seeing, दशभिः ten, बाणैः shafts, रामम् at Rama, सर्वेषु all sides, मर्मसु private parts, विव्याध pierced"
+            }
+          },
+          {
+            "id": "sundara-kanda-58-148",
+            "score": 0.564209,
+            "metadata": {
+              "characters": [
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_abduction",
+                "vali_death",
+                "ravana_death",
+                "emissary_protection"
+              ],
+              "explanation": "'O Ravana of immeasurable courage even if the emissary has done any kind of harm he may be mutilated but not murdered. Nowhere do the sastras allow killing (of an ambassador).",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 58,
+              "shloka": 148,
+              "shloka_text": "सुमहत्यपराधेऽपि दूतस्यातुलविक्रमः। विरूपकरणं दृष्टं न वधोऽस्तीति शास्त्रतः।।5.58.148।।",
+              "themes": [
+                "courage",
+                "anger",
+                "death",
+                "dharma",
+                "justice"
+              ],
+              "translation": "अतुलविक्रमः one of immeasureable courage, सुमहति any kind, अपराधेऽपि harm done, दूतस्य at emissary, विरूपकरणम् may be mutilated, दृष्टम् seen, शास्त्रतः in the sastras,वधः killing,नास्ति not there."
+            }
+          },
+          {
+            "id": "yuddha-kanda-67-124",
+            "score": 0.563916206,
+            "metadata": {
+              "characters": [
+                "rama",
+                "kumbhakarna"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "dasharatha_grief",
+                "vali_death",
+                "battle_begins",
+                "kumbhakarna_death",
+                "ravana_death",
+                "kumbhakarna_hurls_mountain",
+                "rama_defends"
+              ],
+              "explanation": "Thereupon, Kumbhakarna endowed with terrific valour like God of Death hurled towards Rama a mountain peak whirling it round which split.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 67,
+              "shloka": 124,
+              "shloka_text": "अथशृङ्गंसमाविध्यभीमंभीमपराक्रमः । चिक्षेपराममुद्धिश्यबलवानन्तकोपमः ।।6.67.124।।",
+              "themes": [
+                "war",
+                "death",
+                "divine",
+                "valour",
+                "battle"
+              ],
+              "translation": "अथ and then, भीमपराक्रमः endowed with terrific valour, बलवान् strong, अन्तकोपमः like god of death, भीमम् terrible, शृङ्गम् mountain peak, समाविध्य whirling round, रामम् to Rama, उद्धिश्य hurled, चिक्षेप split."
+            }
+          },
+          {
+            "id": "bala-kanda-2-43",
+            "score": 0.563018799,
+            "metadata": {
+              "characters": [
+                "rama",
+                "ravana",
+                "valmiki"
+              ],
+              "comments": "",
+              "events": [
+                "narada_visit",
+                "agastya_visit",
+                "sita_abduction",
+                "vali_death",
+                "ravana_death",
+                "epic_completion"
+              ],
+              "explanation": "This story of Rama and the killing of Ravana composed by the sage consists of compound words, melodious sandhis and lines composed in lucid, melodious and meaningful  phrases. Listen to it. इत्यार्षे श्रीमद्रामायणे वाल्मीकीय आदिकाव्ये बालकाण्डे द्वितीयस्सर्ग:।। Thus ends the second sarga of Balakanda of the holy Ramayana in synopsis of the first epic composed by sage Valmiki.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 2,
+              "shloka": 43,
+              "shloka_text": "तदुपगतसमाससन्धियोगं सममधुरोपनतार्थवाक्यबद्धम् । रघुवरचरितं मुनिप्रणीतं दशशिरसश्च वधं निशामयध्वम् ।।1.2.43।।",
+              "themes": [
+                "death",
+                "literary_artistry",
+                "narrative_composition"
+              ],
+              "translation": "उपगतसमाससन्धियोगम् united with samasas (compound words, phrases), sandhis (pleasing conjunctions of words), सममधुरोपनतार्थवाक्यबद्धम् sentences composed of lucid, melodious and meaningful phrases, मुनिप्रणीतम् composed by ascetic Valmiki, रघुवरचरितम् history of Rama, दशशिरस: of the tenheaded Ravana, वधं च slaying, निशामयध्वम् you may listen."
+            }
+          },
+          {
+            "id": "sundara-kanda-42-43",
+            "score": 0.562921524,
+            "metadata": {
+              "characters": [
+                "valmiki"
+              ],
+              "comments": "",
+              "events": [
+                "narada_visit",
+                "coronation_plan",
+                "viradha_encounter",
+                "agastya_visit",
+                "vali_death",
+                "rama_army",
+                "battle_begins",
+                "ravana_death",
+                "rama_coronation",
+                "ravana_response",
+                "army_destruction"
+              ],
+              "explanation": "The mighty demon king having heard about the killing of the formidable army of ogres, his eyes rolling in rage, commanded the son of Prahasta, who is difficult to conquer and matchless in war. इत्यार्षे श्रीमद्रामायणे वाल्मीकीय आदिकाव्ये सुन्दरकाण्डे द्विचत्वारिंशस्सर्गः।। Thus ends the fortysecond sarga of Sundarakanda of the holy Ramayana, the first epic composed by sage Valmiki.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 42,
+              "shloka": 43,
+              "shloka_text": "स राक्षसानां निहतं महद्बलं निशम्य राजा परिवृत्तलोचनः। समादिदेशाप्रतिमं पराक्रमे प्रहस्तपुत्रं समरे सुदुर्जयम्।।5.42.43।।",
+              "themes": [
+                "rajadharma",
+                "filial_dharma",
+                "anger",
+                "war",
+                "death",
+                "rage",
+                "leadership"
+              ],
+              "translation": "स he, राजा king, राक्षसानाम् of ogres, महत् mighty, बलम् army, निहतम् killed, निशम्य after hearing, परिवृत्तलोचनः with his eyes rolling, पराक्रमे in valour, अप्रतिमम् matchless, समरे in war, सुदुर्जयम् difficult to conquer, प्रहस्तपुत्रम् son of Prahasta, समादिदेश commanded."
+            }
+          },
+          {
+            "id": "yuddha-kanda-129-50",
+            "score": 0.561878204,
+            "metadata": {
+              "characters": [
+                "rama",
+                "lakshmana",
+                "ravana",
+                "kumbhakarna",
+                "nila"
+              ],
+              "comments": "",
+              "events": [
+                "sita_abduction",
+                "vali_death",
+                "kumbhakarna_death",
+                "indrajit_battle",
+                "ravana_death",
+                "key_battle_deaths"
+              ],
+              "explanation": "\"Prahastha was killed by Nila. Rama killed Kumbhakarna. Lakshmana killed Indrajith, the son of Ravana.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 129,
+              "shloka": 50,
+              "shloka_text": "प्रहस्तम्वधीन्नीलःकुम्भकर्णंतुराघवः ।।6.129.50।। लक्ष्मणोरावणसुतंस्वयंरामस्तुरावणम् ।",
+              "themes": [
+                "filial_dharma",
+                "brotherhood",
+                "death",
+                "warfare",
+                "heroism"
+              ],
+              "translation": "नीलः Nila, प्रहस्तम् Prahastha, अवधीत् killed, राघवः Raghava, रामः Rama, कुम्भकर्णम् Kumbhakarna, रावणम् Ravana, स्वयम् himself, लक्ष्मणः Lakshmana, रावणसुतम् Ravana's son"
+            }
+          },
+          {
+            "id": "bala-kanda-65-1",
+            "score": 0.561377525,
+            "metadata": {
+              "characters": [],
+              "comments": "Satananda completes his narration of how Viswamitra attains Brahmarshi status.",
+              "events": [
+                "viswamitra_austerities"
+              ],
+              "explanation": "\"O Rama thereafter the great ascetic (Viswamitra), abandoning the north of the Himavat mountain reached the eastern quarter and performed rigorous austerities.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 65,
+              "shloka": 1,
+              "shloka_text": "अथ हैमवतीं राम दिशं त्यक्त्वा महामुनि:। पूर्वां दिशमनुप्राप्य तपस्तेपे सुदारुणम्।।1.65.1।।",
+              "themes": [
+                "sacrifice",
+                "dedication",
+                "spirituality"
+              ],
+              "translation": "राम O Rama, अथ thereafter, महामुनि: great ascetic Visvamitra, हैमवतीम् relating to Himavat mountain, दिशम् quarter, त्यक्त्वा abandoning, पूर्वां दिशम् eastern quarter, अनुप्राप्य having reached, सुदारुणम् rigorous, तप: austerities, तेपे performed."
+            }
+          },
+          {
+            "id": "bala-kanda-26-23",
+            "score": 0.560343802,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "vali_death",
+                "ravana_death",
+                "rama_attacks"
+              ],
+              "explanation": "Addressed thus (by Viswamitra), Rama attacked her exhibiting his skill in targetting her by the sound and prevented with arrows the yakshini from showering  stones.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 26,
+              "shloka": 23,
+              "shloka_text": "इत्युक्तस्तु तदा यक्षी अश्मवृष्ट्याभिवर्षतीम्।।1.26.23।। दर्शयन् शब्दवेधित्वं तां रुरोध स सायकै:।",
+              "themes": [
+                "death",
+                "skill",
+                "defense"
+              ],
+              "translation": "इति in this manner, उक्त: addressed, स: Rama, तदा then, शब्दवेधित्वम् skill in targetting the object by the sound, दर्शयन् exhibiting, अश्मवृष्ट्या with rain of stones, अभिवर्षतीम् showering, ताम् यक्षीम् that yakshi, सायकै: with arrows, रुरोध prevented."
+            }
+          },
+          {
+            "id": "yuddha-kanda-101-43",
+            "score": 0.559073448,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "lanka_entry",
+                "battle_begins",
+                "rama_pulling_out_javelin"
+              ],
+              "explanation": "It pierced through Lakshmana's body and entered into the earth. Mighty Rama held the terrific javelin with both hands bent it and removed in the course of struggle.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 101,
+              "shloka": 43,
+              "shloka_text": "सौमित्रिंसाविनिर्भिद्यप्रविष्टाधरणीतलम् । तांकराभ्यांपरामृश्यरामःशक्तिंभयावहाम् ।।6.101.43।। बभञ्जसमरेक्रुद्धोबलवान्विचकर्ष च ।",
+              "themes": [
+                "brotherhood",
+                "anger",
+                "war",
+                "strength",
+                "heroism"
+              ],
+              "translation": "सा that, सौमित्रि: Saumithri, विनिर्भिद्य piercing through, धरणीतलम् the ground, प्रविष्टा entered, बलवान् mighty, रामः Rama, समरे in battle, क्रुद्धः enraged, भयापहाम् terrific, तांशक्तिम् that javelin, कराभ्याम् with both hands, परामृश्य bending it, विचकर्ष in the course of struggle, बभञ्ज च removed"
+            }
+          },
+          {
+            "id": "yuddha-kanda-67-161",
+            "score": 0.556963861,
+            "metadata": {
+              "characters": [
+                "rama",
+                "indra"
+              ],
+              "comments": "",
+              "events": [
+                "bow_breaking",
+                "coronation_plan",
+                "agastya_visit",
+                "vali_death",
+                "kumbhakarna_death",
+                "rama_coronation",
+                "arm_cutting"
+              ],
+              "explanation": "Then Rama yoking his bow with an arrow charged with Indra's mantra and decked with gold severed Kumbhakarna's arm which was like coils of serpent and held the palmyra tree.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 67,
+              "shloka": 161,
+              "shloka_text": "स तस्यबाहुंसहतालवृक्षंसमुद्यतंपन्नगभोगकल्पम् । इन्द्रास्त्रयुक्तेनजघानरामोबाणेनजाम्भूनदचित्रितेन ।।6.67.161।।",
+              "themes": [
+                "rajadharma",
+                "divine_weapon",
+                "warrior_skill"
+              ],
+              "translation": "सःरामः that Rama, इन्द्रास्त्रयुक्तेन yoking bow charged with Indra's mantra, जाम्भूनदचित्रितेन decked with gold, बाणेन arrow, तस्य of his, पन्नगभोगकल्पम् like coils of serpent, समुद्यतम् held, सतालवृक्षम् the Palmyra tree, बाहुम् arms, जघान severed."
+            }
+          },
+          {
+            "id": "yuddha-kanda-29-3",
+            "score": 0.556883872,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "Ravana rebukes the spies, Suka and Saarana from the Rakshasa army for praising Vanara army and sends Saardula, another spy who also reports about the strength of Vanara army.",
+              "events": [
+                "bow_breaking",
+                "coronation_plan",
+                "sita_abduction",
+                "meet_hanuman",
+                "sugriva_alliance",
+                "vali_duel",
+                "vali_death",
+                "vanara_search",
+                "ocean_crossing",
+                "rama_army",
+                "bridge_construction",
+                "ravana_death",
+                "rama_coronation",
+                "army_inspection"
+              ],
+              "explanation": "There after Ravana having heard the words spoken by Suka about the army of Vanara heroes, seeing Lakshmana of extraordinary valour, the right shoulder of Rama standing close by Rama his own brother Vibheeshana close by  the king of Vanaras, Sugriva of fierce valour and Angada the son of Vali (the son of Indra who wields thunderbolt)  and valiant Hanuman Jambavan who is difficult to conquer Sushena, Nila, Kumuda, bull among the leaping animals Nala likewise Gaja, Gavaksha, Sarabha, Mainda and Dwivida got a little broken hearted and mixed with fury started to rebuke both the heroes Suka and Saarana.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 29,
+              "shloka": 3,
+              "shloka_text": "शुकेनतुसमाख्यातान्दृष्ट्वासहरियूथपान् । समीपस्थंचरामस्यभ्रातरंस्वंविभीषणम् ।।6.29.1।। लक्ष्मणंचमहावीर्यंभुजंरामस्यदक्षिणं । सर्ववानरराजंचसुग्रीवंभीमविक्रमम् ।।6.29.2।। अङ्गदंचापिबलिनंवज्रहस्तात्मजात्मजम् । हनूमन्तंचविक्रान्तंजाम्बवन्तंचदुर्जयम् ।।6.29.3।। सुषेणंकुमुदंनीलंनलंचप्लवगर्षभम् । गजंगवाक्षंशरभंमैन्दंचद्विविदंतथा ।।6.29.4।। किञ्चिदाविग्नहृदयोजातक्रोधश्चरावणः । भर्त्सयामासतौवीरौकथान्तेशुकसारणौ ।।6.29.5।।",
+              "themes": [
+                "dharma",
+                "rajadharma",
+                "filial_dharma",
+                "brotherhood",
+                "justice",
+                "anger",
+                "valor",
+                "leadership"
+              ],
+              "translation": "सःरावण that Ravana, शुकेन by Suka, समाख्यातान् spoken that way, हरियूथपान् about the army of monkeys, रामस्य Rama's, दक्षिणंभुजम् right shoulder, महावीर्यम् extraordinary valour, लक्ष्मणंच at Lakshmana, रामस्य Rama's, समीपस्थम् close by, भ्रातरम् the brother, विभीषणम् Vibheeshana, सर्ववानरराजम् King of all Vanaras, भीमविक्रमम् one of fierce valour, सुग्रीवंच Sugriva, बलिनम् the strong, वज्रहस्तात्मजात्मजम् the son of Vali (son of Indra who wields a thunderbolt ), अङ्गदंचापि and also Angada, विक्रान्तम् the valiant, हनूमन्तम् Hanuman, दुर्जयम् difficult to conquer, जाम्बवन्तम् Jambavan, सुषेणम् Sushena, कुमुदम् Kumuda, नीलम् Nila, प्लवगर्षभम् bull among leaping ones, नलंच that Nala, गजम् Gaja, गवाक्षम् at Gavaksha, शरभम् Sarabha, मैन्दम् Mainda, तथा likewise, द्विविदम् Dwiv i da, दृष्टवा seeing, किञ्चित् a little, आविग्नहृदय broken hearted, जातक्रोधश्च with fury, कथांते aforesaid, वीरौ heroes, तौ both, शुकसारणौ Suka and Saarana, भर्त्सयामास started to rebuke."
+            }
+          }
+        ],
+        "totalRetrieved": 20,
+        "expandedQuery": "The killing of Sambuka is a significant event in Uttara Kanda, where Rama slays Sambuka, a Shudra ascetic, for performing penance improperly and disrupting the social order. This act emphasizes the importance of dharma (righteousness) in Valmiki Ramayana."
+      },
+      "retrieval_latency_ms": 0,
+      "classification_result": {
+        "model": "gpt-4o",
+        "category": "Consequences of adharma",
+        "category_id": 32,
+        "confidence": 1,
+        "template_selected": "T1"
+      },
+      "classification_latency_ms": 0,
+      "generation_result": {
+        "model": "gpt-4o",
+        "template_used": "T1",
+        "answer": "**Answer:** The killing of Sambuka by Rama is not directly mentioned in the provided citations. However, the text frequently addresses the justification for killing sinners, such as in a situation where it is stated that there is no sin in the killing of those who commit sins [Sundara Kanda 52.11]. Furthermore, the text alludes to actions and decisions guided by dharma and the accordance with scripture [Bala Kanda 66.2]. These principles suggest a pattern where killing is justified within the rules of dharma as understood by the text.",
+        "citations_in_answer": [
+          "Sundara Kanda 52.11",
+          "Bala Kanda 66.2"
+        ]
+      },
+      "generation_latency_ms": 20606,
+      "total_latency_ms": 29272,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The killing of Sambuka by Rama is not directly mentioned in the provided citations. However, the text frequently addresses the justification for killing sinners, such as in a situation where it is stated that there is no sin in the killing of those who commit sins [Sundara Kanda 52.11]. Furthermore, the text alludes to actions and decisions guided by dharma and the accordance with scripture [Bala Kanda 66.2]. These principles suggest a pattern where killing is justified within the rules of dharma as understood by the text.",
+        "textualBasis": {
+          "kanda": "Sundara Kanda",
+          "sarga": [
+            52
+          ],
+          "shloka": [
+            11
+          ],
+          "citations": [
+            "Sundara Kanda 52.11",
+            "Bala Kanda 66.2"
+          ]
+        },
+        "explanation": "The Sundara Kanda states that there is no sin in killing a sinner as per the text's understanding of dharma [Sundara Kanda 52.11]. Bala Kanda illustrates adherence to dharma and scriptural guidance in sacred acts [Bala Kanda 66.2]. Therefore, while the specific event of Sambuka's killing is not mentioned, the broader context within the text provides justification principles.",
+        "whatTextStates": "The text states that there is no sin in the killing of sinners [Sundara Kanda 52.11] and emphasizes actions in accordance with scriptures [Bala Kanda 66.2].",
+        "traditionalInterpretations": "Traditional interpretations often view Rama's adherence to dharma as crucial, and his actions are generally understood within the framework of dharma as illustrated in the text.",
+        "limitOfCertainty": "Based on the citations, the killing of Sambuka is not explicitly detailed in the text.",
+        "outOfScopeNotice": "The provided citations do not detail the killing of Sambuka or its specific moral reasoning.",
+        "why": "The question addresses the killing of Sambuka, which is not explicitly mentioned in the retrieved excerpts; however, broader principles of dharma are addressed, which might contextualize similar actions.",
+        "redirect": {
+          "introduction": "For details on actions justified by dharma, consider looking into sections that discuss scriptural adherence and ethical conduct.",
+          "alternatives": [
+            "Examples of dharma adherence in killing sinners",
+            "Consequences of adharmic acts"
+          ]
+        },
+        "whatICanHelpWith": [
+          "Providing textual examples of dharma",
+          "Explaining justifications for actions according to the text"
+        ]
+      }
+    }
+  }
+]

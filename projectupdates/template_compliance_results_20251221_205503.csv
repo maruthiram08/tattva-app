@@ -1,0 +1,27 @@
+index,user_query,system_model,assigned_template,structural_result,semantic_result,overall_compliance,failures,summary
+10,How did Rama identify Luv and Kush?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>
+<evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Answer Section: PASS - Clear ""Answer:"" section present.
+- Citation Requirement: PASS - The text states ""no mention"" which allows for 0 citations.
+- Citations Section: PASS - Explicitly states ""Citations: None""
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+- Claim: ""The text does not explicitly state how Rama identified Luv and Kush. Based on the available text, there is no mention of such an event in the provided citations.""
+- Citation: None
+- Shloka text: N/A
+- Judgment: SUPPORTED - Since the text explicitly denies the presence of this information and correctly cites ""None.""
+
+**Semantic Result:** PASS
+
+**Overall Compliance:** PASS
+
+**Summary:** The answer correctly states that the provided database does not contain information about how Rama identified Luv and Kush, thus complying with T1 template.
+
+**Failures:** None
+</evaluation_results>","The response adheres to the T1 template requirements by providing a clear answer, explicitly stating the absence of the requested information within the provided context, and including an empty citation section. The claims are supported by the absence of evidence in the shloka database, thus no semantic violation."

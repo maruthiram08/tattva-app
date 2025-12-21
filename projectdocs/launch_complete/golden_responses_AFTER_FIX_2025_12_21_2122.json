@@ -1,0 +1,2042 @@
+[
+  {
+    "index": 1,
+    "user_query": "Did Hanuman burn Lanka before or after meeting Vibhishana?",
+    "classification": "Timeline sequencing",
+    "expected_template": "T1",
+    "openai": {
+      "status": "OK",
+      "template_used": "T1",
+      "answer": "**Answer:** Based on the provided text, Hanuman burned Lanka after meeting Vibhishana. The text mentions that Hanuman set fire to Lanka and saw it engulfed in flames, with its inhabitants in distress [Sundara Kanda 54.42]. Before setting fire to Lanka, Hanuman meets Vibhishana during his mission in Lanka as part of his reconnaissance for Rama [Yuddha Kanda 115.10]. Therefore, the act of burning takes place following his interactions, including with Vibhishana.",
+      "whatTextStates": "The text describes Hanuman setting Lanka on fire after having met Vibhishana, indicating sequence within his mission.",
+      "citations": [
+        "[Yuddha Kanda 115.10]",
+        "[Sundara Kanda 54.42]"
+      ],
+      "citation_count": 2,
+      "has_inline_citations": true,
+      "answer_citations": 2,
+      "wts_citations": 0,
+      "textual_basis_citations": [
+        "Sundara Kanda 54.42",
+        "Yuddha Kanda 115.10"
+      ],
+      "retrieved_count": 25,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** Based on the provided text, Hanuman burned Lanka after meeting Vibhishana. The text mentions that Hanuman set fire to Lanka and saw it engulfed in flames, with its inhabitants in distress [Sundara Kanda 54.42]. Before setting fire to Lanka, Hanuman meets Vibhishana during his mission in Lanka as part of his reconnaissance for Rama [Yuddha Kanda 115.10]. Therefore, the act of burning takes place following his interactions, including with Vibhishana.",
+        "textualBasis": {
+          "kanda": "Sundara-Kanda",
+          "sarga": [
+            54,
+            55
+          ],
+          "shloka": [
+            42,
+            1
+          ],
+          "citations": [
+            "Sundara Kanda 54.42",
+            "Yuddha Kanda 115.10"
+          ]
+        },
+        "explanation": "The citations indicate that Hanuman observed Lanka in distress after setting it on fire [Sundara Kanda 54.42]. Before this event, Vibhishana is referenced in the context of meetings in Lanka, implying his presence during Hanuman's reconnaissance [Yuddha Kanda 115.10]. Thus, the burning follows these interactions.",
+        "whatTextStates": "The text describes Hanuman setting Lanka on fire after having met Vibhishana, indicating sequence within his mission.",
+        "traditionalInterpretations": "Traditionally, Hanuman's burning of Lanka is seen as an act of retribution and demonstration of his power, often highlighting Vibhishana's role as an ally before this event.",
+        "limitOfCertainty": "The text only confirms sequence within the described events without linking specific meetings to immediate actions.",
+        "outOfScopeNotice": "The broader context or motivations beyond the cited text are beyond scope.",
+        "why": "To determine sequence, the text directly linking Hanuman's actions with the burning of Lanka was used, situating Vibhishana's interaction logically prior.",
+        "redirect": {
+          "introduction": "For more on Vibhishana's role, explore other contexts in the Ramayana.",
+          "alternatives": [
+            "Events involving Hanuman and Vibhishana",
+            "Reactions of Lanka's inhabitants to Hanuman"
+          ]
+        },
+        "whatICanHelpWith": [
+          "Understanding Hanuman's mission in Lanka",
+          "Role of Vibhishana in the Ramayana",
+          "Event sequencing in Sundara-Kanda"
+        ]
+      }
+    },
+    "claude": {
+      "status": "OK",
+      "template_used": "T1",
+      "answer": "**Answer:** The text describes that Hanuman burnt Lanka after talking to Vibhishana. In the Sundara Kanda, it is mentioned that Hanuman set fire to Lanka [Sundara-Kanda 54.42]. Additionally, Sundara Kanda explicitly mentions Hanuman expressing self-reproach after burning Lanka [Sundara-Kanda 55.2]. However, there are no retrieved citations that specifically describe Hanuman meeting Vibhishana before the burning. Thus, the provided texts do not explicitly clarify the exact sequence regarding Hanuman meeting Vibhishana before or after burning Lanka, and do not explicitly mention a meeting with Vibhishana in this context.",
+      "whatTextStates": "",
+      "citations": [
+        "[Sundara-Kanda 55.2]",
+        "[Sundara-Kanda 54.42]"
+      ],
+      "citation_count": 2,
+      "has_inline_citations": true,
+      "answer_citations": 2,
+      "wts_citations": 0,
+      "textual_basis_citations": [
+        "Sundara-Kanda 54.42",
+        "Sundara-Kanda 55.2"
+      ],
+      "retrieved_count": 25,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The text describes that Hanuman burnt Lanka after talking to Vibhishana. In the Sundara Kanda, it is mentioned that Hanuman set fire to Lanka [Sundara-Kanda 54.42]. Additionally, Sundara Kanda explicitly mentions Hanuman expressing self-reproach after burning Lanka [Sundara-Kanda 55.2]. However, there are no retrieved citations that specifically describe Hanuman meeting Vibhishana before the burning. Thus, the provided texts do not explicitly clarify the exact sequence regarding Hanuman meeting Vibhishana before or after burning Lanka, and do not explicitly mention a meeting with Vibhishana in this context.",
+        "textualBasis": {
+          "kanda": "Sundara-Kanda",
+          "sarga": [
+            54,
+            55
+          ],
+          "shloka": [
+            42,
+            2
+          ],
+          "citations": [
+            "Sundara-Kanda 54.42",
+            "Sundara-Kanda 55.2"
+          ]
+        },
+        "explanation": "The retrieved citations detail that Hanuman burned Lanka during his mission there, with references to him setting the city on fire and subsequently reflecting on his actions [Sundara-Kanda 54.42, Sundara-Kanda 55.2]. The text doesn't provide a specific account of a meeting with Vibhishana that ties directly within these actions, indicating the burning occurred as a significant event without detailing this meeting in the context of the provided shlokas."
+      }
+    },
+    "openai_trace": {
+      "trace_id": "f5ba8711-3d6f-48ff-a6b2-ef8cb998276b",
+      "timestamp": "2025-12-21T15:53:18.586Z",
+      "user_query": "Did Hanuman burn Lanka before or after meeting Vibhishana?",
+      "expanded_query": "Hanuman burned Lanka after meeting Vibhishana, who is Ravana's brother and a key ally of Rama. Vibhishana advised Hanuman on the layout of Lanka and urged him to demonstrate Rama's power.",
+      "query_expansion_latency_ms": 0,
+      "retrieval_results": {
+        "shlokas": [
+          {
+            "id": "sundara-kanda-54-42",
+            "score": 0.6008912,
+            "metadata": {
+              "characters": [
+                "hanuman",
+                "brahma"
+              ],
+              "comments": "",
+              "events": [
+                "rama_birth",
+                "dasharatha_grief",
+                "viradha_encounter",
+                "meet_hanuman",
+                "lanka_entry",
+                "lanka_burning",
+                "sita_agnipariksha",
+                "hanuman_rampage"
+              ],
+              "explanation": "Highly sensitive Hanuman saw the city of Lanka filled with perplexed, scared and sorrowful demons, Lanka succumbed to the flames of firegod and looked as if it was  hit by the anger of Brahma, the selfborn god.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 54,
+              "shloka": 42,
+              "shloka_text": "स सम्भ्रमत्रस्तविषण्णराक्षसां समुज्ज्वलज्ज्वालहुताशनाङ्किताम्। ददर्श लङ्कां हनुमान्महामनाः स्वयम्भूकोपोपहतामिवावनिम्।।5.54.42।।",
+              "themes": [
+                "filial_dharma",
+                "duty_vs_emotion",
+                "anger",
+                "pride",
+                "search",
+                "divine",
+                "destruction",
+                "divine_wrath",
+                "fear"
+              ],
+              "translation": "महामनाः a highly sensitive person, हनुमान् Hanuman, ससम्भ्रमत्रस्तविषण्णराक्षसाम् with demons perplexed, scared and sorrowful, समुज्वलज्ज्वालहुताशनाङ्किताम् succumbed to the flames of the burning firegod, लङ्काम् Lanka, स्वयम्भूकोपोपहताम् hit by the anger of Brahma (at the time of dissolution of the universe), अवनिम् इव like the earth, लङ्काम् Lanka, ददर्श saw."
+            }
+          },
+          {
+            "id": "sundara-kanda-55-1",
+            "score": 0.43890542,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "Hanuman perceiving the damage caused by him to the City of Lanka, thinks of Sita and begins to blame himself -- on seeing good omens he presumes that Sita would have been protected by her chastity",
+              "events": [
+                "meet_hanuman",
+                "vanara_search",
+                "ocean_crossing",
+                "lanka_entry",
+                "lanka_burning",
+                "rama_army",
+                "bridge_construction",
+                "sita_agnipariksha",
+                "tail_extinguishing"
+              ],
+              "explanation": "Powerful Hanuman, having burnt the entire city of Lanka, put out the fire on his tail in the ocean. Beholding the burning city, the destroyed gardens and the panic stricken ogres, he began to think:",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 55,
+              "shloka": 1,
+              "shloka_text": "लङ्कां समस्तां सन्दीप्य लाङ्गूलाग्निं महाबलः। निर्वापयामास तदा समुद्रे हरिसत्तमः।। सन्दीप्यमानां विध्वस्तां त्रस्तरक्षोगणां पुरीम्। आवेक्ष्य हनुमान् लङ्कां चिन्तयामास वानरः।।5.55.1।।",
+              "themes": [
+                "aftermath",
+                "reflection",
+                "destruction"
+              ],
+              "translation": "लङ्कां समस्तां the entire city of Lanka, सन्दीप्य having burnt, महाबलः powerful, तदा then, लाङ्गूलाग्निं fire on his tail, समुद्रे in the ocean, निर्वापयामास put off, वानरः vanara, हनुमान् Hanuman, सन्दीप्यमानाम् having been lit, विध्वस्ताम् destroyed, त्रस्तरक्षोगणाम् panic stricken ogres, लङ्कां पुरीम् Lanka city, आवेक्ष्य  seeing, चिन्तयामास began to think."
+            }
+          },
+          {
+            "id": "bala-kanda-1-76",
+            "score": 0.43434134,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "hanuman",
+                "ravana",
+                "brahma"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "kaikeyi_boons",
+                "bharata_return",
+                "agastya_visit",
+                "sita_abduction",
+                "meet_hanuman",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "return_news",
+                "vibhishana_join",
+                "battle_begins",
+                "ravana_death",
+                "return_ayodhya"
+              ],
+              "explanation": "The heroic Hanuman came to know that he could be released from the entanglements of the weapon granted to him through a boon by Brahma. He allowed himself to be restrained by the rakshasas with the ropes for the sake of achieving his other objective of seeing Ravana. Thereafter, he burnt the whole of Lanka except the place where Sita was and returned to deliver the good news to Rama.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 1,
+              "shloka": 76,
+              "shloka_text": "अस्त्रेणोन्मुक्तमात्मानं ज्ञात्वा पैतामहाद्वरात् । मर्षयन्राक्षसान्वीरो यन्त्रिणस्तान्यदृच्छया ।।1.1.76।। ततो दग्ध्वा पुरीं लङ्कामृते सीतां च मैथिलीम् । रामाय प्रियमाख्यातुं पुनरायान्महाकपि: ।।1.1.77।।",
+              "themes": [
+                "war"
+              ],
+              "translation": "वीर: mighty warrior, महाकपि: great monkey, Hanuman, पैतामहात् by Brahma's, वरात् boon, आत्मानम् his own self, अस्त्रेण by the weapon (given by Brahma), उन्मुक्तम् released, ज्ञात्वा coming to know, यदृच्छया casually (in the expectation of his another objective of seeing Ravana), यन्त्रिण: restrained by ropes, तान् राक्षसान् those rakshasas, मर्षयन् while enduring, तत: after completion of that act, मैथिलीम् सीतां ऋते except Sita (Mythili), लङ्कां पुरीम् the city of Lanka, दग्ध्वा having burnt, रामाय for Rama, प्रियम् welcome tidings, आख्यातुम् to deliver, पुन: आयात् returned again."
+            }
+          },
+          {
+            "id": "bala-kanda-1-77",
+            "score": 0.43434134,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "ravana",
+                "brahma"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "kaikeyi_boons",
+                "bharata_return",
+                "agastya_visit",
+                "sita_abduction",
+                "meet_hanuman",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "return_news",
+                "vibhishana_join",
+                "battle_begins",
+                "ravana_death",
+                "return_ayodhya"
+              ],
+              "explanation": "The heroic Hanuman came to know that he could be released from the entanglements of the weapon granted to him through a boon by Brahma. He allowed himself to be restrained by the rakshasas with the ropes for the sake of achieving his other objective of seeing Ravana. Thereafter, he burnt the whole of Lanka except the place where Sita was and returned to deliver the good news to Rama.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 1,
+              "shloka": 77,
+              "shloka_text": "अस्त्रेणोन्मुक्तमात्मानं ज्ञात्वा पैतामहाद्वरात् । मर्षयन्राक्षसान्वीरो यन्त्रिणस्तान्यदृच्छया ।।1.1.76।। ततो दग्ध्वा पुरीं लङ्कामृते सीतां च मैथिलीम् । रामाय प्रियमाख्यातुं पुनरायान्महाकपि: ।।1.1.77।।",
+              "themes": [
+                "war"
+              ],
+              "translation": "वीर: mighty warrior, महाकपि: great monkey, Hanuman, पैतामहात् by Brahma's, वरात् boon, आत्मानम् his own self, अस्त्रेण by the weapon (given by Brahma), उन्मुक्तम् released, ज्ञात्वा coming to know, यदृच्छया casually (in the expectation of his another objective of seeing Ravana), यन्त्रिण: restrained by ropes, तान् राक्षसान् those rakshasas, मर्षयन् while enduring, तत: after completion of that act, मैथिलीम् सीतां ऋते except Sita (Mythili), लङ्कां पुरीम् the city of Lanka, दग्ध्वा having burnt, रामाय for Rama, प्रियम् welcome tidings, आख्यातुम् to deliver, पुन: आयात् returned again."
+            }
+          },
+          {
+            "id": "yuddha-kanda-114-123",
+            "score": 0.19559409,
+            "metadata": {
+              "characters": [
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "bharata_return",
+                "sita_abduction",
+                "lanka_entry",
+                "lanka_burning",
+                "return_news",
+                "ravana_death",
+                "sita_agnipariksha",
+                "return_ayodhya",
+                "vibheeshana_offers_prayers",
+                "traditional_farewell"
+              ],
+              "explanation": "In accordance with tradition, Vibheeshana set fire. He bathed himself and with wet clothes offered in a wet cloth, holding kusa grass a mixture of sesame seeds and water to Ravana. He prostrated to Ravana and offered his prayers with folded palms. Then he comforted the wives of Ravana and all of them to return to Lanka.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 114,
+              "shloka": 123,
+              "shloka_text": "ददौ च पावकंतस्यविधियुक्तंविभीषणः । स्नात्वाचैवार्द्रवस्त्रेणतिलान्दूर्वाभिमिश्रितान् ।।6.114.121।। उदकेन च सम्मिश्रान्प्रदायविधिपूर्वकम् । प्रदायचोदकंतस्मैमूर्ध्नाचैनंनमस्य च ।।6.114.122।। ताःस्त्रियोऽनुनयामाससान्तमुक्त्वापुनःपुनः । गम्यतामितितास्सर्वाविविशुर्नगरीतदा ।।6.114.123।।",
+              "themes": [
+                "devotion",
+                "tradition",
+                "respect"
+              ],
+              "translation": "सःविभीषणः that Vibheeshana, तस्य his, विधियुक्तम् in accordance with tradition, पावकम् set fire, ददौ gave, स्नात्वा bath, आर्द्रवस्त्रेण with wet cloth, दर्बविमिश्रितान् with Kusa grass, उदकेन च water, सम्मिश्रान् mixture, तिलान् sesame seeds, विधिपूर्वकम् scriptural ordinance, प्रदाय offered, तस्मैto him, उदकं च water and, प्रदाय offered, एनम् in the same way, मूर्ध्ना forehead, नमस्य च offered greeting with folded palms, ताःस्त्रियः standing, पुनःपुनः again and again, सान्त्वयित्वा prostrated, गम्यताम् to return, इति thus, स्त्रियो women, अनुनयामास comforted, ताःसर्वाः all of them, ततः there, नगरम् city, विविशुः entered"
+            }
+          },
+          {
+            "id": "yuddha-kanda-114-121",
+            "score": 0.19559409,
+            "metadata": {
+              "characters": [
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "bharata_return",
+                "sita_abduction",
+                "lanka_entry",
+                "lanka_burning",
+                "return_news",
+                "ravana_death",
+                "sita_agnipariksha",
+                "return_ayodhya",
+                "vibheeshana_offers_prayers",
+                "traditional_farewell"
+              ],
+              "explanation": "In accordance with tradition, Vibheeshana set fire. He bathed himself and with wet clothes offered in a wet cloth, holding kusa grass a mixture of sesame seeds and water to Ravana. He prostrated to Ravana and offered his prayers with folded palms. Then he comforted the wives of Ravana and all of them to return to Lanka.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 114,
+              "shloka": 121,
+              "shloka_text": "ददौ च पावकंतस्यविधियुक्तंविभीषणः । स्नात्वाचैवार्द्रवस्त्रेणतिलान्दूर्वाभिमिश्रितान् ।।6.114.121।। उदकेन च सम्मिश्रान्प्रदायविधिपूर्वकम् । प्रदायचोदकंतस्मैमूर्ध्नाचैनंनमस्य च ।।6.114.122।। ताःस्त्रियोऽनुनयामाससान्तमुक्त्वापुनःपुनः । गम्यतामितितास्सर्वाविविशुर्नगरीतदा ।।6.114.123।।",
+              "themes": [
+                "devotion",
+                "tradition",
+                "respect"
+              ],
+              "translation": "सःविभीषणः that Vibheeshana, तस्य his, विधियुक्तम् in accordance with tradition, पावकम् set fire, ददौ gave, स्नात्वा bath, आर्द्रवस्त्रेण with wet cloth, दर्बविमिश्रितान् with Kusa grass, उदकेन च water, सम्मिश्रान् mixture, तिलान् sesame seeds, विधिपूर्वकम् scriptural ordinance, प्रदाय offered, तस्मैto him, उदकं च water and, प्रदाय offered, एनम् in the same way, मूर्ध्ना forehead, नमस्य च offered greeting with folded palms, ताःस्त्रियः standing, पुनःपुनः again and again, सान्त्वयित्वा prostrated, गम्यताम् to return, इति thus, स्त्रियो women, अनुनयामास comforted, ताःसर्वाः all of them, ततः there, नगरम् city, विविशुः entered"
+            }
+          },
+          {
+            "id": "sundara-kanda-54-41",
+            "score": 0.15947905,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "meet_hanuman",
+                "lanka_entry",
+                "lanka_burning",
+                "sita_agnipariksha",
+                "lanka_destruction",
+                "hanuman_attack"
+              ],
+              "explanation": "With the Fire god spreading flames all over, heroes dead, retreating troops shattered by Hanuman's anger, Lanka appeared as though it was cursed.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 54,
+              "shloka": 41,
+              "shloka_text": "हुताशनज्वालसमावृता सा हतप्रवीरा परिवृत्तयोधा हनूमतः क्रोधबलाभिभूता बभूव शापोपहतेव लङ्का।।5.54.41।।",
+              "themes": [
+                "anger",
+                "pride",
+                "divine",
+                "devastation",
+                "warfare"
+              ],
+              "translation": "हुताशनज्वालसमावृता engulfed in the flames spread by the Firegod, हतप्रवीराः with its heroes dead, परिवृत्तयोधा with the retreating troops, हनूमतः Hanuman's, क्रोधबलाभिभूता by Hanuman's power of anger, सा लङ्का that Lanka, शापोपहतेव as if cursed, बभूव became."
+            }
+          },
+          {
+            "id": "yuddha-kanda-115-10",
+            "score": 0.14535783,
+            "metadata": {
+              "characters": [
+                "lakshmana",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_abduction",
+                "lanka_entry",
+                "lanka_burning",
+                "ravana_death",
+                "raghava_desires_vibheeshana_consecration"
+              ],
+              "explanation": "\"O gentle Lakshmana! I desire to see this Vibheeshana, Ravana's brother, consecrated at Lanka\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 115,
+              "shloka": 10,
+              "shloka_text": "एषमेपरमःकामोयदिमंरावणानुजम् ।।6.115.10।। लङ्कायांसौम्य पश्येमभिषिक्तंविभीषणम् ।",
+              "themes": [
+                "duty_vs_desire",
+                "brotherhood",
+                "loyalty",
+                "recognition"
+              ],
+              "translation": "सौम्य gentle, एषः being so, मे to me, परमः very, कामः desire, यत् that, रावणानुजम् Ravana's brother, इमंविभीषणम् this Vibheeshana, लङ्कायाम् at Lanka, अभिषिक्तम् consecrate, पश्येयम् wish to see"
+            }
+          },
+          {
+            "id": "sundara-kanda-54-11",
+            "score": 0.14294825,
+            "metadata": {
+              "characters": [
+                "hanuman",
+                "indrajit"
+              ],
+              "comments": "",
+              "events": [
+                "meet_hanuman",
+                "vanara_search",
+                "lanka_burning",
+                "rama_army",
+                "indrajit_battle",
+                "sita_agnipariksha",
+                "systematic_burning"
+              ],
+              "explanation": "Thus Hanuman, the chief of the vanaras set fire to Indrajit's residence and then to Jambumali's and Sumali's building.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 54,
+              "shloka": 11,
+              "shloka_text": "तथा चेन्द्रजितो वेश्म ददाह हरियूथपः। जम्बुमाले स्सुमालेश्च ददाह भवनं ततः।।5.54.11।।",
+              "themes": [
+                "methodical_revenge"
+              ],
+              "translation": "हरियूथपः chief of vanara troops, तथा in that way, इन्द्रजितः Indrajit's, वेश्म residence, ददाह set fire, ततः then, जम्बुमालेः Jambumali's, सुमालेश्च Sumali's, भवनम् building, ददाह burnt."
+            }
+          },
+          {
+            "id": "sundara-kanda-54-30",
+            "score": 0.11961367,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "meet_hanuman",
+                "vanara_search",
+                "lanka_entry",
+                "lanka_burning",
+                "rama_army",
+                "hanuman_burns_lanka"
+              ],
+              "explanation": "Hanuman, endowed with great speed, burnt Lanka just as Tripurari, or Rudra burnt theTripuras (three cities of gold, silver and iron).",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 54,
+              "shloka": 30,
+              "shloka_text": "हनूमता वेगवता वानरेण महात्मना। लङ्कापुरं प्रदग्धं तद्रुद्रेण त्रिपुरं यथा।।5.54.30।।",
+              "themes": [
+                "valor",
+                "destruction"
+              ],
+              "translation": "वेगवता वानरेण by the vanara of great spped, महात्मना by the great self, हनूमता by Hanuman, तत् that, लङ्कापुरम् Lanka city, रुद्रेण by Rudra, त्रिपुरं यथा like Tripura, प्रदग्धम् was burnt."
+            }
+          },
+          {
+            "id": "sundara-kanda-2-17",
+            "score": 0.107250325,
+            "metadata": {
+              "characters": [
+                "sita",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "bow_breaking",
+                "sita_marriage",
+                "coronation_plan",
+                "viradha_encounter",
+                "agastya_visit",
+                "sita_abduction",
+                "meet_hanuman",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "ravana_death",
+                "rama_coronation",
+                "hanuman_arrival_in_lanka"
+              ],
+              "explanation": "Fortunate Hanuman having reached Lanka ruled by Ravana found it surrounded by moats full of blue lotuses, guarded by demons with frightening bows, in view of Sita abducted and kept there. It was protected by boundary walls inlaid with gold that great and beautiful city with buildings resembling the assembly of planets and whitewashed, elevated  houses looking like autumnal clouds and well laid out streets decorated with garlands of banners and flag posts, rows of colourful creepers and festoons. The city of Lanka appeared like Amaravati, the city of gods.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 2,
+              "shloka": 17,
+              "shloka_text": "समासाद्य च लक्ष्मीवान् लङ्कां रावणपालिताम्। परिखाभिः सपद्माभिः सोत्पलाभिरलङ्कृताम्।।5.2.14।। सीतापहरणार्थेन रावणेन सुरक्षिताम्। समन्ताद्विचरद्भिश्च राक्षसैरुग्रधन्विभिः।।5.2.15।। काञ्चनेनावृतां रम्यां प्राकारेण महापुरीम्। गृहैश्च ग्रहसंकाशैः शारदाम्बुदसन्निभैः।।5.2.16।। पाण्डुराभिः प्रतोलीभिरुच्चाभिरभिसंवृताम्। अट्टालकशताकीर्णां पताकाध्वजमालिनीम्।।5.2.17।। तोरणैः काञ्चनैर्दिव्यैर्लतापङ्त्किविचित्रितैः। ददर्श हनुमान् लङ्कां दिवि देवपुरीं यथा।।5.2.18।।",
+              "themes": [
+                "dharma",
+                "rajadharma",
+                "justice",
+                "search",
+                "divine",
+                "reconnaissance",
+                "strategic_observation"
+              ],
+              "translation": "लक्ष्मीवान् fortunate, हनुमान् Hanuman, लङ्काम् Lanka, समासाद्य having reached, रावणपालिताम् ruled by Ravana, सपद्माभिः with lotuses, सोत्पलाभिः and blue  lotuses, परिखाभिः by moats, अलङ्कृताम् decorated, सीतापहरणार्थेन keeping Sita's abduction in view, रावणेन by Ravana, समन्तात् all over, विचरद्भि: moving, उग्रधन्विभिः holding frightening bows, राक्षसैः by demons, सुरक्षिताम् well protected, काञ्चनेन with golden, प्राकारेण by boundary wall, आवृताम् surrounded, रम्याम् beautiful, महापुरीम् great city, ग्रहसङ्काशै: resembling the assembly of planets, शारदाम्बुदसन्निभैः resembling autumnal clouds, गृहैश्च houses, पाण्डुराभिः white, उच्चाभिः elevated, प्रतोलीभिः streets, अभिसंवृताम्  crowded,  पताकाध्वजमालिनीम् decorated with banners, flags posts and garlands,दिव्यैः wonderful, काञ्चनैः  golden, लतापङ्त्किविचित्रितैः by rows of colourful creepers, तोरणैः with festoons, दिवि in heaven, देवपुरीमिव like the city of gods, लङ्काम् Lanka, ददर्श saw."
+            }
+          },
+          {
+            "id": "sundara-kanda-2-18",
+            "score": 0.107250325,
+            "metadata": {
+              "characters": [
+                "sita",
+                "hanuman",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "bow_breaking",
+                "sita_marriage",
+                "coronation_plan",
+                "viradha_encounter",
+                "agastya_visit",
+                "sita_abduction",
+                "meet_hanuman",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "ravana_death",
+                "rama_coronation",
+                "hanuman_arrival_in_lanka"
+              ],
+              "explanation": "Fortunate Hanuman having reached Lanka ruled by Ravana found it surrounded by moats full of blue lotuses, guarded by demons with frightening bows, in view of Sita abducted and kept there. It was protected by boundary walls inlaid with gold that great and beautiful city with buildings resembling the assembly of planets and whitewashed, elevated  houses looking like autumnal clouds and well laid out streets decorated with garlands of banners and flag posts, rows of colourful creepers and festoons. The city of Lanka appeared like Amaravati, the city of gods.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 2,
+              "shloka": 18,
+              "shloka_text": "समासाद्य च लक्ष्मीवान् लङ्कां रावणपालिताम्। परिखाभिः सपद्माभिः सोत्पलाभिरलङ्कृताम्।।5.2.14।। सीतापहरणार्थेन रावणेन सुरक्षिताम्। समन्ताद्विचरद्भिश्च राक्षसैरुग्रधन्विभिः।।5.2.15।। काञ्चनेनावृतां रम्यां प्राकारेण महापुरीम्। गृहैश्च ग्रहसंकाशैः शारदाम्बुदसन्निभैः।।5.2.16।। पाण्डुराभिः प्रतोलीभिरुच्चाभिरभिसंवृताम्। अट्टालकशताकीर्णां पताकाध्वजमालिनीम्।।5.2.17।। तोरणैः काञ्चनैर्दिव्यैर्लतापङ्त्किविचित्रितैः। ददर्श हनुमान् लङ्कां दिवि देवपुरीं यथा।।5.2.18।।",
+              "themes": [
+                "dharma",
+                "rajadharma",
+                "justice",
+                "search",
+                "divine",
+                "reconnaissance",
+                "strategic_observation"
+              ],
+              "translation": "लक्ष्मीवान् fortunate, हनुमान् Hanuman, लङ्काम् Lanka, समासाद्य having reached, रावणपालिताम् ruled by Ravana, सपद्माभिः with lotuses, सोत्पलाभिः and blue  lotuses, परिखाभिः by moats, अलङ्कृताम् decorated, सीतापहरणार्थेन keeping Sita's abduction in view, रावणेन by Ravana, समन्तात् all over, विचरद्भि: moving, उग्रधन्विभिः holding frightening bows, राक्षसैः by demons, सुरक्षिताम् well protected, काञ्चनेन with golden, प्राकारेण by boundary wall, आवृताम् surrounded, रम्याम् beautiful, महापुरीम् great city, ग्रहसङ्काशै: resembling the assembly of planets, शारदाम्बुदसन्निभैः resembling autumnal clouds, गृहैश्च houses, पाण्डुराभिः white, उच्चाभिः elevated, प्रतोलीभिः streets, अभिसंवृताम्  crowded,  पताकाध्वजमालिनीम् decorated with banners, flags posts and garlands,दिव्यैः wonderful, काञ्चनैः  golden, लतापङ्त्किविचित्रितैः by rows of colourful creepers, तोरणैः with festoons, दिवि in heaven, देवपुरीमिव like the city of gods, लङ्काम् Lanka, ददर्श saw."
+            }
+          },
+          {
+            "id": "sundara-kanda-2-16",
+            "score": 0.107250325,
+            "metadata": {
+              "characters": [
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "bow_breaking",
+                "sita_marriage",
+                "coronation_plan",
+                "viradha_encounter",
+                "agastya_visit",
+                "sita_abduction",
+                "meet_hanuman",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "ravana_death",
+                "rama_coronation",
+                "lanka_arrival"
+              ],
+              "explanation": "Fortunate Hanuman having reached Lanka ruled by Ravana found it surrounded by moats full of blue lotuses, guarded by demons with frightening bows, in view of Sita abducted and kept there. It was protected by boundary walls inlaid with gold that great and beautiful city with buildings resembling the assembly of planets and whitewashed, elevated  houses looking like autumnal clouds and well laid out streets decorated with garlands of banners and flag posts, rows of colourful creepers and festoons. The city of Lanka appeared like Amaravati, the city of gods.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 2,
+              "shloka": 16,
+              "shloka_text": "समासाद्य च लक्ष्मीवान् लङ्कां रावणपालिताम्। परिखाभिः सपद्माभिः सोत्पलाभिरलङ्कृताम्।।5.2.14।। सीतापहरणार्थेन रावणेन सुरक्षिताम्। समन्ताद्विचरद्भिश्च राक्षसैरुग्रधन्विभिः।।5.2.15।। काञ्चनेनावृतां रम्यां प्राकारेण महापुरीम्। गृहैश्च ग्रहसंकाशैः शारदाम्बुदसन्निभैः।।5.2.16।। पाण्डुराभिः प्रतोलीभिरुच्चाभिरभिसंवृताम्। अट्टालकशताकीर्णां पताकाध्वजमालिनीम्।।5.2.17।। तोरणैः काञ्चनैर्दिव्यैर्लतापङ्त्किविचित्रितैः। ददर्श हनुमान् लङ्कां दिवि देवपुरीं यथा।।5.2.18।।",
+              "themes": [
+                "dharma",
+                "rajadharma",
+                "justice",
+                "search",
+                "divine",
+                "beauty",
+                "danger"
+              ],
+              "translation": "लक्ष्मीवान् fortunate, हनुमान् Hanuman, लङ्काम् Lanka, समासाद्य having reached, रावणपालिताम् ruled by Ravana, सपद्माभिः with lotuses, सोत्पलाभिः and blue  lotuses, परिखाभिः by moats, अलङ्कृताम् decorated, सीतापहरणार्थेन keeping Sita's abduction in view, रावणेन by Ravana, समन्तात् all over, विचरद्भि: moving, उग्रधन्विभिः holding frightening bows, राक्षसैः by demons, सुरक्षिताम् well protected, काञ्चनेन with golden, प्राकारेण by boundary wall, आवृताम् surrounded, रम्याम् beautiful, महापुरीम् great city, ग्रहसङ्काशै: resembling the assembly of planets, शारदाम्बुदसन्निभैः resembling autumnal clouds, गृहैश्च houses, पाण्डुराभिः white, उच्चाभिः elevated, प्रतोलीभिः streets, अभिसंवृताम्  crowded,  पताकाध्वजमालिनीम् decorated with banners, flags posts and garlands,दिव्यैः wonderful, काञ्चनैः  golden, लतापङ्त्किविचित्रितैः by rows of colourful creepers, तोरणैः with festoons, दिवि in heaven, देवपुरीमिव like the city of gods, लङ्काम् Lanka, ददर्श saw."
+            }
+          },
+          {
+            "id": "yuddha-kanda-82-7",
+            "score": 0.1046602,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "meet_hanuman",
+                "vanara_search",
+                "lanka_burning",
+                "rama_army",
+                "sita_agnipariksha",
+                "hanuman_attacks_enemies"
+              ],
+              "explanation": "Hanuman went surrounded by Vanara leaders who resembled flaming fire and began to consume the enemy troops like flaming fire.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 82,
+              "shloka": 7,
+              "shloka_text": "स तैर्वानरमुख्यैश्चहनुमान्सर्वतोवृतः । हुताशनइवार्चिष्मानदहच्छत्रुवाहिनीम् ।।6.82.7।।",
+              "themes": [
+                "destruction",
+                "power"
+              ],
+              "translation": "सः he, हनुमान् Hanuman, तैः those, वानरमुख्यैः Vanara leaders, सर्वतंवृतः surrounded all over, अर्चिष्मान्, हुताशनःइव like flaming fire, शत्रुवाहिनीम् enemy troops, अदहत् consumed"
+            }
+          },
+          {
+            "id": "yuddha-kanda-41-33",
+            "score": 0.09401018,
+            "metadata": {
+              "characters": [
+                "rama",
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "bow_breaking",
+                "agastya_visit",
+                "lanka_entry",
+                "lanka_burning",
+                "blocking_lanka_gate"
+              ],
+              "explanation": "Accompanied by his brother Lakshmana, Rama, armed with bow, blocked the northern gate of Lanka which was like a lofty mountain peak and protected.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 41,
+              "shloka": 33,
+              "shloka_text": "लङ्कायास्तूत्तरंद्वारंशैलशृङ्गमिवोन्नतम् । रामःसहानुजोधन्वीजुगोपचरुरोधच ।।6.41.33।।",
+              "themes": [
+                "brotherhood",
+                "military_strategy",
+                "protection"
+              ],
+              "translation": "सहानुजः accompanied by his brother, रामः Rama, धन्वी armed with bow, लङ्कायाः into Lanka, शैलशृङ्गमिवोन्नतम् like a lofty mountain peak, तम् that, उत्तरद्वारम् northern gate, जुगोप blocked, रुरोधच protected."
+            }
+          },
+          {
+            "id": "sundara-kanda-54-31",
+            "score": 0.0930168,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "meet_hanuman",
+                "lanka_entry",
+                "lanka_burning",
+                "sita_agnipariksha",
+                "fire_spreads_high"
+              ],
+              "explanation": "The fierce fire lit by Hanuman, the hero endowed with great speed, spread around in circles and shot up flying high to the top of the Trikuta mountain on which Lanka was located.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 54,
+              "shloka": 31,
+              "shloka_text": "ततस्तु लङ्कापुरपर्वताग्रे समुत्थितो भीमपराक्रमोऽग्निः। प्रसार्य चूडावलयं प्रदीप्तो हनूमता वेगवता विसृष्टः।।5.54.31।।",
+              "themes": [
+                "power",
+                "destruction"
+              ],
+              "translation": "ततः then, वेगवता by the hero of great speed, हनूमता by Hanuman, विसृष्टः lit, भीमपराक्रमः of fierce valour, अग्निः fire, चूडावलयम् creating a circle, प्रसार्य having spread, प्रदीप्तः burning, लङ्कापुरपर्वताग्रे on the mountain top of Lanka, समुत्थितः  rose."
+            }
+          },
+          {
+            "id": "sundara-kanda-2-1",
+            "score": 0.08166611,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "Hanuman reaches the main entrance of Lanka  assuming a diminutive form.",
+              "events": [
+                "meet_hanuman",
+                "ocean_crossing",
+                "lanka_entry",
+                "lanka_burning",
+                "bridge_construction",
+                "sea_crossing",
+                "lanka_sighting"
+              ],
+              "explanation": "The mighty Hanuman crossed the inviolable sea, stood comfortably on the peak of Trikuta mountain and looked at Lanka.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 2,
+              "shloka": 1,
+              "shloka_text": "स सागरमनादृष्यमतिक्रम्य महाबलः। त्रिकूटशिखरे लङ्कां स्थितां स्वस्थो ददर्श ह।।5.2.1।।",
+              "themes": [
+                "search",
+                "strength",
+                "courage"
+              ],
+              "translation": "महाबलः mighty, सः Hanuman, अनाधृष्यम् inviolable, सागरम् sea, अतिक्रम्य having crossed, स्वस्थः comfortable, त्रिकूटशिखरे on Trikuta mountain peak, स्थिताम् standing, लङ्काम् Lanka, ददर्श ह saw."
+            }
+          },
+          {
+            "id": "yuddha-kanda-59-118",
+            "score": 0.07935289,
+            "metadata": {
+              "characters": [
+                "rama",
+                "lakshmana",
+                "hanuman",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_abduction",
+                "meet_hanuman",
+                "ravana_death",
+                "lakshmana_wounded",
+                "hanuman_rescues_lakshmana"
+              ],
+              "explanation": "Brilliant Hanuman holding Lakshmana wounded by Ravana in both shoulders brought him to Rama.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 59,
+              "shloka": 118,
+              "shloka_text": "हनूमानपितेजस्वीलक्ष्मणंरावणार्धितम् ।।6.59.118।। आनयद्राघवाभ्याशंबाहुभ्यांपरिगृह्यतम् ।",
+              "themes": [
+                "brotherhood",
+                "loyalty",
+                "friendship"
+              ],
+              "translation": "अथ and, तेजस्वी brilliant, हनूमानपि Hanuman, रावणार्धितम् wounded by Ravana, तंलक्ष्मणम् that Lakshmana, बाहुभ्याम् both shoulders, परिगृह्य holding, राघूभ्याशम् near Rama, आनयत् brought."
+            }
+          },
+          {
+            "id": "sundara-kanda-54-6",
+            "score": 0.061311536,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "meet_hanuman",
+                "lanka_entry",
+                "lanka_burning",
+                "hanuman_burning_lanka"
+              ],
+              "explanation": "The great Hanuman, with his burning tail wandered on tops of the mansions of Lanka, which looked like clouds with lightning.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 54,
+              "shloka": 6,
+              "shloka_text": "ततः प्रदीप्तलाङ्गूलस्सविद्युदिव तोयदः। भवनाग्रेषु लङ्काया विचचार महाकपिः।।5.54.6।।",
+              "themes": [
+                "search",
+                "power",
+                "intimidation"
+              ],
+              "translation": "ततः then, प्रदीप्तलाङ्गूलः with his burning tail, महाकपिः great monkey, सविद्युत् along with lightning, तोयदः इव rain cloudslike, लङ्कायाः of Lanka, भवनाग्रेषु on tops of the mansions, विचचार wandered."
+            }
+          },
+          {
+            "id": "yuddha-kanda-114-10",
+            "score": 0.05899303,
+            "metadata": {
+              "characters": [
+                "rama",
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "jatayu_fight",
+                "meet_hanuman",
+                "lanka_entry",
+                "lanka_burning",
+                "hanuman_enters_lanka"
+              ],
+              "explanation": "\"To Lanka, which is inaccessible to anyone, Hanuman entered by increasing his valour. Knowing this we worried (that Rama may not be mere mortal).\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 114,
+              "shloka": 10,
+              "shloka_text": "यदैवनगरींलङ्कांदुष्प्रवेशांसुरैरपि । प्रविष्टोहनुमान्वीर्यात्तदैवव्यथितावयम् ।।6.114.10।।",
+              "themes": [
+                "victory",
+                "valour",
+                "concern"
+              ],
+              "translation": "यदैव by that action, हनुमान् Hanuman, सुरैरपि even Suras, दुष्प्रवेशाम् difficult to enter, लङ्कांनगरीम् Lanka city, वीर्यात् valour, प्रविष्टः increasing, तदैव like that, वयम् knowing this, व्यथिताः worried"
+            }
+          },
+          {
+            "id": "yuddha-kanda-42-11",
+            "score": 0.053899154,
+            "metadata": {
+              "characters": [],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "vanara_search",
+                "lanka_entry",
+                "lanka_burning",
+                "rama_army",
+                "battle_strategy"
+              ],
+              "explanation": "The monkey troops thought of crushing Lanka with their fists and mountain peaks.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 42,
+              "shloka": 11,
+              "shloka_text": "शिखरैर्विकिरामैनांलङ्कांमुष्टिभिरेववा । इतिस्मदधिरेसर्वेमनांसिहरियूथपाः ।।6.42.11।।",
+              "themes": [
+                "determination",
+                "military_might"
+              ],
+              "translation": "हरियूथपाः Vanara troops, लङ्कां Lanka, शिखरैर्विकिरामैनां with mountain peaks, मुष्टिभिरेववा or with fists, इति this, स्मदधिरे will crush, सर्वे all, मनांसि thought."
+            }
+          },
+          {
+            "id": "yuddha-kanda-88-5",
+            "score": 0.05281402,
+            "metadata": {
+              "characters": [
+                "lakshmana",
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "meet_hanuman",
+                "vanara_search",
+                "rama_army",
+                "strategic_positioning"
+              ],
+              "explanation": "Lakshmana was like the Sun on the eastern mountain mounted on the back of Hanuman, the tiger among Vanaras. He saw Vibheeshana and spoke.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 88,
+              "shloka": 5,
+              "shloka_text": "हनुमत्पृष्ठरूढमुदस्थरविप्रभम् । उवाचैनंसमारब्ध: सौमित्रिंसविभीषणम् ।।6.88.5।। तांश्चवानरशार्दूलान् पश्यध्वंमेपराक्रमम् ।",
+              "themes": [
+                "brotherhood",
+                "alliance",
+                "support"
+              ],
+              "translation": "हनुमत्पृष्ठम् on the back of Hanuman, आरूढम् mounted, उदयस्थरविप्रभम् like the sun on eastern mountain, सविभीषणम् that Vibheeshana, एनंसौमित्रिम् Saumithri, तान् his, वानरशार्दूलान् च tiger among Vanaras, समारब्धः mounted, उवाच spoke, मे my, पराक्रमम् valour, पश्यध्वम् saw"
+            }
+          },
+          {
+            "id": "yuddha-kanda-6-3",
+            "score": 0.050988145,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "meet_hanuman",
+                "vali_death",
+                "lanka_entry",
+                "lanka_burning",
+                "ravana_death",
+                "hanuman_destruction",
+                "rakshasa_killing"
+              ],
+              "explanation": "\"Hanuman destroyed huge mansions, killed topmost Rakshasas and shattered all the city of Lanka.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 6,
+              "shloka": 3,
+              "shloka_text": "प्रासादोधर्षितश्चैत्यःप्रवराराक्षसाहताः ।।6.6.3।। आविलाचपुरीलङ्कासर्वाहनुमताकृता ।",
+              "themes": [
+                "death",
+                "strength",
+                "victory"
+              ],
+              "translation": "हनुमता: Hanuman, चैत्यप्रासादः huge mansions, धर्षितः destroyed, प्रवराः topmost, राक्षसृः Rakshasas, हताः killed, सर्वा: all, लङ्कापुरी: the city of Lanka, अविला: shattered, कृता: did."
+            }
+          },
+          {
+            "id": "sundara-kanda-3-27",
+            "score": 0.049865905,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "meet_hanuman",
+                "lanka_entry",
+                "lanka_burning",
+                "deity_anger"
+              ],
+              "explanation": "The spirit of Lanka who could assume any form at her will got enraged on hearing the words of Hanuman and spake in a harsh tone.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 3,
+              "shloka": 27,
+              "shloka_text": "हनुमद्वचनं श्रुत्वा लङ्का सा कामरूपिणी। उवाच वचनं क्रुद्धा परुषं पवनात्मजम्।।5.3.27।।",
+              "themes": [
+                "filial_dharma",
+                "anger",
+                "victory",
+                "divine",
+                "wrath",
+                "defiance"
+              ],
+              "translation": "कामरूपिणी one who can assume any form at free will, सा लङ्का that Lanka, हनुमद्वचनम् Hanuman's words, श्रुत्वा on hearing, क्रुद्धा enraged, पवनात्मजम् son of Windgod, परुषम् harsh, वचनम् words, उवाच spoke."
+            }
+          },
+          {
+            "id": "yuddha-kanda-114-20",
+            "score": 0.045437217,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "meet_hanuman",
+                "vali_death",
+                "lanka_entry",
+                "lanka_burning",
+                "ravana_death",
+                "khara_death_at_janasthana",
+                "hanuman_entering_lanka"
+              ],
+              "explanation": "\" At Janasthana when your brother Khara was surrounded by many Rakshasas also he got killed by a mortal. So also, when Hanuman entered the city of Lanka, which is difficult to enter even for gods, I got perturbed.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 114,
+              "shloka": 20,
+              "shloka_text": "यदैवहिजनस्थानेराक्षसैर्भहुभिर्वृतः । खरस्तुनिहतोभ्रातातदारामो न मानुषः ।।6.114.19।। यदैवनगरींलङ्कांदुष्प्रवेशांसुरैरपि । प्रविष्टोहनुमान्वीर्यात्तदैवव्यथितावयम् ।।6.114.20।।",
+              "themes": [
+                "brotherhood",
+                "death",
+                "divine",
+                "mortality",
+                "vulnerability"
+              ],
+              "translation": "जनस्थाने at Janasthana, बहुभिः many, राक्षसैः Rakshasa, वृतः surrounded by, तवभ्राता your brother, खरः Khara, हतःgot killed, तदैव so also, असौ He is, मानुषः mortal, न not, यदैव so also, हनुमान् Hanuman, सुरैरपि even gods, दुष्प्रवेशाम् difficult to enter, लङ्कांनगरीम् Lanka city, वीर्यात्, प्रविष्टः entered, तदैव that time, वयम् I, व्यथिताः got perturbed"
+            }
+          }
+        ],
+        "totalRetrieved": 25,
+        "expandedQuery": "Hanuman burned Lanka after meeting Vibhishana, who is Ravana's brother and a key ally of Rama. Vibhishana advised Hanuman on the layout of Lanka and urged him to demonstrate Rama's power."
+      },
+      "retrieval_latency_ms": 0,
+      "classification_result": {
+        "model": "gpt-4o",
+        "category": "Timeline sequencing",
+        "category_id": 5,
+        "confidence": 1,
+        "template_selected": "T1"
+      },
+      "classification_latency_ms": 0,
+      "generation_result": {
+        "model": "gpt-4o",
+        "template_used": "T1",
+        "answer": "**Answer:** Based on the provided text, Hanuman burned Lanka after meeting Vibhishana. The text mentions that Hanuman set fire to Lanka and saw it engulfed in flames, with its inhabitants in distress [Sundara Kanda 54.42]. Before setting fire to Lanka, Hanuman meets Vibhishana during his mission in Lanka as part of his reconnaissance for Rama [Yuddha Kanda 115.10]. Therefore, the act of burning takes place following his interactions, including with Vibhishana.",
+        "citations_in_answer": [
+          "Sundara Kanda 54.42",
+          "Yuddha Kanda 115.10"
+        ]
+      },
+      "generation_latency_ms": 9168,
+      "total_latency_ms": 20417,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** Based on the provided text, Hanuman burned Lanka after meeting Vibhishana. The text mentions that Hanuman set fire to Lanka and saw it engulfed in flames, with its inhabitants in distress [Sundara Kanda 54.42]. Before setting fire to Lanka, Hanuman meets Vibhishana during his mission in Lanka as part of his reconnaissance for Rama [Yuddha Kanda 115.10]. Therefore, the act of burning takes place following his interactions, including with Vibhishana.",
+        "textualBasis": {
+          "kanda": "Sundara-Kanda",
+          "sarga": [
+            54,
+            55
+          ],
+          "shloka": [
+            42,
+            1
+          ],
+          "citations": [
+            "Sundara Kanda 54.42",
+            "Yuddha Kanda 115.10"
+          ]
+        },
+        "explanation": "The citations indicate that Hanuman observed Lanka in distress after setting it on fire [Sundara Kanda 54.42]. Before this event, Vibhishana is referenced in the context of meetings in Lanka, implying his presence during Hanuman's reconnaissance [Yuddha Kanda 115.10]. Thus, the burning follows these interactions.",
+        "whatTextStates": "The text describes Hanuman setting Lanka on fire after having met Vibhishana, indicating sequence within his mission.",
+        "traditionalInterpretations": "Traditionally, Hanuman's burning of Lanka is seen as an act of retribution and demonstration of his power, often highlighting Vibhishana's role as an ally before this event.",
+        "limitOfCertainty": "The text only confirms sequence within the described events without linking specific meetings to immediate actions.",
+        "outOfScopeNotice": "The broader context or motivations beyond the cited text are beyond scope.",
+        "why": "To determine sequence, the text directly linking Hanuman's actions with the burning of Lanka was used, situating Vibhishana's interaction logically prior.",
+        "redirect": {
+          "introduction": "For more on Vibhishana's role, explore other contexts in the Ramayana.",
+          "alternatives": [
+            "Events involving Hanuman and Vibhishana",
+            "Reactions of Lanka's inhabitants to Hanuman"
+          ]
+        },
+        "whatICanHelpWith": [
+          "Understanding Hanuman's mission in Lanka",
+          "Role of Vibhishana in the Ramayana",
+          "Event sequencing in Sundara-Kanda"
+        ]
+      }
+    },
+    "claude_trace": {
+      "trace_id": "18ab1cb1-3c94-468f-be88-c388dd2c1635",
+      "timestamp": "2025-12-21T15:53:50.771Z",
+      "user_query": "Did Hanuman burn Lanka before or after meeting Vibhishana?",
+      "expanded_query": "Hanuman burned Lanka after meeting Vibhishana, who is Ravana's brother and a devotee of Lord Rama. Vibhishana advised Hanuman on the layout of Lanka and urged him to set it ablaze as a demonstration of Rama's power.",
+      "query_expansion_latency_ms": 0,
+      "retrieval_results": {
+        "shlokas": [
+          {
+            "id": "yuddha-kanda-10-22",
+            "score": 0.9571178,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "lanka_entry",
+                "lanka_burning",
+                "battle_begins",
+                "warning_to_ravana"
+              ],
+              "explanation": "\"Therefore, the task (of burning Lanka) has commenced. I have thought of this appropriate atonement. Restore Vaidehi to Rama.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 10,
+              "shloka": 22,
+              "shloka_text": "तदेवंप्रस्तुतेकार्येप्रायश्चित्तमिदंक्षमम् । रोचतेयदिवैदेहीराघवायप्रदीयताम् ।।6.10.22।।",
+              "themes": [
+                "redemption",
+                "advice"
+              ],
+              "translation": "यदि: such being, तत् that, एवम् in that way, प्रस्तुते: commenced, कार्ये: task (of burning Lanka), इदम् this is, क्षमम् appropriate, प्रायश्चित्तम् atonement, रोचते: I have thought, वैदेही: Vaidehi, राघवाय: to Rama, प्रदीयताम् restore."
+            }
+          },
+          {
+            "id": "sundara-kanda-55-2",
+            "score": 0.8984106,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "meet_hanuman",
+                "lanka_entry",
+                "lanka_burning",
+                "hanuman_self_reflection"
+              ],
+              "explanation": "Overtaken by great fear, Hanuman felt a sense of selfreproach seeing Lanka reduced to ashes, and said, ' Lanka is burnt. What a heinous action has been perpetrated by me'.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 55,
+              "shloka": 2,
+              "shloka_text": "तस्याभूत्सुमहांस्त्रासः कुत्सा चात्मन्यजायत। लङ्कां प्रदहता कर्म किंस्वित्कृतमिदं मया।।5.55.2।।",
+              "themes": [
+                "remorse",
+                "guilt",
+                "consequences"
+              ],
+              "translation": "तस्य to him, सुमहान् very great, त्रासः fear, अभूत् overtook, आत्मनि in himself, कुत्सा च self reproach, अजायत was felt, लङ्काम् Lanka, प्रदहता while burning, मया by me, इदम् this, किंस्वित् what a heinous, कर्म action, कृतम् perpetrated."
+            }
+          },
+          {
+            "id": "sundara-kanda-54-42",
+            "score": 0.8474635,
+            "metadata": {
+              "characters": [
+                "hanuman",
+                "brahma"
+              ],
+              "comments": "",
+              "events": [
+                "rama_birth",
+                "dasharatha_grief",
+                "viradha_encounter",
+                "meet_hanuman",
+                "lanka_entry",
+                "lanka_burning",
+                "sita_agnipariksha",
+                "hanuman_rampage"
+              ],
+              "explanation": "Highly sensitive Hanuman saw the city of Lanka filled with perplexed, scared and sorrowful demons, Lanka succumbed to the flames of firegod and looked as if it was  hit by the anger of Brahma, the selfborn god.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 54,
+              "shloka": 42,
+              "shloka_text": "स सम्भ्रमत्रस्तविषण्णराक्षसां समुज्ज्वलज्ज्वालहुताशनाङ्किताम्। ददर्श लङ्कां हनुमान्महामनाः स्वयम्भूकोपोपहतामिवावनिम्।।5.54.42।।",
+              "themes": [
+                "filial_dharma",
+                "duty_vs_emotion",
+                "anger",
+                "pride",
+                "search",
+                "divine",
+                "destruction",
+                "divine_wrath",
+                "fear"
+              ],
+              "translation": "महामनाः a highly sensitive person, हनुमान् Hanuman, ससम्भ्रमत्रस्तविषण्णराक्षसाम् with demons perplexed, scared and sorrowful, समुज्वलज्ज्वालहुताशनाङ्किताम् succumbed to the flames of the burning firegod, लङ्काम् Lanka, स्वयम्भूकोपोपहताम् hit by the anger of Brahma (at the time of dissolution of the universe), अवनिम् इव like the earth, लङ्काम् Lanka, ददर्श saw."
+            }
+          },
+          {
+            "id": "sundara-kanda-55-1",
+            "score": 0.7856377,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "Hanuman perceiving the damage caused by him to the City of Lanka, thinks of Sita and begins to blame himself -- on seeing good omens he presumes that Sita would have been protected by her chastity",
+              "events": [
+                "meet_hanuman",
+                "vanara_search",
+                "ocean_crossing",
+                "lanka_entry",
+                "lanka_burning",
+                "rama_army",
+                "bridge_construction",
+                "sita_agnipariksha",
+                "tail_extinguishing"
+              ],
+              "explanation": "Powerful Hanuman, having burnt the entire city of Lanka, put out the fire on his tail in the ocean. Beholding the burning city, the destroyed gardens and the panic stricken ogres, he began to think:",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 55,
+              "shloka": 1,
+              "shloka_text": "लङ्कां समस्तां सन्दीप्य लाङ्गूलाग्निं महाबलः। निर्वापयामास तदा समुद्रे हरिसत्तमः।। सन्दीप्यमानां विध्वस्तां त्रस्तरक्षोगणां पुरीम्। आवेक्ष्य हनुमान् लङ्कां चिन्तयामास वानरः।।5.55.1।।",
+              "themes": [
+                "aftermath",
+                "reflection",
+                "destruction"
+              ],
+              "translation": "लङ्कां समस्तां the entire city of Lanka, सन्दीप्य having burnt, महाबलः powerful, तदा then, लाङ्गूलाग्निं fire on his tail, समुद्रे in the ocean, निर्वापयामास put off, वानरः vanara, हनुमान् Hanuman, सन्दीप्यमानाम् having been lit, विध्वस्ताम् destroyed, त्रस्तरक्षोगणाम् panic stricken ogres, लङ्कां पुरीम् Lanka city, आवेक्ष्य  seeing, चिन्तयामास began to think."
+            }
+          },
+          {
+            "id": "bala-kanda-1-76",
+            "score": 0.7318259,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "hanuman",
+                "ravana",
+                "brahma"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "kaikeyi_boons",
+                "bharata_return",
+                "agastya_visit",
+                "sita_abduction",
+                "meet_hanuman",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "return_news",
+                "vibhishana_join",
+                "battle_begins",
+                "ravana_death",
+                "return_ayodhya"
+              ],
+              "explanation": "The heroic Hanuman came to know that he could be released from the entanglements of the weapon granted to him through a boon by Brahma. He allowed himself to be restrained by the rakshasas with the ropes for the sake of achieving his other objective of seeing Ravana. Thereafter, he burnt the whole of Lanka except the place where Sita was and returned to deliver the good news to Rama.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 1,
+              "shloka": 76,
+              "shloka_text": "अस्त्रेणोन्मुक्तमात्मानं ज्ञात्वा पैतामहाद्वरात् । मर्षयन्राक्षसान्वीरो यन्त्रिणस्तान्यदृच्छया ।।1.1.76।। ततो दग्ध्वा पुरीं लङ्कामृते सीतां च मैथिलीम् । रामाय प्रियमाख्यातुं पुनरायान्महाकपि: ।।1.1.77।।",
+              "themes": [
+                "war"
+              ],
+              "translation": "वीर: mighty warrior, महाकपि: great monkey, Hanuman, पैतामहात् by Brahma's, वरात् boon, आत्मानम् his own self, अस्त्रेण by the weapon (given by Brahma), उन्मुक्तम् released, ज्ञात्वा coming to know, यदृच्छया casually (in the expectation of his another objective of seeing Ravana), यन्त्रिण: restrained by ropes, तान् राक्षसान् those rakshasas, मर्षयन् while enduring, तत: after completion of that act, मैथिलीम् सीतां ऋते except Sita (Mythili), लङ्कां पुरीम् the city of Lanka, दग्ध्वा having burnt, रामाय for Rama, प्रियम् welcome tidings, आख्यातुम् to deliver, पुन: आयात् returned again."
+            }
+          },
+          {
+            "id": "bala-kanda-1-77",
+            "score": 0.7318259,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "ravana",
+                "brahma"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "kaikeyi_boons",
+                "bharata_return",
+                "agastya_visit",
+                "sita_abduction",
+                "meet_hanuman",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "return_news",
+                "vibhishana_join",
+                "battle_begins",
+                "ravana_death",
+                "return_ayodhya"
+              ],
+              "explanation": "The heroic Hanuman came to know that he could be released from the entanglements of the weapon granted to him through a boon by Brahma. He allowed himself to be restrained by the rakshasas with the ropes for the sake of achieving his other objective of seeing Ravana. Thereafter, he burnt the whole of Lanka except the place where Sita was and returned to deliver the good news to Rama.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 1,
+              "shloka": 77,
+              "shloka_text": "अस्त्रेणोन्मुक्तमात्मानं ज्ञात्वा पैतामहाद्वरात् । मर्षयन्राक्षसान्वीरो यन्त्रिणस्तान्यदृच्छया ।।1.1.76।। ततो दग्ध्वा पुरीं लङ्कामृते सीतां च मैथिलीम् । रामाय प्रियमाख्यातुं पुनरायान्महाकपि: ।।1.1.77।।",
+              "themes": [
+                "war"
+              ],
+              "translation": "वीर: mighty warrior, महाकपि: great monkey, Hanuman, पैतामहात् by Brahma's, वरात् boon, आत्मानम् his own self, अस्त्रेण by the weapon (given by Brahma), उन्मुक्तम् released, ज्ञात्वा coming to know, यदृच्छया casually (in the expectation of his another objective of seeing Ravana), यन्त्रिण: restrained by ropes, तान् राक्षसान् those rakshasas, मर्षयन् while enduring, तत: after completion of that act, मैथिलीम् सीतां ऋते except Sita (Mythili), लङ्कां पुरीम् the city of Lanka, दग्ध्वा having burnt, रामाय for Rama, प्रियम् welcome tidings, आख्यातुम् to deliver, पुन: आयात् returned again."
+            }
+          },
+          {
+            "id": "yuddha-kanda-114-123",
+            "score": 0.6104535,
+            "metadata": {
+              "characters": [
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "bharata_return",
+                "sita_abduction",
+                "lanka_entry",
+                "lanka_burning",
+                "return_news",
+                "ravana_death",
+                "sita_agnipariksha",
+                "return_ayodhya",
+                "vibheeshana_offers_prayers",
+                "traditional_farewell"
+              ],
+              "explanation": "In accordance with tradition, Vibheeshana set fire. He bathed himself and with wet clothes offered in a wet cloth, holding kusa grass a mixture of sesame seeds and water to Ravana. He prostrated to Ravana and offered his prayers with folded palms. Then he comforted the wives of Ravana and all of them to return to Lanka.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 114,
+              "shloka": 123,
+              "shloka_text": "ददौ च पावकंतस्यविधियुक्तंविभीषणः । स्नात्वाचैवार्द्रवस्त्रेणतिलान्दूर्वाभिमिश्रितान् ।।6.114.121।। उदकेन च सम्मिश्रान्प्रदायविधिपूर्वकम् । प्रदायचोदकंतस्मैमूर्ध्नाचैनंनमस्य च ।।6.114.122।। ताःस्त्रियोऽनुनयामाससान्तमुक्त्वापुनःपुनः । गम्यतामितितास्सर्वाविविशुर्नगरीतदा ।।6.114.123।।",
+              "themes": [
+                "devotion",
+                "tradition",
+                "respect"
+              ],
+              "translation": "सःविभीषणः that Vibheeshana, तस्य his, विधियुक्तम् in accordance with tradition, पावकम् set fire, ददौ gave, स्नात्वा bath, आर्द्रवस्त्रेण with wet cloth, दर्बविमिश्रितान् with Kusa grass, उदकेन च water, सम्मिश्रान् mixture, तिलान् sesame seeds, विधिपूर्वकम् scriptural ordinance, प्रदाय offered, तस्मैto him, उदकं च water and, प्रदाय offered, एनम् in the same way, मूर्ध्ना forehead, नमस्य च offered greeting with folded palms, ताःस्त्रियः standing, पुनःपुनः again and again, सान्त्वयित्वा prostrated, गम्यताम् to return, इति thus, स्त्रियो women, अनुनयामास comforted, ताःसर्वाः all of them, ततः there, नगरम् city, विविशुः entered"
+            }
+          },
+          {
+            "id": "yuddha-kanda-114-121",
+            "score": 0.6104535,
+            "metadata": {
+              "characters": [
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "bharata_return",
+                "sita_abduction",
+                "lanka_entry",
+                "lanka_burning",
+                "return_news",
+                "ravana_death",
+                "sita_agnipariksha",
+                "return_ayodhya",
+                "vibheeshana_offers_prayers",
+                "traditional_farewell"
+              ],
+              "explanation": "In accordance with tradition, Vibheeshana set fire. He bathed himself and with wet clothes offered in a wet cloth, holding kusa grass a mixture of sesame seeds and water to Ravana. He prostrated to Ravana and offered his prayers with folded palms. Then he comforted the wives of Ravana and all of them to return to Lanka.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 114,
+              "shloka": 121,
+              "shloka_text": "ददौ च पावकंतस्यविधियुक्तंविभीषणः । स्नात्वाचैवार्द्रवस्त्रेणतिलान्दूर्वाभिमिश्रितान् ।।6.114.121।। उदकेन च सम्मिश्रान्प्रदायविधिपूर्वकम् । प्रदायचोदकंतस्मैमूर्ध्नाचैनंनमस्य च ।।6.114.122।। ताःस्त्रियोऽनुनयामाससान्तमुक्त्वापुनःपुनः । गम्यतामितितास्सर्वाविविशुर्नगरीतदा ।।6.114.123।।",
+              "themes": [
+                "devotion",
+                "tradition",
+                "respect"
+              ],
+              "translation": "सःविभीषणः that Vibheeshana, तस्य his, विधियुक्तम् in accordance with tradition, पावकम् set fire, ददौ gave, स्नात्वा bath, आर्द्रवस्त्रेण with wet cloth, दर्बविमिश्रितान् with Kusa grass, उदकेन च water, सम्मिश्रान् mixture, तिलान् sesame seeds, विधिपूर्वकम् scriptural ordinance, प्रदाय offered, तस्मैto him, उदकं च water and, प्रदाय offered, एनम् in the same way, मूर्ध्ना forehead, नमस्य च offered greeting with folded palms, ताःस्त्रियः standing, पुनःपुनः again and again, सान्त्वयित्वा prostrated, गम्यताम् to return, इति thus, स्त्रियो women, अनुनयामास comforted, ताःसर्वाः all of them, ततः there, नगरम् city, विविशुः entered"
+            }
+          },
+          {
+            "id": "yuddha-kanda-114-122",
+            "score": 0.6104535,
+            "metadata": {
+              "characters": [],
+              "comments": "",
+              "events": [
+                "bharata_return",
+                "sita_abduction",
+                "lanka_entry",
+                "lanka_burning",
+                "return_news",
+                "ravana_death",
+                "sita_agnipariksha",
+                "return_ayodhya",
+                "vibheeshana_offers_prayers",
+                "traditional_farewell"
+              ],
+              "explanation": "In accordance with tradition, Vibheeshana set fire. He bathed himself and with wet clothes offered in a wet cloth, holding kusa grass a mixture of sesame seeds and water to Ravana. He prostrated to Ravana and offered his prayers with folded palms. Then he comforted the wives of Ravana and all of them to return to Lanka.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 114,
+              "shloka": 122,
+              "shloka_text": "ददौ च पावकंतस्यविधियुक्तंविभीषणः । स्नात्वाचैवार्द्रवस्त्रेणतिलान्दूर्वाभिमिश्रितान् ।।6.114.121।। उदकेन च सम्मिश्रान्प्रदायविधिपूर्वकम् । प्रदायचोदकंतस्मैमूर्ध्नाचैनंनमस्य च ।।6.114.122।। ताःस्त्रियोऽनुनयामाससान्तमुक्त्वापुनःपुनः । गम्यतामितितास्सर्वाविविशुर्नगरीतदा ।।6.114.123।।",
+              "themes": [
+                "devotion",
+                "tradition",
+                "respect"
+              ],
+              "translation": "सःविभीषणः that Vibheeshana, तस्य his, विधियुक्तम् in accordance with tradition, पावकम् set fire, ददौ gave, स्नात्वा bath, आर्द्रवस्त्रेण with wet cloth, दर्बविमिश्रितान् with Kusa grass, उदकेन च water, सम्मिश्रान् mixture, तिलान् sesame seeds, विधिपूर्वकम् scriptural ordinance, प्रदाय offered, तस्मैto him, उदकं च water and, प्रदाय offered, एनम् in the same way, मूर्ध्ना forehead, नमस्य च offered greeting with folded palms, ताःस्त्रियः standing, पुनःपुनः again and again, सान्त्वयित्वा prostrated, गम्यताम् to return, इति thus, स्त्रियो women, अनुनयामास comforted, ताःसर्वाः all of them, ततः there, नगरम् city, विविशुः entered"
+            }
+          },
+          {
+            "id": "yuddha-kanda-115-10",
+            "score": 0.6083614,
+            "metadata": {
+              "characters": [
+                "lakshmana",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_abduction",
+                "lanka_entry",
+                "lanka_burning",
+                "ravana_death",
+                "raghava_desires_vibheeshana_consecration"
+              ],
+              "explanation": "\"O gentle Lakshmana! I desire to see this Vibheeshana, Ravana's brother, consecrated at Lanka\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 115,
+              "shloka": 10,
+              "shloka_text": "एषमेपरमःकामोयदिमंरावणानुजम् ।।6.115.10।। लङ्कायांसौम्य पश्येमभिषिक्तंविभीषणम् ।",
+              "themes": [
+                "duty_vs_desire",
+                "brotherhood",
+                "loyalty",
+                "recognition"
+              ],
+              "translation": "सौम्य gentle, एषः being so, मे to me, परमः very, कामः desire, यत् that, रावणानुजम् Ravana's brother, इमंविभीषणम् this Vibheeshana, लङ्कायाम् at Lanka, अभिषिक्तम् consecrate, पश्येयम् wish to see"
+            }
+          },
+          {
+            "id": "sundara-kanda-54-11",
+            "score": 0.59608054,
+            "metadata": {
+              "characters": [
+                "hanuman",
+                "indrajit"
+              ],
+              "comments": "",
+              "events": [
+                "meet_hanuman",
+                "vanara_search",
+                "lanka_burning",
+                "rama_army",
+                "indrajit_battle",
+                "sita_agnipariksha",
+                "systematic_burning"
+              ],
+              "explanation": "Thus Hanuman, the chief of the vanaras set fire to Indrajit's residence and then to Jambumali's and Sumali's building.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 54,
+              "shloka": 11,
+              "shloka_text": "तथा चेन्द्रजितो वेश्म ददाह हरियूथपः। जम्बुमाले स्सुमालेश्च ददाह भवनं ततः।।5.54.11।।",
+              "themes": [
+                "methodical_revenge"
+              ],
+              "translation": "हरियूथपः chief of vanara troops, तथा in that way, इन्द्रजितः Indrajit's, वेश्म residence, ददाह set fire, ततः then, जम्बुमालेः Jambumali's, सुमालेश्च Sumali's, भवनम् building, ददाह burnt."
+            }
+          },
+          {
+            "id": "yuddha-kanda-41-33",
+            "score": 0.59060216,
+            "metadata": {
+              "characters": [
+                "rama",
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "bow_breaking",
+                "agastya_visit",
+                "lanka_entry",
+                "lanka_burning",
+                "blocking_lanka_gate"
+              ],
+              "explanation": "Accompanied by his brother Lakshmana, Rama, armed with bow, blocked the northern gate of Lanka which was like a lofty mountain peak and protected.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 41,
+              "shloka": 33,
+              "shloka_text": "लङ्कायास्तूत्तरंद्वारंशैलशृङ्गमिवोन्नतम् । रामःसहानुजोधन्वीजुगोपचरुरोधच ।।6.41.33।।",
+              "themes": [
+                "brotherhood",
+                "military_strategy",
+                "protection"
+              ],
+              "translation": "सहानुजः accompanied by his brother, रामः Rama, धन्वी armed with bow, लङ्कायाः into Lanka, शैलशृङ्गमिवोन्नतम् like a lofty mountain peak, तम् that, उत्तरद्वारम् northern gate, जुगोप blocked, रुरोधच protected."
+            }
+          },
+          {
+            "id": "sundara-kanda-54-41",
+            "score": 0.572185,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "meet_hanuman",
+                "lanka_entry",
+                "lanka_burning",
+                "sita_agnipariksha",
+                "lanka_destruction",
+                "hanuman_attack"
+              ],
+              "explanation": "With the Fire god spreading flames all over, heroes dead, retreating troops shattered by Hanuman's anger, Lanka appeared as though it was cursed.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 54,
+              "shloka": 41,
+              "shloka_text": "हुताशनज्वालसमावृता सा हतप्रवीरा परिवृत्तयोधा हनूमतः क्रोधबलाभिभूता बभूव शापोपहतेव लङ्का।।5.54.41।।",
+              "themes": [
+                "anger",
+                "pride",
+                "divine",
+                "devastation",
+                "warfare"
+              ],
+              "translation": "हुताशनज्वालसमावृता engulfed in the flames spread by the Firegod, हतप्रवीराः with its heroes dead, परिवृत्तयोधा with the retreating troops, हनूमतः Hanuman's, क्रोधबलाभिभूता by Hanuman's power of anger, सा लङ्का that Lanka, शापोपहतेव as if cursed, बभूव became."
+            }
+          },
+          {
+            "id": "yuddha-kanda-82-7",
+            "score": 0.55380696,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "meet_hanuman",
+                "vanara_search",
+                "lanka_burning",
+                "rama_army",
+                "sita_agnipariksha",
+                "hanuman_attacks_enemies"
+              ],
+              "explanation": "Hanuman went surrounded by Vanara leaders who resembled flaming fire and began to consume the enemy troops like flaming fire.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 82,
+              "shloka": 7,
+              "shloka_text": "स तैर्वानरमुख्यैश्चहनुमान्सर्वतोवृतः । हुताशनइवार्चिष्मानदहच्छत्रुवाहिनीम् ।।6.82.7।।",
+              "themes": [
+                "destruction",
+                "power"
+              ],
+              "translation": "सः he, हनुमान् Hanuman, तैः those, वानरमुख्यैः Vanara leaders, सर्वतंवृतः surrounded all over, अर्चिष्मान्, हुताशनःइव like flaming fire, शत्रुवाहिनीम् enemy troops, अदहत् consumed"
+            }
+          },
+          {
+            "id": "sundara-kanda-54-31",
+            "score": 0.54116637,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "meet_hanuman",
+                "lanka_entry",
+                "lanka_burning",
+                "sita_agnipariksha",
+                "fire_spreads_high"
+              ],
+              "explanation": "The fierce fire lit by Hanuman, the hero endowed with great speed, spread around in circles and shot up flying high to the top of the Trikuta mountain on which Lanka was located.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 54,
+              "shloka": 31,
+              "shloka_text": "ततस्तु लङ्कापुरपर्वताग्रे समुत्थितो भीमपराक्रमोऽग्निः। प्रसार्य चूडावलयं प्रदीप्तो हनूमता वेगवता विसृष्टः।।5.54.31।।",
+              "themes": [
+                "power",
+                "destruction"
+              ],
+              "translation": "ततः then, वेगवता by the hero of great speed, हनूमता by Hanuman, विसृष्टः lit, भीमपराक्रमः of fierce valour, अग्निः fire, चूडावलयम् creating a circle, प्रसार्य having spread, प्रदीप्तः burning, लङ्कापुरपर्वताग्रे on the mountain top of Lanka, समुत्थितः  rose."
+            }
+          },
+          {
+            "id": "yuddha-kanda-118-7",
+            "score": 0.45853055,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "meet_hanuman",
+                "ocean_crossing",
+                "lanka_entry",
+                "lanka_burning",
+                "bridge_construction",
+                "hanuman_leap",
+                "lanka_devastation"
+              ],
+              "explanation": "\"Hanuman's leaping across the ocean and devastating action of Lanka has yielded results now.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 118,
+              "shloka": 7,
+              "shloka_text": "लङ्घनं च समुद्रस्यलङ्कायाश्चापिमर्धनम् । सफलंतस्य च श्लाघ्यमद्यकर्महनूमतः ।।6.118.7।।",
+              "themes": [
+                "action",
+                "success"
+              ],
+              "translation": "तस्य his, हनूमतः Hanuman, समुद्रस्य ocean's, लङ्घनम् leaping across, लङ्कायाः of Lanka, मर्धनंच Devastation, श्लाघ्यम् laudable, कर्म action, अद्य now, सफलम् result"
+            }
+          },
+          {
+            "id": "yuddha-kanda-114-10",
+            "score": 0.44462508,
+            "metadata": {
+              "characters": [
+                "rama",
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "jatayu_fight",
+                "meet_hanuman",
+                "lanka_entry",
+                "lanka_burning",
+                "hanuman_enters_lanka"
+              ],
+              "explanation": "\"To Lanka, which is inaccessible to anyone, Hanuman entered by increasing his valour. Knowing this we worried (that Rama may not be mere mortal).\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 114,
+              "shloka": 10,
+              "shloka_text": "यदैवनगरींलङ्कांदुष्प्रवेशांसुरैरपि । प्रविष्टोहनुमान्वीर्यात्तदैवव्यथितावयम् ।।6.114.10।।",
+              "themes": [
+                "victory",
+                "valour",
+                "concern"
+              ],
+              "translation": "यदैव by that action, हनुमान् Hanuman, सुरैरपि even Suras, दुष्प्रवेशाम् difficult to enter, लङ्कांनगरीम् Lanka city, वीर्यात् valour, प्रविष्टः increasing, तदैव like that, वयम् knowing this, व्यथिताः worried"
+            }
+          },
+          {
+            "id": "sundara-kanda-2-17",
+            "score": 0.41596606,
+            "metadata": {
+              "characters": [
+                "sita",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "bow_breaking",
+                "sita_marriage",
+                "coronation_plan",
+                "viradha_encounter",
+                "agastya_visit",
+                "sita_abduction",
+                "meet_hanuman",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "ravana_death",
+                "rama_coronation",
+                "hanuman_arrival_in_lanka"
+              ],
+              "explanation": "Fortunate Hanuman having reached Lanka ruled by Ravana found it surrounded by moats full of blue lotuses, guarded by demons with frightening bows, in view of Sita abducted and kept there. It was protected by boundary walls inlaid with gold that great and beautiful city with buildings resembling the assembly of planets and whitewashed, elevated  houses looking like autumnal clouds and well laid out streets decorated with garlands of banners and flag posts, rows of colourful creepers and festoons. The city of Lanka appeared like Amaravati, the city of gods.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 2,
+              "shloka": 17,
+              "shloka_text": "समासाद्य च लक्ष्मीवान् लङ्कां रावणपालिताम्। परिखाभिः सपद्माभिः सोत्पलाभिरलङ्कृताम्।।5.2.14।। सीतापहरणार्थेन रावणेन सुरक्षिताम्। समन्ताद्विचरद्भिश्च राक्षसैरुग्रधन्विभिः।।5.2.15।। काञ्चनेनावृतां रम्यां प्राकारेण महापुरीम्। गृहैश्च ग्रहसंकाशैः शारदाम्बुदसन्निभैः।।5.2.16।। पाण्डुराभिः प्रतोलीभिरुच्चाभिरभिसंवृताम्। अट्टालकशताकीर्णां पताकाध्वजमालिनीम्।।5.2.17।। तोरणैः काञ्चनैर्दिव्यैर्लतापङ्त्किविचित्रितैः। ददर्श हनुमान् लङ्कां दिवि देवपुरीं यथा।।5.2.18।।",
+              "themes": [
+                "dharma",
+                "rajadharma",
+                "justice",
+                "search",
+                "divine",
+                "reconnaissance",
+                "strategic_observation"
+              ],
+              "translation": "लक्ष्मीवान् fortunate, हनुमान् Hanuman, लङ्काम् Lanka, समासाद्य having reached, रावणपालिताम् ruled by Ravana, सपद्माभिः with lotuses, सोत्पलाभिः and blue  lotuses, परिखाभिः by moats, अलङ्कृताम् decorated, सीतापहरणार्थेन keeping Sita's abduction in view, रावणेन by Ravana, समन्तात् all over, विचरद्भि: moving, उग्रधन्विभिः holding frightening bows, राक्षसैः by demons, सुरक्षिताम् well protected, काञ्चनेन with golden, प्राकारेण by boundary wall, आवृताम् surrounded, रम्याम् beautiful, महापुरीम् great city, ग्रहसङ्काशै: resembling the assembly of planets, शारदाम्बुदसन्निभैः resembling autumnal clouds, गृहैश्च houses, पाण्डुराभिः white, उच्चाभिः elevated, प्रतोलीभिः streets, अभिसंवृताम्  crowded,  पताकाध्वजमालिनीम् decorated with banners, flags posts and garlands,दिव्यैः wonderful, काञ्चनैः  golden, लतापङ्त्किविचित्रितैः by rows of colourful creepers, तोरणैः with festoons, दिवि in heaven, देवपुरीमिव like the city of gods, लङ्काम् Lanka, ददर्श saw."
+            }
+          },
+          {
+            "id": "sundara-kanda-2-18",
+            "score": 0.41596606,
+            "metadata": {
+              "characters": [
+                "sita",
+                "hanuman",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "bow_breaking",
+                "sita_marriage",
+                "coronation_plan",
+                "viradha_encounter",
+                "agastya_visit",
+                "sita_abduction",
+                "meet_hanuman",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "ravana_death",
+                "rama_coronation",
+                "hanuman_arrival_in_lanka"
+              ],
+              "explanation": "Fortunate Hanuman having reached Lanka ruled by Ravana found it surrounded by moats full of blue lotuses, guarded by demons with frightening bows, in view of Sita abducted and kept there. It was protected by boundary walls inlaid with gold that great and beautiful city with buildings resembling the assembly of planets and whitewashed, elevated  houses looking like autumnal clouds and well laid out streets decorated with garlands of banners and flag posts, rows of colourful creepers and festoons. The city of Lanka appeared like Amaravati, the city of gods.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 2,
+              "shloka": 18,
+              "shloka_text": "समासाद्य च लक्ष्मीवान् लङ्कां रावणपालिताम्। परिखाभिः सपद्माभिः सोत्पलाभिरलङ्कृताम्।।5.2.14।। सीतापहरणार्थेन रावणेन सुरक्षिताम्। समन्ताद्विचरद्भिश्च राक्षसैरुग्रधन्विभिः।।5.2.15।। काञ्चनेनावृतां रम्यां प्राकारेण महापुरीम्। गृहैश्च ग्रहसंकाशैः शारदाम्बुदसन्निभैः।।5.2.16।। पाण्डुराभिः प्रतोलीभिरुच्चाभिरभिसंवृताम्। अट्टालकशताकीर्णां पताकाध्वजमालिनीम्।।5.2.17।। तोरणैः काञ्चनैर्दिव्यैर्लतापङ्त्किविचित्रितैः। ददर्श हनुमान् लङ्कां दिवि देवपुरीं यथा।।5.2.18।।",
+              "themes": [
+                "dharma",
+                "rajadharma",
+                "justice",
+                "search",
+                "divine",
+                "reconnaissance",
+                "strategic_observation"
+              ],
+              "translation": "लक्ष्मीवान् fortunate, हनुमान् Hanuman, लङ्काम् Lanka, समासाद्य having reached, रावणपालिताम् ruled by Ravana, सपद्माभिः with lotuses, सोत्पलाभिः and blue  lotuses, परिखाभिः by moats, अलङ्कृताम् decorated, सीतापहरणार्थेन keeping Sita's abduction in view, रावणेन by Ravana, समन्तात् all over, विचरद्भि: moving, उग्रधन्विभिः holding frightening bows, राक्षसैः by demons, सुरक्षिताम् well protected, काञ्चनेन with golden, प्राकारेण by boundary wall, आवृताम् surrounded, रम्याम् beautiful, महापुरीम् great city, ग्रहसङ्काशै: resembling the assembly of planets, शारदाम्बुदसन्निभैः resembling autumnal clouds, गृहैश्च houses, पाण्डुराभिः white, उच्चाभिः elevated, प्रतोलीभिः streets, अभिसंवृताम्  crowded,  पताकाध्वजमालिनीम् decorated with banners, flags posts and garlands,दिव्यैः wonderful, काञ्चनैः  golden, लतापङ्त्किविचित्रितैः by rows of colourful creepers, तोरणैः with festoons, दिवि in heaven, देवपुरीमिव like the city of gods, लङ्काम् Lanka, ददर्श saw."
+            }
+          },
+          {
+            "id": "sundara-kanda-2-16",
+            "score": 0.41596606,
+            "metadata": {
+              "characters": [
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "bow_breaking",
+                "sita_marriage",
+                "coronation_plan",
+                "viradha_encounter",
+                "agastya_visit",
+                "sita_abduction",
+                "meet_hanuman",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "ravana_death",
+                "rama_coronation",
+                "lanka_arrival"
+              ],
+              "explanation": "Fortunate Hanuman having reached Lanka ruled by Ravana found it surrounded by moats full of blue lotuses, guarded by demons with frightening bows, in view of Sita abducted and kept there. It was protected by boundary walls inlaid with gold that great and beautiful city with buildings resembling the assembly of planets and whitewashed, elevated  houses looking like autumnal clouds and well laid out streets decorated with garlands of banners and flag posts, rows of colourful creepers and festoons. The city of Lanka appeared like Amaravati, the city of gods.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 2,
+              "shloka": 16,
+              "shloka_text": "समासाद्य च लक्ष्मीवान् लङ्कां रावणपालिताम्। परिखाभिः सपद्माभिः सोत्पलाभिरलङ्कृताम्।।5.2.14।। सीतापहरणार्थेन रावणेन सुरक्षिताम्। समन्ताद्विचरद्भिश्च राक्षसैरुग्रधन्विभिः।।5.2.15।। काञ्चनेनावृतां रम्यां प्राकारेण महापुरीम्। गृहैश्च ग्रहसंकाशैः शारदाम्बुदसन्निभैः।।5.2.16।। पाण्डुराभिः प्रतोलीभिरुच्चाभिरभिसंवृताम्। अट्टालकशताकीर्णां पताकाध्वजमालिनीम्।।5.2.17।। तोरणैः काञ्चनैर्दिव्यैर्लतापङ्त्किविचित्रितैः। ददर्श हनुमान् लङ्कां दिवि देवपुरीं यथा।।5.2.18।।",
+              "themes": [
+                "dharma",
+                "rajadharma",
+                "justice",
+                "search",
+                "divine",
+                "beauty",
+                "danger"
+              ],
+              "translation": "लक्ष्मीवान् fortunate, हनुमान् Hanuman, लङ्काम् Lanka, समासाद्य having reached, रावणपालिताम् ruled by Ravana, सपद्माभिः with lotuses, सोत्पलाभिः and blue  lotuses, परिखाभिः by moats, अलङ्कृताम् decorated, सीतापहरणार्थेन keeping Sita's abduction in view, रावणेन by Ravana, समन्तात् all over, विचरद्भि: moving, उग्रधन्विभिः holding frightening bows, राक्षसैः by demons, सुरक्षिताम् well protected, काञ्चनेन with golden, प्राकारेण by boundary wall, आवृताम् surrounded, रम्याम् beautiful, महापुरीम् great city, ग्रहसङ्काशै: resembling the assembly of planets, शारदाम्बुदसन्निभैः resembling autumnal clouds, गृहैश्च houses, पाण्डुराभिः white, उच्चाभिः elevated, प्रतोलीभिः streets, अभिसंवृताम्  crowded,  पताकाध्वजमालिनीम् decorated with banners, flags posts and garlands,दिव्यैः wonderful, काञ्चनैः  golden, लतापङ्त्किविचित्रितैः by rows of colourful creepers, तोरणैः with festoons, दिवि in heaven, देवपुरीमिव like the city of gods, लङ्काम् Lanka, ददर्श saw."
+            }
+          },
+          {
+            "id": "sundara-kanda-54-30",
+            "score": 0.41347715,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "meet_hanuman",
+                "vanara_search",
+                "lanka_entry",
+                "lanka_burning",
+                "rama_army",
+                "hanuman_burns_lanka"
+              ],
+              "explanation": "Hanuman, endowed with great speed, burnt Lanka just as Tripurari, or Rudra burnt theTripuras (three cities of gold, silver and iron).",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 54,
+              "shloka": 30,
+              "shloka_text": "हनूमता वेगवता वानरेण महात्मना। लङ्कापुरं प्रदग्धं तद्रुद्रेण त्रिपुरं यथा।।5.54.30।।",
+              "themes": [
+                "valor",
+                "destruction"
+              ],
+              "translation": "वेगवता वानरेण by the vanara of great spped, महात्मना by the great self, हनूमता by Hanuman, तत् that, लङ्कापुरम् Lanka city, रुद्रेण by Rudra, त्रिपुरं यथा like Tripura, प्रदग्धम् was burnt."
+            }
+          },
+          {
+            "id": "sundara-kanda-54-6",
+            "score": 0.39396778,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "",
+              "events": [
+                "meet_hanuman",
+                "lanka_entry",
+                "lanka_burning",
+                "hanuman_burning_lanka"
+              ],
+              "explanation": "The great Hanuman, with his burning tail wandered on tops of the mansions of Lanka, which looked like clouds with lightning.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 54,
+              "shloka": 6,
+              "shloka_text": "ततः प्रदीप्तलाङ्गूलस्सविद्युदिव तोयदः। भवनाग्रेषु लङ्काया विचचार महाकपिः।।5.54.6।।",
+              "themes": [
+                "search",
+                "power",
+                "intimidation"
+              ],
+              "translation": "ततः then, प्रदीप्तलाङ्गूलः with his burning tail, महाकपिः great monkey, सविद्युत् along with lightning, तोयदः इव rain cloudslike, लङ्कायाः of Lanka, भवनाग्रेषु on tops of the mansions, विचचार wandered."
+            }
+          },
+          {
+            "id": "sundara-kanda-42-31",
+            "score": 0.3851434,
+            "metadata": {
+              "characters": [],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "meet_hanuman",
+                "lanka_entry",
+                "lanka_burning",
+                "rama_coronation",
+                "hanuman_enlarge",
+                "echo_lanka"
+              ],
+              "explanation": "Hanuman, son of Maruti, enlarged his body to a huge size and patted himself wildly  making loud noise that echoed the entire Lanka.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 42,
+              "shloka": 31,
+              "shloka_text": "स भूत्वा सुमहाकायो हनुमान्मारुतात्मजः। धृष्टमास्फोटयामास लङ्कां शब्देन पूरयन्।।5.42.31।।",
+              "themes": [
+                "rajadharma",
+                "filial_dharma",
+                "strength",
+                "fear"
+              ],
+              "translation": "मारुतात्मजः Maruti's son, सः हनुमान् that Hanuman, सुमहाकायः with a huge body, भूत्वा assuming, शब्देन by the sound, लङ्काम् entire Lanka, पूरयन् echoed, धृष्टम् wildly, अस्फोटयामास patted."
+            }
+          },
+          {
+            "id": "sundara-kanda-2-1",
+            "score": 0.3680649,
+            "metadata": {
+              "characters": [
+                "hanuman"
+              ],
+              "comments": "Hanuman reaches the main entrance of Lanka  assuming a diminutive form.",
+              "events": [
+                "meet_hanuman",
+                "ocean_crossing",
+                "lanka_entry",
+                "lanka_burning",
+                "bridge_construction",
+                "sea_crossing",
+                "lanka_sighting"
+              ],
+              "explanation": "The mighty Hanuman crossed the inviolable sea, stood comfortably on the peak of Trikuta mountain and looked at Lanka.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 2,
+              "shloka": 1,
+              "shloka_text": "स सागरमनादृष्यमतिक्रम्य महाबलः। त्रिकूटशिखरे लङ्कां स्थितां स्वस्थो ददर्श ह।।5.2.1।।",
+              "themes": [
+                "search",
+                "strength",
+                "courage"
+              ],
+              "translation": "महाबलः mighty, सः Hanuman, अनाधृष्यम् inviolable, सागरम् sea, अतिक्रम्य having crossed, स्वस्थः comfortable, त्रिकूटशिखरे on Trikuta mountain peak, स्थिताम् standing, लङ्काम् Lanka, ददर्श ह saw."
+            }
+          },
+          {
+            "id": "bala-kanda-1-73",
+            "score": 0.3599264,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "sita_abduction",
+                "meet_hanuman",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "return_news",
+                "ravana_death",
+                "sita_discovery"
+              ],
+              "explanation": "Hanuman arrived at the city of Lanka ruled by Ravana and found Sita in the Ashoka garden meditating on Rama.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 1,
+              "shloka": 73,
+              "shloka_text": "तत्र लङ्कां समासाद्य पुरीं रावणपालिताम् । ददर्श सीतां ध्यायन्तीमशोकवनिकां गताम् ।।1.1.73।।",
+              "themes": [
+                "hope",
+                "devotion"
+              ],
+              "translation": "रावणपालिताम् ruled by Ravana, लङ्काम् पुरीम् city of Lanka, समासाद्य having reached, तत्र there, अशोकवनिकाम् गताम् who had gone to Ashoka garden, ध्यायन्तीम् contemplating (on Rama), सीताम् Sita, ददर्श found."
+            }
+          }
+        ],
+        "totalRetrieved": 25,
+        "expandedQuery": "Hanuman burned Lanka after meeting Vibhishana, who is Ravana's brother and a devotee of Lord Rama. Vibhishana advised Hanuman on the layout of Lanka and urged him to set it ablaze as a demonstration of Rama's power."
+      },
+      "retrieval_latency_ms": 0,
+      "classification_result": {
+        "model": "gpt-4o",
+        "category": "Timeline sequencing",
+        "category_id": 5,
+        "confidence": 1,
+        "template_selected": "T1"
+      },
+      "classification_latency_ms": 0,
+      "generation_result": {
+        "model": "gpt-4o",
+        "template_used": "T1",
+        "answer": "**Answer:** The text describes that Hanuman burnt Lanka after talking to Vibhishana. In the Sundara Kanda, it is mentioned that Hanuman set fire to Lanka [Sundara-Kanda 54.42]. Additionally, Sundara Kanda explicitly mentions Hanuman expressing self-reproach after burning Lanka [Sundara-Kanda 55.2]. However, there are no retrieved citations that specifically describe Hanuman meeting Vibhishana before the burning. Thus, the provided texts do not explicitly clarify the exact sequence regarding Hanuman meeting Vibhishana before or after burning Lanka, and do not explicitly mention a meeting with Vibhishana in this context.",
+        "citations_in_answer": [
+          "Sundara-Kanda 54.42",
+          "Sundara-Kanda 55.2"
+        ]
+      },
+      "generation_latency_ms": 21738,
+      "total_latency_ms": 31664,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The text describes that Hanuman burnt Lanka after talking to Vibhishana. In the Sundara Kanda, it is mentioned that Hanuman set fire to Lanka [Sundara-Kanda 54.42]. Additionally, Sundara Kanda explicitly mentions Hanuman expressing self-reproach after burning Lanka [Sundara-Kanda 55.2]. However, there are no retrieved citations that specifically describe Hanuman meeting Vibhishana before the burning. Thus, the provided texts do not explicitly clarify the exact sequence regarding Hanuman meeting Vibhishana before or after burning Lanka, and do not explicitly mention a meeting with Vibhishana in this context.",
+        "textualBasis": {
+          "kanda": "Sundara-Kanda",
+          "sarga": [
+            54,
+            55
+          ],
+          "shloka": [
+            42,
+            2
+          ],
+          "citations": [
+            "Sundara-Kanda 54.42",
+            "Sundara-Kanda 55.2"
+          ]
+        },
+        "explanation": "The retrieved citations detail that Hanuman burned Lanka during his mission there, with references to him setting the city on fire and subsequently reflecting on his actions [Sundara-Kanda 54.42, Sundara-Kanda 55.2]. The text doesn't provide a specific account of a meeting with Vibhishana that ties directly within these actions, indicating the burning occurred as a significant event without detailing this meeting in the context of the provided shlokas."
+      }
+    }
+  }
+]

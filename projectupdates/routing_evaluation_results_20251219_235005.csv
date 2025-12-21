@@ -1,0 +1,6 @@
+index,user_query,system_model,system_category,expected_category,result,match_type,note
+1,Does the Valmiki Ramayana end with the coronation of Rama?,openai,Return & coronation,Return & coronation,PASS,EXACT,The system's category exactly matches the expected category.
+2,In which section does Valmiki describe the origin of the Sloka meter?,openai,Sarga overview,Sarga overview,PASS,EXACT,The system's category exactly matches the expected category.
+3,"How long did the Pandavas... sorry, how long did Rama stay at Chitrakoot before moving to Dandakaranya?",openai,Story chronology,Story chronology,PASS,EXACT,The system's category exactly matches the expected category.
+4,Did Hanuman burn Lanka before or after meeting Vibhishana?,openai,Timeline sequencing,Timeline sequencing,PASS,EXACT,The system category exactly matches the expected category.
+5,"When did Indrajit use the Brahmastra? Was it the first, second, or third encounter?",openai,Timeline sequencing,Timeline sequencing,PASS,EXACT,The system category exactly matches the expected category.

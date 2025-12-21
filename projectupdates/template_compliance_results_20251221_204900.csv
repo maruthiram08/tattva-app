@@ -1,0 +1,4 @@
+index,user_query,system_model,assigned_template,structural_result,semantic_result,overall_compliance,failures,summary
+14,Why was the killing of Sambuka performed by Rama in Uttara Kanda?,openai,T1,FAIL,FAIL,FAIL,"- No inline citations
+- No citations/references section
+</evaluation_results>","The answer fails to comply with the T1 template requirements. It lacks inline citations and a references/citations section. While the answer claims a lack of explicit information in the source, it still needs to cite *what was searched* to make that determination according to T1 requirements."

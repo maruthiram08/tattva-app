@@ -1,0 +1,90 @@
+index,user_query,system_model,assigned_template,structural_result,semantic_result,overall_compliance,failures,summary
+1,Does the Valmiki Ramayana end with the coronation of Rama?,openai,T1,PASS,FAIL,FAIL,"- Semantic violation: Claims 1 and 4 are unsupported by cited shlokas. Claim 2 is partially supported.
+</evaluation_results>","The answer attempts to address the query by analyzing the Ayodhya Kanda, but several claims are not directly supported by the cited shlokas, violating the semantic requirements of the T1 template. Specifically, it incorrectly claims that shloka 67.38 doesn't include Rama's return, and it draws unsupported conclusions about the emphasis of Ayodhya Kanda's ending."
+2,In which section does Valmiki describe the origin of the Sloka meter?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>",The answer adheres to the structural requirements of the T1 template. All factual claims made in the answer are directly supported by the provided shlokas.
+3,"How long did the Pandavas... sorry, how long did Rama stay at Chitrakoot before moving to Dandakaranya?",openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>
+
+<evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Answer section: PASS - Introductory paragraph functions as an answer
+- Inline citation: PASS - Citations provided inline.
+- Citations section: PASS - Citations listed
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks**
+- Claim: ""The text does not state the exact duration Rama stayed in Chitrakoot before moving to Dandakaranya.""
+- Citation: [Ayodhya Kanda 94.1]
+- Shloka text: ""दीर्घकालोषित स्तस्मिन्गिरौ गिरिवनप्रियः।""
+- Judgment: SUPPORTED - Shloka states Rama stayed a ""long time,"" implying that the duration is not explicitly stated in the text.
+
+- Claim: ""It does mention that Rama stayed there for a long period [Ayodhya Kanda 94.1]""
+- Citation: [Ayodhya Kanda 94.1]
+- Shloka text: ""दीर्घकालोषित स्तस्मिन्गिरौ गिरिवनप्रियः।""
+- Judgment: SUPPORTED - The word ""dIrghakAloshita"" means ""long time residing"".
+
+- Claim: ""when Bharata visited Rama, he found him on Chitrakoot mountain [Ayodhya Kanda 99.4]""
+- Citation: [Ayodhya Kanda 99.4]
+- Shloka text: ""गच्छन्नेवाथ भरतस्तापसालय संस्थिताम्। भ्रातुः पर्णकुटीं श्रीमानुटजं च ददर्श ह।। ""
+- Judgment: SUPPORTED - The verse states that Bharata saw Rama's hermitage ('bhrAtuH parNakutIm'). The word 'tApasAlaya samsthitAM' suggests hermitages on chitrakuta. This supports Bharata finding Rama on Chitrakoot.
+
+- Claim: ""after Bharata left, Rama decided to enter the Dandaka forest [Bala Kanda 1.40]""
+- Citation: [Bala Kanda 1.40]
+- Shloka text: ""गते तु भरते श्रीमान् सत्यसन्धो जितेन्द्रिय: ।।1.1.39।। रामस्तु पुनरालक्ष्य नागरस्य जनस्य च । तत्रागमनमेकाग्रो दण्डकान्प्रविवेश ह ।।1.1.40।।""
+- Judgment: SUPPORTED - ""gate tu bharate"" means ""after Bharata left"". ""daNDakAnpravivesha ha"" means ""entered the Dandaka forest"". The rest of the verse confirms Rama's resolution.
+
+**Semantic Result:** PASS
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer is fully compliant with the T1 template. It provides a factual answer with direct textual support from cited shlokas. There is no use of speculation or interpretation.
+
+**Failures:** None
+</evaluation_results>","The answer adheres to the structural requirements of template T1, including the presence of an answer section, inline citations, and a references section. The factual claims presented are directly supported by the cited shlokas, and no speculation or personal opinions are present."
+4,Did Hanuman burn Lanka before or after meeting Vibhishana?,openai,T1,PASS,FAIL,FAIL,"- Factual claims unsupported by citations.
+</evaluation_results>","The answer fails to comply with the T1 template due to semantic errors. While the structure is correct, several factual claims are not directly supported by the cited shlokas, particularly the claim about Hanuman meeting and being commanded by Vibhishana before burning Lanka. The sequence of events is also not validated by the text."
+5,"When did Indrajit use the Brahmastra? Was it the first, second, or third encounter?",openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - Text provides a direct and factual response.
+- At least one inline citation: PASS - Inline citations are included.
+- Presence of citations/references section: PASS - A ""Citations"" section is present.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+- Claim: ""Indrajit first used the Brahmastra against the son of the Windgod, Hanuman, realizing he could not be killed and caught him with Brahma's divine weapon [Sundara Kanda 48.37]""
+- Citation: Sundara Kanda 48.37
+- Shloka text: ""अवध्योऽयमिति ज्ञात्वा तमस्त्रेणास्त्रतत्त्ववित्। निजग्राह महाबाहुर्मारुतात्मजमिन्द्रजित्।।5.48.37।। ""
+- Judgment: SUPPORTED - The shloka directly states Indrajit realized Hanuman was unkillable and used the Brahmastra to capture him.
+
+- Claim: ""In subsequent encounters, Indrajit is noted for his mastery in using different divine weapons, including those conferred by Brahma [Yuddha Kanda 85.18]""
+- Citation: Yuddha Kanda 85.18
+- Shloka text: ""स हिब्रह्मास्त्रवित्प्राज्ञोमहामायोमहाबल. । करोत्यसंज्ञान् सङ्ग्रामेदेवान्सवरुणानपि ।।6.85.18।। ""
+- Judgment: SUPPORTED - The shloka mentions his skill in using Brahma's weapon.
+
+- Claim: ""He also remained concealed, exhibiting his prowess multiple times against the Vanara army [Yuddha Kanda 73.34]""
+- Citation: Yuddha Kanda 73.34
+- Shloka text: ""स तुनालीकनाराचैर्गदाभिर्मुसलैरपि । रक्षोभिस्सम्वृतस्सङ्ख्येवानरान् विचकर्त ह ।।6.73.34।। ""
+- Judgment: SUPPORTED - The shloka states he was concealed and attacked the Vanaras.
+
+- Claim: ""It's clear that Indrajit's encounters involved various uses of divine weapons, but the text specifically denotes his use of the Brahmastra against Hanuman early on [Sundara Kanda 48.37]""
+- Citation: Sundara Kanda 48.37
+- Shloka text: ""अवध्योऽयमिति ज्ञात्वा तमस्त्रेणास्त्रतत्त्ववित्। निजग्राह महाबाहुर्मारुतात्मजमिन्द्रजित्।।5.48.37।। ""
+- Judgment: SUPPORTED - The shloka confirms the use of Brahmastra against Hanuman.
+
+**Semantic Result:** PASS
+
+**Overall Compliance:** PASS
+
+**Summary:** The answer fully complies with the T1 template. Structurally sound with clear citations, and semantically accurate with all claims directly supported by the provided shlokas.
+
+**Failures:** None
+</evaluation_results>","The answer adheres to the structural and semantic requirements of the T1 template. All factual claims are directly supported by the cited shlokas, and the answer avoids speculation or subjective interpretations."

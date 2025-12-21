@@ -1,0 +1,4 @@
+index,user_query,system_model,assigned_template,structural_result,semantic_result,overall_compliance,failures,summary
+4,Did Hanuman burn Lanka before or after meeting Vibhishana?,openai,T1,PASS,FAIL,FAIL,"- Introduction of unsupported inferences/interpretations (order of events).
+- Factual inaccuracy (Yuddha Kanda 116.1 does not mention Vibhishana).
+</evaluation_results>","The answer attempts to present factual information but introduces unsupported inferences and interpretations, particularly regarding the order of events (burning Lanka vs. interacting with Vibhishana), which violates T1's requirements. The claim mentioning Hanuman and Vibhishana in Yuddha Kanda 116.1 is also incorrect, as that verse doesn't mention Vibhishana."

@@ -1,0 +1,1305 @@
+[
+  {
+    "index": 1,
+    "user_query": "Recount the episode of the female ascetic Svayamprabha.",
+    "classification": "Minor episodes",
+    "expected_template": "T1",
+    "openai": {
+      "status": "OK",
+      "template_used": "T1",
+      "answer": "**Answer:** The text mentions Sabari, a female ascetic proficient in practicing austerities. Rama, after the incident with Kabandha, was informed about Sabari, a dharma-practicing female ascetic from the Sabara community [Bala-Kanda 1.56]. Later, Sabari was described as an old, accomplished ascetic who was adored by siddhas and stood before Rama to speak with him [Aranya-Kanda 74.10].",
+      "whatTextStates": "The text describes Sabari as a female ascetic proficient in religious practices and one who Rama visits after being informed by Kabandha.",
+      "citations": [
+        "[Bala-Kanda 1.56]",
+        "[Aranya-Kanda 74.10]"
+      ],
+      "citation_count": 2,
+      "has_inline_citations": true,
+      "answer_citations": 2,
+      "wts_citations": 0,
+      "textual_basis_citations": [
+        "Bala-Kanda 1.56",
+        "Aranya-Kanda 74.10"
+      ],
+      "retrieved_count": 15,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The text mentions Sabari, a female ascetic proficient in practicing austerities. Rama, after the incident with Kabandha, was informed about Sabari, a dharma-practicing female ascetic from the Sabara community [Bala-Kanda 1.56]. Later, Sabari was described as an old, accomplished ascetic who was adored by siddhas and stood before Rama to speak with him [Aranya-Kanda 74.10].",
+        "textualBasis": {
+          "kanda": "Bala-Kanda, Aranya-Kanda",
+          "sarga": [
+            1,
+            74
+          ],
+          "shloka": [
+            56,
+            10
+          ],
+          "citations": [
+            "Bala-Kanda 1.56",
+            "Aranya-Kanda 74.10"
+          ]
+        },
+        "explanation": "The episode of the female ascetic Sabari is mentioned in the text when Kabandha, after being killed by Rama, informs him about Sabari. She is described as an accomplished ascetic who has been performing religious duties. Rama visits her, and she is shown as an old woman, respected by siddhas, suggesting her spiritual stature.",
+        "whatTextStates": "The text describes Sabari as a female ascetic proficient in religious practices and one who Rama visits after being informed by Kabandha.",
+        "traditionalInterpretations": "Traditional interpretations often embellish Sabari's devotion and her interaction with Rama, but the text directly states her religious dedication and her encounter with Rama.",
+        "limitOfCertainty": "The exact actions and words of Sabari during her interaction with Rama are not detailed beyond her standing and speaking with him.",
+        "outOfScopeNotice": "Details about Svayamprabha and her role in the Ramayana are not covered in the provided citations.",
+        "why": "The response strictly follows the provided text, ensuring that claims about Sabari are clearly supported by specific citations.",
+        "redirect": {
+          "introduction": "The requested episode details Sabari, not Svayamprabha, from the available text.",
+          "alternatives": [
+            "Search for mentions of Svayamprabha in other parts of the Ramayana.",
+            "Request details about Sabari's role outside the cited verses."
+          ]
+        },
+        "whatICanHelpWith": [
+          "Provide details on episodes involving Sabari.",
+          "Clarify events directly mentioned in citations.",
+          "Guide to specific parts of the Ramayana based on questions."
+        ]
+      }
+    },
+    "claude": {
+      "status": "OK",
+      "template_used": "T1",
+      "answer": "**Answer:** The text mentions the female ascetic Svayamprabha in the following way:\n\nThe Ramayana describes how Rama, determined to go to the forest, was seen by Devi Kausalya, who then spoke words to him and wished to perform ceremonies for his wellbeing [Ayodhya-Kanda 24.38]. The text also states that Sita, the beloved queen of Rama, loves to wander in forests and will surely visit this grove [Sundara-Kanda 14.45]. \n\nHowever, the provided citations do not contain any explicit references to the episode of the female ascetic Svayamprabha. The text does not state any details about this character or any related events.",
+      "whatTextStates": "",
+      "citations": [
+        "[Ayodhya-Kanda 24.38]",
+        "[Sundara-Kanda 14.45]"
+      ],
+      "citation_count": 2,
+      "has_inline_citations": true,
+      "answer_citations": 2,
+      "wts_citations": 0,
+      "textual_basis_citations": [
+        "Ayodhya-Kanda 24.38",
+        "Sundara-Kanda 14.45",
+        "Ayodhya-Kanda 81.7",
+        "Ayodhya-Kanda 48.19",
+        "Ayodhya-Kanda 37.35",
+        "Sundara-Kanda 24.25",
+        "Sundara-Kanda 14.47",
+        "Ayodhya-Kanda 53.34",
+        "Ayodhya-Kanda 78.2",
+        "Ayodhya-Kanda 88.30",
+        "Sundara-Kanda 16.22",
+        "Ayodhya-Kanda 29.10",
+        "Ayodhya-Kanda 12.24",
+        "Kishkindha-Kanda 5.4"
+      ],
+      "retrieved_count": 15,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The text mentions the female ascetic Svayamprabha in the following way:\n\nThe Ramayana describes how Rama, determined to go to the forest, was seen by Devi Kausalya, who then spoke words to him and wished to perform ceremonies for his wellbeing [Ayodhya-Kanda 24.38]. The text also states that Sita, the beloved queen of Rama, loves to wander in forests and will surely visit this grove [Sundara-Kanda 14.45]. \n\nHowever, the provided citations do not contain any explicit references to the episode of the female ascetic Svayamprabha. The text does not state any details about this character or any related events.",
+        "textualBasis": {
+          "kanda": "Ayodhya-Kanda, Sundara-Kanda",
+          "sarga": [
+            24,
+            14,
+            81,
+            48,
+            37,
+            24,
+            53,
+            78,
+            88,
+            54,
+            16,
+            29,
+            12,
+            5
+          ],
+          "shloka": [
+            38,
+            45,
+            7,
+            19,
+            35,
+            25,
+            47,
+            34,
+            2,
+            30,
+            22,
+            10,
+            24,
+            4
+          ],
+          "citations": [
+            "Ayodhya-Kanda 24.38",
+            "Sundara-Kanda 14.45",
+            "Ayodhya-Kanda 81.7",
+            "Ayodhya-Kanda 48.19",
+            "Ayodhya-Kanda 37.35",
+            "Sundara-Kanda 24.25",
+            "Sundara-Kanda 14.47",
+            "Ayodhya-Kanda 53.34",
+            "Ayodhya-Kanda 78.2",
+            "Ayodhya-Kanda 88.30",
+            "Sundara-Kanda 16.22",
+            "Ayodhya-Kanda 29.10",
+            "Ayodhya-Kanda 12.24",
+            "Kishkindha-Kanda 5.4"
+          ]
+        },
+        "explanation": "The provided citations describe various events and characters from the Ramayana, such as Kausalya's reaction to Rama's departure, Sita's love for forests, and Rama's exile. However, none of these citations contain any information about the female ascetic Svayamprabha. The text does not seem to provide any details about this character or any related episode. The citations only discuss other characters and events from the epic."
+      }
+    },
+    "openai_trace": {
+      "trace_id": "f52a5827-0129-40ba-b5a6-2bdab17c4079",
+      "timestamp": "2025-12-21T14:14:01.875Z",
+      "user_query": "Recount the episode of the female ascetic Svayamprabha.",
+      "expanded_query": "Svayamprabha is a female ascetic who resides in a hermitage in the forest. She aids Rama and his companions by providing them shelter and guidance during their quest. This episode highlights her wisdom and the importance of female figures in the Ramayana.",
+      "query_expansion_latency_ms": 0,
+      "retrieval_results": {
+        "shlokas": [
+          {
+            "id": "ayodhya-kanda-24-38",
+            "score": 0.550269186,
+            "metadata": {
+              "characters": [
+                "rama",
+                "kaushalya",
+                "valmiki"
+              ],
+              "comments": "",
+              "events": [
+                "narada_visit",
+                "exile_announcement",
+                "bharata_return",
+                "agastya_visit",
+                "return_ayodhya",
+                "rama_forest_departure_preparation"
+              ],
+              "explanation": "Seeing Rama full of auspicious qualities resolved to go to the forest and having spoken to him with the fullness of her heart, Devi Kausalya now braced herself up to perform ceremonies in the interest of  Rama's wellbeing. इत्यार्षे श्रीमद्रामायणे वाल्मीकीय आदिकाव्ये अयोध्याकाण्डे चतुर्विंशस्सर्गः।। Thus ends the twentyfourth sarga of Ayodhyakanda of  the holy Ramayana, the first epic composed by sage Valmiki.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 24,
+              "shloka": 38,
+              "shloka_text": "तथा हि रामं वनवासनिश्चितं समीक्ष्य देवी परमेण चेतसा। उवाच रामं शुभलक्षणं वचो बभूव च स्वस्त्ययनाभिकाङ्क्षिणी।।2.24.38।।",
+              "themes": [
+                "exile",
+                "maternal_love",
+                "sacrifice",
+                "devotion"
+              ],
+              "translation": "देवी Devi (Kausalya), रामम् Rama, तथा like that, वनवासनिश्चितम् determined to go to the forest, समीक्ष्य (ददर्श) seeing, परमेण चेतसा with supreme consciousness, शुभलक्षणम् with auspicious qualities (virtues), रामम् to Rama, वचः words, उवाच said, स्वस्त्ययनाभिकाङ्क्षिणी wishing to perform ceremonies for (his) wellbeing, बभूव became."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-48-19",
+            "score": 0.535917342,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "rama_forest_journey"
+              ],
+              "explanation": "In the forest, Rama will look after your wellbeing and Sita will ensure our, women folk's security.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 48,
+              "shloka": 19,
+              "shloka_text": "युष्माकं राघवोऽरण्ये योगक्षेमं विधास्यति। सीता नारीजनस्यास्य योगक्षेमं करिष्यति।।2.48.19।।",
+              "themes": [
+                "duty_vs_desire",
+                "exile",
+                "search",
+                "protection",
+                "mutual_care"
+              ],
+              "translation": "राघवः Rama, अरण्ये in the forest, युष्माकम् for you, योगक्षेमम् aquisition and protection of desired objects, विधास्यति will provide, सीता sita, अस्य (नारी) जनस्य of these (womenfolk), योगक्षेमम् security of possessions, करिष्यति will make."
+            }
+          },
+          {
+            "id": "sundara-kanda-31-15",
+            "score": 0.531908095,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "sita_found",
+                "sita_identification"
+              ],
+              "explanation": "\"Surely I have seen here a lady of similar body, of similar complexion, of similar glow and beauty as described by Rama\".",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 31,
+              "shloka": 15,
+              "shloka_text": "यथारूपां यथावर्णां यथालक्ष्मीवतीं च निश्चिताम्।।5.31.15।। अश्रौषं राघवस्याहं सेयमासादिता मया।",
+              "themes": [
+                "recognition",
+                "hope"
+              ],
+              "translation": "अहम् I, राघवस्य Raghava's, ताम् her, यथारूपाम् of a similar form, यथावर्णाम् of the same complexion, यथालक्ष्मी of similar glow, अश्रौषम् I heard, सा she, इयम् the same one, मया by me, आसादिता has been found."
+            }
+          },
+          {
+            "id": "sundara-kanda-14-45",
+            "score": 0.528673232,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "exile_announcement",
+                "sita_found",
+                "expected_forest_wandering"
+              ],
+              "explanation": "\"Beautiful Janaki, beloved queen of Rama loves to wander in forests. She will surely visit this grove.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 14,
+              "shloka": 45,
+              "shloka_text": "सा रामा राममहिषी राघवस्य प्रिया सती। वनसञ्चारकुशला नूनमेष्यति जानकी।।5.14.45।।",
+              "themes": [
+                "duty_vs_emotion",
+                "love",
+                "exile",
+                "marital_devotion",
+                "forest_connection"
+              ],
+              "translation": "राममहिषी Rama's queen, राघवस्य Raghava's, प्रिया beloved, सती a chaste lady, रामा a beautiful woman, वनसञ्चारकुशला who loves to wander in forests, सा जानकी that Janaki, नूनम् surely, एष्यति she will visit."
+            }
+          },
+          {
+            "id": "sundara-kanda-24-25",
+            "score": 0.527160704,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_abduction",
+                "ravana_death",
+                "vinata_advocates_sita_leaving_rama"
+              ],
+              "explanation": "'Leave the helpless human Rama and seek Ravana's refuge. O Vaidehi, using the heavenly unguents and adorned with imposing ornaments from now on, be the queen of all people.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 24,
+              "shloka": 25,
+              "shloka_text": "मानुषं कृपणं रामं त्यक्त्वा, रावणमाश्रय। दिव्याङ्गरागा वैदेहि दिव्याभरणभूषिता।।5.24.25।। अद्यप्रभृति सर्वेषां लोकानामीश्वरी भव।",
+              "themes": [
+                "search",
+                "refuge",
+                "royalty"
+              ],
+              "translation": "मानुषम् a human, कृपणम् helpless, रामम् Rama, त्यक्त्वा leave, रावणम् Ravana, आश्रय seek refuge, वैदेहि Vaidehi, दिव्याङ्गरागा have heavenly unguents, दिव्याभरणभूषिता wearing imposing ornaments, अद्यप्रभृति from today, सर्वेषाम् for all, लोकानाम् people, ईश्वरी queen,भव you become"
+            }
+          },
+          {
+            "id": "ayodhya-kanda-88-30",
+            "score": 0.526161253,
+            "metadata": {
+              "characters": [
+                "rama",
+                "valmiki"
+              ],
+              "comments": "",
+              "events": [
+                "narada_visit",
+                "bow_breaking",
+                "coronation_plan",
+                "exile_announcement",
+                "bharata_return",
+                "agastya_visit",
+                "jatayu_fight",
+                "vibhishana_join",
+                "return_ayodhya",
+                "rama_coronation",
+                "seeking_grace"
+              ],
+              "explanation": "I will seek his grace in many ways by bowing down my head. Even then if Rama does not grant my wish, I shall also live with him as long as it takes. He will not be able to ignore a forester like me. इत्यार्षे श्रीमद्रामायणे वाल्मीकीय आदिकाव्ये अयोध्याकाण्डे अष्टाशीतितमस्सर्गः।। Thus ends the eightyeigth sarga in Ayodhyakanda of the holy Ramayana, the first epic composed by sage Valmiki.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 88,
+              "shloka": 30,
+              "shloka_text": "प्रसाद्यमान श्शिरसा मया स्वयं बहुप्रकारं यदि नाभिपत्स्यते। ततोऽनुवत्स्यामि चिराय राघवम् वनेचरन्नार्हति मामुपेक्षितुम्।।2.88.30।।",
+              "themes": [
+                "rajadharma",
+                "filial_dharma",
+                "exile",
+                "search",
+                "victory",
+                "devotion",
+                "sacrifice"
+              ],
+              "translation": "मया by me, स्वयम् personally, बहुप्रकारम् in many ways, शिरसा bowing down my head, प्रसाद्यमानः seeking his grace, न प्रपत्स्यते यदि if it is not granted, ततः then, वने चरन् living in the forest, राघवम् Rama, चिराय for a long time, अनुवत्स्यामि will live along him, माम् me, उपेक्षितुम् to ignore, नार्हति he cannot."
+            }
+          },
+          {
+            "id": "sundara-kanda-16-22",
+            "score": 0.523169577,
+            "metadata": {
+              "characters": [
+                "rama",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_abduction",
+                "ravana_death",
+                "separation"
+              ],
+              "explanation": "\"Rama deserves to see her.Just as a thirsty man longs for the source of water, Rama pines for this highly virtuous lady who is tormented by Ravana.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 16,
+              "shloka": 22,
+              "shloka_text": "इमां तु शीलसम्पन्नां द्रष्टुमर्हति राघवः। रावणेन प्रमथितां प्रपामिव पिपासितः।।5.16.22।।",
+              "themes": [
+                "longing",
+                "devotion"
+              ],
+              "translation": "राघवः Raghava, शीलसम्पन्नाम् a highly virtuous lady, रावणेन by Ravana, प्रमथिताम् tormented, इमाम् her, पिपासितः a thirsty man, प्रपामिव like the source of water, द्रष्टुम् to see, अर्हति he deserves."
+            }
+          },
+          {
+            "id": "bala-kanda-1-56",
+            "score": 0.523109496,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "vali_death",
+                "ravana_death",
+                "killing_kabandha"
+              ],
+              "explanation": "Mightyarmed Rama, having killed Kabandha, consigned his body to flames. While leaving for heavens he informed him saying, 'O Raghava, there is a female ascetic in Sabara community, performing religious duties and proficient in practising austerities. You may visit her'.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 1,
+              "shloka": 56,
+              "shloka_text": "तं निहत्य महाबाहुर्ददाह स्वर्गतश्च  स: । स चास्य कथयामास शबरीं धर्मचारिणीम् ।।1.1.56।। श्रमणीं धर्मनिपुणामभिगच्छेति राघव । 1151",
+              "themes": [
+                "death",
+                "courage",
+                "guidance"
+              ],
+              "translation": "महाबाहु: mightyarmed Rama, तम् that Kabandha, निहत्य having killed, ददाह consigned him to flames, स: he (his soul), स्वर्गतश्च ascended heaven, स च Kabandha (while leaving for heavens), राघव O Raghava,  धर्मचारिणीम् performing religious duties, धर्मनिपुणाम् proficient in practising austerities duties, श्रमणीम् female ascetic, शबरीम् belonging to Sabara community, अभिगच्छ visit her, अस्य to Rama, इति कथयामास informed."
+            }
+          },
+          {
+            "id": "sundara-kanda-33-13",
+            "score": 0.523103833,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage"
+              ],
+              "explanation": "\"Indeed your plight, the superhuman beauty and your robes marked with asceticism, surely tell me that you are Rama's queen.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 33,
+              "shloka": 13,
+              "shloka_text": "यथा हि तव वै दैन्यं रूपं चाप्यतिमानुषम्।।5.33.13।। तपसा चान्वितो वेषस्त्वं राममहिषी ध्रुवम्।",
+              "themes": [
+                "marital_devotion",
+                "suffering"
+              ],
+              "translation": "तव your, दैन्यम् plight, अतिमानुषम् superhuman, रूपं च and your form, तपसा with austerity, अन्वितः endowed, वेषः your dress, यथा as much, त्वम् you are, ध्रुवम् surely, राममहिषी Rama's queen."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-81-7",
+            "score": 0.52217871,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "exile_announcement",
+                "rama_exile_discussion"
+              ],
+              "explanation": "Even Rama, a great protector for all of us, has been banished to the forest by my mother bereft of virtuous conduct.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 81,
+              "shloka": 7,
+              "shloka_text": "यो हि न स्सुमहान्नाथस्सोऽपि प्रव्राजितो वनम्। अनया धर्ममुत्सृज्य मात्रा मे राघवस्स्वयम्।।2.81.7।।",
+              "themes": [
+                "sacrifice",
+                "exile",
+                "injustice",
+                "maternal_betrayal"
+              ],
+              "translation": "यः whoever, नः for us, सुमहान् great, नाथः protector, सः (राघवः) अपि that Rama also, अनया this, मे मात्रा by my mother, धर्मम् virtuous conduct, उत्सृज्य having abandoned, स्वयम् herself, वनम् forest, प्रव्राजितः has been banished."
+            }
+          },
+          {
+            "id": "aranya-kanda-74-10",
+            "score": 0.521706641,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "narada_visit",
+                "rama_meeting_sabari"
+              ],
+              "explanation": "When Rama asked Sabari who was an old, accomplished ascetic adored by siddhas, she stood in front and replied :",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Aranya Kanda",
+              "kanda_number": 3,
+              "sarga": 74,
+              "shloka": 10,
+              "shloka_text": "रामेण तापसी पृष्टा सा सिद्धा सिद्धसम्मता। शशंस शबरी वृद्धा रामाय प्रत्युपस्थिता।।3.74.10।।",
+              "themes": [
+                "spiritual_wisdom",
+                "respect_for_ascetics"
+              ],
+              "translation": "रामेण by Rama, पृष्टा enquired, सिद्धा an accomplished ascetic, सिद्धसम्मता a lady adored and accepted by siddhas, तापसी ascetic, वृद्धा old woman, सा शबरी that Sabari, प्रत्युपस्थिता standing in front, रामाय to Rama, शशंस she spoke."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-116-26",
+            "score": 0.519546568,
+            "metadata": {
+              "characters": [
+                "rama",
+                "valmiki"
+              ],
+              "comments": "",
+              "events": [
+                "narada_visit",
+                "sita_marriage",
+                "bharata_return",
+                "agastya_visit",
+                "jatayu_fight",
+                "return_ayodhya",
+                "rama_staying_in_hermitage"
+              ],
+              "explanation": "Lord Rama, did not leave that hermitage deserted by the sages even for a moment. Those who had adopted the traditions of the sages and  had acquired many virtues followed Rama. इत्यार्षे श्रीमद्रामायणे वाल्मीकीय आदिकाव्ये अयोध्याकाण्डे षोडशोत्तरशततमस्सर्गः।। Thus ends the hundredsixteenth sarga in Ayodhyakanda of the holy Ramayana, the first epic composed by sage Valmiki.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 116,
+              "shloka": 26,
+              "shloka_text": "आश्रममृषिविरहितं प्रभुः क्षणमपिन जहौ स राघवः। राघवं हि सततमनुगता स्तापसाश्चार्षचरित धृतगुणाः।।2.116.26।।",
+              "themes": [
+                "victory",
+                "tradition",
+                "virtue"
+              ],
+              "translation": "प्रभुः the lord, सः राघवः that Rama, ऋषिविरहितम् deserted by the sages, आश्रमम् hermitage, क्षणमपि for a moment also, न जहौ did not leave, आर्षचरिते following the tradition of sages, धृतगुणाः fixed in many virtues, तापसाश्च even the sages, सततम् always, राघवम् to Rama, अनुगताः हि followed remained."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-54-11",
+            "score": 0.519189894,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "agastya_visit",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "sita_agnipariksha",
+                "meeting_sage_bharadwaja",
+                "paying_respects"
+              ],
+              "explanation": "Rama entered the hermitage and saw that highsouled Bharadwaja surrounded by his disciples. He was a distinguished sage who (himself) kindled sacrficial fires and acquired spiritual insight by practising rigid austerities with concentration of mind and ascetic powers. Rama, Lakshmana and Sita paid their obeisance to that great sage.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 54,
+              "shloka": 11,
+              "shloka_text": "स प्रविश्य महात्मानमृषिं शिष्यगणैर्वृतम्। संशितव्रतमेकाग्रं तपसा लब्धचक्षुषम्।।2.54.11।। हुताग्निहोत्रं दृष्ट्वैव महाभागं कृताञ्जलिः। रामः सौमित्रिणा सार्धं सीतया चाभ्यवादयत्।।2.54.12।।",
+              "themes": [
+                "brotherhood",
+                "spiritual_discipline",
+                "devotion",
+                "asceticism"
+              ],
+              "translation": "सः रामः Rama, प्रविश्य having entered, संशितव्रतम् one practising rigorous austerities, एकाग्रम् with concentration of mind, तपसा with asceticism, लब्दचक्षुषम् one who has obtained spiritual insight, हुताग्निहोत्रम् one who has kindled fire in sacrificial rituals, महाभागम् distinguished, शिष्यगणैः with disciples, वृतम् surrounded by, महात्मानम् highsouled, ऋषिम् sage, दृष्ट्वैव having seen, सौमित्रिणा Lakshmana, सार्धम् along with, सीतया च Sita too, अभ्यवादयत् paid obeisance."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-54-32",
+            "score": 0.518577635,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "stay_offer"
+              ],
+              "explanation": "O Rama, I think you will enjoy your stay there in a solitary place. Or else, you may live with me here during the period of banishment.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 54,
+              "shloka": 32,
+              "shloka_text": "प्रविविक्तमहं मन्ये तं वासं भवतस्सुखम्। इह वा वनवासाय वस राम मया सह।।2.54.32।।",
+              "themes": [
+                "exile",
+                "solitude",
+                "companionship"
+              ],
+              "translation": "राम Rama, प्रविविक्तम् solitary, तं वासम् that abode, भवतः for your, सुखम् happiness, अहम् I,  मन्ये think, मया सह with me, इह वा or here, वनवासाय for the period of banishment, वस you may live."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-37-35",
+            "score": 0.517642081,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "kaikeyi_boons",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation",
+                "sita_forest_adornment"
+              ],
+              "explanation": "O Kaikeyi, you asked that Rama only should dwell in the forest (wearing bark robes). Therefore let Sita, adorn her body daily, while she  lives in the forest with Rama.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 37,
+              "shloka": 35,
+              "shloka_text": "एकस्य रामस्य वने निवास स्त्वया वृतःकेकयराजपुत्री। विभूषितेयं प्रतिकर्मनित्या वसत्वरण्ये सह राघवेण।।2.37.35।।",
+              "themes": [
+                "rajadharma",
+                "exile",
+                "dharma",
+                "sacrifice"
+              ],
+              "translation": "केकयराजपुत्री O daughter of the king of Kekaya, त्वया by you, एकस्य रामस्य only for Rama, वने in the forest, निवासः dwell, वृतः is sought for, इयम् this Sita,  विभूषिता welladorned,  प्रतिकर्मनित्या engaged daily in decorating, राघवेण सह along with Rama, अरण्ये in the forest, वसतु shall live."
+            }
+          }
+        ],
+        "totalRetrieved": 15,
+        "expandedQuery": "Svayamprabha is a female ascetic who resides in a hermitage in the forest. She aids Rama and his companions by providing them shelter and guidance during their quest. This episode highlights her wisdom and the importance of female figures in the Ramayana."
+      },
+      "retrieval_latency_ms": 0,
+      "classification_result": {
+        "model": "gpt-4o",
+        "category": "Minor episodes",
+        "category_id": 7,
+        "confidence": 1,
+        "template_selected": "T1"
+      },
+      "classification_latency_ms": 0,
+      "generation_result": {
+        "model": "gpt-4o",
+        "template_used": "T1",
+        "answer": "**Answer:** The text mentions Sabari, a female ascetic proficient in practicing austerities. Rama, after the incident with Kabandha, was informed about Sabari, a dharma-practicing female ascetic from the Sabara community [Bala-Kanda 1.56]. Later, Sabari was described as an old, accomplished ascetic who was adored by siddhas and stood before Rama to speak with him [Aranya-Kanda 74.10].",
+        "citations_in_answer": [
+          "Bala-Kanda 1.56",
+          "Aranya-Kanda 74.10"
+        ]
+      },
+      "generation_latency_ms": 10668,
+      "total_latency_ms": 18799,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The text mentions Sabari, a female ascetic proficient in practicing austerities. Rama, after the incident with Kabandha, was informed about Sabari, a dharma-practicing female ascetic from the Sabara community [Bala-Kanda 1.56]. Later, Sabari was described as an old, accomplished ascetic who was adored by siddhas and stood before Rama to speak with him [Aranya-Kanda 74.10].",
+        "textualBasis": {
+          "kanda": "Bala-Kanda, Aranya-Kanda",
+          "sarga": [
+            1,
+            74
+          ],
+          "shloka": [
+            56,
+            10
+          ],
+          "citations": [
+            "Bala-Kanda 1.56",
+            "Aranya-Kanda 74.10"
+          ]
+        },
+        "explanation": "The episode of the female ascetic Sabari is mentioned in the text when Kabandha, after being killed by Rama, informs him about Sabari. She is described as an accomplished ascetic who has been performing religious duties. Rama visits her, and she is shown as an old woman, respected by siddhas, suggesting her spiritual stature.",
+        "whatTextStates": "The text describes Sabari as a female ascetic proficient in religious practices and one who Rama visits after being informed by Kabandha.",
+        "traditionalInterpretations": "Traditional interpretations often embellish Sabari's devotion and her interaction with Rama, but the text directly states her religious dedication and her encounter with Rama.",
+        "limitOfCertainty": "The exact actions and words of Sabari during her interaction with Rama are not detailed beyond her standing and speaking with him.",
+        "outOfScopeNotice": "Details about Svayamprabha and her role in the Ramayana are not covered in the provided citations.",
+        "why": "The response strictly follows the provided text, ensuring that claims about Sabari are clearly supported by specific citations.",
+        "redirect": {
+          "introduction": "The requested episode details Sabari, not Svayamprabha, from the available text.",
+          "alternatives": [
+            "Search for mentions of Svayamprabha in other parts of the Ramayana.",
+            "Request details about Sabari's role outside the cited verses."
+          ]
+        },
+        "whatICanHelpWith": [
+          "Provide details on episodes involving Sabari.",
+          "Clarify events directly mentioned in citations.",
+          "Guide to specific parts of the Ramayana based on questions."
+        ]
+      }
+    },
+    "claude_trace": {
+      "trace_id": "6203331d-0c5c-4748-8f8d-617bb68a4db4",
+      "timestamp": "2025-12-21T14:14:15.746Z",
+      "user_query": "Recount the episode of the female ascetic Svayamprabha.",
+      "expanded_query": "Svayamprabha is a female ascetic who aids Rama and his companions during their exile. She resides in a mystical forest and provides them shelter and guidance, showcasing her wisdom and spiritual power. This episode highlights themes of devotion and the importance of female figures in the Ramayana.",
+      "query_expansion_latency_ms": 0,
+      "retrieval_results": {
+        "shlokas": [
+          {
+            "id": "ayodhya-kanda-24-38",
+            "score": 0.588620186,
+            "metadata": {
+              "characters": [
+                "rama",
+                "kaushalya",
+                "valmiki"
+              ],
+              "comments": "",
+              "events": [
+                "narada_visit",
+                "exile_announcement",
+                "bharata_return",
+                "agastya_visit",
+                "return_ayodhya",
+                "rama_forest_departure_preparation"
+              ],
+              "explanation": "Seeing Rama full of auspicious qualities resolved to go to the forest and having spoken to him with the fullness of her heart, Devi Kausalya now braced herself up to perform ceremonies in the interest of  Rama's wellbeing. इत्यार्षे श्रीमद्रामायणे वाल्मीकीय आदिकाव्ये अयोध्याकाण्डे चतुर्विंशस्सर्गः।। Thus ends the twentyfourth sarga of Ayodhyakanda of  the holy Ramayana, the first epic composed by sage Valmiki.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 24,
+              "shloka": 38,
+              "shloka_text": "तथा हि रामं वनवासनिश्चितं समीक्ष्य देवी परमेण चेतसा। उवाच रामं शुभलक्षणं वचो बभूव च स्वस्त्ययनाभिकाङ्क्षिणी।।2.24.38।।",
+              "themes": [
+                "exile",
+                "maternal_love",
+                "sacrifice",
+                "devotion"
+              ],
+              "translation": "देवी Devi (Kausalya), रामम् Rama, तथा like that, वनवासनिश्चितम् determined to go to the forest, समीक्ष्य (ददर्श) seeing, परमेण चेतसा with supreme consciousness, शुभलक्षणम् with auspicious qualities (virtues), रामम् to Rama, वचः words, उवाच said, स्वस्त्ययनाभिकाङ्क्षिणी wishing to perform ceremonies for (his) wellbeing, बभूव became."
+            }
+          },
+          {
+            "id": "sundara-kanda-14-45",
+            "score": 0.582875252,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "exile_announcement",
+                "sita_found",
+                "expected_forest_wandering"
+              ],
+              "explanation": "\"Beautiful Janaki, beloved queen of Rama loves to wander in forests. She will surely visit this grove.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 14,
+              "shloka": 45,
+              "shloka_text": "सा रामा राममहिषी राघवस्य प्रिया सती। वनसञ्चारकुशला नूनमेष्यति जानकी।।5.14.45।।",
+              "themes": [
+                "duty_vs_emotion",
+                "love",
+                "exile",
+                "marital_devotion",
+                "forest_connection"
+              ],
+              "translation": "राममहिषी Rama's queen, राघवस्य Raghava's, प्रिया beloved, सती a chaste lady, रामा a beautiful woman, वनसञ्चारकुशला who loves to wander in forests, सा जानकी that Janaki, नूनम् surely, एष्यति she will visit."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-81-7",
+            "score": 0.57970047,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "exile_announcement",
+                "rama_exile_discussion"
+              ],
+              "explanation": "Even Rama, a great protector for all of us, has been banished to the forest by my mother bereft of virtuous conduct.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 81,
+              "shloka": 7,
+              "shloka_text": "यो हि न स्सुमहान्नाथस्सोऽपि प्रव्राजितो वनम्। अनया धर्ममुत्सृज्य मात्रा मे राघवस्स्वयम्।।2.81.7।।",
+              "themes": [
+                "sacrifice",
+                "exile",
+                "injustice",
+                "maternal_betrayal"
+              ],
+              "translation": "यः whoever, नः for us, सुमहान् great, नाथः protector, सः (राघवः) अपि that Rama also, अनया this, मे मात्रा by my mother, धर्मम् virtuous conduct, उत्सृज्य having abandoned, स्वयम् herself, वनम् forest, प्रव्राजितः has been banished."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-48-19",
+            "score": 0.573430061,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "rama_forest_journey"
+              ],
+              "explanation": "In the forest, Rama will look after your wellbeing and Sita will ensure our, women folk's security.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 48,
+              "shloka": 19,
+              "shloka_text": "युष्माकं राघवोऽरण्ये योगक्षेमं विधास्यति। सीता नारीजनस्यास्य योगक्षेमं करिष्यति।।2.48.19।।",
+              "themes": [
+                "duty_vs_desire",
+                "exile",
+                "search",
+                "protection",
+                "mutual_care"
+              ],
+              "translation": "राघवः Rama, अरण्ये in the forest, युष्माकम् for you, योगक्षेमम् aquisition and protection of desired objects, विधास्यति will provide, सीता sita, अस्य (नारी) जनस्य of these (womenfolk), योगक्षेमम् security of possessions, करिष्यति will make."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-37-35",
+            "score": 0.564096451,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "kaikeyi_boons",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation",
+                "sita_forest_adornment"
+              ],
+              "explanation": "O Kaikeyi, you asked that Rama only should dwell in the forest (wearing bark robes). Therefore let Sita, adorn her body daily, while she  lives in the forest with Rama.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 37,
+              "shloka": 35,
+              "shloka_text": "एकस्य रामस्य वने निवास स्त्वया वृतःकेकयराजपुत्री। विभूषितेयं प्रतिकर्मनित्या वसत्वरण्ये सह राघवेण।।2.37.35।।",
+              "themes": [
+                "rajadharma",
+                "exile",
+                "dharma",
+                "sacrifice"
+              ],
+              "translation": "केकयराजपुत्री O daughter of the king of Kekaya, त्वया by you, एकस्य रामस्य only for Rama, वने in the forest, निवासः dwell, वृतः is sought for, इयम् this Sita,  विभूषिता welladorned,  प्रतिकर्मनित्या engaged daily in decorating, राघवेण सह along with Rama, अरण्ये in the forest, वसतु shall live."
+            }
+          },
+          {
+            "id": "sundara-kanda-24-25",
+            "score": 0.561159134,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_abduction",
+                "ravana_death",
+                "vinata_advocates_sita_leaving_rama"
+              ],
+              "explanation": "'Leave the helpless human Rama and seek Ravana's refuge. O Vaidehi, using the heavenly unguents and adorned with imposing ornaments from now on, be the queen of all people.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 24,
+              "shloka": 25,
+              "shloka_text": "मानुषं कृपणं रामं त्यक्त्वा, रावणमाश्रय। दिव्याङ्गरागा वैदेहि दिव्याभरणभूषिता।।5.24.25।। अद्यप्रभृति सर्वेषां लोकानामीश्वरी भव।",
+              "themes": [
+                "search",
+                "refuge",
+                "royalty"
+              ],
+              "translation": "मानुषम् a human, कृपणम् helpless, रामम् Rama, त्यक्त्वा leave, रावणम् Ravana, आश्रय seek refuge, वैदेहि Vaidehi, दिव्याङ्गरागा have heavenly unguents, दिव्याभरणभूषिता wearing imposing ornaments, अद्यप्रभृति from today, सर्वेषाम् for all, लोकानाम् people, ईश्वरी queen,भव you become"
+            }
+          },
+          {
+            "id": "sundara-kanda-14-47",
+            "score": 0.558095932,
+            "metadata": {
+              "characters": [],
+              "comments": "",
+              "events": [
+                "exile_announcement",
+                "dasharatha_grief",
+                "expected_forest_wandering"
+              ],
+              "explanation": "\"That lovelyeyed queen tormented with grief over separation from Rama will be coming here to stay as she always loves strolling in the forest.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 14,
+              "shloka": 47,
+              "shloka_text": "रामशोकाभिसन्तप्ता सा देवी वामलोचना। वनवासे रता नित्यमेष्यते वनचारिणी।।5.14.47।।",
+              "themes": [
+                "duty_vs_emotion",
+                "love",
+                "exile",
+                "grief",
+                "separation",
+                "resilience"
+              ],
+              "translation": "रामशोकाभिसन्तप्ता tormented with over grief Rama's separation, वामलोचना lovelyeyed one, नित्यम् always, वनवासे in the forest, रता enjoying, सा that, देवी devi, वनचारिणी loves strolling in the forest, एष्यते will come."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-53-34",
+            "score": 0.5580616,
+            "metadata": {
+              "characters": [
+                "rama",
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "exile_announcement",
+                "shurpanakha",
+                "vibhishana_join",
+                "forest_living_permission"
+              ],
+              "explanation": "Rama, the tormentor of enemies, listened, out of love, to the excellent and copious words of Lakshmana and permitted him to live in the forest for the entire period of fourteen years by observing the prescribed code of conduct as enjoined on  life in the forest.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 53,
+              "shloka": 34,
+              "shloka_text": "स लक्ष्मणस्योत्तमपुष्कलं वचो निशम्य चैवं वनवासमादरात्। समाः समस्ता विदधे परन्तपः प्रपद्य धर्मं सुचिराय राघवः।।2.53.34।।",
+              "themes": [
+                "duty_vs_emotion",
+                "brotherhood",
+                "love",
+                "exile",
+                "duty",
+                "sacrifice"
+              ],
+              "translation": "परन्तपः tormentor of enemies, सः राघवः that Rama, एवम् thus, लक्ष्मणस्य Lakshmana's, उत्तमपुष्कलम् excellent and copious, वचः utterances, आदरात् out of love, निशम्य having heard, सुचिराय for a long period, धर्मम् that code of conduct of forest life, प्रपद्य having obtained, समस्ता: all, समाः the years, वनवासम् life in the forest, विदधे resorted to."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-78-2",
+            "score": 0.554749489,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "rama_exile"
+              ],
+              "explanation": "Couldn't the mighty Rama who is the ultimate refuge of all beings protect himself in his own distress? That Rama has been exiled to the forest by a woman.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 78,
+              "shloka": 2,
+              "shloka_text": "गतिर्य स्सर्वभूतानां दुःखे किं पुनरात्मनः। स राम स्सत्त्वसम्पन्नः स्त्रिया प्रव्राजितो वनम्।।2.78.2।।",
+              "themes": [
+                "exile",
+                "injustice",
+                "strength"
+              ],
+              "translation": "यः who, सर्वभूतानाम् for all beings, गतिः ultimate refuge, आत्मनः in his own, दुःखे distress, किं पुनः why again say, सः he, सत्त्वसम्पन्नः endowed with strength, रामः Rama, स्त्रिया by a woman, वनम् to forest, प्रव्राजितः has been exiled."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-88-30",
+            "score": 0.55374527,
+            "metadata": {
+              "characters": [
+                "rama",
+                "valmiki"
+              ],
+              "comments": "",
+              "events": [
+                "narada_visit",
+                "bow_breaking",
+                "coronation_plan",
+                "exile_announcement",
+                "bharata_return",
+                "agastya_visit",
+                "jatayu_fight",
+                "vibhishana_join",
+                "return_ayodhya",
+                "rama_coronation",
+                "seeking_grace"
+              ],
+              "explanation": "I will seek his grace in many ways by bowing down my head. Even then if Rama does not grant my wish, I shall also live with him as long as it takes. He will not be able to ignore a forester like me. इत्यार्षे श्रीमद्रामायणे वाल्मीकीय आदिकाव्ये अयोध्याकाण्डे अष्टाशीतितमस्सर्गः।। Thus ends the eightyeigth sarga in Ayodhyakanda of the holy Ramayana, the first epic composed by sage Valmiki.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 88,
+              "shloka": 30,
+              "shloka_text": "प्रसाद्यमान श्शिरसा मया स्वयं बहुप्रकारं यदि नाभिपत्स्यते। ततोऽनुवत्स्यामि चिराय राघवम् वनेचरन्नार्हति मामुपेक्षितुम्।।2.88.30।।",
+              "themes": [
+                "rajadharma",
+                "filial_dharma",
+                "exile",
+                "search",
+                "victory",
+                "devotion",
+                "sacrifice"
+              ],
+              "translation": "मया by me, स्वयम् personally, बहुप्रकारम् in many ways, शिरसा bowing down my head, प्रसाद्यमानः seeking his grace, न प्रपत्स्यते यदि if it is not granted, ततः then, वने चरन् living in the forest, राघवम् Rama, चिराय for a long time, अनुवत्स्यामि will live along him, माम् me, उपेक्षितुम् to ignore, नार्हति he cannot."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-54-32",
+            "score": 0.549984,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "stay_offer"
+              ],
+              "explanation": "O Rama, I think you will enjoy your stay there in a solitary place. Or else, you may live with me here during the period of banishment.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 54,
+              "shloka": 32,
+              "shloka_text": "प्रविविक्तमहं मन्ये तं वासं भवतस्सुखम्। इह वा वनवासाय वस राम मया सह।।2.54.32।।",
+              "themes": [
+                "exile",
+                "solitude",
+                "companionship"
+              ],
+              "translation": "राम Rama, प्रविविक्तम् solitary, तं वासम् that abode, भवतः for your, सुखम् happiness, अहम् I,  मन्ये think, मया सह with me, इह वा or here, वनवासाय for the period of banishment, वस you may live."
+            }
+          },
+          {
+            "id": "sundara-kanda-16-22",
+            "score": 0.549761772,
+            "metadata": {
+              "characters": [
+                "rama",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_abduction",
+                "ravana_death",
+                "separation"
+              ],
+              "explanation": "\"Rama deserves to see her.Just as a thirsty man longs for the source of water, Rama pines for this highly virtuous lady who is tormented by Ravana.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 16,
+              "shloka": 22,
+              "shloka_text": "इमां तु शीलसम्पन्नां द्रष्टुमर्हति राघवः। रावणेन प्रमथितां प्रपामिव पिपासितः।।5.16.22।।",
+              "themes": [
+                "longing",
+                "devotion"
+              ],
+              "translation": "राघवः Raghava, शीलसम्पन्नाम् a highly virtuous lady, रावणेन by Ravana, प्रमथिताम् tormented, इमाम् her, पिपासितः a thirsty man, प्रपामिव like the source of water, द्रष्टुम् to see, अर्हति he deserves."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-29-10",
+            "score": 0.548840582,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "exile_announcement",
+                "forest_command"
+              ],
+              "explanation": "Therefore, O my beloved I must certainly obtain such a command to dwell in the forest. I must accompany you to the forest and it cannot be otherwise.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 29,
+              "shloka": 10,
+              "shloka_text": "आदेशो वनवासस्य प्राप्तव्य स्स मया किल। सा त्वया सह तत्राहं यास्यामि प्रिय नान्यथा।।2.29.10।।",
+              "themes": [
+                "duty_vs_emotion",
+                "love",
+                "exile",
+                "commitment",
+                "dharma"
+              ],
+              "translation": "प्रिय O beloved Rama, मया by me, वनवासस्य to dwell in the forest, सः आदेशः such orders, प्राप्तव्यः किल certainly needs to be obtained, सा अहम् such I am, त्वया सह along with you, तत्र there, यास्यामि I shall accompany, अन्यथा न not otherwise."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-12-24",
+            "score": 0.548492491,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "exile_announcement"
+              ],
+              "explanation": "O woman with attractive eyes, why do you want Rama who is so charming and serving you to be exiled to a distant place?",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 12,
+              "shloka": 24,
+              "shloka_text": "रोचयस्यभिरामस्य रामस्य शुभलोचने। तव शुश्रूषमाणस्य किमर्थं विप्रवासनम्।।2.12.24।।",
+              "themes": [
+                "duty_vs_desire",
+                "exile",
+                "service"
+              ],
+              "translation": "शुभलोचने O woman of beautiful eyes, तव to you, शुश्रूषमाणस्य desirous of serving,    अभिरामस्य charming, रामस्य Rama's, विप्रवासनम् exile to a distant place, किमर्थम् why,   रोचयसि do you desire?"
+            }
+          },
+          {
+            "id": "kishkindha-kanda-5-4",
+            "score": 0.547310829,
+            "metadata": {
+              "characters": [
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "exile_announcement",
+                "sita_abduction",
+                "ravana_death"
+              ],
+              "explanation": "'While the great Rama armed with selfrestraint was living in the forest, his wife was abducted by Ravana. So he has come to you seeing refuge.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Kishkindha Kanda",
+              "kanda_number": 4,
+              "sarga": 5,
+              "shloka": 4,
+              "shloka_text": "तस्यास्य वसतोऽरण्ये नियतस्य महात्मनः। रावणेन हृता भार्या स त्वां शरणमागतः4.5.4।।",
+              "themes": [
+                "marriage",
+                "exile",
+                "search",
+                "suffering",
+                "seeking_help"
+              ],
+              "translation": "अरण्ये in the forest, वसतः  living , नियतस्य  self controlled , तस्य his, अस्य this man, महात्मनः great man's, भार्या wife, रावणेन by Ravana, हृता is abducted, सः he, त्वाम् to you, शरणम् आगतः has come to you to seek refuge"
+            }
+          }
+        ],
+        "totalRetrieved": 15,
+        "expandedQuery": "Svayamprabha is a female ascetic who aids Rama and his companions during their exile. She resides in a mystical forest and provides them shelter and guidance, showcasing her wisdom and spiritual power. This episode highlights themes of devotion and the importance of female figures in the Ramayana."
+      },
+      "retrieval_latency_ms": 0,
+      "classification_result": {
+        "model": "gpt-4o",
+        "category": "Minor episodes",
+        "category_id": 7,
+        "confidence": 1,
+        "template_selected": "T1"
+      },
+      "classification_latency_ms": 0,
+      "generation_result": {
+        "model": "claude-3-haiku-20240307",
+        "template_used": "T1",
+        "answer": "**Answer:** The text mentions the female ascetic Svayamprabha in the following way:\n\nThe Ramayana describes how Rama, determined to go to the forest, was seen by Devi Kausalya, who then spoke words to him and wished to perform ceremonies for his wellbeing [Ayodhya-Kanda 24.38]. The text also states that Sita, the beloved queen of Rama, loves to wander in forests and will surely visit this grove [Sundara-Kanda 14.45]. \n\nHowever, the provided citations do not contain any explicit references to the episode of the female ascetic Svayamprabha. The text does not state any details about this character or any related events.",
+        "citations_in_answer": [
+          "Ayodhya-Kanda 24.38",
+          "Sundara-Kanda 14.45",
+          "Ayodhya-Kanda 81.7",
+          "Ayodhya-Kanda 48.19",
+          "Ayodhya-Kanda 37.35",
+          "Sundara-Kanda 24.25",
+          "Sundara-Kanda 14.47",
+          "Ayodhya-Kanda 53.34",
+          "Ayodhya-Kanda 78.2",
+          "Ayodhya-Kanda 88.30",
+          "Sundara-Kanda 16.22",
+          "Ayodhya-Kanda 29.10",
+          "Ayodhya-Kanda 12.24",
+          "Kishkindha-Kanda 5.4"
+        ]
+      },
+      "generation_latency_ms": 5832,
+      "total_latency_ms": 13315,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The text mentions the female ascetic Svayamprabha in the following way:\n\nThe Ramayana describes how Rama, determined to go to the forest, was seen by Devi Kausalya, who then spoke words to him and wished to perform ceremonies for his wellbeing [Ayodhya-Kanda 24.38]. The text also states that Sita, the beloved queen of Rama, loves to wander in forests and will surely visit this grove [Sundara-Kanda 14.45]. \n\nHowever, the provided citations do not contain any explicit references to the episode of the female ascetic Svayamprabha. The text does not state any details about this character or any related events.",
+        "textualBasis": {
+          "kanda": "Ayodhya-Kanda, Sundara-Kanda",
+          "sarga": [
+            24,
+            14,
+            81,
+            48,
+            37,
+            24,
+            53,
+            78,
+            88,
+            54,
+            16,
+            29,
+            12,
+            5
+          ],
+          "shloka": [
+            38,
+            45,
+            7,
+            19,
+            35,
+            25,
+            47,
+            34,
+            2,
+            30,
+            22,
+            10,
+            24,
+            4
+          ],
+          "citations": [
+            "Ayodhya-Kanda 24.38",
+            "Sundara-Kanda 14.45",
+            "Ayodhya-Kanda 81.7",
+            "Ayodhya-Kanda 48.19",
+            "Ayodhya-Kanda 37.35",
+            "Sundara-Kanda 24.25",
+            "Sundara-Kanda 14.47",
+            "Ayodhya-Kanda 53.34",
+            "Ayodhya-Kanda 78.2",
+            "Ayodhya-Kanda 88.30",
+            "Sundara-Kanda 16.22",
+            "Ayodhya-Kanda 29.10",
+            "Ayodhya-Kanda 12.24",
+            "Kishkindha-Kanda 5.4"
+          ]
+        },
+        "explanation": "The provided citations describe various events and characters from the Ramayana, such as Kausalya's reaction to Rama's departure, Sita's love for forests, and Rama's exile. However, none of these citations contain any information about the female ascetic Svayamprabha. The text does not seem to provide any details about this character or any related episode. The citations only discuss other characters and events from the epic."
+      }
+    }
+  }
+]

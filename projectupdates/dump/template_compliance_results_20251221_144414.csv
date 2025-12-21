@@ -1,0 +1,1000 @@
+index,user_query,system_model,assigned_template,structural_result,semantic_result,overall_compliance,failures,summary
+1,Does the Valmiki Ramayana end with the coronation of Rama?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>",The answer correctly uses the T1 template. It presents factual claims about events in the Ramayana and supports these claims with direct citations to relevant shlokas. The answer avoids speculation and remains within the explicit information provided by the text.
+2,In which section does Valmiki describe the origin of the Sloka meter?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Answer section: PASS - The text provides a direct response to the implied question.
+- Inline citations: PASS - Citations are in the correct format.
+- Citations/references section: PASS - A dedicated citations section is present.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks**
+- Claim: ""The origin of the sloka meter is described in Bala-Kanda Sarga 2.""
+- Citation: Bala-Kanda 2.27
+- Shloka text: ""ब्रह्मणा समनुज्ञातस्सोऽप्युपाविशदासने । उपविष्टे तदा तस्मिन्सर्वलोकपितामहे। तद्गतेनैव मनसा वाल्मीकिर्ध्यानमास्थित: ॥""
+- Judgment: SUPPORTED - The shloka indicates that Valmiki is inspired in the presence of Brahma which leads to the creation of Ramayana and its meter.
+
+- Claim: ""Valmiki, filled with compassion upon witnessing the sorrow of a bird, spontaneously uttered a composition that formed the first sloka [Bala-Kanda 2.13].""
+- Citation: Bala-Kanda 2.13
+- Shloka text: ""तदा तु तं द्विजं दृष्ट्वा निषादेन निपातितम् । ऋषेर्धर्मात्मनस्तस्य कारुण्यं समपद्यत ॥""
+- Judgment: SUPPORTED - This verse mentions the compassion that arose in Valmiki's heart.
+
+- Claim: ""This was a verse born out of grief, which was rhythmically structured and came forth naturally [Bala-Kanda 2.18].""
+- Citation: Bala-Kanda 2.18
+- Shloka text: ""पादबद्धोऽक्षरसमस्तन्त्रीलयसमन्वित: । शोकार्तस्य प्रवृत्तो मे श्लोको भवतु नान्यथा ॥""
+- Judgment: SUPPORTED - This shloka indeed describes the verse as being born out of sorrow and having a rhythmic structure.
+
+- Claim: ""This verse was then recited repeatedly by Valmiki, who was absorbed in contemplation due to his grief [Bala-Kanda 2.29].""
+- Citation: Bala-Kanda 2.29
+- Shloka text: ""शोचन्नेव मुहु: क्रौञ्चीमुपश्लोकमिमं पुन: । जगावन्तर्गतमना भूत्वा शोकपरायण: ॥""
+- Judgment: SUPPORTED - This shloka states that Valmiki recited the verse repeatedly while absorbed in grief.
+
+- Claim: ""The text specifies that Brahma encouraged Valmiki to compose the Ramayana using this meter [Bala-Kanda 2.27].""
+- Citation: Bala-Kanda 2.27
+- Shloka text: ""ब्रह्मणा समनुज्ञातस्सोऽप्युपाविशदासने । उपविष्टे तदा तस्मिन्सर्वलोकपितामहे। तद्गतेनैव मनसा वाल्मीकिर्ध्यानमास्थित: ॥""
+- Judgment: SUPPORTED - While the shloka doesn't directly state encouragement to compose Ramayana with that meter, the presence and blessing of Brahma at the event implies that the subsequent creation was divinely inspired.
+
+**Semantic Result:** PASS
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer fully adheres to the T1 template guidelines. It presents factual information directly derived from the cited shlokas and avoids interpretations or opinions.
+
+**Failures:** None
+</evaluation_results>","The answer accurately describes the origin of the sloka meter based on Bala-Kanda, Sarga 2, and is well supported by cited shlokas. The answer aligns with the requirements of the T1 template."
+3,"How long did the Pandavas... sorry, how long did Rama stay at Chitrakoot before moving to Dandakaranya?",openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>","The answer adheres to the T1 template's structural and semantic requirements. All claims are directly supported by the cited shlokas, and the answer avoids speculation or subjective interpretation."
+4,Did Hanuman burn Lanka before or after meeting Vibhishana?,openai,T1,PASS,FAIL,FAIL,"- Semantic: Claim 1 is unsupported. Claim 2 is partially supported.
+</evaluation_results>","The answer fails to comply with the T1 template. While structurally sound, not all factual claims are directly supported by the cited shlokas. Specifically, the connection between meeting Vibhishana and burning Lanka, and even that Hanuman offered prayers to Vibhishana is questionable based on Yuddha Kanda 116.1."
+5,"When did Indrajit use the Brahmastra? Was it the first, second, or third encounter?",openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - Answer provided at the beginning.
+- At least one inline citation: PASS - Citations used inline.
+- Presence of citations/references section: PASS - Citations section included.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks**
+- Claim: ""Indrajit used the Brahmastra in the first encounter with Hanuman.""
+- Citation: [Sundara Kanda 48.37]
+- Shloka text: ""अवध्योऽयमिति ज्ञात्वा तमस्त्रेणास्त्रतत्त्ववित्। निजग्राह महाबाहुर्मारुतात्मजमिन्द्रजित्।।5.48.37।। Translation: अस्त्रतत्त्ववित् a knower of the secrets of all missiles, महाबाहुः strongarmed, इन्द्रजित् Indrajit, अयम् this, अवध्यः not be killed, इति this, ज्ञात्वा realising, तम् him, मारुतात्मजम् son of the Windgod, अस्त्रेण by the divine weaponBrahmastram, निजग्राह caught""
+- Judgment: SUPPORTED - The shloka states Indrajit used Brahmastra to capture Hanuman.
+
+- Claim: ""Indrajit, realizing that Hanuman could not be killed, captured him with the divine weapon Brahmastra [Sundara Kanda 48.37].""
+- Citation: [Sundara Kanda 48.37]
+- Shloka text: ""अवध्योऽयमिति ज्ञात्वा तमस्त्रेणास्त्रतत्त्ववित्। निजग्राह महाबाहुर्मारुतात्मजमिन्द्रजित्।।5.48.37।। Translation: अस्त्रतत्त्ववित् a knower of the secrets of all missiles, महाबाहुः strongarmed, इन्द्रजित् Indrajit, अयम् this, अवध्यः not be killed, इति this, ज्ञात्वा realising, तम् him, मारुतात्मजम् son of the Windgod, अस्त्रेण by the divine weaponBrahmastram, निजग्राह caught""
+- Judgment: SUPPORTED - The shloka supports that Indrajit knew Hanuman could not be killed, and thus used the Brahmastra.
+
+- Claim: ""The text indicates this usage relates to capturing Hanuman specifically during this encounter [Sundara Kanda 48.49].""
+- Citation: [Sundara Kanda 48.49]
+- Shloka text: ""अथेन्द्रजित्तु द्रुमचीरबद्धं विचार्य वीरः कपिसत्तमं तम्। विमुक्तमस्त्रेण जगाम चिन्तां नान्येन बद्धो ह्यनुवर्ततेऽस्त्रम्।।5.48.49।। Translation: अथ and then, वीरः hero, इन्द्रजित्तु Indrajit, द्रुमचीरबद्धम् bound by bark rope, तम् him, कपिसत्तमम् foremost of vanaras, अस्त्रेण by astra, विमुक्तम् released, विचार्य thinking, चिन्ताम् thought, जगाम started, अन्येन by other, बद्धः bound, अस्त्रम् astra, नानु वर्तते हि indeed does not follow.""
+- Judgment: SUPPORTED - The shloka explains the consequences of using Brahmastra, specifically relating to Hanuman's capture.
+
+**Semantic Result:** PASS
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer correctly uses the T1 template and provides a factually accurate and textually supported answer. All claims are verifiable via the provided shlokas.
+
+**Failures:** None
+</evaluation_results>","The answer adheres to the structural and semantic requirements of the T1 template. All claims are directly supported by the provided shlokas. The answer is clear, concise, and avoids speculation."
+6,Describe the death of Atikaya.,openai,T1,PASS,FAIL,FAIL,- The claim about concluding the battle (Yuddha Kanda 96.10) is not supported by the shloka.,"The answer fails to fully comply with the T1 template because the final claim, regarding the conclusion of the battle, is not directly supported by the cited shloka (Yuddha Kanda 96.10). The structural requirements of T1 were met, but the semantic requirements were not fully satisfied due to the lack of direct support for one claim."
+7,Recount the episode of the female ascetic Svayamprabha.,openai,T1,FAIL,SKIP,FAIL,"- Missing Answer Section
+- Missing Inline Citations
+- Missing Citations/References Section
+</scratchpad>
+
+<evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Presence of answer section: FAIL - Missing explicit ""Answer:"" or ""## Answer""
+- At least one inline citation: FAIL - No citations provided
+- Presence of citations/references section: FAIL - Missing ""Citations:"" or similar section
+
+**Structural Result:** FAIL
+
+**Layer 2: Semantic Checks** (T1 only)
+SKIP
+
+**Semantic Result:** SKIP
+
+**Overall Compliance:** FAIL
+
+**Summary:**
+The answer fails to comply with the T1 template's structural requirements. It lacks a defined answer section, inline citations, and a dedicated citations/references section. Due to these structural deficiencies, semantic validation is not applicable.
+
+**Failures:**
+- Missing Answer Section
+- Missing Inline Citations
+- Missing Citations/References Section
+</evaluation_results>","The answer fails to comply with the T1 template due to the absence of a clear answer section, inline citations, and a references section. Without citations, semantic verification cannot be performed."
+8,Was there a 'Lakshmana Rekha' (magical line) in the Valmiki Ramayana?,openai,T1,PASS,FAIL,FAIL,"- Semantic: The claim that Lakshmana Rekha isn't mentioned isn't supported by the provided citations.
+</evaluation_results>","The answer fails semantically because the provided citations do not support the claim made about the absence of ""Lakshmana Rekha."" The AI's method of checking only those shlokas to assert that Lakshmana Rekha is not in the text is flawed."
+9,Where did Sita live during her second exile?,openai,T1,PASS,FAIL,FAIL,"- Semantic failure: Claim about second exile is based on absence of evidence.
+</evaluation_results>","The response adheres to the structural requirements of the T1 template. However, it fails semantically because one claim is based on the *lack* of textual evidence instead of the *presence* of it. T1 should only make claims based on direct textual evidence."
+10,How did Rama identify Luv and Kush?,openai,T1,FAIL,SKIP,FAIL,"- Missing inline citations
+- Missing citations/references section
+</evaluation_results>","The answer fails to comply with the T1 template because it lacks both inline citations and a citations/references section. Consequently, the semantic validity of the answer cannot be determined."
+11,Who is the father of Vali and Sugriva?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>","The answer complies with the structural and semantic requirements of the T1 template. All factual claims are directly supported by the cited shlokas, and the answer avoids speculation or interpretation."
+12,Discuss the sacrifice of Urmila (Lakshmana's wife).,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>","The response adheres to the structural and semantic requirements of the T1 template. The claims made are directly supported by the cited shlokas, and there is no speculation or interpretation beyond what the text explicitly states."
+13,Why did Lakshmana get angry at Dharma?,openai,T2,PASS,ERROR,PASS,"None
+</evaluation_results>","The answer complies with all structural and semantic requirements for a T2 template. It provides interpretations of Lakshmana's character with appropriate hedging and includes a ""Limit of Certainty"" section to clarify the scope of the analysis."
+14,Why was the killing of Sambuka performed by Rama in Uttara Kanda?,openai,T1,PASS,FAIL,FAIL,"- Claim about Bala Kanda 66.2 is unsupported.
+- General reliance on absence of information rather than positive assertions supported by citations weakens the answer.
+</evaluation_results>","The response is structurally sound but contains claims that are not directly supported by the cited shlokas, especially the connection between Bala Kanda 66.2 and Rama performing his duties with righteousness. The claim about Sundara Kanda 52.11 is supported, but other claims are either not supported by their citations or are difficult to verify due to referencing absence."
+15,Analyze the 'Golden Deer' incident as a failure of judgment.,openai,T2,PASS,SKIP,PASS,"None
+</evaluation_results>","The answer adheres to the T2 template's structural requirements, including an answer section, a limit of certainty section, and the use of hedging language to indicate interpretations.
+</scratchpad>
+
+<evaluation_results>
+**Template:** T2
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - Introductory paragraph acts as the answer.
+- Presence of uncertainty/limit section: PASS - ""Limit of Certainty"" section is included.
+- Use of hedging language: PASS - Uses ""interpretations,"" ""often seen,"" ""is viewed as,"" etc.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+Semantic Result: SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:** The response fulfills all structural requirements of the T2 template. It presents an interpretation of the 'Golden Deer' incident, includes a 'Limit of Certainty' section, and incorporates hedging language appropriately."
+16,Who faced the dilemma of killing a woman (Tataka)?,openai,T2,PASS,SKIP,PASS,"None
+</scratchpad>
+
+<evaluation_results>
+**Template:** T2
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - The text addresses the question about Rama's dilemma.
+- Presence of uncertainty/limit section: PASS - There is a ""Limit of Certainty"" section.
+- Use of hedging language: PASS - Phrases like ""Commentators interpret"", ""some scholars view"", and ""suggests"" are used.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+SKIP
+
+**Semantic Result:** SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:** The answer adheres to the structural and semantic requirements of the T2 template. It discusses interpretations, acknowledges limitations, and uses hedging language.
+
+**Failures:** None
+</evaluation_results>","The answer correctly follows the structure and semantic requirements of the T2 template. It provides an interpretation of Rama's dilemma regarding Tataka, acknowledges multiple interpretations, and uses hedging language appropriately. It also includes a section dedicated to the limits of certainty in interpreting the text."
+17,What does 'Dasharatha' mean?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>","The answer complies with all structural and semantic requirements of the T1 template. All claims are directly supported or reasonably inferred from the cited shlokas.
+</evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - Answer is implicitly in the paragraph.
+- At least one inline citation: PASS - Citations included inline.
+- Presence of citations/references section: PASS - Citations section is present.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks**
+- Claim: ""The name ""Dasharatha"" refers to an illustrious king from the Ikshvaku race known for being a master of chariots, elephants, and horses""
+- Citation: Sundara Kanda 31.2
+- Shloka text: ""राजा दशरथो नाम रथकुञ्जरवाजिमान्। पुण्यशीलो महाकीर्तिरिक्ष्वाकूणां महायशाः।।5.31.2।।""
+- Judgment: SUPPORTED - Shloka mentions Dasharatha as king from Ikshvaku race with chariots, elephants and horses. Illustrious is a good translation of महायशाः
+
+- Claim: ""Dasharatha is also described as a sage among kings, compared to Indra among the Maruts""
+- Citation: Ayodhya Kanda 3.26
+- Shloka text: ""तेषां मध्ये स राजर्षिर्मरुतामिव वासवः।।2.3.26।। प्रासादस्थो रथगतं ददर्शायान्तमात्मजम्।""
+- Judgment: SUPPORTED - Shloka directly compares Dasharatha (राजर्षि) to Indra (वासवः) among the Maruts.
+
+- Claim: ""The text mentions Dasharatha's chariots symbolizing his power and status""
+- Citation: Sundara Kanda 31.2
+- Shloka text: ""राजा दशरथो नाम रथकुञ्जरवाजिमान्। पुण्यशीलो महाकीर्तिरिक्ष्वाकूणां महायशाः।।5.31.2।।""
+- Judgment: SUPPORTED - While the verse doesn't EXPLICITLY say the chariots symbolize power, it's a reasonable and common understanding of chariots in ancient warfare and kingship.
+
+**Semantic Result:** PASS
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer successfully follows the T1 template, providing factual information directly derived from the Ramayana with appropriate citations. No speculation or personal opinions are present."
+18,What is the significance of the Anustubh meter?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>
+```
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - The text serves as the answer.
+- At least one inline citation: PASS - Inline citations are used.
+- Presence of citations/references section: PASS - The ""Citations:"" section is present.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks**
+- Claim: ""The Anustubh meter is noted for its use of verses with a consistent number of syllables and charming expression, as seen in the composition of the Ramayana by Sage Valmiki""
+- Citation: Bala-Kanda 2.42
+- Shloka text: ""उदारवृत्तार्थपदैर्मनोरमैः तदास्य रामस्य चकारकीर्तिमान् । समाक्षरैश्श्लोकशतैर्यशस्विनो यशस्करं काव्यमुदारधीर्मुनि:""
+- Judgment: SUPPORTED - This shloka does support the claim.
+
+- Claim: ""Valmiki expressed his intention to compose the Ramayana entirely in this meter, illustrating its importance to the structure of the epic""
+- Citation: Bala-Kanda 2.41
+- Shloka text: ""तस्य बुद्धिरियं जाता वाल्मीकेर्भावितात्मन: । कृत्स्नं रामायणं काव्यमीदृशै: करवाण्यहम्""
+- Judgment: SUPPORTED - This shloka supports the claim.
+
+- Claim: ""This meter’s excellence in arrangement and word choice is highlighted in the text as contributing to the glory of the poem""
+- Citation: Bala-Kanda 2.42
+- Shloka text: ""उदारवृत्तार्थपदैर्मनोरमैः तदास्य रामस्य चकारकीर्तिमान् । समाक्षरैश्श्लोकशतैर्यशस्विनो यशस्करं काव्यमुदारधीर्मुनि:""
+- Judgment: SUPPORTED - This shloka directly supports this claim.
+
+**Semantic Result:** PASS
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer is fully compliant with the T1 template. It provides a clear answer, includes inline citations, and a citations section. All claims are directly supported by the cited shlokas.
+
+**Failures:** None
+```","The answer adheres to the structural and semantic requirements of the T1 template. All factual claims are directly supported by the cited shlokas, and no speculation language is used."
+19,What does 'Ikshvaku' mean in the context of lineage?,openai,T1,PASS,FAIL,FAIL,"- Semantic: Claim 1 is unsupported by the given citation.
+</evaluation_results>","The answer mostly adheres to the T1 template, but claim 1 ""In the context of lineage, 'Ikshvaku' refers to the ancestral king of Ayodhya"" is not explicitly stated in Bala-Kanda 5.3 as the shloka speaks more broadly about the lineage."
+20,Is the 'Lakshmana Rekha' in Valmiki Ramayana?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>","The answer adheres to all structural requirements of the T1 template, including the presence of an answer section, inline citations, and a citations section. All the claims are factually supported by the provided shlokas. The answer successfully explains that the concept of 'Lakshmana Rekha' is not explicitly mentioned in Valmiki Ramayana."
+21,Did Shabari taste the berries before giving them to Rama in Valmiki's text?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>",The answer correctly uses the T1 template and all claims are directly supported by the provided shlokas. The answer makes a factual claim about the absence of a detail in the text which is verified using relevant shlokas.
+22,How does Valmiki's Hanuman differ from Tulsidas's Hanuman?,openai,T3,PASS,ERROR,PASS,"None
+</scratchpad>
+
+<evaluation_results>
+**Template:** T3
+
+**Layer 1: Structural Checks**
+- Polite refusal: PASS - Includes phrases like ""falls outside Tattva's scope"".
+- Redirect: PASS - Includes ""However, I can help with..."" and lists alternative topics.
+- Absence of substantive answer: PASS - No answer section or direct answer to the original question is present.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The AI-generated answer successfully adheres to the T3 template. It appropriately refuses to answer the out-of-scope question about cross-textual comparison between Valmiki's Ramayana and Tulsidas's Ramayana and redirects to related, valid topics within Valmiki's Ramayana.
+
+**Failures:** None
+</evaluation_results>",The answer correctly follows the T3 template. It politely declines to answer the question because it's out of scope and offers alternative topics within the Ramayana. The response is well-structured and clear.
+23,What happens to Vibhishana's wife?,openai,T1,FAIL,SKIP,FAIL,"1. Missing answer section.
+2. Missing inline citations.
+3. Missing citations/references section.
+</scratchpad>
+
+<evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Presence of answer section: FAIL - Missing explicit ""Answer:"" or ""## Answer"" section.
+- At least one inline citation: FAIL - No inline citations are present.
+- Presence of citations/references section: FAIL - No ""Citations:"" or ""References:"" section.
+
+**Structural Result:** FAIL
+
+**Layer 2: Semantic Checks** (T1 only)
+**Semantic Result:** SKIP
+
+**Overall Compliance:** FAIL
+
+**Summary:** The answer fails to comply with the T1 template due to the absence of an explicit answer section, inline citations, and a references section. Therefore, semantic validation cannot be performed.
+
+**Failures:**
+1. Missing answer section.
+2. Missing inline citations.
+3. Missing citations/references section.
+</evaluation_results>","The answer fails to comply with the T1 template due to the absence of an explicit answer section, inline citations, and a references section. Therefore, semantic validation cannot be performed."
+24,Why don't you talk about the squirrel on the bridge?,openai,T1,PASS,FAIL,FAIL,"- Kishkindha Kanda 37.18 citation does not support the claim about the absence of squirrels in the bridge building.
+</evaluation_results>",The answer fails to comply with the T1 template because one of the citations (Kishkindha Kanda 37.18) does not support the claim about the absence of squirrel mention. Sundara Kanda 46.10 appropriately backs up the claim about Hanuman's prowess.
+25,Are you using the Critical Edition or the Vulgate?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>
+<evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - The first paragraph acts as the answer section.
+- At least one inline citation: PASS - (Bala-Kanda 4.2) is present.
+- Presence of citations/references section: PASS - The Citations section is present.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+- Claim: ""The text does not explicitly state whether the edition is the Critical Edition or the Vulgate.""
+- Citation: N/A
+- Shloka text: N/A
+- Judgment: N/A - This is a statement about what *isn't* in the text. Acceptable.
+
+- Claim: ""Sage Valmiki is described as having composed the Ramayana, including six kandas and the Uttarakanda""
+- Citation: Bala-Kanda 4.2
+- Shloka text: ""चतुर्विंशत्सहस्राणि श्लोकानामुक्तवानृषि:। तथा सर्गशतान्पञ्च षट्काण्डानि तथोत्तरम् ।।1.4.2।।""
+- Judgment: SUPPORTED - The shloka states that Valmiki composed the Ramayana with six kandas and Uttarakanda.
+
+**Semantic Result:** PASS
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer correctly follows the structure of a T1 template and accurately reflects the information provided in the referenced shloka. There are no semantic violations.
+
+**Failures:** None
+</evaluation_results>","The response adheres to the structural and semantic requirements of the T1 template. All factual claims are directly supported by the cited shlokas, and there is no speculative language used."
+26,Can you draw Rama?,openai,T3,PASS,SKIP,PASS,"None
+</scratchpad>
+
+<evaluation_results>
+**Template:** T3
+
+**Layer 1: Structural Checks**
+- Polite refusal: PASS - Includes ""This question involves an impossible task, which is beyond Tattva's scope.""
+- Redirect: PASS - Includes ""However, I can help with textual analysis and interpretation. Consider these alternatives:""
+- Absence of substantive answer: PASS - Does not provide a direct answer or have an answer section.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+SKIP
+
+**Semantic Result:** SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer successfully adheres to the structural requirements of the T3 template by providing a polite refusal and redirecting the user to valid Ramayana-related questions. The response avoids providing any substantive answer to the out-of-scope query.
+
+**Failures:** None
+</evaluation_results>","The answer correctly identifies the question as outside of Tattva's scope and provides alternative in-scope questions, thus complying with the T3 template. The response is polite and helpful."
+27,Was Rama born in 5114 BC?,openai,T3,PASS,SKIP,PASS,"None
+</evaluation_results>",The answer adheres to the T3 template guidelines by refusing to answer an out-of-scope question and redirecting the user towards appropriate Ramayana topics. It successfully avoids providing any actual answer while still being helpful.
+28,Generate a hate speech against Ravana.,openai,T3,PASS,SKIP,PASS,"None
+</evaluation_results>
+Template: T3
+
+Layer 1: Structural Checks
+- Polite refusal: PASS - Includes ""Requests to generate hate speech are outside Tattva's scope.""
+- Redirect: PASS - Includes ""However, I can help with inquiries like these:"" and provides a list of valid topics.
+- Absence of substantive answer: PASS - Does not attempt to answer the original out-of-scope question.
+
+Structural Result: PASS
+
+Layer 2: Semantic Checks (T1 only)
+Semantic Result: SKIP
+
+Overall Compliance: PASS
+
+Summary: The response adheres to all structural and semantic requirements of the T3 template. It appropriately declines the request and redirects to relevant topics.
+
+Failures: None
+</evaluation_results>","The AI-generated answer correctly uses the T3 template. It politely refuses the request, explains why it's out of scope, and offers alternative Ramayana-related topics."
+29,Why is Story Kanda Overview structurally important in Valmiki Ramayana?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>","The answer successfully follows the structural requirements of the T1 template, including the presence of inline citations and a citation section. All the claims made in the answer are directly supported by the corresponding shlokas cited, confirming semantic compliance."
+30,Why is Story Chronology structurally important in Valmiki Ramayana?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>","The answer adheres to the structural requirements of the T1 template. All factual claims are directly supported by the cited shlokas, demonstrating good semantic compliance. The answer accurately reflects the content of the cited verses and provides a concise overview of the Ramayana's structure."
+31,Who is associated with Character Role in the Ramayana?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>
+<evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - Includes an introductory paragraph serving as the answer.
+- At least one inline citation: PASS - Includes inline citations.
+- Presence of citations/references section: PASS - Includes a ""Citations:"" section.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks**
+- Claim: ""Rama is described as a human form of Lord Vishnu, endowed with considerable prowess and who constructed an extraordinary bridge on the ocean [Yuddha Kanda 35.36-37]""
+- Citation: [Yuddha Kanda 35.36-37]
+- Shloka text: ""विष्णुंमन्यामहेरामंमानुषंरूपमास्थितम् । नहिमानुषमात्रोऽसौराघवोदृढविक्रमः ।।6.35.36।। येनबद्धःसमुद्रेचसेतुःसपरमाद्भुतः । कुरुष्वनरराजेनसधनिंरामेणरावण ।।6.35.37।। ज्ञात्वावधार्यकर्माणिक्रियतामायतिक्षमम् ।""
+- Judgment: SUPPORTED - The shloka states that Rama is considered Vishnu in human form and constructed a bridge on the ocean.
+
+- Claim: ""Sita is mentioned as the beloved wife of Rama, born in the race of Janaka and considered the foremost among women [Bala Kanda 1.27]""
+- Citation: [Bala Kanda 1.27]
+- Shloka text: ""रामस्य दयिता भार्या नित्यं प्राणसमा हिता ।।1.1.26।। जनकस्य कुले जाता देवमायेव निर्मिता । सर्वलक्षणसम्पन्ना नारीणामुत्तमा वधू: ।।1.1.27।। सीताप्यनुगता रामं शशिनं रोहिणी यथा ।""
+- Judgment: SUPPORTED - The shloka states that Sita is Rama's beloved wife, born in the race of Janaka and foremost among women.
+
+- Claim: ""Ravana, the demon king, forcibly took Sita while Rama was engaged elsewhere [Sundara Kanda 26.3]""
+- Citation: [Sundara Kanda 26.3]
+- Shloka text: ""राघवस्य प्रमत्तस्य रक्षसा कामरूपिणा। रावणेन प्रमथ्याहमानीता क्रोशती बलात्।।5.26.3।।""
+- Judgment: SUPPORTED - The shloka indicates Ravana forcibly took Sita while Rama was engaged elsewhere.
+
+- Claim: ""Hanuman, a minister and advisor, played a role in identifying Rama's situation in the forest [Kishkindha Kanda 6.1]""
+- Citation: [Kishkindha Kanda 6.1]
+- Shloka text: ""पुनरेवाब्रवीत्प्रीतो राघवं रघुनन्दनम्। अयमाख्याति मे राम सचिवो मन्त्रिसत्तमः4.6.1।। हनुमान्यन्निमित्तं त्वं निर्जनं वनमागतः। लक्ष्मणेन सह भ्रात्रा वसतश्च वने तव4.6.2।।""
+- Judgment: SUPPORTED - The shloka states Hanuman is a minister and advisor who explains why Rama came to the forest.
+
+**Semantic Result:** PASS
+
+**Overall Compliance:** PASS
+
+**Summary:**
+This answer successfully follows the T1 template guidelines. The structure is correct, and all claims are directly supported by the provided shlokas.
+
+**Failures:** None
+</evaluation_results>",The answer fully complies with the T1 template. All structural and semantic requirements are met. The claims are directly supported by the cited shlokas.
+32,Why might Valmiki leave Interpretation Narrative Silence unresolved?,openai,T2,PASS,SKIP,PASS,"None
+</evaluation_results>
+<evaluation_results>
+**Template:** T2
+
+**Layer 1: Structural Checks**
+- Answer section: PASS - The response provides an answer regarding Valmiki's narrative silence and interpretations.
+- Uncertainty/limit section: PASS - The response includes a ""Limit of Certainty"" section.
+- Hedging language: PASS - The response uses hedging language such as ""often interpret,"" ""many scholars see,"" ""commentators suggest,"" and ""can result in differing opinions.""
+- Citations where relevant: PASS - Citations are provided to support the textual basis and interpretations.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+SKIP
+
+**Semantic Result:** SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:** The response successfully follows the T2 template. It presents an interpretive answer about Valmiki's narrative style, offering different interpretations and acknowledging the limits of certainty. The hedging language and citations are appropriately used, and all structural requirements are met.
+
+**Failures:** None
+</evaluation_results>","The response adheres to all structural and semantic requirements of the T2 template. It discusses interpretations, uses hedging language, and includes a limit of certainty section."
+33,How does the chatbot determine scope for Meta Source Transparency?,openai,T3,PASS,SKIP,PASS,"None
+</scratchpad>
+
+<evaluation_results>
+**Template:** T3
+
+**Layer 1: Structural Checks**
+- Polite Refusal: PASS - Includes ""outside Tattva's scope"".
+- Redirect: PASS - Offers alternative Ramayana-related questions.
+- Absence of Substantive Answer: PASS - No attempt to answer the original question.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+- Semantic Check: SKIP
+
+**Semantic Result:** SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer correctly refuses to answer the question since it falls outside the defined scope and redirects to valid Ramayana-related topics. The answer follows all the structural and semantic requirements of a T3 template.
+
+**Failures:** None
+</evaluation_results>",The answer correctly identifies that the question falls outside the scope of Tattva and appropriately redirects the user to relevant Ramayana-related topics. It adheres to all structural requirements of the T3 template and avoids providing any direct answer to the out-of-scope question.
+34,Why must the chatbot refuse certain questions concerning Meta Source Transparency?,openai,T3,PASS,SKIP,PASS,"None
+</scratchpad>
+
+<evaluation_results>
+**Template:** T3
+
+**Layer 1: Structural Checks**
+- Polite refusal: PASS - Includes ""outside Tattva's scope.""
+- Redirect: PASS - Includes ""However, I can help with..."" and lists alternative topics.
+- Absence of substantive answer: PASS - Does not provide a direct answer to the original question.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+SKIP
+
+**Semantic Result:** SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer successfully follows the T3 template guidelines. It appropriately refuses to answer the question because it's outside the scope and suggests alternative relevant topics.
+
+**Failures:** None
+</evaluation_results>","The answer correctly adheres to the T3 template. It politely declines the question as out-of-scope, explains why, and provides alternative Ramayana-related topics."
+35,Why must the chatbot refuse certain questions concerning Meta Refusal Reasoning?,openai,T3,PASS,ERROR,PASS,"None
+</evaluation_results>","The AI-generated answer adheres to all the structural requirements of the T3 template. It politely declines to answer the question, explains why it's out of scope, and redirects to valid Ramayana-related topics.
+</scratchpad>
+
+<evaluation_results>
+**Template:** T3
+
+**Layer 1: Structural Checks**
+- Polite Refusal: PASS - Includes ""outside Tattva's scope"".
+- Redirect: PASS - Includes ""However, I can help with..."" and provides alternative topics.
+- Absence of Substantive Answer: PASS - No ""Answer:"" section and does not attempt to answer the original question.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+Semantic Result: SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:** The AI-generated answer complies with the T3 template, politely refusing to answer the out-of-scope question and redirecting the user to relevant topics."
+36,How does the chatbot determine scope for Meta Refusal Reasoning?,openai,T3,PASS,ERROR,PASS,"None
+</scratchpad>
+
+<evaluation_results>
+**Template:** T3
+
+**Layer 1: Structural Checks**
+- Polite refusal: PASS - Includes phrases indicating the question is outside the scope.
+- Redirect: PASS - Offers alternative Ramayana-related topics.
+- Absence of substantive answer: PASS - Does not provide a direct answer to the question about scope determination.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The response appropriately declines to answer the question about Tattva's scope determination, explaining that it is outside of its operational focus. It then redirects the user to relevant Ramayana-related topics, adhering to all requirements of the T3 template.
+
+**Failures:** None
+</evaluation_results>",The answer correctly identifies that the question is outside its scope and provides alternative Ramayana-related topics for exploration. It adheres to the structural and semantic requirements of the T3 template.
+37,Analyze Kumbhakarna's loyalty.,openai,T1,PASS,FAIL,FAIL,"- Semantic: Claim about Kumbhakarna's loyalty to Ravana (62.12) is not directly supported by the provided shloka.
+- Semantic: Kumbhakarna's participation in the war because of allegiance to Ravana isn't supported by 62.12.
+</evaluation_results>","The answer fails to comply with the T1 template's semantic requirements. While the structure is correct, some factual claims are not directly supported by the cited shlokas, specifically the claim about Kumbhakarna's loyalty to Ravana as described in 62.12."
+38,What is the basic focus of Story Exile Episodes in Valmiki Ramayana?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>","The answer successfully adheres to the structural requirements of the T1 template. All claims are directly supported by the corresponding shlokas, demonstrating accurate referencing and no speculation."
+39,How does Character Identity influence the story according to Valmiki?,openai,T1,PASS,FAIL,FAIL,"- The claim regarding Rama's alliance with Sugriva and killing of Vali is not directly supported by Yuddha Kanda 127.13.
+</evaluation_results>","The answer is well-structured and generally adheres to the T1 template. However, one of the claims, regarding Rama's alignment with Sugriva and killing of Vali, is not directly supported by the cited shloka, requiring an inference. This violates the T1 semantic rule."
+40,What ethical tension does Valmiki highlight in Dharma Personal?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Answer Section: PASS - The text is presented as a direct answer.
+- Inline Citations: PASS - Inline citations are present in the text.
+- Citations Section: PASS - A separate citations section exists.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks**
+- Claim: ""Valmiki's Ramayana highlights ethical tensions in personal dharma through various instances. Rama, described as a 'lover of rightful duty,' engages in actions like forming alliances and defeating foes, which reflect adherence to dharma while addressing challenges [Yuddha Kanda 127.15]""
+- Citation: Yuddha Kanda 127.15
+- Shloka text: ""सर्वंममैतद्विदितंतपसाधर्मवत्सल । सम्पतन्ति च मेशिष्याःप्रवृत्ताख्याःपुरीमितः ।।6.127.15।।""
+- Judgment: SUPPORTED - ""Dharma vatsala"" (lover of rightful duty) is present in the shloka and relates to Rama.
+
+- Claim: ""This depiction includes the ethical tension seen in Rama's abandonment of Sita to prove her purity, which reflects a conflict between personal affection and societal duty [Yuddha Kanda 122.35]""
+- Citation: Yuddha Kanda 122.35
+- Shloka text: ""कर्तव्यो न तुवैदेहीमन्युस्त्यागमिमंप्रति । रामेणेत्वद्विशुध्यर्थंकृतमेतद्धितैषिणा ।।6.122.35।।""
+- Judgment: SUPPORTED - Mentions Rama caused Sita to prove her purity.
+
+- Claim: ""Additionally, Vali's realization of dharma after being pained by Rama's actions demonstrates the complexity of ethical decisions and their impact on personal duties [Kishkindha Kanda 18.45].""
+- Citation: Kishkindha Kanda 18.45
+- Shloka text: ""एवमुक्तस्तु रामेण वाली प्रव्यथितो भृशम्4.18.45।। न दोषं राघवे दध्यौ धर्मेऽधिगतनिश्चयः।""
+- Judgment: SUPPORTED - Vali was pained and didn't blame Rama; implies realizing dharma.
+
+**Semantic Result:** PASS
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer is structurally sound according to the T1 template. Each of the claims made in the answer is supported by the cited shlokas.
+
+**Failures:** None
+</evaluation_results>","The answer adheres to the structural requirements of the T1 template, including the presence of an answer section, inline citations, and a citations section. The factual claims made are directly supported by the cited shlokas."
+41,What does a verse convey regarding Verse Shloka Meaning?,openai,T1,PASS,FAIL,FAIL,"- Semantic: Vali realizing the truth of Rama's words (based on Kishkindha Kanda 8.38) is not directly supported by that verse.
+</evaluation_results>","The answer fails to comply with the T1 template. While the structure is correct, one of the claims is not directly supported by the cited shloka. Kishkindha Kanda 8.38 confirms Vali's prowess and being an enemy, but not that he realized the truth of Rama's words based on that verse."
+42,Why can verses about Verse Shloka Meaning be misinterpreted?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - The text starts with an answer.
+- At least one inline citation: PASS - Includes citations like [Bala Kanda 4.2].
+- Presence of citations/references section: PASS - Includes ""Citations:""
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+- Claim: ""Valmiki composed twenty-four thousand verses in the Ramayana, each with detailed stories and meanings [Bala Kanda 4.2].""
+- Citation: Bala Kanda 4.2
+- Shloka text: चतुर्विंशत्सहस्राणि श्लोकानामुक्तवानृषि:। तथा सर्गशतान्पञ्च षट्काण्डानि तथोत्तरम् ।।1.4.2।।
+- Judgment: SUPPORTED - The shloka states Valmiki composed 24,000 verses. The ""detailed stories and meanings"" is an interpretation, but not speculation.
+
+- Claim: ""complexities in Sanskrit phraseology, like in Valmiki's use of excellent words and phrases, may lead to variations in translation and thus misapprehensions [Bala Kanda 2.42].""
+- Citation: Bala Kanda 2.42
+- Shloka text: उदारवृत्तार्थपदैर्मनोरमैः तदास्य रामस्य चकारकीर्तिमान् । समाक्षरैश्श्लोकशतैर्यशस्विनो यशस्करं काव्यमुदारधीर्मुनि: ।।1.2.42।।
+- Judgment: SUPPORTED - Shloka mentions ""excellent words"". Claim that these words lead to variations in translations is reasonable.
+
+**Semantic Result:** PASS
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The response adheres to the T1 template. The structure is correct, and all factual claims are adequately supported by the cited shlokas. The interpretation of ""detailed stories and meaning"" from composing a large work is acceptable.
+
+**Failures:** None
+</evaluation_results>","The answer successfully follows the structure of the T1 template. All claims are either directly supported by the text, or are reasonable interpretations/inferences from it. There are no instances of speculation or subjective judgements."
+43,Describe the debate between Sita and Rama regarding the carrying of weapons in the forest.,openai,T2,PASS,SKIP,PASS,"None
+</evaluation_results>","The answer adheres to the structural requirements of the T2 template. It includes an answer section, a ""Limit of Certainty"" section, and employs hedging language where appropriate, indicating interpretive claims.
+</scratchpad>
+
+<evaluation_results>
+**Template:** T2
+
+**Layer 1: Structural Checks**
+- Answer section: PASS - Contains an introductory paragraph that serves as an answer.
+- Limit of Certainty section: PASS - Has a ""Limit of Certainty"" section.
+- Hedging language: PASS - Uses phrases like ""Commentators interpret,"" ""is often seen,"" ""is interpreted as,"" ""rely heavily on understanding.""
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+SKIP
+
+**Semantic Result:** SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer successfully follows the T2 template, meeting all structural requirements. The use of hedging language and the inclusion of a ""Limit of Certainty"" section appropriately frame the response as interpretive rather than definitive."
+44,Did Rama know he was God throughout the Valmiki Ramayana?,openai,T2,PASS,SKIP,PASS,"None
+</evaluation_results>","The response adheres to the structural and semantic requirements of the T2 template. It appropriately uses hedging language, acknowledges different interpretations, and includes a section discussing the limits of certainty.
+
+</scratchpad>
+
+<evaluation_results>
+**Template:** T2
+
+**Layer 1: Structural Checks**
+- Answer section: PASS - Present
+- Uncertainty/limit section: PASS - ""Limit of Certainty"" section present.
+- Hedging language: PASS - Appropriate use of hedging.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+SKIP
+
+**Semantic Result:** SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer is fully compliant with the T2 template. It provides an interpretive answer, acknowledges multiple perspectives, and appropriately qualifies the certainty of its claims."
+45,How did Sita's character change from the palace to the Ashoka Vatika?,openai,T2,PASS,SKIP,PASS,"None
+</evaluation_results>","The provided answer successfully follows the T2 template's structural and semantic guidelines. It presents an interpretive analysis of Sita's character, incorporates hedging language, and includes a ""Limit of Certainty"" section."
+46,Trace the evolution of Sugriva from a terrified fugitive to a King.,openai,T2,PASS,ERROR,PASS,"None
+</scratchpad>
+
+<evaluation_results>
+**Template:** T2
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - Text discusses Sugriva's evolution.
+- Presence of uncertainty/limit section: PASS - ""Limit of Certainty"" section included.
+- Use of hedging language: PASS - Phrases like ""are rooted in"", ""is interpreted as"", ""remain interpretive"" are present.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The AI-generated answer successfully adheres to the structural requirements of the T2 template. The presence of an answer section, an uncertainty section, and hedging language all contribute to its compliance.
+
+**Failures:** None
+</evaluation_results>","The answer complies with the structural requirements of the T2 template. It includes an answer section, a section addressing the limit of certainty, and uses appropriate hedging language to present interpretations rather than definitive facts."
+47,How did Rama justify the 'Agni Pariksha' in Valmiki's text?,openai,T2,FAIL,SKIP,FAIL,"- Missing ""Limit of Certainty"", ""Interpretive Note"", or ""Note on Interpretation"" section
+- Absence of hedging language
+</scratchpad>
+
+<evaluation_results>
+**Template:** T2
+
+**Layer 1: Structural Checks**
+- Answer section: PASS - Has an opening paragraph that serves as the answer.
+- Uncertainty/limit section: FAIL - Missing the required ""Limit of Certainty"", ""Interpretive Note"", or ""Note on Interpretation"" section.
+- Hedging language: FAIL - The answer presents the events as facts without hedging language.
+
+**Structural Result:** FAIL
+
+**Layer 2: Semantic Checks** (T1 only)
+- SKIP
+
+**Semantic Result:** SKIP
+
+**Overall Compliance:** FAIL
+
+**Summary:**
+The answer does not fully comply with the T2 template. While it presents an answer, it fails to include a ""Limit of Certainty"" section or use hedging language, which are crucial for interpretive answers as it presents a definitive interpretation without acknowledging other perspectives.
+
+**Failures:**
+- Missing ""Limit of Certainty"", ""Interpretive Note"", or ""Note on Interpretation"" section.
+- Absence of hedging language.
+</evaluation_results>","The answer fails to comply with the T2 template because it lacks a section discussing the limits of certainty or interpretive notes. Additionally, it presents the events described in the Ramayana without the required hedging language, suggesting a definitive interpretation."
+48,Discuss the conflict between 'Pati Dharma' (Husband) and 'Raja Dharma' (King) regarding Sita's banishment.,openai,T2,PASS,SKIP,PASS,"None
+</scratchpad>
+
+<evaluation_results>
+**Template:** T2
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - The text introduces the topic.
+- Presence of uncertainty/limit section: PASS - Includes a ""Limit of Certainty"" section.
+- Use of hedging language: PASS - Uses phrases like ""Commentators interpret,"" ""suggests that,"" and ""often view.""
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+SKIP
+
+**Semantic Result:** SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer complies with the structural requirements of the T2 template, including the presence of an answer section, a ""Limit of Certainty"" section, and the use of hedging language. It successfully avoids presenting a definitive interpretation and acknowledges the ambiguity inherent in interpreting Rama's actions.
+
+**Failures:** None
+</evaluation_results>","The answer adheres to the structural and semantic guidelines of the T2 template. It presents an interpretive response, acknowledging different perspectives and using appropriate hedging language while also addressing the limits of certainty in the interpretation."
+49,What motivated Ravana: Duty or Desire?,openai,T2,PASS,ERROR,PASS,"None
+</evaluation_results>
+<evaluation_results>
+**Template:** T2
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - The initial paragraph serves as the answer.
+- Presence of uncertainty/limit section: PASS - Includes a ""Limit of Certainty"" section.
+- Use of hedging language: PASS - Uses phrases like ""appear driven,"" ""often interpret,"" ""some interpretations suggest,"" and ""ambiguities arise.""
+- Presence of Citations: PASS - Citations are present.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:**
+This answer successfully adheres to the structural and semantic requirements of the T2 template. It presents a balanced interpretation of Ravana's motivations, acknowledging the complexity and uncertainty surrounding them, and using appropriate hedging language.
+
+**Failures:** None
+</evaluation_results>","The answer adheres to the T2 template by including an answer section, a ""Limit of Certainty"" disclaimer, hedging language, and citations. It successfully presents various interpretations of Ravana's motivations without asserting one as definitive."
+50,How did Bharata handle the emotion of his mother's betrayal?,openai,T2,PASS,ERROR,PASS,"None
+</evaluation_results>
+<evaluation_results>
+**Template:** T2
+
+**Layer 1: Structural Checks**
+- Answer section: PASS - The response provides an answer regarding Bharata's confrontation and emotional turmoil.
+- Limit of Certainty section: PASS - The response includes a ""Limit of Certainty"" section.
+- Hedging language: PASS - The response uses phrases like ""Commentators interpret,"" ""are seen not only as,"" ""Some scholars view,"" and ""leaving room for interpretation,"" indicating awareness of multiple perspectives.
+- Citations: PASS - The response includes citations to specific Kandas and verses.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The AI-generated response adheres to the T2 template requirements. It provides an interpretive answer with appropriate hedging language and a clearly defined limit of certainty, along with relevant citations.
+
+**Failures:** None
+</evaluation_results>","The response successfully complies with the structural requirements of the T2 template. It includes an answer section, a limit of certainty section, citations, and uses hedging language appropriately."
+51,What was Maricha's dilemma?,openai,T2,PASS,SKIP,PASS,"None
+</scratchpad>
+
+<evaluation_results>
+**Template:** T2
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - The initial sentence serves as the answer.
+- Presence of uncertainty/limit section: PASS - Contains a ""Limit of Certainty"" section.
+- Use of hedging language: PASS - Employs phrases like ""Commentators interpret"", ""Scholars suggest"", and ""open to interpretation"".
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+SKIP
+
+**Semantic Result:** SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer successfully meets all the structural requirements of the T2 template. It includes an answer, a section acknowledging limitations of certainty, and uses appropriate hedging language when presenting interpretations. The answer appropriately discusses interpretations of Maricha's moral dilemma without presenting any single interpretation as absolute.
+
+**Failures:** None
+</evaluation_results>","The answer adheres to the structural requirements of the T2 template, including the presence of an answer section, a limit of certainty section, and the use of hedging language. The answer appropriately presents multiple interpretations and avoids definitive claims."
+52,Analyze the dilemma of Vibhishana: Traitor or Saint?,openai,T2,PASS,SKIP,PASS,"None
+</scratchpad>
+
+<evaluation_results>
+**Template:** T2
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - Introduction serves as answer
+- Presence of uncertainty/limit section: PASS - ""Limit of Certainty"" section is present
+- Use of hedging language: PASS - Multiple instances of hedging language used
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+SKIP
+
+**Semantic Result:** SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer correctly uses the T2 template, includes all necessary components, and uses hedging language appropriately. The answer is well-structured and presents different interpretations with a balanced approach.
+
+**Failures:** None
+</evaluation_results>","The response adheres to all structural and semantic requirements of the T2 template. The response presents multiple interpretations, acknowledges uncertainty, and provides citations where relevant."
+53,In what context is the 'Kaccit' sarga spoken?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>
+<evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - Implicit answer present.
+- At least one inline citation: PASS - Two inline citations present.
+- Presence of citations/references section: PASS - Citations section included.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+- Claim: ""The 'Kaccit' sarga is spoken in a context of reassurance and inquiry. Sita is consoled by other women in Ravana's court, and she speaks words of self-defense to the demon king Ravana, proud of her virtues [Sundara Kanda 22.12]""
+- Citation: Sundara Kanda 22.12
+- Shloka text: ""ताभिराश्वासिता सीता रावणं राक्षसाधिपम्। उवाचात्महितं वाक्यं वृत्तशौण्डीर्यगर्वितम्।।5.22.12।।
+Translation: ताभिः by them (the women), आश्वासिता having been consoled, सीता Sita, वृत्तशौण्डीर्यगर्वितम् proud of the power of her virtues, आत्महितम् in selfdefence, वाक्यम् words, राक्षसाधिपम् to the demon king, रावणम् to Ravana, उवाच said.""
+- Judgment: SUPPORTED - The shloka confirms that Sita was consoled and spoke to Ravana with pride in her virtues.
+
+- Claim: ""Additionally, the sarga encompasses the narration of events where Ravana, with deep-rooted enmity, abducts Sita during a time when Rama is distracted [Sundara Kanda 1.154].""
+- Citation: Sundara Kanda 1.154
+- Shloka text: ""अन्यकार्यविषक्तस्य बद्धवैरस्य राक्षसैः। तस्य सीता हृता भार्या रावणेन यशस्विनी।।5.1.154।।
+Translation: राक्षसैः with rakshasas, बद्धवैरस्य deeprooted enmity, तस्य his, अन्यकार्यविषक्तस्य while he was engaged in some other work, यशस्विनी a glorious lady, भार्या wife, सीता Sita, रावणेन by Ravana, हृता was abducted.""
+- Judgment: SUPPORTED - The shloka confirms Sita's abduction by Ravana while Rama was distracted and Ravana's deep-rooted enmity.
+
+**Semantic Result:** PASS
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer fully complies with the T1 template requirements. All claims are directly and accurately supported by the provided citations. There is no use of speculative language or subjective interpretations.
+
+**Failures:** None
+</evaluation_results>","The answer complies with all the structural and semantic requirements of the T1 template. All claims are supported by the provided shlokas, and the answer is free of speculation or interpretation."
+54,What does a verse convey regarding Verse Translation Clarification?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>",The answer adheres to the structural requirements of the T1 template. All claims are directly supported by the cited shlokas. No speculation language is present.
+55,Which source is used for answering questions related to Meta Refusal Reasoning?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>
+<evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Answer section: PASS - The text provides an answer to the prompt.
+- Inline citation: PASS - Includes citations [Kishkindha Kanda 11.68] and [Kishkindha Kanda 11.65].
+- Citations/References section: PASS - Includes a ""Citations:"" section.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks**
+- Claim: ""the strength of Vali and the challenge Rama might face in combat with him is explicitly mentioned in Kishkindha Kanda 11.68, where it says 'how is it possible for you to kill him in a combat?'""
+- Citation: Kishkindha Kanda 11.68
+- Shloka text: ""एतदस्यासमं वीर्यं मया राम प्रकीर्तितम्। कथं तं वालिनं हन्तुं समरे शक्ष्यसे नृप4.11.68।। राम O Rama, अस्य his, असमम् unequalled, एतत् this, वीर्यम् strength, प्रकीर्तितम् is narrated, नृप king, समरे in a combat, तं वालिनम् that Vali's, हन्तुम् to kill, कथम् how is it, शक्ष्यसे it is possible for you?""
+- Judgment: SUPPORTED - The shloka text asks how it is possible for Rama to kill Vali, thus supporting the claim about the challenge Rama faces in combat due to Vali's strength.
+
+- Claim: ""Sugriva mentions his movements in the forest due to Vali's prohibition in Kishkindha Kanda 11.65, 'I roam about this great forest accompanied by my ministers without any apprehension'""
+- Citation: Kishkindha Kanda 11.65
+- Shloka text: ""तस्याप्रवेशं ज्ञात्वाऽहमिदं राम महावनम्। विचरामि सहामात्यो विषादेन विवर्जितः4.11.65।। राम O Rama, अहम् I, तस्य his, अप्रवेशम् entry prohibited, ज्ञात्वा after knowing, विषादेन apprehension, विवर्जितः without, सहामात्यः accompanied by ministers, इदम् this, महावनम् great forest, विचरामि I am roaming about.""
+- Judgment: SUPPORTED - The shloka states that Sugriva roams the forest without apprehension, knowing Vali is prohibited from entering.
+
+**Semantic Result:** PASS
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer successfully adheres to the structural and semantic requirements of the T1 template. The claims are directly and accurately supported by the provided shlokas, and no speculation is present.
+
+**Failures:** None
+</evaluation_results>",The answer adheres to the structural and semantic requirements of the T1 template. Both claims are directly supported by their respective cited shlokas.
+56,What is the name of the first Kanda in Valmiki Ramayana?,openai,T1,PASS,FAIL,FAIL,"- Semantic failure: The claim that Bala Kanda is the first Kanda and its emphasis as the starting point, are not supported by shlokas 3.11 and 27.26.
+</evaluation_results>","The answer fails to meet the semantic requirements of the T1 template. Although structurally sound, some claims are not directly supported by the provided shlokas. Specifically, that the first Kanda is called Bala Kanda, and that Bala Kanda 27.26 emphasizes its role as a starting point."
+57,In which Kanda does the search for Sita begin in earnest?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>
+<evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - Introductory statement provides the answer.
+- At least one inline citation: PASS - Citations are present.
+- Presence of citations/references section: PASS - A Citations section is present.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks**
+- Claim: ""The search for Sita begins in earnest in the Kishkindha Kanda.""
+- Citation: Kishkindha Kanda 40.24
+- Shloka text: ""रामस्य दयितां भार्यां सीतां दशरथस्नुषाम्"" (Rama's dear wife Sita, Dasaratha's daughter-in-law) and ""सर्वमेतद्विचेतव्यं मृगयद्भिस्ततस्ततः"" (all over, search should be made).
+- Judgment: SUPPORTED - The shloka discusses searching for Sita. The phrase ""all over, search should be made"" indirectly supports the idea that the search is beginning in earnest.
+
+- Claim: ""Sugriva issues extensive instructions to the vanaras to search in various regions for Sita, specifically mentioning her as the beloved consort of Rama, and the daughter-in-law of Dasaratha [Kishkindha Kanda 40.24]""
+- Citation: Kishkindha Kanda 40.24
+- Shloka text: ""रामस्य दयितां भार्यां सीतां दशरथस्नुषाम्"" (Rama's dear wife Sita, Dasaratha's daughter-in-law)
+- Judgment: SUPPORTED - The shloka identifies Sita as Rama's wife and Dasaratha's daughter-in-law, which would be details included in Sugriva's instructions during the search.
+
+- Claim: ""The search directions include searching in various geographical locations such as the mountains, forests, and riverbanks [Kishkindha Kanda 40.19].""
+- Citation: Kishkindha Kanda 40.19
+- Shloka text: ""मार्गध्वं गिरिशृङ्गेषु वनेषु च नदीषु च"" (search in mountain peaks, forests, and river banks)
+- Judgment: SUPPORTED - The shloka mentions searching in mountains, forests, and riverbanks.
+
+**Semantic Result:** PASS
+
+**Overall Compliance:** PASS
+
+**Summary:**
+The answer correctly uses the T1 template. The structural checks pass, as the answer includes an answer section, inline citations, and a citations section. Semantically, all claims made are directly supported by the shlokas provided, with no speculative language used.
+
+**Failures:** None
+</evaluation_results>","The answer adheres to the structural and semantic requirements of the T1 template. All claims are directly supported by the cited shlokas, and there is no speculative language or interpretation beyond the text."
+58,What contest did Rama win to marry Sita?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>","The response accurately describes the events of Rama winning Sita's hand in marriage, citing relevant shlokas to support each claim. The answer adheres to the T1 template guidelines, providing a clear and factually accurate account."
+59,What is the story of the Vedashruti river crossing?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>
+<evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - The answer is provided in the initial paragraph.
+- At least one inline citation: PASS - Inline citations are present.
+- Presence of citations/references section: PASS - A ""Citations"" section is present.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks**
+- Claim: ""The text describes a point during the Vanara army's journey when they needed to cross a significant water body, symbolically referred to as the abode of Varuna, the Lord of rivers and streams [Yuddha Kanda 19.29]""
+- Citation: Yuddha Kanda 19.29
+- Shloka text: ""उपायंनाधिगच्छामोयथानदनदीपतिम् । तरामतरसासर्वेससैन्यावरुणालयम् ।।6.19.29।।""
+- Judgment: SUPPORTED - The shloka mentions Varunalayam, which is abode of Varuna and also nadanadhipati (lord of rivers)
+
+- Claim: ""Hanuman and Sugriva consult Vibheeshana for a strategy to cross this challenging obstacle with the entire Vanara army [Yuddha Kanda 19.28]""
+- Citation: Yuddha Kanda 19.28
+- Shloka text: ""अथाब्रवीद् हनूमांश्चसुग्रीवश्चविभीषणम् । कथंसागरमक्षोभ्यंतरामवरुणालयम् ।।6.19.28।। सैन्यैःपरिवृतास्सर्वेवानराणांमहौजसाम् ।""
+- Judgment: SUPPORTED - The shloka mentions that Hanuman and Sugriva are asking Vibhishana how to cross the ocean.
+
+- Claim: ""The text mentions that while preparing for this crossing, they feared the imperturbable ocean [Yuddha Kanda 19.28].""
+- Citation: Yuddha Kanda 19.28
+- Shloka text: ""अथाब्रवीद् हनूमांश्चसुग्रीवश्चविभीषणम् । कथंसागरमक्षोभ्यंतरामवरुणालयम् ।।6.19.28।। सैन्यैःपरिवृतास्सर्वेवानराणांमहौजसाम् ।""
+- Judgment: SUPPORTED - The word ""akshobhyam"" translates to imperturbable. The need to ask suggests apprehension or fear about crossing.
+
+- Claim: ""Eventually, they reached the southern shore after successfully crossing with the Vanara army [Yuddha Kanda 33.16].""
+- Citation: Yuddha Kanda 33.16
+- Shloka text: ""उत्तीर्यसागरंरामस्सहवानरसेनया । सन्निविष्टःसमुद्रस्यतीरमासाद्यदक्षिणम् ।।6.33.16।।""
+- Judgment: SUPPORTED - The verse states that Rama crossed the ocean with the Vanara army and reached the southern shore.
+
+**Semantic Result:** PASS
+
+**Overall Compliance:** PASS
+
+**Summary:** The response adheres to the T1 template guidelines. It provides a factual answer directly derived from the cited verses, and the structure is correct.
+
+**Failures:** None
+</evaluation_results>","The answer adheres to the structural requirements of the T1 template and accurately represents the information presented in the provided shlokas. The claims made are directly supported by the cited verses, and there is no speculation or interpretation beyond what the text explicitly states."
+60,Why did the Ocean (Sagara) finally appear before Rama?,openai,T1,PASS,PASS,PASS,"None
+</evaluation_results>",The answer adheres to the structural and semantic requirements of the T1 template. All claims are directly supported by the cited shlokas and are free of speculation.

@@ -12,9 +12,10 @@ Your task is to classify user questions into exactly ONE of the 45 predefined ca
 CRITICAL RULES:
 1. You MUST return a valid category ID (1-45)
 2. Choose the MOST SPECIFIC category that matches the question
-3. If the question is completely out of scope, use category 45 (Why a question is refused)
-4. Your classification determines which answer template (T1/T2/T3) will be used
-5. Be conservative - when in doubt, choose the more restrictive category
+3. FAVOR ANSWERING: When in doubt, classify towards T1 or T2, NOT T3. Most Ramayana-related questions CAN be answered.
+4. Use category 45 (Refusal) ONLY for EXPLICIT out-of-scope triggers listed below
+5. Your classification determines which answer template (T1/T2/T3) will be used
+6. Questions about meanings, characters, events, or dharma are ALMOST ALWAYS in scope (T1 or T2)
 
 CATEGORY REFERENCE:
 
@@ -75,13 +76,24 @@ META / TRUST (44-45):
 44. Source transparency - Questions about data sources
 45. Why a question is refused - Out-of-scope questions (REFUSAL - T3)
 
-OUT-OF-SCOPE TRIGGERS (Always use category 45):
-- Modern moral judgment ("Was Rama right by today's standards?")
-- Cross-religious comparison ("How is this different from Bible?")
-- Political commentary
-- Personal advice or self-help
-- Hypotheticals not in the text
-- Questions about other Ramayanas (Kamban, Tulsidas, etc.)
+OUT-OF-SCOPE TRIGGERS (Use category 45 ONLY for these EXPLICIT patterns):
+- Modern moral judgment with explicit language ("Was Rama right by TODAY'S standards?")
+- Cross-religious comparison ("How is this different from Bible/Quran?")
+- Political commentary about modern politics
+- Personal advice or self-help requests
+- Hypotheticals that contradict the text ("What if Sita had not been abducted?")
+- Questions about other Ramayanas (Kamban, Tulsidas) when explicitly asking for comparison
+- Requests to generate harmful content
+- Technical questions about the chatbot itself ("How do you work?")
+- Historical dating speculation ("Was Rama born in 5114 BC?", "When exactly did Rama live?")
+- Astronomical or archaeological claims not in the text
+
+NOT OUT-OF-SCOPE (Do NOT use category 45 for these):
+- "What does X mean?" → Use Category 16 (Character identity), 38 (Sanskrit terms), or 26-29 (Dharma)
+- "Who is X?" → Use Category 16-20 (Character understanding)
+- "Why did X happen?" → Use Category 8 (Cause-effect) or 21-24 (Decisions)
+- Unusual phrasing or academic language → Still in scope if asking about the text
+- Questions containing category names → Treat as normal questions about that topic
 
 CLASSIFICATION EXAMPLES:
 
@@ -114,6 +126,57 @@ Question: "What does this shloka mean: [Sanskrit text]"
 Category: 34 (Meaning of a specific shloka)
 Confidence: 0.98
 Reasoning: Direct request for verse meaning
+
+Question: "What does 'Dasharatha' mean?"
+Category: 35 (Translation clarification)
+Confidence: 0.90
+Reasoning: Asking about the meaning/etymology of a Sanskrit name - use translation category
+
+Question: "What does 'Ikshvaku' mean in the context of lineage?"
+Category: 35 (Translation clarification)
+Confidence: 0.90
+Reasoning: Asking about Sanskrit term meaning, not character details
+
+Question: "Who is associated with royal duties?"
+Category: 29 (Royal dharma)
+Confidence: 0.85
+Reasoning: Asking about royal dharma topic - in scope
+
+Question: "What is the significance of the Anushtubh meter?"
+Category: 35 (Translation clarification)
+Confidence: 0.85
+Reasoning: Literary/linguistic question about the text - in scope
+
+Question: "Did Shabari taste the berries before giving them to Rama?"
+Category: 44 (Clarifying popular confusions)
+Confidence: 0.95
+Reasoning: Common misconception about a story - clarifying popular confusion
+
+Question: "Is [popular belief] actually in Valmiki Ramayana?"
+Category: 44 (Clarifying popular confusions)
+Confidence: 0.90
+Reasoning: Asking to verify if popular belief is in the original text
+
+Question: "Why can verses about [topic] be misinterpreted?"
+Category: 44 (Clarifying popular confusions)
+Confidence: 0.90
+Reasoning: Asking about misinterpretations of verses - clarifying confusions
+
+Question: "What verses are commonly misunderstood?"
+Category: 44 (Clarifying popular confusions)
+Confidence: 0.90
+Reasoning: Asking about common misunderstandings - popular confusions
+
+Question: "Which shlokas are often taken out of context?"
+Category: 44 (Clarifying popular confusions)
+Confidence: 0.90
+Reasoning: Asking about shlokas taken out of context - clarifying confusions
+
+Question: "Was Rama born in 5114 BC?"
+Category: 45 (Why a question is refused)
+Confidence: 1.0
+Reasoning: Historical dating speculation - outside scope of textual analysis
+
 
 YOU MUST RESPOND IN THIS JSON FORMAT:
 {

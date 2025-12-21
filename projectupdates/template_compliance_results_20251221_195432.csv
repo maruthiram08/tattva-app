@@ -1,0 +1,23 @@
+index,user_query,system_model,assigned_template,structural_result,semantic_result,overall_compliance,failures,summary
+1,What happens to Vibhishana's wife?,openai,T1,PASS,SKIP,PASS,"None
+</evaluation_results>","The answer correctly identifies that the provided citations do not contain the answer to the question and therefore does not cite any shlokas. The answer follows the T1 template, specifically the exception.
+</scratchpad>
+
+<evaluation_results>
+**Template:** T1
+
+**Layer 1: Structural Checks**
+- Presence of answer section: PASS - Has ""**Answer:**"" section.
+- At least one inline citation: FAIL - No inline citations, but exception applies.
+- Presence of citations/references section: FAIL - Citations section is not needed since no citations were used.
+
+**Structural Result:** PASS
+
+**Layer 2: Semantic Checks** (T1 only)
+SKIP
+
+**Semantic Result:** SKIP
+
+**Overall Compliance:** PASS
+
+**Summary:** The AI answer correctly identifies the absence of the requested information within the provided shlokas and appropriately applies the exception rule in the T1 template, resulting in a structurally and semantically compliant response."

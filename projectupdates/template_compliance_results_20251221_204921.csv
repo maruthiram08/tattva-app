@@ -1,0 +1,3 @@
+index,user_query,system_model,assigned_template,structural_result,semantic_result,overall_compliance,failures,summary
+23,What happens to Vibhishana's wife?,openai,T1,FAIL,FAIL,FAIL,"- Missing inline citation
+</evaluation_results>","The response fails to comply with the structural and semantic requirements of the T1 template due to the absence of any citations. While the answer asserts the absence of specific information within provided citations, it fails to provide said citations. This lack of clarity hinders the verification process."

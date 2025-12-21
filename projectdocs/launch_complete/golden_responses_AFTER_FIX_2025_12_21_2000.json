@@ -1,0 +1,140 @@
+[
+  {
+    "index": 1,
+    "user_query": "How does Valmiki's Hanuman differ from Tulsidas's Hanuman?",
+    "classification": "Why a question is refused",
+    "expected_template": "T3",
+    "openai": {
+      "status": "OK",
+      "template_used": "T3",
+      "answer": "This question involves a comparison between different versions of a character across texts, which is beyond Tattva's scope.\n\nTattva focuses on interpreting Valmiki's Ramayana and does not offer analysis of characters as portrayed in other renditions like Tulsidas's Ramayana. Each version has its own context and interpretation.\n\nHowever, I can help with understanding related aspects within Valmiki's text:\n- What are Hanuman's defining traits in Valmiki's Ramayana?\n- How does Hanuman contribute to the success of Rama's mission in the text?\n- What are some key episodes involving Hanuman in the Sundara Kanda?",
+      "whatTextStates": "",
+      "citations": [],
+      "citation_count": 0,
+      "has_inline_citations": false,
+      "answer_citations": 0,
+      "wts_citations": 0,
+      "textual_basis_citations": [],
+      "retrieved_count": 0,
+      "full_response": {
+        "templateType": "T3",
+        "outOfScopeNotice": "This question involves a comparison between different versions of a character across texts, which is beyond Tattva's scope.",
+        "why": "Tattva focuses on interpreting Valmiki's Ramayana and does not offer analysis of characters as portrayed in other renditions like Tulsidas's Ramayana. Each version has its own context and interpretation.",
+        "redirect": {
+          "introduction": "However, I can help with understanding related aspects within Valmiki's text:",
+          "alternatives": [
+            "What are Hanuman's defining traits in Valmiki's Ramayana?",
+            "How does Hanuman contribute to the success of Rama's mission in the text?",
+            "What are some key episodes involving Hanuman in the Sundara Kanda?"
+          ]
+        }
+      }
+    },
+    "claude": {
+      "status": "OK",
+      "template_used": "T3",
+      "answer": "This question comparing Valmiki's portrayal of Hanuman to Tulsidas's is outside the scope of Tattva's text-focused analysis.\n\nTattva is a scholarly interpreter of Valmiki's Ramayana and does not engage in comparisons between different tellings of the Rama story. Analyzing differences across Ramayanas requires a broader approach beyond the specific text I am trained to interpret.\n\nHowever, I can help with questions that are grounded in Valmiki's Ramayana itself, such as:\n- What are the key characteristics and roles of Hanuman according to Valmiki's text?\n- How does Hanuman's relationship with Rama evolve over the course of the Ramayana?\n- What symbolic or spiritual significance is attributed to Hanuman in Valmiki's telling?",
+      "whatTextStates": "",
+      "citations": [],
+      "citation_count": 0,
+      "has_inline_citations": false,
+      "answer_citations": 0,
+      "wts_citations": 0,
+      "textual_basis_citations": [],
+      "retrieved_count": 0,
+      "full_response": {
+        "templateType": "T3",
+        "outOfScopeNotice": "This question comparing Valmiki's portrayal of Hanuman to Tulsidas's is outside the scope of Tattva's text-focused analysis.",
+        "why": "Tattva is a scholarly interpreter of Valmiki's Ramayana and does not engage in comparisons between different tellings of the Rama story. Analyzing differences across Ramayanas requires a broader approach beyond the specific text I am trained to interpret.",
+        "redirect": {
+          "introduction": "However, I can help with questions that are grounded in Valmiki's Ramayana itself, such as:",
+          "alternatives": [
+            "What are the key characteristics and roles of Hanuman according to Valmiki's text?",
+            "How does Hanuman's relationship with Rama evolve over the course of the Ramayana?",
+            "What symbolic or spiritual significance is attributed to Hanuman in Valmiki's telling?"
+          ]
+        }
+      }
+    },
+    "openai_trace": {
+      "trace_id": "73cd6075-8055-488f-8bad-a07ef3089f71",
+      "timestamp": "2025-12-21T14:30:25.938Z",
+      "user_query": "How does Valmiki's Hanuman differ from Tulsidas's Hanuman?",
+      "query_expansion_latency_ms": 0,
+      "retrieval_results": {
+        "shlokas": [],
+        "totalRetrieved": 0
+      },
+      "retrieval_latency_ms": 0,
+      "classification_result": {
+        "model": "gpt-4o",
+        "category": "Why a question is refused",
+        "category_id": 45,
+        "confidence": 1,
+        "template_selected": "T3"
+      },
+      "classification_latency_ms": 0,
+      "generation_result": {
+        "model": "gpt-4o",
+        "template_used": "T3",
+        "answer": "This question involves a comparison between different versions of a character across texts, which is beyond Tattva's scope.\n\nTattva focuses on interpreting Valmiki's Ramayana and does not offer analysis of characters as portrayed in other renditions like Tulsidas's Ramayana. Each version has its own context and interpretation.\n\nHowever, I can help with understanding related aspects within Valmiki's text:\n- What are Hanuman's defining traits in Valmiki's Ramayana?\n- How does Hanuman contribute to the success of Rama's mission in the text?\n- What are some key episodes involving Hanuman in the Sundara Kanda?",
+        "citations_in_answer": []
+      },
+      "generation_latency_ms": 4472,
+      "total_latency_ms": 7271,
+      "full_response": {
+        "templateType": "T3",
+        "outOfScopeNotice": "This question involves a comparison between different versions of a character across texts, which is beyond Tattva's scope.",
+        "why": "Tattva focuses on interpreting Valmiki's Ramayana and does not offer analysis of characters as portrayed in other renditions like Tulsidas's Ramayana. Each version has its own context and interpretation.",
+        "redirect": {
+          "introduction": "However, I can help with understanding related aspects within Valmiki's text:",
+          "alternatives": [
+            "What are Hanuman's defining traits in Valmiki's Ramayana?",
+            "How does Hanuman contribute to the success of Rama's mission in the text?",
+            "What are some key episodes involving Hanuman in the Sundara Kanda?"
+          ]
+        }
+      }
+    },
+    "claude_trace": {
+      "trace_id": "f1e78b03-8095-4779-8da8-7fb6d1a844e7",
+      "timestamp": "2025-12-21T14:30:31.988Z",
+      "user_query": "How does Valmiki's Hanuman differ from Tulsidas's Hanuman?",
+      "query_expansion_latency_ms": 0,
+      "retrieval_results": {
+        "shlokas": [],
+        "totalRetrieved": 0
+      },
+      "retrieval_latency_ms": 0,
+      "classification_result": {
+        "model": "gpt-4o",
+        "category": "Why a question is refused",
+        "category_id": 45,
+        "confidence": 1,
+        "template_selected": "T3"
+      },
+      "classification_latency_ms": 0,
+      "generation_result": {
+        "model": "claude-3-haiku-20240307",
+        "template_used": "T3",
+        "answer": "This question comparing Valmiki's portrayal of Hanuman to Tulsidas's is outside the scope of Tattva's text-focused analysis.\n\nTattva is a scholarly interpreter of Valmiki's Ramayana and does not engage in comparisons between different tellings of the Rama story. Analyzing differences across Ramayanas requires a broader approach beyond the specific text I am trained to interpret.\n\nHowever, I can help with questions that are grounded in Valmiki's Ramayana itself, such as:\n- What are the key characteristics and roles of Hanuman according to Valmiki's text?\n- How does Hanuman's relationship with Rama evolve over the course of the Ramayana?\n- What symbolic or spiritual significance is attributed to Hanuman in Valmiki's telling?",
+        "citations_in_answer": []
+      },
+      "generation_latency_ms": 3725,
+      "total_latency_ms": 5526,
+      "full_response": {
+        "templateType": "T3",
+        "outOfScopeNotice": "This question comparing Valmiki's portrayal of Hanuman to Tulsidas's is outside the scope of Tattva's text-focused analysis.",
+        "why": "Tattva is a scholarly interpreter of Valmiki's Ramayana and does not engage in comparisons between different tellings of the Rama story. Analyzing differences across Ramayanas requires a broader approach beyond the specific text I am trained to interpret.",
+        "redirect": {
+          "introduction": "However, I can help with questions that are grounded in Valmiki's Ramayana itself, such as:",
+          "alternatives": [
+            "What are the key characteristics and roles of Hanuman according to Valmiki's text?",
+            "How does Hanuman's relationship with Rama evolve over the course of the Ramayana?",
+            "What symbolic or spiritual significance is attributed to Hanuman in Valmiki's telling?"
+          ]
+        }
+      }
+    }
+  }
+]

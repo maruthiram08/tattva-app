@@ -1,4 +1,5 @@
 import OpenAI from 'openai';
+import { CohereClient } from 'cohere-ai';
 import { getPineconeClient, PINECONE_INDEX_NAME } from '@/lib/pinecone/client';
 import { getRetrievalConfig } from '@/lib/config/retrieval-configs';
 import { CategoryId } from '@/lib/types/templates';
@@ -7,6 +8,58 @@ import { RetrievalResult, RetrievedShloka, ShlokaMetadata } from '@/lib/types/re
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 });
+
+const cohere = process.env.COHERE_API_KEY
+    ? new CohereClient({ token: process.env.COHERE_API_KEY })
+    : null;
+
+/**
+ * Rerank retrieved shlokas using Cohere
+ */
+async function rerankResults(
+    query: string,
+    docs: RetrievedShloka[],
+    topK: number,
+    finalTopK: number
+): Promise<RetrievedShloka[]> {
+    // If no Cohere key or not enough docs to rerank, return original slice
+    if (!cohere || docs.length <= finalTopK) {
+        return docs.slice(0, finalTopK);
+    }
+
+    try {
+        console.log(`✨ Reranking ${docs.length} results to Top ${finalTopK} using Cohere...`);
+
+        // Prepare documents for reranking (Use translation or text)
+        const documents = docs.map(d =>
+            (d.metadata.translation && d.metadata.translation.length > 20)
+                ? d.metadata.translation
+                : d.metadata.shloka_text
+        );
+
+        const rerank = await cohere.rerank({
+            model: 'rerank-english-v3.0',
+            query: query,
+            documents: documents,
+            topN: finalTopK,
+        });
+
+        // Map back to original objects
+        // rerank.results contains { index, relevanceScore }
+        const rankedDocs = rerank.results.map(r => {
+            const originalDoc = docs[r.index];
+            return {
+                ...originalDoc,
+                score: r.relevanceScore // Update score with Semantic Relevance
+            };
+        });
+
+        return rankedDocs;
+    } catch (error) {
+        console.warn('⚠️ Cohere Reranking failed, falling back to Vector Search:', error);
+        return docs.slice(0, finalTopK);
+    }
+}
 
 /**
  * Generate embedding for the question
@@ -80,6 +133,7 @@ async function generateQueryEmbedding(question: string): Promise<{ embedding: nu
 async function queryPinecone(
     embedding: number[],
     categoryId: CategoryId,
+    queryText: string, // Added for Reranking
     userFilters?: {
         kanda?: string;
         sarga?: number;
@@ -122,9 +176,15 @@ async function queryPinecone(
         filter.has_comments = true;
     }
 
+    // Determine fetch count (Higher for Reranking)
+    // If Cohere is enabled, fetch at least 50 or 2x needed
+    const fetchTopK = cohere ? Math.max(50, config.topK * 2) : config.topK;
+
     console.log('Querying Pinecone:', {
         categoryId,
-        topK: config.topK,
+        configuredTopK: config.topK,
+        fetchTopK,
+        reranking: !!cohere,
         granularity: config.granularity,
         filter,
     });
@@ -132,18 +192,23 @@ async function queryPinecone(
     try {
         const queryResponse = await index.query({
             vector: embedding,
-            topK: config.topK,
+            topK: fetchTopK,
             includeMetadata: true,
             filter: Object.keys(filter).length > 0 ? filter : undefined,
         });
 
-        const shlokas: RetrievedShloka[] = queryResponse.matches.map((match) => ({
+        let shlokas: RetrievedShloka[] = queryResponse.matches.map((match) => ({
             id: match.id,
             score: match.score || 0,
             metadata: match.metadata as unknown as ShlokaMetadata,
         }));
 
-        // Check for missing data warnings
+        // Apply Reranking
+        if (cohere && shlokas.length > 0) {
+            shlokas = await rerankResults(queryText, shlokas, fetchTopK, config.topK);
+        }
+
+        // Check for missing data warnings on the FINAL set
         let warning: string | undefined;
         const missingTranslation = shlokas.filter(
             (s) => config.includeTranslation && !s.metadata.has_translation
@@ -182,7 +247,9 @@ export async function retrieveContext(
     }
 ): Promise<RetrievalResult> {
     const { embedding, expandedQuery } = await generateQueryEmbedding(question);
-    const result = await queryPinecone(embedding, categoryId, filters);
+
+    // Pass expandedQuery for Reranking context
+    const result = await queryPinecone(embedding, categoryId, expandedQuery, filters);
 
     return {
         ...result,

@@ -1,0 +1,1647 @@
+[
+  {
+    "index": 1,
+    "user_query": "Where did Sita live during her second exile?",
+    "classification": "Post-war events",
+    "expected_template": "T1",
+    "openai": {
+      "status": "OK",
+      "template_used": "T1",
+      "answer": "**Answer:** The text describes that during her second exile, Sita lived in the hermitage of Valmiki [Uttara-Kanda 89.5]. Sita delivered her sons in the hermitage, as described in the section where Valmiki takes care of her and the twins [Uttara-Kanda 89.7]. While the text provides details of Valmiki's care, it does not specify on a daily basis all activities [Uttara-Kanda 89.11].",
+      "whatTextStates": "The text states that Sita lived in Valmiki's hermitage during her second exile where her sons were also born.",
+      "citations": [
+        "[Uttara-Kanda 89.7]",
+        "[Uttara-Kanda 89.11]",
+        "[Uttara-Kanda 89.5]"
+      ],
+      "citation_count": 3,
+      "has_inline_citations": true,
+      "answer_citations": 3,
+      "wts_citations": 0,
+      "textual_basis_citations": [
+        "Uttara-Kanda 89.5",
+        "Uttara-Kanda 89.7",
+        "Uttara-Kanda 89.11"
+      ],
+      "retrieved_count": 20,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The text describes that during her second exile, Sita lived in the hermitage of Valmiki [Uttara-Kanda 89.5]. Sita delivered her sons in the hermitage, as described in the section where Valmiki takes care of her and the twins [Uttara-Kanda 89.7]. While the text provides details of Valmiki's care, it does not specify on a daily basis all activities [Uttara-Kanda 89.11].",
+        "textualBasis": {
+          "kanda": "Uttara-Kanda",
+          "sarga": [
+            89
+          ],
+          "shloka": [
+            5,
+            7,
+            11
+          ],
+          "citations": [
+            "Uttara-Kanda 89.5",
+            "Uttara-Kanda 89.7",
+            "Uttara-Kanda 89.11"
+          ]
+        },
+        "explanation": "The text specifically mentions Sita's residence being in Valmiki's hermitage during her second exile. This is supported by direct references to her living there and giving birth to her sons. The shlokas from Uttara-Kanda describe Valmiki's involvement and the environment of safety and care provided for her.",
+        "whatTextStates": "The text states that Sita lived in Valmiki's hermitage during her second exile where her sons were also born.",
+        "traditionalInterpretations": "Traditionally, it is believed that Valmiki's hermitage was a place of peace where Sita lived with her sons.",
+        "limitOfCertainty": "The claim is limited to the information directly described in the text, without inferring specific daily activities beyond what is mentioned.",
+        "outOfScopeNotice": "This response is limited to the details in Uttara-Kanda regarding Sita's second exile and does not account for non-explicit events.",
+        "why": "The information is based on explicit textual citations from the Uttara-Kanda.",
+        "redirect": {
+          "introduction": "If you need additional information on Sita's life events, consider exploring the broader narrative contexts.",
+          "alternatives": [
+            "Valmiki Ramayana - Uttara Kanda",
+            "Other Ramayana interpretations"
+          ]
+        },
+        "whatICanHelpWith": [
+          "Details on Sita's life based on text",
+          "Understanding the events during exiles",
+          "Clarification on Valmiki's role"
+        ]
+      }
+    },
+    "claude": {
+      "status": "OK",
+      "template_used": "T1",
+      "answer": "**Answer:** According to the provided citations, during her second exile Sita lived in the forest with Rama and Lakshmana. The text states that Sita \"will now wander in the forest troubled by piercing thorns\" [Ayodhya Kanda 42.19], and that \"Sita with her mind fixed on Rama is living confidently in that desolate forest without any fear as if it were her home\" [Ayodhya Kanda 60.7]. The verses also describe Sita following Rama and Lakshmana into the forest [Ayodhya Kanda 44.6, 37.35, 54.10].",
+      "whatTextStates": "",
+      "citations": [
+        "[Ayodhya Kanda 42.19]",
+        "[Ayodhya Kanda 60.7]"
+      ],
+      "citation_count": 2,
+      "has_inline_citations": true,
+      "answer_citations": 2,
+      "wts_citations": 0,
+      "textual_basis_citations": [
+        "Ayodhya Kanda 42.19",
+        "Ayodhya Kanda 44.6",
+        "Ayodhya Kanda 37.35",
+        "Ayodhya Kanda 60.7",
+        "Ayodhya Kanda 54.10"
+      ],
+      "retrieved_count": 20,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** According to the provided citations, during her second exile Sita lived in the forest with Rama and Lakshmana. The text states that Sita \"will now wander in the forest troubled by piercing thorns\" [Ayodhya Kanda 42.19], and that \"Sita with her mind fixed on Rama is living confidently in that desolate forest without any fear as if it were her home\" [Ayodhya Kanda 60.7]. The verses also describe Sita following Rama and Lakshmana into the forest [Ayodhya Kanda 44.6, 37.35, 54.10].",
+        "textualBasis": {
+          "kanda": "Ayodhya Kanda",
+          "sarga": [
+            42,
+            44,
+            37,
+            60,
+            54
+          ],
+          "shloka": [
+            19,
+            6,
+            35,
+            7,
+            10
+          ],
+          "citations": [
+            "Ayodhya Kanda 42.19",
+            "Ayodhya Kanda 44.6",
+            "Ayodhya Kanda 37.35",
+            "Ayodhya Kanda 60.7",
+            "Ayodhya Kanda 54.10"
+          ]
+        },
+        "explanation": "The provided citations clearly state that during her second exile, Sita lived in the forest with Rama and Lakshmana. The verses describe Sita following Rama to the forest and living there, facing the hardships of forest life but remaining confident and focused on Rama. The text does not provide any details about Sita living elsewhere during this period."
+      }
+    },
+    "openai_trace": {
+      "trace_id": "e37d140b-8d4c-4b8e-9ce7-65e356efba5d",
+      "timestamp": "2025-12-21T14:27:04.746Z",
+      "user_query": "Where did Sita live during her second exile?",
+      "expanded_query": "During her second exile, Sita lived in the hermitage of Sage Valmiki, located in the forest. This is where she gave birth to her sons, Lava and Kusha.",
+      "query_expansion_latency_ms": 0,
+      "retrieval_results": {
+        "shlokas": [
+          {
+            "id": "ayodhya-kanda-42-19",
+            "score": 0.568193436,
+            "metadata": {
+              "characters": [
+                "sita",
+                "janaka"
+              ],
+              "comments": "",
+              "events": [
+                "bow_breaking",
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "sitas_journey"
+              ],
+              "explanation": "Sita, beloved daughter of Janaka, who is accustomed to comforts, will now wander in the forest troubled by piercing thorns.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 42,
+              "shloka": 19,
+              "shloka_text": "सा नूनं जनकस्येष्टा सुता सुखसदोचिता। कण्टकाक्रमणाक्लान्ता वनमद्य गमिष्यति।।2.42.19।।",
+              "themes": [
+                "duty_vs_emotion",
+                "love",
+                "exile",
+                "suffering",
+                "loss"
+              ],
+              "translation": "सुखसदोचिता accustomed to comforts, जनकस्य Janaka's, इष्टा beloved, सुता daughter, सा Janaki, कण्टकाक्रमणक्लान्ता troubled due to piercing of thorns, अद्य now, वनम् to the forest, गमिष्यति will go."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-44-6",
+            "score": 0.554168701,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "jatayu_fight",
+                "vanara_search",
+                "sita_found",
+                "following_into_forest"
+              ],
+              "explanation": "The daughter of Videha (Sita) who was used to comforts has knowingly followed your virtuous son into the hardships of forest life.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 44,
+              "shloka": 6,
+              "shloka_text": "अरण्यवासे यद्दुःखं जानती वै सुखोचिता। अनुगच्छति वैदेही धर्मात्मानं तवात्मजम्।।2.44.6।।",
+              "themes": [
+                "filial_dharma",
+                "exile",
+                "victory",
+                "sacrifice",
+                "love"
+              ],
+              "translation": "सुखोचिता used to comforts, वैदेही Sita, अरण्यवासे living in the forest, यत् दुःखम् those hardships, जानती वै knowingly, धर्मात्मानम् virtuous, तव your, आत्मजम् son, अनुगच्छति is following."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-37-35",
+            "score": 0.548613548,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "kaikeyi_boons",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation",
+                "sita_forest_adornment"
+              ],
+              "explanation": "O Kaikeyi, you asked that Rama only should dwell in the forest (wearing bark robes). Therefore let Sita, adorn her body daily, while she  lives in the forest with Rama.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 37,
+              "shloka": 35,
+              "shloka_text": "एकस्य रामस्य वने निवास स्त्वया वृतःकेकयराजपुत्री। विभूषितेयं प्रतिकर्मनित्या वसत्वरण्ये सह राघवेण।।2.37.35।।",
+              "themes": [
+                "rajadharma",
+                "exile",
+                "dharma",
+                "sacrifice"
+              ],
+              "translation": "केकयराजपुत्री O daughter of the king of Kekaya, त्वया by you, एकस्य रामस्य only for Rama, वने in the forest, निवासः dwell, वृतः is sought for, इयम् this Sita,  विभूषिता welladorned,  प्रतिकर्मनित्या engaged daily in decorating, राघवेण सह along with Rama, अरण्ये in the forest, वसतु shall live."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-30-29",
+            "score": 0.548136711,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "rama_birth",
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "rama_commitment"
+              ],
+              "explanation": "Since you, O daughter of Mithila, were born to go along with me to the forest, I cannot abandon you just as a selfrespecting man cannot forsake his reputation.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 30,
+              "shloka": 29,
+              "shloka_text": "यत्सृष्टाऽसि मया सार्धं वनवासाय मैथिलि। न विहातुं मया शक्या कीर्तिरात्मवता यथा।।2.30.29।।",
+              "themes": [
+                "filial_dharma",
+                "sacrifice",
+                "honor",
+                "exile",
+                "dharma",
+                "loyalty"
+              ],
+              "translation": "मैथिलि O daughter of Mithila (Sita), यत् since, मयासार्धम् along with me, वनवासाय for living in the forest, सृष्टासि created, आत्मवता by selfrespecting, कीर्तिर्यथा like reputation, मया by me, विहातुम् to abandon, न शक्या is not possible."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-37-18",
+            "score": 0.538722098,
+            "metadata": {
+              "characters": [
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "forest_departure"
+              ],
+              "explanation": "Go, O son to the forest with Lakshmana as your companion. (But) this auspicious Sita, will not be able to live in the jungle like a hermit.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 37,
+              "shloka": 18,
+              "shloka_text": "लक्ष्मणेन सहायेन वनं गच्छस्व पुत्रक। नेयमर्हति कल्याणी वस्तुं तापसवद्वने।।2.37.18।।",
+              "themes": [
+                "filial_dharma",
+                "brotherhood",
+                "exile",
+                "sacrifice",
+                "concern"
+              ],
+              "translation": "पुत्रक O son, सहायेन as companion, लक्ष्मणेन with Lakshmana, वनम् to the forest, गच्छस्व you may go, कल्याणी auspicious lady, इयम् she, तापसवत् like a hermit, वने in the forest, वस्तुम् to live, नार्हति is not worthy of."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-39-17",
+            "score": 0.537566185,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "rama_birth",
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "sita_prepares_for_departure"
+              ],
+              "explanation": "That princess of noble birth from Videha adorned her beautiful limbs with the sparkling ornaments and got ready to depart for the forest.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 39,
+              "shloka": 17,
+              "shloka_text": "सा सुजाता सुजातानि वैदेही प्रस्थिता वनम्। भूषयामास गात्राणि तैर्विचित्रैर्विभूषणैः।।2.39.17।।",
+              "themes": [
+                "exile",
+                "sacrifice",
+                "nobility"
+              ],
+              "translation": "वनम् to the forest, प्रस्थिता ready to depart, सुजाता of noble birth, सा वैदेहि that princess from Videha (Sita), सुजातानि beautiful, गात्राणि limbs, विचित्रैः sparkling, तैः विभूषणैः those ornaments, भूषयामास adorned."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-37-23",
+            "score": 0.535124779,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "kaikeyi_boons",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation",
+                "sita_stay_request"
+              ],
+              "explanation": "You are devoid of good conduct, O Kaikeyi Divine Sita need not go to the forest. Remaining here she should occupy the royal throne of Rama.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 37,
+              "shloka": 23,
+              "shloka_text": "न गन्तव्यं वनं देव्या सीतया शीलवर्जिते। अनुष्ठास्यति रामस्य सीता प्रकृतमासनम्।।2.37.23।।",
+              "themes": [
+                "rajadharma",
+                "exile",
+                "divine",
+                "dharma",
+                "royalty"
+              ],
+              "translation": "शीलवर्जिते  devoid of good conduct, देव्या by the divine, सीतया Sita, वनम् to the forest, न गन्तव्यम् need not go, सीता Sita, रामस्य Rama's, प्रकृतम् present, आसनम् royal throne, अनुष्ठास्यति she will occupy."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-60-7",
+            "score": 0.534654617,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "sita_in_forest",
+                "sita_fixed_on_rama"
+              ],
+              "explanation": "Sita with her mind fixed on Rama is living confidently in that desolate forest without any fear as if it were her home.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 60,
+              "shloka": 7,
+              "shloka_text": "विजनेऽपि वने सीता वासं प्राप्य गृहेष्विव। विस्रम्भं लभतेऽभीता रामे सन्न्यस्तमानसा।।2.60.7।।",
+              "themes": [
+                "exile",
+                "courage",
+                "love"
+              ],
+              "translation": "सीता Sita, विजने in the desolate, वनेपि in the forest also, गृहेष्विव like at home, वासम् living, प्राप्य having obtained, रामे in Rama, सन्न्यस्तमानसा with her mind fixed, अभीता without fear, विस्रम्भम् confidence, लभते  is getting."
+            }
+          },
+          {
+            "id": "bala-kanda-66-13",
+            "score": 0.528995514,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "vanara_search",
+                "sita_found",
+                "sita_discovery",
+                "ploughing_ritual"
+              ],
+              "explanation": "Thereupon while I was ploughing and cleaing the (sacrificial) ground, Sita, a wellknown name, was lifted up by the blade of the plough. Thus she was obtained by me.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 66,
+              "shloka": 13,
+              "shloka_text": "अथ मे कृषत: क्षेत्रं लाङ्गूलादुत्थिता मया। क्षेत्रं शोधयता लब्धा नाम्ना सीतेति विश्रुता।।1.66.13।।",
+              "themes": [
+                "divine_intervention",
+                "miraculous_birth"
+              ],
+              "translation": "अथ thereafter, मे my, क्षेत्रम् the sacrificial ground, कृषत: while I was ploughing, लाङ्गूलात् by the blade of plough, उत्थिता lifted, नाम्ना by name, सीतेति Sita, विश्रुता wellknown, क्षेत्रम् that sacrificial ground, शोधयता purifying, मया by me, लब्धा obtained."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-38-3",
+            "score": 0.527769148,
+            "metadata": {
+              "characters": [
+                "sita",
+                "kaikeyi"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "kaikeyi_boons",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "sita_forest_exile_discussion"
+              ],
+              "explanation": "The descendant of the Ikshvakus (Dasaratha), heaving hot sighs, said to his wife O Kaikeyi, Sita does not deserve to go (to the forest) in garment of kusa grass.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 38,
+              "shloka": 3,
+              "shloka_text": "स निःश्वस्योष्णमैक्ष्वाक स्तां भार्यामिदमब्रवीत्। कैकेयि कुशचीरेण न सीता गन्तुमर्हति।।2.38.3।।",
+              "themes": [
+                "marriage",
+                "exile",
+                "royal_duty",
+                "family_conflict"
+              ],
+              "translation": "सः ऐक्ष्वाकः that descendant of the Ikshvakus (Dasaratha), उष्णम् निःश्वस्य heaving hot sighs, भार्याम् to his wife (Kaikeyi), इदम् these words, अब्रवीत् he spoke, कैकेयी O Kaikeyi, सीता Sita, कुशचीरेण with kusa garment, गन्तुम् to go, नार्हति is not worthy of."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-54-10",
+            "score": 0.527575552,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "agastya_visit",
+                "vanara_search",
+                "sita_found",
+                "arrival_at_hermitage",
+                "waiting_for_sage"
+              ],
+              "explanation": "Thereafter the two heroes followed by Sita arrived at the hermitage and, wishing to see the sage, waited at a distance.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 54,
+              "shloka": 10,
+              "shloka_text": "ततस्त्वाश्रमासाद्य मुनेर्दर्शनकाङ्क्षिणौ। सीतयानुगतौ वीरौ दूरादेवावतस्थतुः।।2.54.10।।",
+              "themes": [
+                "respect",
+                "humility"
+              ],
+              "translation": "ततः then, सीतया by Sita, अनुगतौ followed, वीरौ those two heroes, आश्रमम् hermitage, आसाद्य having reached, मुनेः ascetic's, दर्शनकाङ्क्षिणौ wishing to see, दूरादेव at a distance, अवतस्थतुः stood."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-52-67",
+            "score": 0.527301788,
+            "metadata": {
+              "characters": [
+                "sita",
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "exile_announcement",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "rama_coronation",
+                "exile_preparation",
+                "forest_journey"
+              ],
+              "explanation": "Seeking the welfare of my father, Sita and Lakshmana I shall enter the forest with matted hair and practise the prescribed austerities which are the adornments of ascetics. Do fetch me the sap of a banyan tree.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 52,
+              "shloka": 67,
+              "shloka_text": "सोऽहं गृहीत्वा नियमं तपस्वि जनभूषणम्। हितकामः पितुर्भूयः सीताया लक्ष्मणस्य च।।2.52.67।। जटाः कृत्वा गमिष्यामि न्यग्रोधक्षीरमानय।",
+              "themes": [
+                "rajadharma",
+                "filial_dharma",
+                "brotherhood",
+                "exile",
+                "search",
+                "duty",
+                "sacrifice",
+                "family_loyalty"
+              ],
+              "translation": "सः अहम् that I, तपस्विजनभूषणम् the adornment of ascetics, नियमम् prescribed austerities, गृहीत्वा accepting, पितुः father's, भूयः also, सीतायाः Sita's, लक्ष्मणस्य च also Lakshmana's, हितकामः seeking their good, जटाः कृत्वा having matted my locks of hair, गमिष्यामि shall go, न्यग्रोधक्षीरम् latex of banyan tree, आनय fetch."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-39-15",
+            "score": 0.526805878,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "shurpanakha",
+                "vanara_search",
+                "sita_found",
+                "preparation_for_sita"
+              ],
+              "explanation": "Assess the (needs for) number of years the princess of Videha (Sita) is going to be in the forest, and fetch her quickly highly valuable garments and excellent ornaments.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 39,
+              "shloka": 15,
+              "shloka_text": "वासांसि च महार्हाणि भूषणानि वराणि च। वर्षाण्येतानि सङ्ख्याय वैदेह्याः क्षिप्रमानय।।2.39.15।।",
+              "themes": [
+                "exile",
+                "care",
+                "duty"
+              ],
+              "translation": "एतानि these, वर्षाणि years, सङ्ख्याय calculating, वैदेह्याः for the princess of Videha (Sita), महार्हाणि highly valuable, वासांसि च garments, वराणि excellent, भूषणानि च ornaments, क्षिप्रम् quickly, आनय fetch."
+            }
+          },
+          {
+            "id": "bala-kanda-77-12",
+            "score": 0.525595725,
+            "metadata": {
+              "characters": [
+                "sita",
+                "urmila"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation",
+                "bride_reception"
+              ],
+              "explanation": "Thereafter the queens received the highly fortunate Sita, Urmila of high fame and both the daughters of Kusadhwaja, Mandavi and Srutakirti.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 77,
+              "shloka": 12,
+              "shloka_text": "ततस्सीतां महाभागामूर्मिलां च यशस्विनीम्। कुशध्वजसुते चोभे जगृहुर्नृपपत्नय:।।1.77.12।।",
+              "themes": [
+                "rajadharma",
+                "family_honor"
+              ],
+              "translation": "तत: thereafter, नृपपत्नय: king's wives, महाभागाम् highly fortunate, सीताम् Sita, यशस्विनीम्  having fame, ऊर्मिलां च Urmila, उभे both, कुशध्वजसुते daughters of Kusadhwaja, जगृहु: received."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-28-5",
+            "score": 0.525415421,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found"
+              ],
+              "explanation": "Give up the desire to live in the forest, O Sita Living in the dreary jungle, it is said, has many hardships.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 28,
+              "shloka": 5,
+              "shloka_text": "सीते विमुच्यतामेषा वनवासकृता मतिः। बहुदोषं हि कान्तारं वनमित्यभिधीयते।।2.28.5।।",
+              "themes": [
+                "duty_vs_desire",
+                "sacrifice",
+                "exile",
+                "warning",
+                "hardship"
+              ],
+              "translation": "सीते O Sita, वनवासकृता to live in the forest, एषा this, मति: mind, विमुच्यताम् give up, कान्तारम् a dreary forest, वनम् forest, बहुदोषं (बहुदोषयुतं) has many hardships, अभिधीयते हि is being said."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-28-22",
+            "score": 0.525299072,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "thorny_trees"
+              ],
+              "explanation": "O lovely Sita there are thorny trees with branches on the top interlaced with one another. There are kusa grass and reeds. So forest life is very hard.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 28,
+              "shloka": 22,
+              "shloka_text": "द्रुमाः कण्टकिनश्चैव कुशा: काशाश्च भामिनि। वने व्याकुलशाखाग्रास्तेन दुःखतरं वनम्।।2.28.22।।",
+              "themes": [
+                "duty_vs_emotion",
+                "love",
+                "exile",
+                "suffering",
+                "hardship"
+              ],
+              "translation": "भामिनि O lovely Sita, वने in the forest, द्रुमाः trees, कुशा काशाः च kusa grass and reeds,  कण्टकिनश्चैव thorny ones, व्याकुलशाखाग्राः with tops of branches interlaced with each other, तेन therefore, वनम् forest life, दुःखतरम् is full of difficulties."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-54-12",
+            "score": 0.524470329,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "agastya_visit",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "sita_agnipariksha"
+              ],
+              "explanation": "Rama entered the hermitage and saw that highsouled Bharadwaja surrounded by his disciples. He was a distinguished sage who (himself) kindled sacrficial fires and acquired spiritual insight by practising rigid austerities with concentration of mind and ascetic powers. Rama, Lakshmana and Sita paid their obeisance to that great sage.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 54,
+              "shloka": 12,
+              "shloka_text": "स प्रविश्य महात्मानमृषिं शिष्यगणैर्वृतम्। संशितव्रतमेकाग्रं तपसा लब्धचक्षुषम्।।2.54.11।। हुताग्निहोत्रं दृष्ट्वैव महाभागं कृताञ्जलिः। रामः सौमित्रिणा सार्धं सीतया चाभ्यवादयत्।।2.54.12।।",
+              "themes": [
+                "brotherhood"
+              ],
+              "translation": "सः रामः Rama, प्रविश्य having entered, संशितव्रतम् one practising rigorous austerities, एकाग्रम् with concentration of mind, तपसा with asceticism, लब्दचक्षुषम् one who has obtained spiritual insight, हुताग्निहोत्रम् one who has kindled fire in sacrificial rituals, महाभागम् distinguished, शिष्यगणैः with disciples, वृतम् surrounded by, महात्मानम् highsouled, ऋषिम् sage, दृष्ट्वैव having seen, सौमित्रिणा Lakshmana, सार्धम् along with, सीतया च Sita too, अभ्यवादयत् paid obeisance."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-54-35",
+            "score": 0.523667336,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "vanara_search",
+                "sita_found",
+                "night_stay"
+              ],
+              "explanation": "The exhausted scion of the Kakutsthas, used to comforts, stayed in the lovely hermitage of Bharadwaja for the night with Sita, as the third member (of the group).",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 54,
+              "shloka": 35,
+              "shloka_text": "सीतातृतीयः काकुत्स्थः परिश्रान्तः सुखोचितः। भरद्वाजाश्रमे रम्ये तां रात्रिमवसत्सुखम्।।2.54.35।।",
+              "themes": [
+                "duty_vs_emotion",
+                "love",
+                "comfort",
+                "companionship"
+              ],
+              "translation": "सुखोचितः used to comforts, परिश्रान्तः exhausted, सीतांतृतीयः Sita counted as the third, काकुत्स्थ: Rama, रम्ये in the lovely, भरद्वाजाश्रमे hermitage of Bharadwaja, तां रात्रिम् that night, सुखम् happily, अवसत् stayed."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-56-34",
+            "score": 0.523035049,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "hermitage_arrival"
+              ],
+              "explanation": "Bestowed with auspicious qualities, Rama and Lakshmana along with Sita propitiated those celestial beings with garlands of forest flowers, fruits and roots, wellcooked venison, water, muttering of prayers as expounded in the Vedas, faggots and kusa grass and entered that auspicious hermitage.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 56,
+              "shloka": 34,
+              "shloka_text": "वन्यैर्माल्यैः फलैर्मूलैः पक्वैर्मांसैर्यथाविधि। अद्भिर्जपैश्च वेदोक्तैर्दर्भैश्च ससमित्कुशैः।।2.56.34।। तौ तर्पयित्वा भूतानि राघवौ सह सीतया। तदा विविशतु श्शालां सुशुभां शुभलक्षणौ।।2.56.35।।",
+              "themes": [
+                "filial_dharma",
+                "brotherhood",
+                "exile",
+                "devotion",
+                "divine",
+                "auspiciousness",
+                "rituals"
+              ],
+              "translation": "शुभलक्षणौ bestowed with auspicious qualities, राघवौ Rama and Lakshmana, सह सीतया accompanied by Sita, वन्यै: माल्यै: with garlands of forest flowers, फलै: with fruits, मूलै: with roots, पक्वै: with wellcooked, मांसै: with venison, अद्भिः with water, वेदोक्तै: as expounded in the Vedas, जपैश्च with muttering of prayers, दर्भैश्च with darbha grass,    सुसमित्कुशै: with faggots and kusa grass, भूतानि all beings, तर्पयित्वा after propitiating, तदा then, शुभाम् auspicious, शालाम् hut, विविशतुः entered."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-26-19",
+            "score": 0.522811,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "banishment_announcement"
+              ],
+              "explanation": "O Sita my venerable father is banishing me to the forest, said Rama, the scion of the Raghus, the joy of the Raghu race, seeing her thus lamenting.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 26,
+              "shloka": 19,
+              "shloka_text": "इतीव विलपन्तीं तां प्रोवाच रघुनन्दनः। सीते तत्र भवांस्तातः प्रव्राजयति मां वनम्।।2.26.19।।",
+              "themes": [
+                "filial_dharma",
+                "exile",
+                "sorrow",
+                "dharma"
+              ],
+              "translation": "इतीव in this way, विलपन्तीम् lamenting, ताम् to her, रघुनन्दनः Rama, प्रोवाच said , सीते O Sita, तत्रभवान् venerable, तातः father, माम् me, वनम् to the forest, प्रव्राजयति  banishing."
+            }
+          }
+        ],
+        "totalRetrieved": 20,
+        "expandedQuery": "During her second exile, Sita lived in the hermitage of Sage Valmiki, located in the forest. This is where she gave birth to her sons, Lava and Kusha."
+      },
+      "retrieval_latency_ms": 0,
+      "classification_result": {
+        "model": "gpt-4o",
+        "category": "Post-war events",
+        "category_id": 15,
+        "confidence": 1,
+        "template_selected": "T1"
+      },
+      "classification_latency_ms": 0,
+      "generation_result": {
+        "model": "gpt-4o",
+        "template_used": "T1",
+        "answer": "**Answer:** The text describes that during her second exile, Sita lived in the hermitage of Valmiki [Uttara-Kanda 89.5]. Sita delivered her sons in the hermitage, as described in the section where Valmiki takes care of her and the twins [Uttara-Kanda 89.7]. While the text provides details of Valmiki's care, it does not specify on a daily basis all activities [Uttara-Kanda 89.11].",
+        "citations_in_answer": [
+          "Uttara-Kanda 89.5",
+          "Uttara-Kanda 89.7",
+          "Uttara-Kanda 89.11"
+        ]
+      },
+      "generation_latency_ms": 19656,
+      "total_latency_ms": 29604,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The text describes that during her second exile, Sita lived in the hermitage of Valmiki [Uttara-Kanda 89.5]. Sita delivered her sons in the hermitage, as described in the section where Valmiki takes care of her and the twins [Uttara-Kanda 89.7]. While the text provides details of Valmiki's care, it does not specify on a daily basis all activities [Uttara-Kanda 89.11].",
+        "textualBasis": {
+          "kanda": "Uttara-Kanda",
+          "sarga": [
+            89
+          ],
+          "shloka": [
+            5,
+            7,
+            11
+          ],
+          "citations": [
+            "Uttara-Kanda 89.5",
+            "Uttara-Kanda 89.7",
+            "Uttara-Kanda 89.11"
+          ]
+        },
+        "explanation": "The text specifically mentions Sita's residence being in Valmiki's hermitage during her second exile. This is supported by direct references to her living there and giving birth to her sons. The shlokas from Uttara-Kanda describe Valmiki's involvement and the environment of safety and care provided for her.",
+        "whatTextStates": "The text states that Sita lived in Valmiki's hermitage during her second exile where her sons were also born.",
+        "traditionalInterpretations": "Traditionally, it is believed that Valmiki's hermitage was a place of peace where Sita lived with her sons.",
+        "limitOfCertainty": "The claim is limited to the information directly described in the text, without inferring specific daily activities beyond what is mentioned.",
+        "outOfScopeNotice": "This response is limited to the details in Uttara-Kanda regarding Sita's second exile and does not account for non-explicit events.",
+        "why": "The information is based on explicit textual citations from the Uttara-Kanda.",
+        "redirect": {
+          "introduction": "If you need additional information on Sita's life events, consider exploring the broader narrative contexts.",
+          "alternatives": [
+            "Valmiki Ramayana - Uttara Kanda",
+            "Other Ramayana interpretations"
+          ]
+        },
+        "whatICanHelpWith": [
+          "Details on Sita's life based on text",
+          "Understanding the events during exiles",
+          "Clarification on Valmiki's role"
+        ]
+      }
+    },
+    "claude_trace": {
+      "trace_id": "3697cbea-0d36-4b8d-8f06-dabc1d2d4c15",
+      "timestamp": "2025-12-21T14:27:17.703Z",
+      "user_query": "Where did Sita live during her second exile?",
+      "expanded_query": "During her second exile, Sita lived in the hermitage of Sage Valmiki, located in the forest. This is where she gave birth to her sons, Lava and Kusha.",
+      "query_expansion_latency_ms": 0,
+      "retrieval_results": {
+        "shlokas": [
+          {
+            "id": "ayodhya-kanda-42-19",
+            "score": 0.568193436,
+            "metadata": {
+              "characters": [
+                "sita",
+                "janaka"
+              ],
+              "comments": "",
+              "events": [
+                "bow_breaking",
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "sitas_journey"
+              ],
+              "explanation": "Sita, beloved daughter of Janaka, who is accustomed to comforts, will now wander in the forest troubled by piercing thorns.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 42,
+              "shloka": 19,
+              "shloka_text": "सा नूनं जनकस्येष्टा सुता सुखसदोचिता। कण्टकाक्रमणाक्लान्ता वनमद्य गमिष्यति।।2.42.19।।",
+              "themes": [
+                "duty_vs_emotion",
+                "love",
+                "exile",
+                "suffering",
+                "loss"
+              ],
+              "translation": "सुखसदोचिता accustomed to comforts, जनकस्य Janaka's, इष्टा beloved, सुता daughter, सा Janaki, कण्टकाक्रमणक्लान्ता troubled due to piercing of thorns, अद्य now, वनम् to the forest, गमिष्यति will go."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-44-6",
+            "score": 0.554168701,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "jatayu_fight",
+                "vanara_search",
+                "sita_found",
+                "following_into_forest"
+              ],
+              "explanation": "The daughter of Videha (Sita) who was used to comforts has knowingly followed your virtuous son into the hardships of forest life.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 44,
+              "shloka": 6,
+              "shloka_text": "अरण्यवासे यद्दुःखं जानती वै सुखोचिता। अनुगच्छति वैदेही धर्मात्मानं तवात्मजम्।।2.44.6।।",
+              "themes": [
+                "filial_dharma",
+                "exile",
+                "victory",
+                "sacrifice",
+                "love"
+              ],
+              "translation": "सुखोचिता used to comforts, वैदेही Sita, अरण्यवासे living in the forest, यत् दुःखम् those hardships, जानती वै knowingly, धर्मात्मानम् virtuous, तव your, आत्मजम् son, अनुगच्छति is following."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-37-35",
+            "score": 0.548613548,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "kaikeyi_boons",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation",
+                "sita_forest_adornment"
+              ],
+              "explanation": "O Kaikeyi, you asked that Rama only should dwell in the forest (wearing bark robes). Therefore let Sita, adorn her body daily, while she  lives in the forest with Rama.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 37,
+              "shloka": 35,
+              "shloka_text": "एकस्य रामस्य वने निवास स्त्वया वृतःकेकयराजपुत्री। विभूषितेयं प्रतिकर्मनित्या वसत्वरण्ये सह राघवेण।।2.37.35।।",
+              "themes": [
+                "rajadharma",
+                "exile",
+                "dharma",
+                "sacrifice"
+              ],
+              "translation": "केकयराजपुत्री O daughter of the king of Kekaya, त्वया by you, एकस्य रामस्य only for Rama, वने in the forest, निवासः dwell, वृतः is sought for, इयम् this Sita,  विभूषिता welladorned,  प्रतिकर्मनित्या engaged daily in decorating, राघवेण सह along with Rama, अरण्ये in the forest, वसतु shall live."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-30-29",
+            "score": 0.548136711,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "rama_birth",
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "rama_commitment"
+              ],
+              "explanation": "Since you, O daughter of Mithila, were born to go along with me to the forest, I cannot abandon you just as a selfrespecting man cannot forsake his reputation.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 30,
+              "shloka": 29,
+              "shloka_text": "यत्सृष्टाऽसि मया सार्धं वनवासाय मैथिलि। न विहातुं मया शक्या कीर्तिरात्मवता यथा।।2.30.29।।",
+              "themes": [
+                "filial_dharma",
+                "sacrifice",
+                "honor",
+                "exile",
+                "dharma",
+                "loyalty"
+              ],
+              "translation": "मैथिलि O daughter of Mithila (Sita), यत् since, मयासार्धम् along with me, वनवासाय for living in the forest, सृष्टासि created, आत्मवता by selfrespecting, कीर्तिर्यथा like reputation, मया by me, विहातुम् to abandon, न शक्या is not possible."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-37-18",
+            "score": 0.538722098,
+            "metadata": {
+              "characters": [
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "forest_departure"
+              ],
+              "explanation": "Go, O son to the forest with Lakshmana as your companion. (But) this auspicious Sita, will not be able to live in the jungle like a hermit.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 37,
+              "shloka": 18,
+              "shloka_text": "लक्ष्मणेन सहायेन वनं गच्छस्व पुत्रक। नेयमर्हति कल्याणी वस्तुं तापसवद्वने।।2.37.18।।",
+              "themes": [
+                "filial_dharma",
+                "brotherhood",
+                "exile",
+                "sacrifice",
+                "concern"
+              ],
+              "translation": "पुत्रक O son, सहायेन as companion, लक्ष्मणेन with Lakshmana, वनम् to the forest, गच्छस्व you may go, कल्याणी auspicious lady, इयम् she, तापसवत् like a hermit, वने in the forest, वस्तुम् to live, नार्हति is not worthy of."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-39-17",
+            "score": 0.537566185,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "rama_birth",
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "sita_prepares_for_departure"
+              ],
+              "explanation": "That princess of noble birth from Videha adorned her beautiful limbs with the sparkling ornaments and got ready to depart for the forest.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 39,
+              "shloka": 17,
+              "shloka_text": "सा सुजाता सुजातानि वैदेही प्रस्थिता वनम्। भूषयामास गात्राणि तैर्विचित्रैर्विभूषणैः।।2.39.17।।",
+              "themes": [
+                "exile",
+                "sacrifice",
+                "nobility"
+              ],
+              "translation": "वनम् to the forest, प्रस्थिता ready to depart, सुजाता of noble birth, सा वैदेहि that princess from Videha (Sita), सुजातानि beautiful, गात्राणि limbs, विचित्रैः sparkling, तैः विभूषणैः those ornaments, भूषयामास adorned."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-37-23",
+            "score": 0.535124779,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "kaikeyi_boons",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation",
+                "sita_stay_request"
+              ],
+              "explanation": "You are devoid of good conduct, O Kaikeyi Divine Sita need not go to the forest. Remaining here she should occupy the royal throne of Rama.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 37,
+              "shloka": 23,
+              "shloka_text": "न गन्तव्यं वनं देव्या सीतया शीलवर्जिते। अनुष्ठास्यति रामस्य सीता प्रकृतमासनम्।।2.37.23।।",
+              "themes": [
+                "rajadharma",
+                "exile",
+                "divine",
+                "dharma",
+                "royalty"
+              ],
+              "translation": "शीलवर्जिते  devoid of good conduct, देव्या by the divine, सीतया Sita, वनम् to the forest, न गन्तव्यम् need not go, सीता Sita, रामस्य Rama's, प्रकृतम् present, आसनम् royal throne, अनुष्ठास्यति she will occupy."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-60-7",
+            "score": 0.534654617,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "sita_in_forest",
+                "sita_fixed_on_rama"
+              ],
+              "explanation": "Sita with her mind fixed on Rama is living confidently in that desolate forest without any fear as if it were her home.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 60,
+              "shloka": 7,
+              "shloka_text": "विजनेऽपि वने सीता वासं प्राप्य गृहेष्विव। विस्रम्भं लभतेऽभीता रामे सन्न्यस्तमानसा।।2.60.7।।",
+              "themes": [
+                "exile",
+                "courage",
+                "love"
+              ],
+              "translation": "सीता Sita, विजने in the desolate, वनेपि in the forest also, गृहेष्विव like at home, वासम् living, प्राप्य having obtained, रामे in Rama, सन्न्यस्तमानसा with her mind fixed, अभीता without fear, विस्रम्भम् confidence, लभते  is getting."
+            }
+          },
+          {
+            "id": "bala-kanda-66-13",
+            "score": 0.528995514,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "vanara_search",
+                "sita_found",
+                "sita_discovery",
+                "ploughing_ritual"
+              ],
+              "explanation": "Thereupon while I was ploughing and cleaing the (sacrificial) ground, Sita, a wellknown name, was lifted up by the blade of the plough. Thus she was obtained by me.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 66,
+              "shloka": 13,
+              "shloka_text": "अथ मे कृषत: क्षेत्रं लाङ्गूलादुत्थिता मया। क्षेत्रं शोधयता लब्धा नाम्ना सीतेति विश्रुता।।1.66.13।।",
+              "themes": [
+                "divine_intervention",
+                "miraculous_birth"
+              ],
+              "translation": "अथ thereafter, मे my, क्षेत्रम् the sacrificial ground, कृषत: while I was ploughing, लाङ्गूलात् by the blade of plough, उत्थिता lifted, नाम्ना by name, सीतेति Sita, विश्रुता wellknown, क्षेत्रम् that sacrificial ground, शोधयता purifying, मया by me, लब्धा obtained."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-38-3",
+            "score": 0.527769148,
+            "metadata": {
+              "characters": [
+                "sita",
+                "kaikeyi"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "kaikeyi_boons",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "sita_forest_exile_discussion"
+              ],
+              "explanation": "The descendant of the Ikshvakus (Dasaratha), heaving hot sighs, said to his wife O Kaikeyi, Sita does not deserve to go (to the forest) in garment of kusa grass.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 38,
+              "shloka": 3,
+              "shloka_text": "स निःश्वस्योष्णमैक्ष्वाक स्तां भार्यामिदमब्रवीत्। कैकेयि कुशचीरेण न सीता गन्तुमर्हति।।2.38.3।।",
+              "themes": [
+                "marriage",
+                "exile",
+                "royal_duty",
+                "family_conflict"
+              ],
+              "translation": "सः ऐक्ष्वाकः that descendant of the Ikshvakus (Dasaratha), उष्णम् निःश्वस्य heaving hot sighs, भार्याम् to his wife (Kaikeyi), इदम् these words, अब्रवीत् he spoke, कैकेयी O Kaikeyi, सीता Sita, कुशचीरेण with kusa garment, गन्तुम् to go, नार्हति is not worthy of."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-54-10",
+            "score": 0.527575552,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "agastya_visit",
+                "vanara_search",
+                "sita_found",
+                "arrival_at_hermitage",
+                "waiting_for_sage"
+              ],
+              "explanation": "Thereafter the two heroes followed by Sita arrived at the hermitage and, wishing to see the sage, waited at a distance.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 54,
+              "shloka": 10,
+              "shloka_text": "ततस्त्वाश्रमासाद्य मुनेर्दर्शनकाङ्क्षिणौ। सीतयानुगतौ वीरौ दूरादेवावतस्थतुः।।2.54.10।।",
+              "themes": [
+                "respect",
+                "humility"
+              ],
+              "translation": "ततः then, सीतया by Sita, अनुगतौ followed, वीरौ those two heroes, आश्रमम् hermitage, आसाद्य having reached, मुनेः ascetic's, दर्शनकाङ्क्षिणौ wishing to see, दूरादेव at a distance, अवतस्थतुः stood."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-52-67",
+            "score": 0.527301788,
+            "metadata": {
+              "characters": [
+                "sita",
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "exile_announcement",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "rama_coronation",
+                "exile_preparation",
+                "forest_journey"
+              ],
+              "explanation": "Seeking the welfare of my father, Sita and Lakshmana I shall enter the forest with matted hair and practise the prescribed austerities which are the adornments of ascetics. Do fetch me the sap of a banyan tree.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 52,
+              "shloka": 67,
+              "shloka_text": "सोऽहं गृहीत्वा नियमं तपस्वि जनभूषणम्। हितकामः पितुर्भूयः सीताया लक्ष्मणस्य च।।2.52.67।। जटाः कृत्वा गमिष्यामि न्यग्रोधक्षीरमानय।",
+              "themes": [
+                "rajadharma",
+                "filial_dharma",
+                "brotherhood",
+                "exile",
+                "search",
+                "duty",
+                "sacrifice",
+                "family_loyalty"
+              ],
+              "translation": "सः अहम् that I, तपस्विजनभूषणम् the adornment of ascetics, नियमम् prescribed austerities, गृहीत्वा accepting, पितुः father's, भूयः also, सीतायाः Sita's, लक्ष्मणस्य च also Lakshmana's, हितकामः seeking their good, जटाः कृत्वा having matted my locks of hair, गमिष्यामि shall go, न्यग्रोधक्षीरम् latex of banyan tree, आनय fetch."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-39-15",
+            "score": 0.526805878,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "shurpanakha",
+                "vanara_search",
+                "sita_found",
+                "preparation_for_sita"
+              ],
+              "explanation": "Assess the (needs for) number of years the princess of Videha (Sita) is going to be in the forest, and fetch her quickly highly valuable garments and excellent ornaments.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 39,
+              "shloka": 15,
+              "shloka_text": "वासांसि च महार्हाणि भूषणानि वराणि च। वर्षाण्येतानि सङ्ख्याय वैदेह्याः क्षिप्रमानय।।2.39.15।।",
+              "themes": [
+                "exile",
+                "care",
+                "duty"
+              ],
+              "translation": "एतानि these, वर्षाणि years, सङ्ख्याय calculating, वैदेह्याः for the princess of Videha (Sita), महार्हाणि highly valuable, वासांसि च garments, वराणि excellent, भूषणानि च ornaments, क्षिप्रम् quickly, आनय fetch."
+            }
+          },
+          {
+            "id": "bala-kanda-77-12",
+            "score": 0.525595725,
+            "metadata": {
+              "characters": [
+                "sita",
+                "urmila"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation",
+                "bride_reception"
+              ],
+              "explanation": "Thereafter the queens received the highly fortunate Sita, Urmila of high fame and both the daughters of Kusadhwaja, Mandavi and Srutakirti.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 77,
+              "shloka": 12,
+              "shloka_text": "ततस्सीतां महाभागामूर्मिलां च यशस्विनीम्। कुशध्वजसुते चोभे जगृहुर्नृपपत्नय:।।1.77.12।।",
+              "themes": [
+                "rajadharma",
+                "family_honor"
+              ],
+              "translation": "तत: thereafter, नृपपत्नय: king's wives, महाभागाम् highly fortunate, सीताम् Sita, यशस्विनीम्  having fame, ऊर्मिलां च Urmila, उभे both, कुशध्वजसुते daughters of Kusadhwaja, जगृहु: received."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-28-5",
+            "score": 0.525415421,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found"
+              ],
+              "explanation": "Give up the desire to live in the forest, O Sita Living in the dreary jungle, it is said, has many hardships.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 28,
+              "shloka": 5,
+              "shloka_text": "सीते विमुच्यतामेषा वनवासकृता मतिः। बहुदोषं हि कान्तारं वनमित्यभिधीयते।।2.28.5।।",
+              "themes": [
+                "duty_vs_desire",
+                "sacrifice",
+                "exile",
+                "warning",
+                "hardship"
+              ],
+              "translation": "सीते O Sita, वनवासकृता to live in the forest, एषा this, मति: mind, विमुच्यताम् give up, कान्तारम् a dreary forest, वनम् forest, बहुदोषं (बहुदोषयुतं) has many hardships, अभिधीयते हि is being said."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-28-22",
+            "score": 0.525299072,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "thorny_trees"
+              ],
+              "explanation": "O lovely Sita there are thorny trees with branches on the top interlaced with one another. There are kusa grass and reeds. So forest life is very hard.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 28,
+              "shloka": 22,
+              "shloka_text": "द्रुमाः कण्टकिनश्चैव कुशा: काशाश्च भामिनि। वने व्याकुलशाखाग्रास्तेन दुःखतरं वनम्।।2.28.22।।",
+              "themes": [
+                "duty_vs_emotion",
+                "love",
+                "exile",
+                "suffering",
+                "hardship"
+              ],
+              "translation": "भामिनि O lovely Sita, वने in the forest, द्रुमाः trees, कुशा काशाः च kusa grass and reeds,  कण्टकिनश्चैव thorny ones, व्याकुलशाखाग्राः with tops of branches interlaced with each other, तेन therefore, वनम् forest life, दुःखतरम् is full of difficulties."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-54-12",
+            "score": 0.524470329,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "agastya_visit",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "lanka_burning",
+                "sita_agnipariksha"
+              ],
+              "explanation": "Rama entered the hermitage and saw that highsouled Bharadwaja surrounded by his disciples. He was a distinguished sage who (himself) kindled sacrficial fires and acquired spiritual insight by practising rigid austerities with concentration of mind and ascetic powers. Rama, Lakshmana and Sita paid their obeisance to that great sage.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 54,
+              "shloka": 12,
+              "shloka_text": "स प्रविश्य महात्मानमृषिं शिष्यगणैर्वृतम्। संशितव्रतमेकाग्रं तपसा लब्धचक्षुषम्।।2.54.11।। हुताग्निहोत्रं दृष्ट्वैव महाभागं कृताञ्जलिः। रामः सौमित्रिणा सार्धं सीतया चाभ्यवादयत्।।2.54.12।।",
+              "themes": [
+                "brotherhood"
+              ],
+              "translation": "सः रामः Rama, प्रविश्य having entered, संशितव्रतम् one practising rigorous austerities, एकाग्रम् with concentration of mind, तपसा with asceticism, लब्दचक्षुषम् one who has obtained spiritual insight, हुताग्निहोत्रम् one who has kindled fire in sacrificial rituals, महाभागम् distinguished, शिष्यगणैः with disciples, वृतम् surrounded by, महात्मानम् highsouled, ऋषिम् sage, दृष्ट्वैव having seen, सौमित्रिणा Lakshmana, सार्धम् along with, सीतया च Sita too, अभ्यवादयत् paid obeisance."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-54-35",
+            "score": 0.523667336,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "vanara_search",
+                "sita_found",
+                "night_stay"
+              ],
+              "explanation": "The exhausted scion of the Kakutsthas, used to comforts, stayed in the lovely hermitage of Bharadwaja for the night with Sita, as the third member (of the group).",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 54,
+              "shloka": 35,
+              "shloka_text": "सीतातृतीयः काकुत्स्थः परिश्रान्तः सुखोचितः। भरद्वाजाश्रमे रम्ये तां रात्रिमवसत्सुखम्।।2.54.35।।",
+              "themes": [
+                "duty_vs_emotion",
+                "love",
+                "comfort",
+                "companionship"
+              ],
+              "translation": "सुखोचितः used to comforts, परिश्रान्तः exhausted, सीतांतृतीयः Sita counted as the third, काकुत्स्थ: Rama, रम्ये in the lovely, भरद्वाजाश्रमे hermitage of Bharadwaja, तां रात्रिम् that night, सुखम् happily, अवसत् stayed."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-56-34",
+            "score": 0.523035049,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "hermitage_arrival"
+              ],
+              "explanation": "Bestowed with auspicious qualities, Rama and Lakshmana along with Sita propitiated those celestial beings with garlands of forest flowers, fruits and roots, wellcooked venison, water, muttering of prayers as expounded in the Vedas, faggots and kusa grass and entered that auspicious hermitage.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 56,
+              "shloka": 34,
+              "shloka_text": "वन्यैर्माल्यैः फलैर्मूलैः पक्वैर्मांसैर्यथाविधि। अद्भिर्जपैश्च वेदोक्तैर्दर्भैश्च ससमित्कुशैः।।2.56.34।। तौ तर्पयित्वा भूतानि राघवौ सह सीतया। तदा विविशतु श्शालां सुशुभां शुभलक्षणौ।।2.56.35।।",
+              "themes": [
+                "filial_dharma",
+                "brotherhood",
+                "exile",
+                "devotion",
+                "divine",
+                "auspiciousness",
+                "rituals"
+              ],
+              "translation": "शुभलक्षणौ bestowed with auspicious qualities, राघवौ Rama and Lakshmana, सह सीतया accompanied by Sita, वन्यै: माल्यै: with garlands of forest flowers, फलै: with fruits, मूलै: with roots, पक्वै: with wellcooked, मांसै: with venison, अद्भिः with water, वेदोक्तै: as expounded in the Vedas, जपैश्च with muttering of prayers, दर्भैश्च with darbha grass,    सुसमित्कुशै: with faggots and kusa grass, भूतानि all beings, तर्पयित्वा after propitiating, तदा then, शुभाम् auspicious, शालाम् hut, विविशतुः entered."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-26-19",
+            "score": 0.522811,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "vanara_search",
+                "sita_found",
+                "banishment_announcement"
+              ],
+              "explanation": "O Sita my venerable father is banishing me to the forest, said Rama, the scion of the Raghus, the joy of the Raghu race, seeing her thus lamenting.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 26,
+              "shloka": 19,
+              "shloka_text": "इतीव विलपन्तीं तां प्रोवाच रघुनन्दनः। सीते तत्र भवांस्तातः प्रव्राजयति मां वनम्।।2.26.19।।",
+              "themes": [
+                "filial_dharma",
+                "exile",
+                "sorrow",
+                "dharma"
+              ],
+              "translation": "इतीव in this way, विलपन्तीम् lamenting, ताम् to her, रघुनन्दनः Rama, प्रोवाच said , सीते O Sita, तत्रभवान् venerable, तातः father, माम् me, वनम् to the forest, प्रव्राजयति  banishing."
+            }
+          }
+        ],
+        "totalRetrieved": 20,
+        "expandedQuery": "During her second exile, Sita lived in the hermitage of Sage Valmiki, located in the forest. This is where she gave birth to her sons, Lava and Kusha."
+      },
+      "retrieval_latency_ms": 0,
+      "classification_result": {
+        "model": "gpt-4o",
+        "category": "Post-war events",
+        "category_id": 15,
+        "confidence": 1,
+        "template_selected": "T1"
+      },
+      "classification_latency_ms": 0,
+      "generation_result": {
+        "model": "claude-3-haiku-20240307",
+        "template_used": "T1",
+        "answer": "**Answer:** According to the provided citations, during her second exile Sita lived in the forest with Rama and Lakshmana. The text states that Sita \"will now wander in the forest troubled by piercing thorns\" [Ayodhya Kanda 42.19], and that \"Sita with her mind fixed on Rama is living confidently in that desolate forest without any fear as if it were her home\" [Ayodhya Kanda 60.7]. The verses also describe Sita following Rama and Lakshmana into the forest [Ayodhya Kanda 44.6, 37.35, 54.10].",
+        "citations_in_answer": [
+          "Ayodhya Kanda 42.19",
+          "Ayodhya Kanda 44.6",
+          "Ayodhya Kanda 37.35",
+          "Ayodhya Kanda 60.7",
+          "Ayodhya Kanda 54.10"
+        ]
+      },
+      "generation_latency_ms": 4852,
+      "total_latency_ms": 12412,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** According to the provided citations, during her second exile Sita lived in the forest with Rama and Lakshmana. The text states that Sita \"will now wander in the forest troubled by piercing thorns\" [Ayodhya Kanda 42.19], and that \"Sita with her mind fixed on Rama is living confidently in that desolate forest without any fear as if it were her home\" [Ayodhya Kanda 60.7]. The verses also describe Sita following Rama and Lakshmana into the forest [Ayodhya Kanda 44.6, 37.35, 54.10].",
+        "textualBasis": {
+          "kanda": "Ayodhya Kanda",
+          "sarga": [
+            42,
+            44,
+            37,
+            60,
+            54
+          ],
+          "shloka": [
+            19,
+            6,
+            35,
+            7,
+            10
+          ],
+          "citations": [
+            "Ayodhya Kanda 42.19",
+            "Ayodhya Kanda 44.6",
+            "Ayodhya Kanda 37.35",
+            "Ayodhya Kanda 60.7",
+            "Ayodhya Kanda 54.10"
+          ]
+        },
+        "explanation": "The provided citations clearly state that during her second exile, Sita lived in the forest with Rama and Lakshmana. The verses describe Sita following Rama to the forest and living there, facing the hardships of forest life but remaining confident and focused on Rama. The text does not provide any details about Sita living elsewhere during this period."
+      }
+    }
+  }
+]

@@ -8,7 +8,7 @@
 
 | Task | Priority | Status |
 |------|----------|--------|
-| Citation Verifier | High | 🔲 Not Started |
+| Citation Verifier | High | ✅ Completed |
 | Routing Evaluator | High | 🔲 Not Started |
 | Template Compliance Evaluator | High | 🔲 Not Started |
 

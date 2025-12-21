@@ -1,0 +1,1599 @@
+[
+  {
+    "index": 1,
+    "user_query": "What happens to Vibhishana's wife?",
+    "classification": "Post-war events",
+    "expected_template": "T1",
+    "openai": {
+      "status": "OK",
+      "template_used": "T1",
+      "answer": "**Answer:** The provided citations do not explicitly mention the fate or events concerning Vibhishana's wife after the war. There is mention of Vibhishana coming to Rama in a submissive manner after the women had entered the city [Yuddha-Kanda 114.124]. However, specific details regarding his wife's situation are not provided in the retrieved verses.",
+      "whatTextStates": "The text details Vibheeshana approaching Rama in a submissive manner, but it does not mention his wife [Yuddha-Kanda 114.124].",
+      "citations": [
+        "[Yuddha-Kanda 114.124]"
+      ],
+      "citation_count": 1,
+      "has_inline_citations": true,
+      "answer_citations": 1,
+      "wts_citations": 1,
+      "textual_basis_citations": [
+        "Yuddha-Kanda 114.124"
+      ],
+      "retrieved_count": 20,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The provided citations do not explicitly mention the fate or events concerning Vibhishana's wife after the war. There is mention of Vibhishana coming to Rama in a submissive manner after the women had entered the city [Yuddha-Kanda 114.124]. However, specific details regarding his wife's situation are not provided in the retrieved verses.",
+        "textualBasis": {
+          "kanda": "Yuddha-Kanda",
+          "sarga": [
+            114
+          ],
+          "shloka": [
+            124
+          ],
+          "citations": [
+            "Yuddha-Kanda 114.124"
+          ]
+        },
+        "explanation": "The retrieved citations focus mainly on Vibhishana's actions and other characters without directly addressing Vibhishana's wife's experiences or fate. The text describes Vibheeshana's interaction with Rama, but does not provide details on his wife's circumstances.",
+        "whatTextStates": "The text details Vibheeshana approaching Rama in a submissive manner, but it does not mention his wife [Yuddha-Kanda 114.124].",
+        "traditionalInterpretations": "The traditional interpretations typically explore Vibheeshana's character or his actions during the events. However, without explicit mention, traditional interpretations would not address his wife's fate here based on the retrieved texts.",
+        "limitOfCertainty": "The text does not specify outcomes related to Vibhishana's wife.",
+        "outOfScopeNotice": "The question regarding Vibhishana's wife falls outside the scope of the retrieved citations, which do not provide explicit information on her post-war fate.",
+        "why": "The shlokas retrieved do not explicitly cover details about Vibhishana's wife. They focus more on characters like Rama, Sita, and Vibheeshana himself, making it clear that there are no shlokas directly addressing the question.",
+        "redirect": {
+          "introduction": "For detailed information on Vibhishana's wife, consult sections covering post-war events or family relation narratives in broader sources.",
+          "alternatives": [
+            "Explore other texts beyond current citations",
+            "Consult multiple Kandas for a broader context"
+          ]
+        },
+        "whatICanHelpWith": [
+          "Providing textual evidence from the Valmiki Ramayana",
+          "Answering questions based on specific shlokas",
+          "Clarifying textual meanings with citations"
+        ]
+      }
+    },
+    "claude": {
+      "status": "OK",
+      "template_used": "T1",
+      "answer": "**Answer:** The text does not explicitly state what happens to Vibhishana's wife. The available citations do not mention Vibhishana's wife or provide any information about her fate after the war. [Yuddha Kanda 32.9] mentions Vibhishana coming to Rama in a submissive manner, but there is no mention of his wife. [Yuddha Kanda 18.37] describes Rama accepting Vibhishana as an ally, but again, there is no information about Vibhishana's wife. The provided citations do not contain any details about what happened to Vibhishana's wife.",
+      "whatTextStates": "",
+      "citations": [
+        "[Yuddha Kanda 32.9]",
+        "[Yuddha Kanda 18.37]"
+      ],
+      "citation_count": 2,
+      "has_inline_citations": true,
+      "answer_citations": 2,
+      "wts_citations": 0,
+      "textual_basis_citations": [
+        "Yuddha Kanda 32.9",
+        "Yuddha Kanda 18.37"
+      ],
+      "retrieved_count": 20,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The text does not explicitly state what happens to Vibhishana's wife. The available citations do not mention Vibhishana's wife or provide any information about her fate after the war. [Yuddha Kanda 32.9] mentions Vibhishana coming to Rama in a submissive manner, but there is no mention of his wife. [Yuddha Kanda 18.37] describes Rama accepting Vibhishana as an ally, but again, there is no information about Vibhishana's wife. The provided citations do not contain any details about what happened to Vibhishana's wife.",
+        "textualBasis": {
+          "kanda": "Yuddha Kanda",
+          "sarga": [
+            32,
+            18
+          ],
+          "shloka": [
+            9,
+            37
+          ],
+          "citations": [
+            "Yuddha Kanda 32.9",
+            "Yuddha Kanda 18.37"
+          ]
+        },
+        "explanation": "The available citations do not mention anything about Vibhishana's wife or her fate after the war against Ravana. The citations only discuss Vibhishana himself submitting to Rama and being accepted as an ally, but there is no information provided about his wife. Without any explicit mentions of Vibhishana's wife in the text, I cannot make any claims about what happened to her."
+      }
+    },
+    "openai_trace": {
+      "trace_id": "a2318940-3c17-47ae-b0c2-bc80a869268f",
+      "timestamp": "2025-12-21T15:36:05.918Z",
+      "user_query": "What happens to Vibhishana's wife?",
+      "expanded_query": "Vibhishana's wife, Sarama, remains loyal to him throughout the Ramayana. After Vibhishana joins Rama's side, she is depicted as supportive, and their relationship symbolizes fidelity and devotion amidst the conflict.",
+      "query_expansion_latency_ms": 0,
+      "retrieval_results": {
+        "shlokas": [
+          {
+            "id": "aranya-kanda-47-34",
+            "score": 0.606803,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage"
+              ],
+              "explanation": "I am the loyal wife of venerable Rama who is endowed with all excellences, a refuge to all like  a spreading banyan tree, and a votary of truth.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Aranya Kanda",
+              "kanda_number": 3,
+              "sarga": 47,
+              "shloka": 34,
+              "shloka_text": "सर्वलक्षणसम्पन्नं न्यग्रोधपरिमण्डलम्। सत्यसन्धं महाभागमहं राममनुव्रता।।3.47.34।।",
+              "themes": [
+                "loyalty",
+                "marriage",
+                "truth",
+                "devotion"
+              ],
+              "translation": "अहम् I am, सर्वलक्षणसम्पन्नम् endowed with all excellences, न्यग्रोधपरिमण्डलम् a refuge like a spreading banyan tree, सत्यसन्धम् devoted to truth, महाभागम् venerable, रामम् Rama, अनुव्रता a loyal wife."
+            }
+          },
+          {
+            "id": "sundara-kanda-24-12",
+            "score": 0.585550308,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "agastya_visit",
+                "bridge_construction",
+                "rama_coronation",
+                "exemplifying_loyalty"
+              ],
+              "explanation": "'I am steadfast (in love) to my husband Rama, the foremost of the Ikshvaku family in the same manner as noble Sachi to Indra, Arundhati to Vasistha, Rohini to the Moon, Lopamudra to Agastya, Sukanya to sage Chyavana, Savitri to Satyavan, Srimati to Kapilamuni Madayanti to Soudasu, Kesini to king Sagara and Bhima's daughter Damayanti to her lord Nala, (the king of Nishadas)'.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 24,
+              "shloka": 12,
+              "shloka_text": "यथा शची महाभागा शक्रं समुपतिष्ठति। अरुन्धती वसिष्ठं च रोहिणी शशिनं यथा।।5.24.10।। लोपामुद्रा यथागस्त्यं सुकन्या च्यवनं यथा। सावित्री सत्यवन्तं च कपिलं श्रीमती यथा।।5.24.11।। सौदासं मदयन्तीव केशिनी सगरं यथा। नैषधं दमयन्तीव भैमी पतिमनुव्रता।।5.24.12।। तथाऽहमिक्ष्वाकुवरं रामं पतिमनुव्रता।",
+              "themes": [
+                "rajadharma",
+                "duty_vs_emotion",
+                "loyalty",
+                "love",
+                "marriage",
+                "truth",
+                "devotion",
+                "marital_devotion",
+                "ideal_wife"
+              ],
+              "translation": "महाभागा noble, शची Sachi, यथा like, शक्रम् Indra, समुपतिष्ठति is steadfadt, अरुन्धती Arundhati, वसिष्ठं च with Vasistha, रोहिणी Rohini, शशिनम् the moon, यथा likewise, लोपामुद्रा Lopamudra, अगस्त्यम् with Agastya, यथा similarly, सुकन्या Sukanya, च्यवनम् Chayavanam, यथा so also, सावित्री Savitri, सत्यवन्तम् with Satyavan, श्रीमती Srimati, कपिलम् with Kapilamuni, यथा so also, सौदासम् Soudasa, मदयन्तीव Madayanti, केशिनी Kesini, सगरं यथा with Sagara likewise, पतिम् as husband, नैषधम् Nala, king of Naishada, अनुव्रता devoted, भैमी Bhima's daughter, दमयन्तीव like Damayanti, तथा in the same way, अहम् I, इक्ष्वाकुवरम् foremost of Ikshvaku family, पतिम् a husband, रामम् Rama, अनुव्रता I am devoted."
+            }
+          },
+          {
+            "id": "sundara-kanda-24-10",
+            "score": 0.578670502,
+            "metadata": {
+              "characters": [
+                "rama",
+                "agastya",
+                "nala",
+                "indra"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "agastya_visit",
+                "bridge_construction",
+                "rama_coronation",
+                "exemplifying_loyalty"
+              ],
+              "explanation": "'I am steadfast (in love) to my husband Rama, the foremost of the Ikshvaku family in the same manner as noble Sachi to Indra, Arundhati to Vasistha, Rohini to the Moon, Lopamudra to Agastya, Sukanya to sage Chyavana, Savitri to Satyavan, Srimati to Kapilamuni Madayanti to Soudasu, Kesini to king Sagara and Bhima's daughter Damayanti to her lord Nala, (the king of Nishadas)'.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 24,
+              "shloka": 10,
+              "shloka_text": "यथा शची महाभागा शक्रं समुपतिष्ठति। अरुन्धती वसिष्ठं च रोहिणी शशिनं यथा।।5.24.10।। लोपामुद्रा यथागस्त्यं सुकन्या च्यवनं यथा। सावित्री सत्यवन्तं च कपिलं श्रीमती यथा।।5.24.11।। सौदासं मदयन्तीव केशिनी सगरं यथा। नैषधं दमयन्तीव भैमी पतिमनुव्रता।।5.24.12।। तथाऽहमिक्ष्वाकुवरं रामं पतिमनुव्रता।",
+              "themes": [
+                "rajadharma",
+                "duty_vs_emotion",
+                "loyalty",
+                "love",
+                "marriage",
+                "truth",
+                "devotion",
+                "marital_devotion",
+                "ideal_wife"
+              ],
+              "translation": "महाभागा noble, शची Sachi, यथा like, शक्रम् Indra, समुपतिष्ठति is steadfadt, अरुन्धती Arundhati, वसिष्ठं च with Vasistha, रोहिणी Rohini, शशिनम् the moon, यथा likewise, लोपामुद्रा Lopamudra, अगस्त्यम् with Agastya, यथा similarly, सुकन्या Sukanya, च्यवनम् Chayavanam, यथा so also, सावित्री Savitri, सत्यवन्तम् with Satyavan, श्रीमती Srimati, कपिलम् with Kapilamuni, यथा so also, सौदासम् Soudasa, मदयन्तीव Madayanti, केशिनी Kesini, सगरं यथा with Sagara likewise, पतिम् as husband, नैषधम् Nala, king of Naishada, अनुव्रता devoted, भैमी Bhima's daughter, दमयन्तीव like Damayanti, तथा in the same way, अहम् I, इक्ष्वाकुवरम् foremost of Ikshvaku family, पतिम् a husband, रामम् Rama, अनुव्रता I am devoted."
+            }
+          },
+          {
+            "id": "sundara-kanda-24-11",
+            "score": 0.57185936,
+            "metadata": {
+              "characters": [
+                "agastya",
+                "nala",
+                "indra"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "agastya_visit",
+                "bridge_construction",
+                "rama_coronation",
+                "exemplifying_loyalty"
+              ],
+              "explanation": "'I am steadfast (in love) to my husband Rama, the foremost of the Ikshvaku family in the same manner as noble Sachi to Indra, Arundhati to Vasistha, Rohini to the Moon, Lopamudra to Agastya, Sukanya to sage Chyavana, Savitri to Satyavan, Srimati to Kapilamuni Madayanti to Soudasu, Kesini to king Sagara and Bhima's daughter Damayanti to her lord Nala, (the king of Nishadas)'.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 24,
+              "shloka": 11,
+              "shloka_text": "यथा शची महाभागा शक्रं समुपतिष्ठति। अरुन्धती वसिष्ठं च रोहिणी शशिनं यथा।।5.24.10।। लोपामुद्रा यथागस्त्यं सुकन्या च्यवनं यथा। सावित्री सत्यवन्तं च कपिलं श्रीमती यथा।।5.24.11।। सौदासं मदयन्तीव केशिनी सगरं यथा। नैषधं दमयन्तीव भैमी पतिमनुव्रता।।5.24.12।। तथाऽहमिक्ष्वाकुवरं रामं पतिमनुव्रता।",
+              "themes": [
+                "rajadharma",
+                "duty_vs_emotion",
+                "loyalty",
+                "love",
+                "marriage",
+                "truth",
+                "devotion",
+                "marital_devotion",
+                "ideal_wife"
+              ],
+              "translation": "महाभागा noble, शची Sachi, यथा like, शक्रम् Indra, समुपतिष्ठति is steadfadt, अरुन्धती Arundhati, वसिष्ठं च with Vasistha, रोहिणी Rohini, शशिनम् the moon, यथा likewise, लोपामुद्रा Lopamudra, अगस्त्यम् with Agastya, यथा similarly, सुकन्या Sukanya, च्यवनम् Chayavanam, यथा so also, सावित्री Savitri, सत्यवन्तम् with Satyavan, श्रीमती Srimati, कपिलम् with Kapilamuni, यथा so also, सौदासम् Soudasa, मदयन्तीव Madayanti, केशिनी Kesini, सगरं यथा with Sagara likewise, पतिम् as husband, नैषधम् Nala, king of Naishada, अनुव्रता devoted, भैमी Bhima's daughter, दमयन्तीव like Damayanti, तथा in the same way, अहम् I, इक्ष्वाकुवरम् foremost of Ikshvaku family, पतिम् a husband, रामम् Rama, अनुव्रता I am devoted."
+            }
+          },
+          {
+            "id": "sundara-kanda-59-27",
+            "score": 0.56679821,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "indra"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation",
+                "sita_captivity"
+              ],
+              "explanation": "\"Chaste Sita of beautiful hips, an auspicious lady though bound is wholly devoted to Rama alone like Sachi, the wife of Indra who was bound by Nahusha.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 59,
+              "shloka": 27,
+              "shloka_text": "पतिव्रता च सुश्रोणी अवष्टब्धा च जानकी।।5.59.27।। अनुरक्ता हि वैदेही रामं सर्वात्मना शुभा। अनन्यचित्ता रामे च पौलोमीव पुरन्दरे।।5.59.28।।",
+              "themes": [
+                "rajadharma",
+                "loyalty",
+                "marriage",
+                "devotion",
+                "marital_devotion",
+                "chastity"
+              ],
+              "translation": "पतिव्रता chaste woman, सुश्रोणी who has beautiful hips, जानकी Janaki, अवष्टब्धा though bound, शुभा auspicious, वैदेही Vaidehi, सर्वात्मना all her self, रामम् Rama only, अनुरक्ता devoted, पुरन्दरे Indra, पौलोमीव like Sachi the wife of Indra, रामे only on Rama, अनन्यचित्ता always thinking."
+            }
+          },
+          {
+            "id": "yuddha-kanda-32-9",
+            "score": 0.566177428,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "dasharatha_grief",
+                "vali_death",
+                "kumbhakarna_death",
+                "ravana_death",
+                "sita_defends_rama"
+              ],
+              "explanation": "\"O Rama, you are faithful to your vows, a noble one! It is said that because of a woman's faults, the husband will die. It is not even so as you died in front of a virtuous woman of good conduct.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 32,
+              "shloka": 9,
+              "shloka_text": "प्रथमंमरणंनार्याभर्तुर्वैगुण्यमुच्यते । सुवृत्त: स्साधुवृत्तायास्सम्वृत्तस्त्वंममाग्रतः ।।6.32.9।।",
+              "themes": [
+                "loyalty",
+                "marriage",
+                "promise",
+                "death",
+                "faithfulness",
+                "virtue"
+              ],
+              "translation": "सुवृत्तः faithful to one's vows, प्रथमम् in front, भर्तुः husband 's, मरणम् death, नार्याः O noble one, वैगुण्यम् fault, उच्यते is said to be, त्वम् your, साधुवृत्तायाः of good conduct, मम I, अग्रतः in front, सम्वृत्तं virtuous one."
+            }
+          },
+          {
+            "id": "sundara-kanda-59-28",
+            "score": 0.565419197,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "indra"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation"
+              ],
+              "explanation": "\"Chaste Sita of beautiful hips, an auspicious lady though bound is wholly devoted to Rama alone like Sachi, the wife of Indra who was bound by Nahusha.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 59,
+              "shloka": 28,
+              "shloka_text": "पतिव्रता च सुश्रोणी अवष्टब्धा च जानकी।।5.59.27।। अनुरक्ता हि वैदेही रामं सर्वात्मना शुभा। अनन्यचित्ता रामे च पौलोमीव पुरन्दरे।।5.59.28।।",
+              "themes": [
+                "rajadharma",
+                "loyalty",
+                "marriage",
+                "devotion"
+              ],
+              "translation": "पतिव्रता chaste woman, सुश्रोणी who has beautiful hips, जानकी Janaki, अवष्टब्धा though bound, शुभा auspicious, वैदेही Vaidehi, सर्वात्मना all her self, रामम् Rama only, अनुरक्ता devoted, पुरन्दरे Indra, पौलोमीव like Sachi the wife of Indra, रामे only on Rama, अनन्यचित्ता always thinking."
+            }
+          },
+          {
+            "id": "sundara-kanda-58-25",
+            "score": 0.56401062,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "sita_abduction",
+                "vanara_search",
+                "sita_found",
+                "ravana_death"
+              ],
+              "explanation": "'His wife was abducted by the evilminded Ravana. By Rama's command I am going to meet her as messenger from Rama.'",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 58,
+              "shloka": 25,
+              "shloka_text": "तस्य सीता हृता भार्या रावणेन दुरात्मना। तस्या स्सङ्काशं दूतोऽहं गमिष्ये रामशासनात्।।5.58.25।।",
+              "themes": [
+                "marriage",
+                "reunion",
+                "loss",
+                "loyalty"
+              ],
+              "translation": "तस्य his, भार्या wife, सीता Sita, दुरात्मना evil minded, रावणेन by Ravana, हृता abducted, अहम् I, रामशासनात् by Rama's command, दूतः messenger, तस्याः her, सङ्काशम् to meet, गमिष्ये going."
+            }
+          },
+          {
+            "id": "sundara-kanda-27-40",
+            "score": 0.562536299,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "wife_protection"
+              ],
+              "explanation": "\"Rama will not approve of any one abusing or threatening his venerable, beloved wife, who had led a life of exile with him.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 27,
+              "shloka": 40,
+              "shloka_text": "प्रियां बहुमतां भार्यां वनवासमनुव्रताम्।।5.27.40।। भर्त्सितां तर्जितां वापि नानुमंस्यति राघवः।",
+              "themes": [
+                "filial_dharma",
+                "duty_vs_emotion",
+                "love",
+                "marriage",
+                "honor",
+                "exile",
+                "loyalty",
+                "respect",
+                "marital_devotion"
+              ],
+              "translation": "राघवः Rama, प्रियाम् his beloved, बहुमताम् highly respected one, वनवासम् exile in the forest, अनुव्रताम् followed, भार्याम् wife, भर्त्सिताम् abused, तर्जितां वापि or threatened, नानुमंस्यति he will not approve."
+            }
+          },
+          {
+            "id": "yuddha-kanda-114-124",
+            "score": 0.559206,
+            "metadata": {
+              "characters": [
+                "rama",
+                "vibhishana"
+              ],
+              "comments": "",
+              "events": [
+                "lanka_entry",
+                "lanka_burning",
+                "vibhishana_join",
+                "battle_begins",
+                "vibheeshana_approaches_rama"
+              ],
+              "explanation": "After the women entering the city, Vibheeshana came towards Rama and stood in a submissive manner.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 114,
+              "shloka": 124,
+              "shloka_text": "प्रविष्टासुसर्वासुराक्षसीषुविभीषणः । रामपार्श्वमुपागम्यतदातिष्ठद्विनीतवत् ।।6.114.124।।",
+              "themes": [
+                "war",
+                "submission",
+                "respect"
+              ],
+              "translation": "स्त्रीषु women also, पुरीम् Lanka, प्रविष्टासु on entering, सर्वासु all over, राक्षसीषु Rakshasa women, विभीषणः Vibhishana, तदा then, रामपार्श्वम् towards Rama, उपागम्य came towards, विनीतवत् submissive manner, अतिष्ठत् standing"
+            }
+          },
+          {
+            "id": "yuddha-kanda-48-5",
+            "score": 0.550539,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "vali_death",
+                "ravana_death",
+                "sita_reflecting_on_fate"
+              ],
+              "explanation": "\"Whoever has told me that I will be the wife of a man of great prowess, worshipped by husband, and all wise men are liars if Rama is killed.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 48,
+              "shloka": 5,
+              "shloka_text": "वीरपार्थिवपत्नीत्वांयेविदुर्भर्तृपूजिताम् । तेऽद्यसर्वेहतेरामेज्ञानिनोऽनृतवादिनः ।।6.48.5।।",
+              "themes": [
+                "marriage",
+                "death",
+                "devotion",
+                "destiny",
+                "betrayal"
+              ],
+              "translation": "वीरपार्थिवपत्नी wife of man of great prowess, त्वाम् you, भर्तृपूजिताम् worshipped by husband, ये whoever, विदुः know, ते they, सर्वे all, ज्ञानिनः wise men, अद्य predicted, रामे Rama, हते killed, अनृतवादिनः liars."
+            }
+          },
+          {
+            "id": "yuddha-kanda-18-37",
+            "score": 0.549440384,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "sugriva_alliance",
+                "vibheeshana_friendship"
+              ],
+              "explanation": "\"Rama therefore, let this highly sagacious Vibheeshana be with you like a friend in equal terms and enjoy.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 18,
+              "shloka": 37,
+              "shloka_text": "तस्मात् क्षिप्रंसहास्माभिस्तुल्योभवतराघव: । विभीषणोमहाप्राज्ञस्सखित्वंचाभ्युपैतुनः ।।6.18.37।।",
+              "themes": [
+                "friendship",
+                "trust"
+              ],
+              "translation": "राघव: Rama, तस्मात् therefore, महाप्राज्ञः highly sagacious one, विभीषणः Vibheeshana, क्षिप्रम् at once, अस्माभिस्सह: along with us, तुल्यः equal term, भवतु: be, नः our, सखित्वंच: friendship, अभ्युपैतु: you enjoy."
+            }
+          },
+          {
+            "id": "sundara-kanda-58-61",
+            "score": 0.545524597,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "rama_coronation",
+                "observing_sita"
+              ],
+              "explanation": "\"I remained there looking on that renowned wife of Rama from the Simsupa tree.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 58,
+              "shloka": 61,
+              "shloka_text": "तां दृष्ट्वा तादृशीं नारीं रामपत्नीं यशस्विनीम्। तत्रैव शिंशुपावृक्षे पश्यन्नहमवस्थितः।।5.58.61।।",
+              "themes": [
+                "rajadharma",
+                "marriage",
+                "search",
+                "admiration",
+                "longing"
+              ],
+              "translation": "अहम् I am, तादृशीम् seeing her, नारीम् woman, यशस्विनीम् renowned one, तां रामपत्नीम् that Rama's wife, दृष्ट्वा on seeing, तत्र there, शिंशुपावृक्षे एव from the Simsupa tree only, पश्यन् saw, अवस्थितः stayed."
+            }
+          },
+          {
+            "id": "aranya-kanda-47-35",
+            "score": 0.544690073,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [],
+              "explanation": "I am the faithful wife of the longarmed, broadchested  Rama,  a lion among men. His gait is the gait of an advancing, invincible lion.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Aranya Kanda",
+              "kanda_number": 3,
+              "sarga": 47,
+              "shloka": 35,
+              "shloka_text": "महाबाहुं महोरस्कं सिंहविक्रान्तगामिनम्। नृसिंहं सिंहसङ्काशमहं राममनुव्रता।।3.47.35।।",
+              "themes": [
+                "loyalty",
+                "marriage"
+              ],
+              "translation": "अहम् I am, महाबाहुम् longarmed hero, महोरस्कम् broadchested, सिंहविक्रान्तगामिनम् takes strides like an advancing lion, नृसिंहम् like a lion among men, सिंहसङ्काशम् invincible  like lion, रामम् Rama, अनुव्रता faithful wife."
+            }
+          },
+          {
+            "id": "bala-kanda-1-27",
+            "score": 0.543802261,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "janaka"
+              ],
+              "comments": "",
+              "events": [
+                "rama_birth",
+                "bow_breaking",
+                "sita_marriage",
+                "coronation_plan",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation",
+                "rama_forest_journey"
+              ],
+              "explanation": "Born in the race of Janaka and daughterinlaw of Dasaratha, Sita, beloved spouse of Rama is like  his vital breath always desired the wellbeing of Rama she followed him like Rohini, the Moon. Endowed with all virtues she is the foremost woman.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 1,
+              "shloka": 27,
+              "shloka_text": "रामस्य दयिता भार्या नित्यं प्राणसमा हिता ।।1.1.26।। जनकस्य कुले जाता देवमायेव निर्मिता । सर्वलक्षणसम्पन्ना नारीणामुत्तमा वधू: ।।1.1.27।। सीताप्यनुगता रामं शशिनं रोहिणी यथा ।",
+              "themes": [
+                "rajadharma",
+                "duty_vs_desire",
+                "duty_vs_emotion",
+                "love",
+                "marriage",
+                "wifely_devotion",
+                "loyalty",
+                "sacrifice"
+              ],
+              "translation": "रामस्य for Rama, दयिता beloved, भार्या wife, प्राणसमा equal to his vital breath, नित्यम् always, हिता doing fit and proper acts beneficial to him, जनकस्य king Janaka's, कुले in the  race, जाता born, निर्मिता created, देवमायेव like Maya Mohini, the assumed form of visnuhnu,  सर्वलक्षणसम्पन्ना endowed with all auspicious characteristics, नारीणाम् among women, उत्तमा the foremost, वधू: daughterinlaw (of Dasaratha), सीतापि Sita also, रोहिणी Rohini, (one of the several daughters of Daksha and consort of moon) शशिनम् यथा like moon, रामम् Rama, अनुगता followed."
+            }
+          },
+          {
+            "id": "sundara-kanda-65-17",
+            "score": 0.54282,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sugriva"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "sugriva_alliance",
+                "vali_duel",
+                "vanara_search",
+                "sita_found",
+                "battle_begins",
+                "rama_sugriva_alliance_revelation"
+              ],
+              "explanation": "\"When the divine lady talked to me, I presented all the facts about the alliance of Rama and Sugriva. On hearing me, virtuous Sita, whose devotion is fixed on you became delighted.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 65,
+              "shloka": 17,
+              "shloka_text": "तत स्सम्भाषिता देवी सर्वमर्थं च दर्शिता।।5.65.16।। रामसुग्रीवसख्यं च श्रुत्वा प्रीतिमुपागता। नियत स्समुदाचारो भक्तिश्चास्यास्तथा त्वयि।।5.65.17।।",
+              "themes": [
+                "love",
+                "war",
+                "devotion",
+                "divine",
+                "hope",
+                "loyalty"
+              ],
+              "translation": "ततः then, देवी divine lady, सम्भाषिता talked, सर्वम् all,अर्थम् all facts,दर्शिता presented to her, रामसुग्रीवसख्यं च about the alliance of Rama and Sugriva, श्रुत्वा on hearing, प्रीतिम् affectionately, उपागता became, अस्याः her, समुदाचारः virtuous, नियतः fixed, तथा so also, त्वयि towards, भक्तिश्च and devotion."
+            }
+          },
+          {
+            "id": "sundara-kanda-23-13",
+            "score": 0.5422135,
+            "metadata": {
+              "characters": [
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "sita_abduction",
+                "ravana_death",
+                "rama_coronation",
+                "ravana_prepared_to_accept_sita"
+              ],
+              "explanation": "'Even renouncing his highly respectable,  favourite wife among all, mighty Ravana is prepared to accept you.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 23,
+              "shloka": 13,
+              "shloka_text": "प्रियां बहुमतां भार्यां त्यक्त्वा राजा महाबलः।।5.23.13।। सर्वासां च महाभागां त्वामुपैष्यति रावणः।",
+              "themes": [
+                "rajadharma",
+                "filial_dharma",
+                "marriage",
+                "honor",
+                "sacrifice",
+                "desire"
+              ],
+              "translation": "राजा king, महाबलः mighty, रावणःRavana, प्रियाम् his dear, बहुमताम् favourrite lady, सर्वासाम् of all, महाभागाम् highly respectable, भार्याम् wife, त्यक्त्वा renouncing, त्वाम् you, उपैष्यति he is desirous"
+            }
+          },
+          {
+            "id": "yuddha-kanda-93-51",
+            "score": 0.541625,
+            "metadata": {
+              "characters": [],
+              "comments": "",
+              "events": [
+                "sita_abduction",
+                "vali_death",
+                "ravana_death",
+                "sita_rejects_ravana"
+              ],
+              "explanation": "'I who am devoted to my husband and this Ravana wanted me to revel with him. He has been entreated by me several times. Surely, he, having been rejected by me is dejected, filled with anger and infatuation, intends to kill me, is evident'.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 93,
+              "shloka": 51,
+              "shloka_text": "बहुशश्चोदयामासभर्तारंमामनुव्रताम् । भार्याभवरमस्वेतिप्रत्याख्यातोध्रुवंमया ।।6.93.50।। सोऽयंमामनुपस्थानेव्यक्तंनैराश्यमागतः । क्रोधमोहसमाविष्टोनिहन्तुंमांसमुद्यतः ।।6.93.51।।",
+              "themes": [
+                "loyalty",
+                "marriage",
+                "anger",
+                "death",
+                "devotion"
+              ],
+              "translation": "भर्तारम् husband, अनुव्रताम् devoted, माम् me, भवभार्या his consort, रमस्व revel, इति thus, बहुशः perhaps, चोदयामास entreated, मया by me, ध्रुवम् surely, प्रत्याख्यातः retaliated, सः him अयम् I, अनुपस्थाने having been rejected, माम् by me, व्यक्तम् said, नैराश्यम् dejected, आगतः has come, क्रोधमोहसमाविष्टः filled with anger and infatuation, निहन्तुम् to kill, माम् me, हन्तुम् kill, उद्यतः is evident"
+            }
+          },
+          {
+            "id": "sundara-kanda-24-9",
+            "score": 0.541461,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "rama_coronation",
+                "declaration_of_loyalty"
+              ],
+              "explanation": "'Dejected or dethroned from the kingdom, Rama is my lawful husband. I will ever remain devoted to Rama as Suvarchala, wife of the Sungod is to him.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 24,
+              "shloka": 9,
+              "shloka_text": "दीनो वा राज्यहीनो वा यो मे भर्ता स मे गुरुः। तं नित्यमनुरक्तास्मि यथा सूर्यं सुवर्चला।।5.24.9।।",
+              "themes": [
+                "rajadharma",
+                "loyalty",
+                "marriage",
+                "devotion",
+                "divine",
+                "marital_devotion",
+                "unconditional_love"
+              ],
+              "translation": "दीनो वा a dejected one, राज्यहीनो वा a king who lost his kingdom, यः he who, मे my, भर्ता husband, सः he, मे my, गुरुः lord, सुवर्चला Suvarchala, सूर्यं यथा just as to Sungod, नित्यम् ever, तम् him, अनुरक्ता devoted, अस्मि I am."
+            }
+          },
+          {
+            "id": "ayodhya-kanda-48-18",
+            "score": 0.5414,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "dasharatha_grief",
+                "vanara_search",
+                "lanka_entry",
+                "sita_found",
+                "rama_exile"
+              ],
+              "explanation": "We will serve Sita. You will serve Rama. Such were the words of the distressed women of the city to their husbands. (They continued).",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Ayodhya Kanda",
+              "kanda_number": 2,
+              "sarga": 48,
+              "shloka": 18,
+              "shloka_text": "वयं परिचरिष्यामः सीतां यूयं तु राघवम्। इति पौरस्त्रियो भर्तृ़न् दुखार्तास्तत्तदब्रुवन्।।2.48.18।।",
+              "themes": [
+                "duty_vs_emotion",
+                "marriage",
+                "service",
+                "solidarity"
+              ],
+              "translation": "वयम् we, सीताम् Sita, परिचरिष्यामः will serve, यूयं तु you also, राघवम् to Rama, इति like this, पौरस्त्रियः women of the city, दुःखार्ताः distressed in sorrow, भर्तृ़न् to their husbands तत्तत् that kind of words, अब्रुवन् spoke."
+            }
+          }
+        ],
+        "totalRetrieved": 20,
+        "expandedQuery": "Vibhishana's wife, Sarama, remains loyal to him throughout the Ramayana. After Vibhishana joins Rama's side, she is depicted as supportive, and their relationship symbolizes fidelity and devotion amidst the conflict."
+      },
+      "retrieval_latency_ms": 0,
+      "classification_result": {
+        "model": "gpt-4o",
+        "category": "Post-war events",
+        "category_id": 15,
+        "confidence": 1,
+        "template_selected": "T1"
+      },
+      "classification_latency_ms": 0,
+      "generation_result": {
+        "model": "gpt-4o",
+        "template_used": "T1",
+        "answer": "**Answer:** The provided citations do not explicitly mention the fate or events concerning Vibhishana's wife after the war. There is mention of Vibhishana coming to Rama in a submissive manner after the women had entered the city [Yuddha-Kanda 114.124]. However, specific details regarding his wife's situation are not provided in the retrieved verses.",
+        "citations_in_answer": [
+          "Yuddha-Kanda 114.124"
+        ]
+      },
+      "generation_latency_ms": 10701,
+      "total_latency_ms": 19720,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The provided citations do not explicitly mention the fate or events concerning Vibhishana's wife after the war. There is mention of Vibhishana coming to Rama in a submissive manner after the women had entered the city [Yuddha-Kanda 114.124]. However, specific details regarding his wife's situation are not provided in the retrieved verses.",
+        "textualBasis": {
+          "kanda": "Yuddha-Kanda",
+          "sarga": [
+            114
+          ],
+          "shloka": [
+            124
+          ],
+          "citations": [
+            "Yuddha-Kanda 114.124"
+          ]
+        },
+        "explanation": "The retrieved citations focus mainly on Vibhishana's actions and other characters without directly addressing Vibhishana's wife's experiences or fate. The text describes Vibheeshana's interaction with Rama, but does not provide details on his wife's circumstances.",
+        "whatTextStates": "The text details Vibheeshana approaching Rama in a submissive manner, but it does not mention his wife [Yuddha-Kanda 114.124].",
+        "traditionalInterpretations": "The traditional interpretations typically explore Vibheeshana's character or his actions during the events. However, without explicit mention, traditional interpretations would not address his wife's fate here based on the retrieved texts.",
+        "limitOfCertainty": "The text does not specify outcomes related to Vibhishana's wife.",
+        "outOfScopeNotice": "The question regarding Vibhishana's wife falls outside the scope of the retrieved citations, which do not provide explicit information on her post-war fate.",
+        "why": "The shlokas retrieved do not explicitly cover details about Vibhishana's wife. They focus more on characters like Rama, Sita, and Vibheeshana himself, making it clear that there are no shlokas directly addressing the question.",
+        "redirect": {
+          "introduction": "For detailed information on Vibhishana's wife, consult sections covering post-war events or family relation narratives in broader sources.",
+          "alternatives": [
+            "Explore other texts beyond current citations",
+            "Consult multiple Kandas for a broader context"
+          ]
+        },
+        "whatICanHelpWith": [
+          "Providing textual evidence from the Valmiki Ramayana",
+          "Answering questions based on specific shlokas",
+          "Clarifying textual meanings with citations"
+        ]
+      }
+    },
+    "claude_trace": {
+      "trace_id": "0089e010-47fa-4fd9-b435-db637015b02e",
+      "timestamp": "2025-12-21T15:36:17.950Z",
+      "user_query": "What happens to Vibhishana's wife?",
+      "expanded_query": "Vibhishana's wife, Sarama, remains loyal to him throughout the Ramayana. After Vibhishana joins Rama's side, she is depicted as supportive and steadfast, symbolizing fidelity and devotion.",
+      "query_expansion_latency_ms": 0,
+      "retrieval_results": {
+        "shlokas": [
+          {
+            "id": "aranya-kanda-47-34",
+            "score": 0.613220274,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage"
+              ],
+              "explanation": "I am the loyal wife of venerable Rama who is endowed with all excellences, a refuge to all like  a spreading banyan tree, and a votary of truth.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Aranya Kanda",
+              "kanda_number": 3,
+              "sarga": 47,
+              "shloka": 34,
+              "shloka_text": "सर्वलक्षणसम्पन्नं न्यग्रोधपरिमण्डलम्। सत्यसन्धं महाभागमहं राममनुव्रता।।3.47.34।।",
+              "themes": [
+                "loyalty",
+                "marriage",
+                "truth",
+                "devotion"
+              ],
+              "translation": "अहम् I am, सर्वलक्षणसम्पन्नम् endowed with all excellences, न्यग्रोधपरिमण्डलम् a refuge like a spreading banyan tree, सत्यसन्धम् devoted to truth, महाभागम् venerable, रामम् Rama, अनुव्रता a loyal wife."
+            }
+          },
+          {
+            "id": "sundara-kanda-24-12",
+            "score": 0.589111328,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "agastya_visit",
+                "bridge_construction",
+                "rama_coronation",
+                "exemplifying_loyalty"
+              ],
+              "explanation": "'I am steadfast (in love) to my husband Rama, the foremost of the Ikshvaku family in the same manner as noble Sachi to Indra, Arundhati to Vasistha, Rohini to the Moon, Lopamudra to Agastya, Sukanya to sage Chyavana, Savitri to Satyavan, Srimati to Kapilamuni Madayanti to Soudasu, Kesini to king Sagara and Bhima's daughter Damayanti to her lord Nala, (the king of Nishadas)'.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 24,
+              "shloka": 12,
+              "shloka_text": "यथा शची महाभागा शक्रं समुपतिष्ठति। अरुन्धती वसिष्ठं च रोहिणी शशिनं यथा।।5.24.10।। लोपामुद्रा यथागस्त्यं सुकन्या च्यवनं यथा। सावित्री सत्यवन्तं च कपिलं श्रीमती यथा।।5.24.11।। सौदासं मदयन्तीव केशिनी सगरं यथा। नैषधं दमयन्तीव भैमी पतिमनुव्रता।।5.24.12।। तथाऽहमिक्ष्वाकुवरं रामं पतिमनुव्रता।",
+              "themes": [
+                "rajadharma",
+                "duty_vs_emotion",
+                "loyalty",
+                "love",
+                "marriage",
+                "truth",
+                "devotion",
+                "marital_devotion",
+                "ideal_wife"
+              ],
+              "translation": "महाभागा noble, शची Sachi, यथा like, शक्रम् Indra, समुपतिष्ठति is steadfadt, अरुन्धती Arundhati, वसिष्ठं च with Vasistha, रोहिणी Rohini, शशिनम् the moon, यथा likewise, लोपामुद्रा Lopamudra, अगस्त्यम् with Agastya, यथा similarly, सुकन्या Sukanya, च्यवनम् Chayavanam, यथा so also, सावित्री Savitri, सत्यवन्तम् with Satyavan, श्रीमती Srimati, कपिलम् with Kapilamuni, यथा so also, सौदासम् Soudasa, मदयन्तीव Madayanti, केशिनी Kesini, सगरं यथा with Sagara likewise, पतिम् as husband, नैषधम् Nala, king of Naishada, अनुव्रता devoted, भैमी Bhima's daughter, दमयन्तीव like Damayanti, तथा in the same way, अहम् I, इक्ष्वाकुवरम् foremost of Ikshvaku family, पतिम् a husband, रामम् Rama, अनुव्रता I am devoted."
+            }
+          },
+          {
+            "id": "sundara-kanda-24-10",
+            "score": 0.581645,
+            "metadata": {
+              "characters": [
+                "rama",
+                "agastya",
+                "nala",
+                "indra"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "agastya_visit",
+                "bridge_construction",
+                "rama_coronation",
+                "exemplifying_loyalty"
+              ],
+              "explanation": "'I am steadfast (in love) to my husband Rama, the foremost of the Ikshvaku family in the same manner as noble Sachi to Indra, Arundhati to Vasistha, Rohini to the Moon, Lopamudra to Agastya, Sukanya to sage Chyavana, Savitri to Satyavan, Srimati to Kapilamuni Madayanti to Soudasu, Kesini to king Sagara and Bhima's daughter Damayanti to her lord Nala, (the king of Nishadas)'.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 24,
+              "shloka": 10,
+              "shloka_text": "यथा शची महाभागा शक्रं समुपतिष्ठति। अरुन्धती वसिष्ठं च रोहिणी शशिनं यथा।।5.24.10।। लोपामुद्रा यथागस्त्यं सुकन्या च्यवनं यथा। सावित्री सत्यवन्तं च कपिलं श्रीमती यथा।।5.24.11।। सौदासं मदयन्तीव केशिनी सगरं यथा। नैषधं दमयन्तीव भैमी पतिमनुव्रता।।5.24.12।। तथाऽहमिक्ष्वाकुवरं रामं पतिमनुव्रता।",
+              "themes": [
+                "rajadharma",
+                "duty_vs_emotion",
+                "loyalty",
+                "love",
+                "marriage",
+                "truth",
+                "devotion",
+                "marital_devotion",
+                "ideal_wife"
+              ],
+              "translation": "महाभागा noble, शची Sachi, यथा like, शक्रम् Indra, समुपतिष्ठति is steadfadt, अरुन्धती Arundhati, वसिष्ठं च with Vasistha, रोहिणी Rohini, शशिनम् the moon, यथा likewise, लोपामुद्रा Lopamudra, अगस्त्यम् with Agastya, यथा similarly, सुकन्या Sukanya, च्यवनम् Chayavanam, यथा so also, सावित्री Savitri, सत्यवन्तम् with Satyavan, श्रीमती Srimati, कपिलम् with Kapilamuni, यथा so also, सौदासम् Soudasa, मदयन्तीव Madayanti, केशिनी Kesini, सगरं यथा with Sagara likewise, पतिम् as husband, नैषधम् Nala, king of Naishada, अनुव्रता devoted, भैमी Bhima's daughter, दमयन्तीव like Damayanti, तथा in the same way, अहम् I, इक्ष्वाकुवरम् foremost of Ikshvaku family, पतिम् a husband, रामम् Rama, अनुव्रता I am devoted."
+            }
+          },
+          {
+            "id": "sundara-kanda-24-11",
+            "score": 0.574932098,
+            "metadata": {
+              "characters": [
+                "agastya",
+                "nala",
+                "indra"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "agastya_visit",
+                "bridge_construction",
+                "rama_coronation",
+                "exemplifying_loyalty"
+              ],
+              "explanation": "'I am steadfast (in love) to my husband Rama, the foremost of the Ikshvaku family in the same manner as noble Sachi to Indra, Arundhati to Vasistha, Rohini to the Moon, Lopamudra to Agastya, Sukanya to sage Chyavana, Savitri to Satyavan, Srimati to Kapilamuni Madayanti to Soudasu, Kesini to king Sagara and Bhima's daughter Damayanti to her lord Nala, (the king of Nishadas)'.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 24,
+              "shloka": 11,
+              "shloka_text": "यथा शची महाभागा शक्रं समुपतिष्ठति। अरुन्धती वसिष्ठं च रोहिणी शशिनं यथा।।5.24.10।। लोपामुद्रा यथागस्त्यं सुकन्या च्यवनं यथा। सावित्री सत्यवन्तं च कपिलं श्रीमती यथा।।5.24.11।। सौदासं मदयन्तीव केशिनी सगरं यथा। नैषधं दमयन्तीव भैमी पतिमनुव्रता।।5.24.12।। तथाऽहमिक्ष्वाकुवरं रामं पतिमनुव्रता।",
+              "themes": [
+                "rajadharma",
+                "duty_vs_emotion",
+                "loyalty",
+                "love",
+                "marriage",
+                "truth",
+                "devotion",
+                "marital_devotion",
+                "ideal_wife"
+              ],
+              "translation": "महाभागा noble, शची Sachi, यथा like, शक्रम् Indra, समुपतिष्ठति is steadfadt, अरुन्धती Arundhati, वसिष्ठं च with Vasistha, रोहिणी Rohini, शशिनम् the moon, यथा likewise, लोपामुद्रा Lopamudra, अगस्त्यम् with Agastya, यथा similarly, सुकन्या Sukanya, च्यवनम् Chayavanam, यथा so also, सावित्री Savitri, सत्यवन्तम् with Satyavan, श्रीमती Srimati, कपिलम् with Kapilamuni, यथा so also, सौदासम् Soudasa, मदयन्तीव Madayanti, केशिनी Kesini, सगरं यथा with Sagara likewise, पतिम् as husband, नैषधम् Nala, king of Naishada, अनुव्रता devoted, भैमी Bhima's daughter, दमयन्तीव like Damayanti, तथा in the same way, अहम् I, इक्ष्वाकुवरम् foremost of Ikshvaku family, पतिम् a husband, रामम् Rama, अनुव्रता I am devoted."
+            }
+          },
+          {
+            "id": "yuddha-kanda-32-9",
+            "score": 0.572826445,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "dasharatha_grief",
+                "vali_death",
+                "kumbhakarna_death",
+                "ravana_death",
+                "sita_defends_rama"
+              ],
+              "explanation": "\"O Rama, you are faithful to your vows, a noble one! It is said that because of a woman's faults, the husband will die. It is not even so as you died in front of a virtuous woman of good conduct.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 32,
+              "shloka": 9,
+              "shloka_text": "प्रथमंमरणंनार्याभर्तुर्वैगुण्यमुच्यते । सुवृत्त: स्साधुवृत्तायास्सम्वृत्तस्त्वंममाग्रतः ।।6.32.9।।",
+              "themes": [
+                "loyalty",
+                "marriage",
+                "promise",
+                "death",
+                "faithfulness",
+                "virtue"
+              ],
+              "translation": "सुवृत्तः faithful to one's vows, प्रथमम् in front, भर्तुः husband 's, मरणम् death, नार्याः O noble one, वैगुण्यम् fault, उच्यते is said to be, त्वम् your, साधुवृत्तायाः of good conduct, मम I, अग्रतः in front, सम्वृत्तं virtuous one."
+            }
+          },
+          {
+            "id": "sundara-kanda-59-27",
+            "score": 0.568614,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "indra"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation",
+                "sita_captivity"
+              ],
+              "explanation": "\"Chaste Sita of beautiful hips, an auspicious lady though bound is wholly devoted to Rama alone like Sachi, the wife of Indra who was bound by Nahusha.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 59,
+              "shloka": 27,
+              "shloka_text": "पतिव्रता च सुश्रोणी अवष्टब्धा च जानकी।।5.59.27।। अनुरक्ता हि वैदेही रामं सर्वात्मना शुभा। अनन्यचित्ता रामे च पौलोमीव पुरन्दरे।।5.59.28।।",
+              "themes": [
+                "rajadharma",
+                "loyalty",
+                "marriage",
+                "devotion",
+                "marital_devotion",
+                "chastity"
+              ],
+              "translation": "पतिव्रता chaste woman, सुश्रोणी who has beautiful hips, जानकी Janaki, अवष्टब्धा though bound, शुभा auspicious, वैदेही Vaidehi, सर्वात्मना all her self, रामम् Rama only, अनुरक्ता devoted, पुरन्दरे Indra, पौलोमीव like Sachi the wife of Indra, रामे only on Rama, अनन्यचित्ता always thinking."
+            }
+          },
+          {
+            "id": "sundara-kanda-59-28",
+            "score": 0.56810379,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "indra"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation"
+              ],
+              "explanation": "\"Chaste Sita of beautiful hips, an auspicious lady though bound is wholly devoted to Rama alone like Sachi, the wife of Indra who was bound by Nahusha.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 59,
+              "shloka": 28,
+              "shloka_text": "पतिव्रता च सुश्रोणी अवष्टब्धा च जानकी।।5.59.27।। अनुरक्ता हि वैदेही रामं सर्वात्मना शुभा। अनन्यचित्ता रामे च पौलोमीव पुरन्दरे।।5.59.28।।",
+              "themes": [
+                "rajadharma",
+                "loyalty",
+                "marriage",
+                "devotion"
+              ],
+              "translation": "पतिव्रता chaste woman, सुश्रोणी who has beautiful hips, जानकी Janaki, अवष्टब्धा though bound, शुभा auspicious, वैदेही Vaidehi, सर्वात्मना all her self, रामम् Rama only, अनुरक्ता devoted, पुरन्दरे Indra, पौलोमीव like Sachi the wife of Indra, रामे only on Rama, अनन्यचित्ता always thinking."
+            }
+          },
+          {
+            "id": "sundara-kanda-58-25",
+            "score": 0.563984871,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "sita_abduction",
+                "vanara_search",
+                "sita_found",
+                "ravana_death"
+              ],
+              "explanation": "'His wife was abducted by the evilminded Ravana. By Rama's command I am going to meet her as messenger from Rama.'",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 58,
+              "shloka": 25,
+              "shloka_text": "तस्य सीता हृता भार्या रावणेन दुरात्मना। तस्या स्सङ्काशं दूतोऽहं गमिष्ये रामशासनात्।।5.58.25।।",
+              "themes": [
+                "marriage",
+                "reunion",
+                "loss",
+                "loyalty"
+              ],
+              "translation": "तस्य his, भार्या wife, सीता Sita, दुरात्मना evil minded, रावणेन by Ravana, हृता abducted, अहम् I, रामशासनात् by Rama's command, दूतः messenger, तस्याः her, सङ्काशम् to meet, गमिष्ये going."
+            }
+          },
+          {
+            "id": "sundara-kanda-27-40",
+            "score": 0.562875807,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "exile_announcement",
+                "wife_protection"
+              ],
+              "explanation": "\"Rama will not approve of any one abusing or threatening his venerable, beloved wife, who had led a life of exile with him.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 27,
+              "shloka": 40,
+              "shloka_text": "प्रियां बहुमतां भार्यां वनवासमनुव्रताम्।।5.27.40।। भर्त्सितां तर्जितां वापि नानुमंस्यति राघवः।",
+              "themes": [
+                "filial_dharma",
+                "duty_vs_emotion",
+                "love",
+                "marriage",
+                "honor",
+                "exile",
+                "loyalty",
+                "respect",
+                "marital_devotion"
+              ],
+              "translation": "राघवः Rama, प्रियाम् his beloved, बहुमताम् highly respected one, वनवासम् exile in the forest, अनुव्रताम् followed, भार्याम् wife, भर्त्सिताम् abused, तर्जितां वापि or threatened, नानुमंस्यति he will not approve."
+            }
+          },
+          {
+            "id": "yuddha-kanda-114-124",
+            "score": 0.557362556,
+            "metadata": {
+              "characters": [
+                "rama",
+                "vibhishana"
+              ],
+              "comments": "",
+              "events": [
+                "lanka_entry",
+                "lanka_burning",
+                "vibhishana_join",
+                "battle_begins",
+                "vibheeshana_approaches_rama"
+              ],
+              "explanation": "After the women entering the city, Vibheeshana came towards Rama and stood in a submissive manner.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 114,
+              "shloka": 124,
+              "shloka_text": "प्रविष्टासुसर्वासुराक्षसीषुविभीषणः । रामपार्श्वमुपागम्यतदातिष्ठद्विनीतवत् ।।6.114.124।।",
+              "themes": [
+                "war",
+                "submission",
+                "respect"
+              ],
+              "translation": "स्त्रीषु women also, पुरीम् Lanka, प्रविष्टासु on entering, सर्वासु all over, राक्षसीषु Rakshasa women, विभीषणः Vibhishana, तदा then, रामपार्श्वम् towards Rama, उपागम्य came towards, विनीतवत् submissive manner, अतिष्ठत् standing"
+            }
+          },
+          {
+            "id": "yuddha-kanda-48-5",
+            "score": 0.553882599,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "vali_death",
+                "ravana_death",
+                "sita_reflecting_on_fate"
+              ],
+              "explanation": "\"Whoever has told me that I will be the wife of a man of great prowess, worshipped by husband, and all wise men are liars if Rama is killed.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 48,
+              "shloka": 5,
+              "shloka_text": "वीरपार्थिवपत्नीत्वांयेविदुर्भर्तृपूजिताम् । तेऽद्यसर्वेहतेरामेज्ञानिनोऽनृतवादिनः ।।6.48.5।।",
+              "themes": [
+                "marriage",
+                "death",
+                "devotion",
+                "destiny",
+                "betrayal"
+              ],
+              "translation": "वीरपार्थिवपत्नी wife of man of great prowess, त्वाम् you, भर्तृपूजिताम् worshipped by husband, ये whoever, विदुः know, ते they, सर्वे all, ज्ञानिनः wise men, अद्य predicted, रामे Rama, हते killed, अनृतवादिनः liars."
+            }
+          },
+          {
+            "id": "aranya-kanda-47-35",
+            "score": 0.551394403,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [],
+              "explanation": "I am the faithful wife of the longarmed, broadchested  Rama,  a lion among men. His gait is the gait of an advancing, invincible lion.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Aranya Kanda",
+              "kanda_number": 3,
+              "sarga": 47,
+              "shloka": 35,
+              "shloka_text": "महाबाहुं महोरस्कं सिंहविक्रान्तगामिनम्। नृसिंहं सिंहसङ्काशमहं राममनुव्रता।।3.47.35।।",
+              "themes": [
+                "loyalty",
+                "marriage"
+              ],
+              "translation": "अहम् I am, महाबाहुम् longarmed hero, महोरस्कम् broadchested, सिंहविक्रान्तगामिनम् takes strides like an advancing lion, नृसिंहम् like a lion among men, सिंहसङ्काशम् invincible  like lion, रामम् Rama, अनुव्रता faithful wife."
+            }
+          },
+          {
+            "id": "sundara-kanda-58-61",
+            "score": 0.550729752,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "rama_coronation",
+                "observing_sita"
+              ],
+              "explanation": "\"I remained there looking on that renowned wife of Rama from the Simsupa tree.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 58,
+              "shloka": 61,
+              "shloka_text": "तां दृष्ट्वा तादृशीं नारीं रामपत्नीं यशस्विनीम्। तत्रैव शिंशुपावृक्षे पश्यन्नहमवस्थितः।।5.58.61।।",
+              "themes": [
+                "rajadharma",
+                "marriage",
+                "search",
+                "admiration",
+                "longing"
+              ],
+              "translation": "अहम् I am, तादृशीम् seeing her, नारीम् woman, यशस्विनीम् renowned one, तां रामपत्नीम् that Rama's wife, दृष्ट्वा on seeing, तत्र there, शिंशुपावृक्षे एव from the Simsupa tree only, पश्यन् saw, अवस्थितः stayed."
+            }
+          },
+          {
+            "id": "yuddha-kanda-18-37",
+            "score": 0.546823502,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "sugriva_alliance",
+                "vibheeshana_friendship"
+              ],
+              "explanation": "\"Rama therefore, let this highly sagacious Vibheeshana be with you like a friend in equal terms and enjoy.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 18,
+              "shloka": 37,
+              "shloka_text": "तस्मात् क्षिप्रंसहास्माभिस्तुल्योभवतराघव: । विभीषणोमहाप्राज्ञस्सखित्वंचाभ्युपैतुनः ।।6.18.37।।",
+              "themes": [
+                "friendship",
+                "trust"
+              ],
+              "translation": "राघव: Rama, तस्मात् therefore, महाप्राज्ञः highly sagacious one, विभीषणः Vibheeshana, क्षिप्रम् at once, अस्माभिस्सह: along with us, तुल्यः equal term, भवतु: be, नः our, सखित्वंच: friendship, अभ्युपैतु: you enjoy."
+            }
+          },
+          {
+            "id": "sundara-kanda-23-13",
+            "score": 0.545455039,
+            "metadata": {
+              "characters": [
+                "ravana"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "sita_abduction",
+                "ravana_death",
+                "rama_coronation",
+                "ravana_prepared_to_accept_sita"
+              ],
+              "explanation": "'Even renouncing his highly respectable,  favourite wife among all, mighty Ravana is prepared to accept you.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 23,
+              "shloka": 13,
+              "shloka_text": "प्रियां बहुमतां भार्यां त्यक्त्वा राजा महाबलः।।5.23.13।। सर्वासां च महाभागां त्वामुपैष्यति रावणः।",
+              "themes": [
+                "rajadharma",
+                "filial_dharma",
+                "marriage",
+                "honor",
+                "sacrifice",
+                "desire"
+              ],
+              "translation": "राजा king, महाबलः mighty, रावणःRavana, प्रियाम् his dear, बहुमताम् favourrite lady, सर्वासाम् of all, महाभागाम् highly respectable, भार्याम् wife, त्यक्त्वा renouncing, त्वाम् you, उपैष्यति he is desirous"
+            }
+          },
+          {
+            "id": "yuddha-kanda-93-51",
+            "score": 0.544992447,
+            "metadata": {
+              "characters": [],
+              "comments": "",
+              "events": [
+                "sita_abduction",
+                "vali_death",
+                "ravana_death",
+                "sita_rejects_ravana"
+              ],
+              "explanation": "'I who am devoted to my husband and this Ravana wanted me to revel with him. He has been entreated by me several times. Surely, he, having been rejected by me is dejected, filled with anger and infatuation, intends to kill me, is evident'.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 93,
+              "shloka": 51,
+              "shloka_text": "बहुशश्चोदयामासभर्तारंमामनुव्रताम् । भार्याभवरमस्वेतिप्रत्याख्यातोध्रुवंमया ।।6.93.50।। सोऽयंमामनुपस्थानेव्यक्तंनैराश्यमागतः । क्रोधमोहसमाविष्टोनिहन्तुंमांसमुद्यतः ।।6.93.51।।",
+              "themes": [
+                "loyalty",
+                "marriage",
+                "anger",
+                "death",
+                "devotion"
+              ],
+              "translation": "भर्तारम् husband, अनुव्रताम् devoted, माम् me, भवभार्या his consort, रमस्व revel, इति thus, बहुशः perhaps, चोदयामास entreated, मया by me, ध्रुवम् surely, प्रत्याख्यातः retaliated, सः him अयम् I, अनुपस्थाने having been rejected, माम् by me, व्यक्तम् said, नैराश्यम् dejected, आगतः has come, क्रोधमोहसमाविष्टः filled with anger and infatuation, निहन्तुम् to kill, माम् me, हन्तुम् kill, उद्यतः is evident"
+            }
+          },
+          {
+            "id": "bala-kanda-1-27",
+            "score": 0.544771194,
+            "metadata": {
+              "characters": [
+                "rama",
+                "sita",
+                "janaka"
+              ],
+              "comments": "",
+              "events": [
+                "rama_birth",
+                "bow_breaking",
+                "sita_marriage",
+                "coronation_plan",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation",
+                "rama_forest_journey"
+              ],
+              "explanation": "Born in the race of Janaka and daughterinlaw of Dasaratha, Sita, beloved spouse of Rama is like  his vital breath always desired the wellbeing of Rama she followed him like Rohini, the Moon. Endowed with all virtues she is the foremost woman.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 1,
+              "shloka": 27,
+              "shloka_text": "रामस्य दयिता भार्या नित्यं प्राणसमा हिता ।।1.1.26।। जनकस्य कुले जाता देवमायेव निर्मिता । सर्वलक्षणसम्पन्ना नारीणामुत्तमा वधू: ।।1.1.27।। सीताप्यनुगता रामं शशिनं रोहिणी यथा ।",
+              "themes": [
+                "rajadharma",
+                "duty_vs_desire",
+                "duty_vs_emotion",
+                "love",
+                "marriage",
+                "wifely_devotion",
+                "loyalty",
+                "sacrifice"
+              ],
+              "translation": "रामस्य for Rama, दयिता beloved, भार्या wife, प्राणसमा equal to his vital breath, नित्यम् always, हिता doing fit and proper acts beneficial to him, जनकस्य king Janaka's, कुले in the  race, जाता born, निर्मिता created, देवमायेव like Maya Mohini, the assumed form of visnuhnu,  सर्वलक्षणसम्पन्ना endowed with all auspicious characteristics, नारीणाम् among women, उत्तमा the foremost, वधू: daughterinlaw (of Dasaratha), सीतापि Sita also, रोहिणी Rohini, (one of the several daughters of Daksha and consort of moon) शशिनम् यथा like moon, रामम् Rama, अनुगता followed."
+            }
+          },
+          {
+            "id": "kishkindha-kanda-24-27",
+            "score": 0.54468441,
+            "metadata": {
+              "characters": [
+                "rama",
+                "tara"
+              ],
+              "comments": "",
+              "events": [
+                "bow_breaking",
+                "agastya_visit",
+                "jatayu_fight",
+                "vali_death",
+                "wife_separation"
+              ],
+              "explanation": "While Tara was clinging to her husband and struggling, and was being removed from there, she saw effulgent Rama holding bow and arrows glittering like the Sun.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Kishkindha Kanda",
+              "kanda_number": 4,
+              "sarga": 24,
+              "shloka": 27,
+              "shloka_text": "सा विस्फुरन्ती परिरभ्यमाणा भर्तुस्सकाशादपनीयमाना। ददर्श रामं शरचापपाणिं स्वतेजसा सूर्यमिव ज्वलन्तम्4.24.27।।",
+              "themes": [
+                "marriage",
+                "victory",
+                "loss",
+                "heroic_presence"
+              ],
+              "translation": "परिरभ्यमाणा while she was clinging, भर्तुः husband's, सकाशात् from his presence, अपनीयमाना while she was taken away, सा she, विस्फुरन्ती struggling, शरचापपाणिम् wielding bow and arrows, स्वतेजसा by his effulgence, सूर्यमिव like the Sun, ज्वलन्तम् glowing, रामम् Rama, ददर्श saw."
+            }
+          },
+          {
+            "id": "sundara-kanda-24-9",
+            "score": 0.544247627,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "rama_coronation",
+                "declaration_of_loyalty"
+              ],
+              "explanation": "'Dejected or dethroned from the kingdom, Rama is my lawful husband. I will ever remain devoted to Rama as Suvarchala, wife of the Sungod is to him.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 24,
+              "shloka": 9,
+              "shloka_text": "दीनो वा राज्यहीनो वा यो मे भर्ता स मे गुरुः। तं नित्यमनुरक्तास्मि यथा सूर्यं सुवर्चला।।5.24.9।।",
+              "themes": [
+                "rajadharma",
+                "loyalty",
+                "marriage",
+                "devotion",
+                "divine",
+                "marital_devotion",
+                "unconditional_love"
+              ],
+              "translation": "दीनो वा a dejected one, राज्यहीनो वा a king who lost his kingdom, यः he who, मे my, भर्ता husband, सः he, मे my, गुरुः lord, सुवर्चला Suvarchala, सूर्यं यथा just as to Sungod, नित्यम् ever, तम् him, अनुरक्ता devoted, अस्मि I am."
+            }
+          },
+          {
+            "id": "bala-kanda-73-28",
+            "score": 0.543524802,
+            "metadata": {
+              "characters": [
+                "sita"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "vanara_search",
+                "sita_found",
+                "rama_coronation",
+                "marriage_blessing"
+              ],
+              "explanation": "By being a devoted wife this highly fortunate Sita would always follow you like a shadow\". Thus spoken, he sprinkled the water sanctified with mantras (on them).",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 73,
+              "shloka": 28,
+              "shloka_text": "पतिव्रता महाभागा छायेवानुगता सदा। इत्युक्त्वा प्राक्षिपद्राजा मन्त्रपूतं जलं तदा।।1.73.28।।",
+              "themes": [
+                "rajadharma",
+                "loyalty",
+                "marriage",
+                "devotion",
+                "marital_loyalty",
+                "wifely_duty"
+              ],
+              "translation": "महाभागा highly fortunate, पतिव्रता devoted, faithful and loyal wife, सदा always, छाया इव like shadow, अनुगता follows, इति thus, उक्त्वा having spoken, राजा king, तदा then,मन्त्रपूतम् sanctified with mantra, जलम् water, प्राक्षिपत् released."
+            }
+          }
+        ],
+        "totalRetrieved": 20,
+        "expandedQuery": "Vibhishana's wife, Sarama, remains loyal to him throughout the Ramayana. After Vibhishana joins Rama's side, she is depicted as supportive and steadfast, symbolizing fidelity and devotion."
+      },
+      "retrieval_latency_ms": 0,
+      "classification_result": {
+        "model": "gpt-4o",
+        "category": "Post-war events",
+        "category_id": 15,
+        "confidence": 1,
+        "template_selected": "T1"
+      },
+      "classification_latency_ms": 0,
+      "generation_result": {
+        "model": "claude-3-haiku-20240307",
+        "template_used": "T1",
+        "answer": "**Answer:** The text does not explicitly state what happens to Vibhishana's wife. The available citations do not mention Vibhishana's wife or provide any information about her fate after the war. [Yuddha Kanda 32.9] mentions Vibhishana coming to Rama in a submissive manner, but there is no mention of his wife. [Yuddha Kanda 18.37] describes Rama accepting Vibhishana as an ally, but again, there is no information about Vibhishana's wife. The provided citations do not contain any details about what happened to Vibhishana's wife.",
+        "citations_in_answer": [
+          "Yuddha Kanda 32.9",
+          "Yuddha Kanda 18.37"
+        ]
+      },
+      "generation_latency_ms": 4165,
+      "total_latency_ms": 11381,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The text does not explicitly state what happens to Vibhishana's wife. The available citations do not mention Vibhishana's wife or provide any information about her fate after the war. [Yuddha Kanda 32.9] mentions Vibhishana coming to Rama in a submissive manner, but there is no mention of his wife. [Yuddha Kanda 18.37] describes Rama accepting Vibhishana as an ally, but again, there is no information about Vibhishana's wife. The provided citations do not contain any details about what happened to Vibhishana's wife.",
+        "textualBasis": {
+          "kanda": "Yuddha Kanda",
+          "sarga": [
+            32,
+            18
+          ],
+          "shloka": [
+            9,
+            37
+          ],
+          "citations": [
+            "Yuddha Kanda 32.9",
+            "Yuddha Kanda 18.37"
+          ]
+        },
+        "explanation": "The available citations do not mention anything about Vibhishana's wife or her fate after the war against Ravana. The citations only discuss Vibhishana himself submitting to Rama and being accepted as an ally, but there is no information provided about his wife. Without any explicit mentions of Vibhishana's wife in the text, I cannot make any claims about what happened to her."
+      }
+    }
+  }
+]

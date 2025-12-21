@@ -1,0 +1,1259 @@
+[
+  {
+    "index": 1,
+    "user_query": "Why don't you talk about the squirrel on the bridge?",
+    "classification": "Minor episodes",
+    "expected_template": "T1",
+    "openai": {
+      "status": "OK",
+      "template_used": "T1",
+      "answer": "**Answer:** The provided citations do not explicitly mention a squirrel participating in the building of the bridge in Valmiki's Ramayana. The text describes that the monkey army, under the command of Sugriva and others, constructed a bridge to cross the ocean to Lanka [Yuddha Kanda 22.62]. Nala, a Vanara, is credited with constructing the bridge [Yuddha Kanda 129.49]. The shlokas specifically highlight the efforts of these monkeys in building the bridge [Yuddha Kanda 22.63].",
+      "whatTextStates": "",
+      "citations": [
+        "[Yuddha Kanda 22.63]",
+        "[Yuddha Kanda 22.62]",
+        "[Yuddha Kanda 129.49]"
+      ],
+      "citation_count": 3,
+      "has_inline_citations": true,
+      "answer_citations": 3,
+      "wts_citations": 0,
+      "textual_basis_citations": [
+        "Yuddha Kanda 22.62",
+        "Yuddha Kanda 129.49",
+        "Yuddha Kanda 22.63"
+      ],
+      "retrieved_count": 15,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The provided citations do not explicitly mention a squirrel participating in the building of the bridge in Valmiki's Ramayana. The text describes that the monkey army, under the command of Sugriva and others, constructed a bridge to cross the ocean to Lanka [Yuddha Kanda 22.62]. Nala, a Vanara, is credited with constructing the bridge [Yuddha Kanda 129.49]. The shlokas specifically highlight the efforts of these monkeys in building the bridge [Yuddha Kanda 22.63].",
+        "textualBasis": {
+          "kanda": "Yuddha Kanda",
+          "sarga": [
+            22,
+            129
+          ],
+          "shloka": [
+            62,
+            63,
+            49
+          ],
+          "citations": [
+            "Yuddha Kanda 22.62",
+            "Yuddha Kanda 129.49",
+            "Yuddha Kanda 22.63"
+          ]
+        },
+        "explanation": "The text focuses on the efforts of the Vanara army led by Sugriva in building the bridge, with Nala being specifically noted for his role [Yuddha Kanda 129.49]. There are no explicit references to a squirrel within these citations, as the shlokas primarily discuss the Vanaras working to complete the task [Yuddha Kanda 22.62-63]."
+      }
+    },
+    "claude": {
+      "status": "OK",
+      "template_used": "T1",
+      "answer": "**Answer:** The provided citations do not mention the episode of the squirrel contributing to the building of the bridge. The text specifically details the role of Nala in the construction of the bridge over the ocean, aided by the Vanaras, as advised by the lord of the ocean, Samudra [Yuddha Kanda 22.62-63]. The citations describe the great effort by the Vanaras in gathering materials for the bridge [Yuddha Kanda 22.62].",
+      "whatTextStates": "",
+      "citations": [
+        "[Yuddha Kanda 22.62-63]",
+        "[Yuddha Kanda 22.62]"
+      ],
+      "citation_count": 2,
+      "has_inline_citations": true,
+      "answer_citations": 2,
+      "wts_citations": 0,
+      "textual_basis_citations": [
+        "Yuddha Kanda 22.62",
+        "Yuddha Kanda 22.63"
+      ],
+      "retrieved_count": 15,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The provided citations do not mention the episode of the squirrel contributing to the building of the bridge. The text specifically details the role of Nala in the construction of the bridge over the ocean, aided by the Vanaras, as advised by the lord of the ocean, Samudra [Yuddha Kanda 22.62-63]. The citations describe the great effort by the Vanaras in gathering materials for the bridge [Yuddha Kanda 22.62].",
+        "textualBasis": {
+          "kanda": "Yuddha Kanda",
+          "sarga": [
+            22,
+            22
+          ],
+          "shloka": [
+            62,
+            63
+          ],
+          "citations": [
+            "Yuddha Kanda 22.62",
+            "Yuddha Kanda 22.63"
+          ]
+        },
+        "explanation": "The citations focus on the large-scale construction efforts led by the Vanaras, specifically mentioning Nala's key role in the bridge's construction, as instructed by Samudra. There is a detailed description of how the Vanaras collected logs and reeds to build the bridge, but no mention of a squirrel [Yuddha Kanda 22.62-63]."
+      }
+    },
+    "openai_trace": {
+      "trace_id": "76f5fba2-bf24-4d69-bd32-4810c4ccc11f",
+      "timestamp": "2025-12-21T14:16:16.474Z",
+      "user_query": "Why don't you talk about the squirrel on the bridge?",
+      "expanded_query": "The squirrel refers to the small creature that assisted Lord Rama's army by carrying small stones to build the bridge to Lanka. This act symbolizes devotion and contribution, regardless of size.",
+      "query_expansion_latency_ms": 0,
+      "retrieval_results": {
+        "shlokas": [
+          {
+            "id": "kishkindha-kanda-37-18",
+            "score": 0.491193771,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "exile_announcement",
+                "ocean_crossing",
+                "bridge_construction",
+                "monkey_recruitment",
+                "search_mission"
+              ],
+              "explanation": "The messenger monkeys drove in all those living on the sea shore, mountains, forests as well as banks of lakes in order to serve the cause of Rama.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Kishkindha Kanda",
+              "kanda_number": 4,
+              "sarga": 37,
+              "shloka": 18,
+              "shloka_text": "ते समुद्रेषु गिरिषु वनेषु च सरस्सु च। वानरा वानरान्सर्वान्रामहेतोरचोदयन्।।4.37.18।।",
+              "themes": [
+                "exile",
+                "service",
+                "dedication"
+              ],
+              "translation": "ते वानराः set his foot those monkeys, समुद्रेषु on the sea shore, गिरिषु on the mountains, वनेषु च in the forests, सरस्सु च  on the banks of lakes, सर्वान् all over, वानरान् monkeys, रामहेतोः  to serve Rama's cause, अचोदयन् driven."
+            }
+          },
+          {
+            "id": "bala-kanda-1-80",
+            "score": 0.466309547,
+            "metadata": {
+              "characters": [
+                "rama",
+                "nala"
+              ],
+              "comments": "",
+              "events": [
+                "rama_army",
+                "bridge_construction"
+              ],
+              "explanation": "Samudra, lord of rivers, (afraid of Rama's anger) and having appeared in his own form, and on his advice got a bridge built with the help of Nala.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 1,
+              "shloka": 80,
+              "shloka_text": "दर्शयामास चात्मानं समुद्रस्सरितां पति: । समुद्रवचनाच्चैव नलं सेतुमकारयत् ।।1.1.80।।",
+              "themes": [
+                "anger",
+                "cooperation",
+                "problem_solving"
+              ],
+              "translation": "सरितां पति: lord of rivers, समुद्र: Samudra, आत्मानम् in his own form, दर्शयामास appeared (to Rama), समुद्रवचनात् च एव on the advice of Samudra , नलम् through Nala, सेतुम् a bridge, अकारयत् got it built."
+            }
+          },
+          {
+            "id": "sundara-kanda-43-20",
+            "score": 0.466035843,
+            "metadata": {
+              "characters": [
+                "sugriva"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "sugriva_alliance",
+                "vali_duel",
+                "vanara_search",
+                "rama_army",
+                "rama_coronation",
+                "monkey_recruitment"
+              ],
+              "explanation": "\"Thousands of huge and mighty monkeys, equal to me, loyal to king Sugriva, are coming under the orders and have been recruited from the entire earth. They  are the best among monkeys.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 43,
+              "shloka": 20,
+              "shloka_text": "मादृशानां सहस्राणि विसृष्टानि महात्मनाम्।।5.43.20।। बलिनां वानरेन्द्राणां सुग्रीववशवर्तिनाम्। अटन्ति वसुधां कृत्स्नां वयमन्ये च वानराः।।5.43.21।।",
+              "themes": [
+                "rajadharma",
+                "loyalty",
+                "strength"
+              ],
+              "translation": "महात्मनाम् huge, बलिनाम् of mighty, सुग्रीववशवर्तिनाम् of those loyal to Sugriva, मादृशानाम् of people like me, वानरेन्द्राणाम् of the best of  vanara leaders, सहस्राणि in thousands, विसृष्टानि are despatched, वयम् we, अन्ये others, वानराश्च and vanaras, कृत्स्नाम् entire, वसुधाम् the earth, अटन्ति we are wandering."
+            }
+          },
+          {
+            "id": "sundara-kanda-43-21",
+            "score": 0.465958595,
+            "metadata": {
+              "characters": [
+                "sugriva"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "sugriva_alliance",
+                "vali_duel",
+                "vanara_search",
+                "rama_army",
+                "rama_coronation",
+                "monkey_recruitment"
+              ],
+              "explanation": "\"Thousands of huge and mighty monkeys, equal to me, loyal to king Sugriva, are coming under the orders and have been recruited from the entire earth. They  are the best among monkeys.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 43,
+              "shloka": 21,
+              "shloka_text": "मादृशानां सहस्राणि विसृष्टानि महात्मनाम्।।5.43.20।। बलिनां वानरेन्द्राणां सुग्रीववशवर्तिनाम्। अटन्ति वसुधां कृत्स्नां वयमन्ये च वानराः।।5.43.21।।",
+              "themes": [
+                "rajadharma",
+                "loyalty",
+                "strength"
+              ],
+              "translation": "महात्मनाम् huge, बलिनाम् of mighty, सुग्रीववशवर्तिनाम् of those loyal to Sugriva, मादृशानाम् of people like me, वानरेन्द्राणाम् of the best of  vanara leaders, सहस्राणि in thousands, विसृष्टानि are despatched, वयम् we, अन्ये others, वानराश्च and vanaras, कृत्स्नाम् entire, वसुधाम् the earth, अटन्ति we are wandering."
+            }
+          },
+          {
+            "id": "kishkindha-kanda-41-1",
+            "score": 0.464389801,
+            "metadata": {
+              "characters": [
+                "sugriva"
+              ],
+              "comments": "Sugriva sends another troop including Hanuaman, Nila, Angada and Jambavan in the southern direction",
+              "events": [
+                "coronation_plan",
+                "sugriva_alliance",
+                "vali_duel",
+                "vanara_search",
+                "rama_army",
+                "dispatch_monkey_army"
+              ],
+              "explanation": "Sugriva then sends in the southern direction another vanara army known for their excellence.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Kishkindha Kanda",
+              "kanda_number": 4,
+              "sarga": 41,
+              "shloka": 1,
+              "shloka_text": "ततः प्रस्थाप्य सुग्रीवस्तन्महद्वानरं बलम्। दक्षिणां प्रेषयामास वानरानभिलक्षितान्।।4.41.1।।",
+              "themes": [
+                "leadership",
+                "strategy"
+              ],
+              "translation": "सुग्रीवः Sugriva, महत् great, तत् that, वानरं बलम् monkey army, प्रस्थाप्य after despatching, ततः then, अभिलक्षितान् those recognised for excellence, वानरान् monkeys, दक्षिणाम् southern direction, प्रेषयामास sent forth."
+            }
+          },
+          {
+            "id": "yuddha-kanda-29-5",
+            "score": 0.464359283,
+            "metadata": {
+              "characters": [
+                "lakshmana",
+                "hanuman",
+                "ravana",
+                "sugriva",
+                "vali",
+                "angada",
+                "jambavan",
+                "nala",
+                "nila",
+                "indra"
+              ],
+              "comments": "Ravana rebukes the spies, Suka and Saarana from the Rakshasa army for praising Vanara army and sends Saardula, another spy who also reports about the strength of Vanara army.",
+              "events": [
+                "bow_breaking",
+                "coronation_plan",
+                "sita_abduction",
+                "meet_hanuman",
+                "sugriva_alliance",
+                "vali_duel",
+                "vali_death",
+                "vanara_search",
+                "ocean_crossing",
+                "rama_army",
+                "bridge_construction",
+                "ravana_death",
+                "rama_coronation",
+                "army_inspection"
+              ],
+              "explanation": "There after Ravana having heard the words spoken by Suka about the army of Vanara heroes, seeing Lakshmana of extraordinary valour, the right shoulder of Rama standing close by Rama his own brother Vibheeshana close by  the king of Vanaras, Sugriva of fierce valour and Angada the son of Vali (the son of Indra who wields thunderbolt)  and valiant Hanuman Jambavan who is difficult to conquer Sushena, Nila, Kumuda, bull among the leaping animals Nala likewise Gaja, Gavaksha, Sarabha, Mainda and Dwivida got a little broken hearted and mixed with fury started to rebuke both the heroes Suka and Saarana.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 29,
+              "shloka": 5,
+              "shloka_text": "शुकेनतुसमाख्यातान्दृष्ट्वासहरियूथपान् । समीपस्थंचरामस्यभ्रातरंस्वंविभीषणम् ।।6.29.1।। लक्ष्मणंचमहावीर्यंभुजंरामस्यदक्षिणं । सर्ववानरराजंचसुग्रीवंभीमविक्रमम् ।।6.29.2।। अङ्गदंचापिबलिनंवज्रहस्तात्मजात्मजम् । हनूमन्तंचविक्रान्तंजाम्बवन्तंचदुर्जयम् ।।6.29.3।। सुषेणंकुमुदंनीलंनलंचप्लवगर्षभम् । गजंगवाक्षंशरभंमैन्दंचद्विविदंतथा ।।6.29.4।। किञ्चिदाविग्नहृदयोजातक्रोधश्चरावणः । भर्त्सयामासतौवीरौकथान्तेशुकसारणौ ।।6.29.5।।",
+              "themes": [
+                "dharma",
+                "rajadharma",
+                "filial_dharma",
+                "brotherhood",
+                "justice",
+                "anger",
+                "valor",
+                "leadership"
+              ],
+              "translation": "सःरावण that Ravana, शुकेन by Suka, समाख्यातान् spoken that way, हरियूथपान् about the army of monkeys, रामस्य Rama's, दक्षिणंभुजम् right shoulder, महावीर्यम् extraordinary valour, लक्ष्मणंच at Lakshmana, रामस्य Rama's, समीपस्थम् close by, भ्रातरम् the brother, विभीषणम् Vibheeshana, सर्ववानरराजम् King of all Vanaras, भीमविक्रमम् one of fierce valour, सुग्रीवंच Sugriva, बलिनम् the strong, वज्रहस्तात्मजात्मजम् the son of Vali (son of Indra who wields a thunderbolt ), अङ्गदंचापि and also Angada, विक्रान्तम् the valiant, हनूमन्तम् Hanuman, दुर्जयम् difficult to conquer, जाम्बवन्तम् Jambavan, सुषेणम् Sushena, कुमुदम् Kumuda, नीलम् Nila, प्लवगर्षभम् bull among leaping ones, नलंच that Nala, गजम् Gaja, गवाक्षम् at Gavaksha, शरभम् Sarabha, मैन्दम् Mainda, तथा likewise, द्विविदम् Dwiv i da, दृष्टवा seeing, किञ्चित् a little, आविग्नहृदय broken hearted, जातक्रोधश्च with fury, कथांते aforesaid, वीरौ heroes, तौ both, शुकसारणौ Suka and Saarana, भर्त्सयामास started to rebuke."
+            }
+          },
+          {
+            "id": "yuddha-kanda-22-62",
+            "score": 0.463713646,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "jatayu_fight",
+                "vanara_search",
+                "rama_army",
+                "bridge_construction",
+                "rama_command"
+              ],
+              "explanation": "Others held sticks and some held logs of wood and reeds following the command of Rama, hundreds of Vanaras who looked like clouds and mountain tops built the bridge.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 22,
+              "shloka": 62,
+              "shloka_text": "दण्डानन्येप्रगृह्णन्तिविचिन्वन्तितथापरे ।।6.22.62।। वानरैश्शतशस्तत्ररामस्याज्ञापुरस्सराः । मेघाभैःपर्वताग्रैश्चतृणैःकाष्ठैर्बबन्धिरे ।।6.22.63।।",
+              "themes": [
+                "search",
+                "victory",
+                "obedience",
+                "collective_action"
+              ],
+              "translation": "अन्ये others, दण्डान् sticks, प्रगृह्णन्ति holding, तथा in the same way, अपरे some others, विचिन्वन्ति following, रामस्य of Rama, आज्ञापुरस्सरैः the command in front, शतशः in hundreds, मेघाभिः like clouds, पर्वताग्रैश्च like top of mountains, वानरैः with Vanaras, तृणैः reeds, काष्ठैश्च logs of wood, बबन्धिरे built."
+            }
+          },
+          {
+            "id": "yuddha-kanda-22-63",
+            "score": 0.462839127,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "jatayu_fight",
+                "vanara_search",
+                "rama_army",
+                "bridge_construction",
+                "rama_command"
+              ],
+              "explanation": "Others held sticks and some held logs of wood and reeds following the command of Rama, hundreds of Vanaras who looked like clouds and mountain tops built the bridge.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 22,
+              "shloka": 63,
+              "shloka_text": "दण्डानन्येप्रगृह्णन्तिविचिन्वन्तितथापरे ।।6.22.62।। वानरैश्शतशस्तत्ररामस्याज्ञापुरस्सराः । मेघाभैःपर्वताग्रैश्चतृणैःकाष्ठैर्बबन्धिरे ।।6.22.63।।",
+              "themes": [
+                "search",
+                "victory",
+                "obedience",
+                "collective_action"
+              ],
+              "translation": "अन्ये others, दण्डान् sticks, प्रगृह्णन्ति holding, तथा in the same way, अपरे some others, विचिन्वन्ति following, रामस्य of Rama, आज्ञापुरस्सरैः the command in front, शतशः in hundreds, मेघाभिः like clouds, पर्वताग्रैश्च like top of mountains, वानरैः with Vanaras, तृणैः reeds, काष्ठैश्च logs of wood, बबन्धिरे built."
+            }
+          },
+          {
+            "id": "yuddha-kanda-59-145",
+            "score": 0.462553978,
+            "metadata": {
+              "characters": [
+                "rama",
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "vali_death",
+                "lanka_entry",
+                "lanka_burning",
+                "battle_begins",
+                "rama_coronation",
+                "rama_lakshmana_aid_monkeys"
+              ],
+              "explanation": "After the king of prowlers, the enemy of Danavas and Devas entered Lanka, Rama and Lakshmana also drew out the arrows from monkeys in the forefront of the battlefield and went.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 59,
+              "shloka": 145,
+              "shloka_text": "प्रविष्टेरजनीचरेन्द्रेमहाबलेदाववदेवशत्रौ । हरीन् विशल्यान् सहलक्ष्मणेनचकाररामःपरमाहवाग्रे ।।6.59.145।।",
+              "themes": [
+                "rajadharma",
+                "brotherhood",
+                "war",
+                "support"
+              ],
+              "translation": "महाबले endowed with great prowess, दानवदेवशत्रौ enemy of Danavas and Devas, तस्मिन् his, रजनीचरेन्द्रे king night prowlers, प्रविष्टे entering, रामः Rama, परमाहवाग्रे in the forefront, लक्ष्मणेनसह with Lakshmana, हरीन् monkeys ', विशल्यान् removed, चकार went."
+            }
+          },
+          {
+            "id": "yuddha-kanda-129-49",
+            "score": 0.46208477,
+            "metadata": {
+              "characters": [
+                "nala"
+              ],
+              "comments": "",
+              "events": [
+                "ocean_crossing",
+                "rama_army",
+                "bridge_construction"
+              ],
+              "explanation": "\"Then Nala constructed the bridge, and the monkey heroes crossed the bridge.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 129,
+              "shloka": 49,
+              "shloka_text": "ततस्समुद्रमासाद्यनलंसेतुमकारयत् ।।6.129.49।। अतरत्कपिवीराणां वाहिनी तेन सेतुना ।",
+              "themes": [
+                "engineering",
+                "teamwork"
+              ],
+              "translation": "ततः then, समुद्रम् ocean, आसाद्य reached, नलम् Nala, सेतुम् bridge, अकारयत् constructed, कपिवीराणाम् monkey heroes, वाहिनी troops, तेनसेतुना by that bridge, अतरत् crossed"
+            }
+          },
+          {
+            "id": "yuddha-kanda-22-45",
+            "score": 0.46137619,
+            "metadata": {
+              "characters": [],
+              "comments": "",
+              "events": [
+                "vanara_search",
+                "rama_army",
+                "bridge_construction",
+                "nala_builds_bridge"
+              ],
+              "explanation": "\"This monkey is full of zeal. He will build a bridge over me, and I will bear it. In that way he is like his father.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 22,
+              "shloka": 45,
+              "shloka_text": "एषसेतुंमहोत्साहःकरोतुमयिवानरः । तमहंधारयिष्यामियथाह्येषपितातथा ।।6.22.45।।",
+              "themes": [
+                "filial_dharma",
+                "zeal",
+                "creativity"
+              ],
+              "translation": "महोत्साहः full of zeal, एषःवानरः this Vanara, मयि over me, सेतुम् bridge, करोतु will built, तम् him, अहम् I, धारयिष्यामि will bear, पिता father, यथा that way, एषः he is, तथा like him."
+            }
+          },
+          {
+            "id": "sundara-kanda-35-55",
+            "score": 0.461292297,
+            "metadata": {
+              "characters": [
+                "sugriva"
+              ],
+              "comments": "",
+              "events": [
+                "jatayu_fight",
+                "sugriva_alliance",
+                "vali_duel",
+                "vanara_search",
+                "ocean_crossing",
+                "rama_army",
+                "bridge_construction",
+                "search_mission"
+              ],
+              "explanation": "\"Following Sugriva's orders, we, the monkeys, since then are moving about searching the entire earth eager to find you or to carry out Sugriva's orders.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 35,
+              "shloka": 55,
+              "shloka_text": "ततस्ते मार्गमाणा वै सुग्रीववचनातुराः। चरन्ति वसुधां कृत्स्नां वयमन्ये च वानराः।।5.35.55।।",
+              "themes": [
+                "search",
+                "victory",
+                "dedication",
+                "perseverance"
+              ],
+              "translation": "ततः then, ते they, वयम् we, अन्ये others, वानराः च and the vanaras, सुग्रीववचनातुराः eager to carry out Sugriva's order, मार्गमाणाः while searching, कृत्स्नाम् entire, वसुधाम् the earth, चरन्ति we are moving about."
+            }
+          },
+          {
+            "id": "sundara-kanda-46-10",
+            "score": 0.460887909,
+            "metadata": {
+              "characters": [
+                "sugriva",
+                "vali",
+                "jambavan",
+                "nila"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "sugriva_alliance",
+                "vali_duel",
+                "vali_death",
+                "rama_army",
+                "ravana_comparing_monkeys"
+              ],
+              "explanation": "\"Earlier I have seen monkeys of immense prowess, like Vali and Sugriva as well as Jambavan, the bear. Also I have seen the army general, Nila, Dvivida and others. They do not have such tremendous splendour or movement valour, intellect and strength and energy. They did not have such ability to change form at their will.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 46,
+              "shloka": 10,
+              "shloka_text": "दृष्टा हि हरयः पूर्वं मया विपुलविक्रमाः। वाली च सहसुग्रीवो जाम्बवांश्च महाबलः।।5.46.10।। नीलस्सेनापतिश्चैव ये चान्ये द्विविदादयः। नैवं तेषां गतिर्भीमा न तेजो न पराक्रमः।।5.46.11।। न मतिर्न बलोत्साहौ न रूपपरिकल्पनम्।",
+              "themes": [
+                "strength",
+                "comparison"
+              ],
+              "translation": "पूर्वम् earlier, मया by me, विपुलविक्रमाः of immense prowess, हरयः monkeys, सहसुग्रीवः with Sugriva, वाली च and Vali, महाबलः mighty, जाम्बवांश्च and Jambavan, सेनापतिः army chief, नीलः Nila, द्विविदादयः Dvivida and others, अन्ये च and others, ये those, दृष्टाः हि have seen, तेषाम् for them, गतिः movement, एवम् that way, भीमा tremendous, न not, तेजः splendour, पराक्रमः valour, न not, मतिः intellect, न not, बलोत्साहौ strength and energy, रूपपरिकल्पनम् ability to change form at will."
+            }
+          },
+          {
+            "id": "yuddha-kanda-29-3",
+            "score": 0.460868865,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "Ravana rebukes the spies, Suka and Saarana from the Rakshasa army for praising Vanara army and sends Saardula, another spy who also reports about the strength of Vanara army.",
+              "events": [
+                "bow_breaking",
+                "coronation_plan",
+                "sita_abduction",
+                "meet_hanuman",
+                "sugriva_alliance",
+                "vali_duel",
+                "vali_death",
+                "vanara_search",
+                "ocean_crossing",
+                "rama_army",
+                "bridge_construction",
+                "ravana_death",
+                "rama_coronation",
+                "army_inspection"
+              ],
+              "explanation": "There after Ravana having heard the words spoken by Suka about the army of Vanara heroes, seeing Lakshmana of extraordinary valour, the right shoulder of Rama standing close by Rama his own brother Vibheeshana close by  the king of Vanaras, Sugriva of fierce valour and Angada the son of Vali (the son of Indra who wields thunderbolt)  and valiant Hanuman Jambavan who is difficult to conquer Sushena, Nila, Kumuda, bull among the leaping animals Nala likewise Gaja, Gavaksha, Sarabha, Mainda and Dwivida got a little broken hearted and mixed with fury started to rebuke both the heroes Suka and Saarana.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 29,
+              "shloka": 3,
+              "shloka_text": "शुकेनतुसमाख्यातान्दृष्ट्वासहरियूथपान् । समीपस्थंचरामस्यभ्रातरंस्वंविभीषणम् ।।6.29.1।। लक्ष्मणंचमहावीर्यंभुजंरामस्यदक्षिणं । सर्ववानरराजंचसुग्रीवंभीमविक्रमम् ।।6.29.2।। अङ्गदंचापिबलिनंवज्रहस्तात्मजात्मजम् । हनूमन्तंचविक्रान्तंजाम्बवन्तंचदुर्जयम् ।।6.29.3।। सुषेणंकुमुदंनीलंनलंचप्लवगर्षभम् । गजंगवाक्षंशरभंमैन्दंचद्विविदंतथा ।।6.29.4।। किञ्चिदाविग्नहृदयोजातक्रोधश्चरावणः । भर्त्सयामासतौवीरौकथान्तेशुकसारणौ ।।6.29.5।।",
+              "themes": [
+                "dharma",
+                "rajadharma",
+                "filial_dharma",
+                "brotherhood",
+                "justice",
+                "anger",
+                "valor",
+                "leadership"
+              ],
+              "translation": "सःरावण that Ravana, शुकेन by Suka, समाख्यातान् spoken that way, हरियूथपान् about the army of monkeys, रामस्य Rama's, दक्षिणंभुजम् right shoulder, महावीर्यम् extraordinary valour, लक्ष्मणंच at Lakshmana, रामस्य Rama's, समीपस्थम् close by, भ्रातरम् the brother, विभीषणम् Vibheeshana, सर्ववानरराजम् King of all Vanaras, भीमविक्रमम् one of fierce valour, सुग्रीवंच Sugriva, बलिनम् the strong, वज्रहस्तात्मजात्मजम् the son of Vali (son of Indra who wields a thunderbolt ), अङ्गदंचापि and also Angada, विक्रान्तम् the valiant, हनूमन्तम् Hanuman, दुर्जयम् difficult to conquer, जाम्बवन्तम् Jambavan, सुषेणम् Sushena, कुमुदम् Kumuda, नीलम् Nila, प्लवगर्षभम् bull among leaping ones, नलंच that Nala, गजम् Gaja, गवाक्षम् at Gavaksha, शरभम् Sarabha, मैन्दम् Mainda, तथा likewise, द्विविदम् Dwiv i da, दृष्टवा seeing, किञ्चित् a little, आविग्नहृदय broken hearted, जातक्रोधश्च with fury, कथांते aforesaid, वीरौ heroes, तौ both, शुकसारणौ Suka and Saarana, भर्त्सयामास started to rebuke."
+            }
+          },
+          {
+            "id": "sundara-kanda-46-11",
+            "score": 0.460823059,
+            "metadata": {
+              "characters": [
+                "sugriva",
+                "vali",
+                "jambavan",
+                "nila"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "sugriva_alliance",
+                "vali_duel",
+                "vali_death",
+                "rama_army",
+                "ravana_comparing_monkeys"
+              ],
+              "explanation": "\"Earlier I have seen monkeys of immense prowess, like Vali and Sugriva as well as Jambavan, the bear. Also I have seen the army general, Nila, Dvivida and others. They do not have such tremendous splendour or movement valour, intellect and strength and energy. They did not have such ability to change form at their will.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 46,
+              "shloka": 11,
+              "shloka_text": "दृष्टा हि हरयः पूर्वं मया विपुलविक्रमाः। वाली च सहसुग्रीवो जाम्बवांश्च महाबलः।।5.46.10।। नीलस्सेनापतिश्चैव ये चान्ये द्विविदादयः। नैवं तेषां गतिर्भीमा न तेजो न पराक्रमः।।5.46.11।। न मतिर्न बलोत्साहौ न रूपपरिकल्पनम्।",
+              "themes": [
+                "strength",
+                "comparison"
+              ],
+              "translation": "पूर्वम् earlier, मया by me, विपुलविक्रमाः of immense prowess, हरयः monkeys, सहसुग्रीवः with Sugriva, वाली च and Vali, महाबलः mighty, जाम्बवांश्च and Jambavan, सेनापतिः army chief, नीलः Nila, द्विविदादयः Dvivida and others, अन्ये च and others, ये those, दृष्टाः हि have seen, तेषाम् for them, गतिः movement, एवम् that way, भीमा tremendous, न not, तेजः splendour, पराक्रमः valour, न not, मतिः intellect, न not, बलोत्साहौ strength and energy, रूपपरिकल्पनम् ability to change form at will."
+            }
+          }
+        ],
+        "totalRetrieved": 15,
+        "expandedQuery": "The squirrel refers to the small creature that assisted Lord Rama's army by carrying small stones to build the bridge to Lanka. This act symbolizes devotion and contribution, regardless of size."
+      },
+      "retrieval_latency_ms": 0,
+      "classification_result": {
+        "model": "gpt-4o",
+        "category": "Minor episodes",
+        "category_id": 7,
+        "confidence": 1,
+        "template_selected": "T1"
+      },
+      "classification_latency_ms": 0,
+      "generation_result": {
+        "model": "gpt-4o",
+        "template_used": "T1",
+        "answer": "**Answer:** The provided citations do not explicitly mention a squirrel participating in the building of the bridge in Valmiki's Ramayana. The text describes that the monkey army, under the command of Sugriva and others, constructed a bridge to cross the ocean to Lanka [Yuddha Kanda 22.62]. Nala, a Vanara, is credited with constructing the bridge [Yuddha Kanda 129.49]. The shlokas specifically highlight the efforts of these monkeys in building the bridge [Yuddha Kanda 22.63].",
+        "citations_in_answer": [
+          "Yuddha Kanda 22.62",
+          "Yuddha Kanda 129.49",
+          "Yuddha Kanda 22.63"
+        ]
+      },
+      "generation_latency_ms": 6254,
+      "total_latency_ms": 13423,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The provided citations do not explicitly mention a squirrel participating in the building of the bridge in Valmiki's Ramayana. The text describes that the monkey army, under the command of Sugriva and others, constructed a bridge to cross the ocean to Lanka [Yuddha Kanda 22.62]. Nala, a Vanara, is credited with constructing the bridge [Yuddha Kanda 129.49]. The shlokas specifically highlight the efforts of these monkeys in building the bridge [Yuddha Kanda 22.63].",
+        "textualBasis": {
+          "kanda": "Yuddha Kanda",
+          "sarga": [
+            22,
+            129
+          ],
+          "shloka": [
+            62,
+            63,
+            49
+          ],
+          "citations": [
+            "Yuddha Kanda 22.62",
+            "Yuddha Kanda 129.49",
+            "Yuddha Kanda 22.63"
+          ]
+        },
+        "explanation": "The text focuses on the efforts of the Vanara army led by Sugriva in building the bridge, with Nala being specifically noted for his role [Yuddha Kanda 129.49]. There are no explicit references to a squirrel within these citations, as the shlokas primarily discuss the Vanaras working to complete the task [Yuddha Kanda 22.62-63]."
+      }
+    },
+    "claude_trace": {
+      "trace_id": "0aee2bf3-6121-497d-99a9-ef5f3c0fbef8",
+      "timestamp": "2025-12-21T14:16:37.594Z",
+      "user_query": "Why don't you talk about the squirrel on the bridge?",
+      "expanded_query": "The squirrel refers to the small creature that assisted Lord Rama's army by carrying small stones to build the bridge to Lanka. This act symbolizes devotion and contribution, regardless of size.",
+      "query_expansion_latency_ms": 0,
+      "retrieval_results": {
+        "shlokas": [
+          {
+            "id": "kishkindha-kanda-37-18",
+            "score": 0.491193771,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "exile_announcement",
+                "ocean_crossing",
+                "bridge_construction",
+                "monkey_recruitment",
+                "search_mission"
+              ],
+              "explanation": "The messenger monkeys drove in all those living on the sea shore, mountains, forests as well as banks of lakes in order to serve the cause of Rama.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Kishkindha Kanda",
+              "kanda_number": 4,
+              "sarga": 37,
+              "shloka": 18,
+              "shloka_text": "ते समुद्रेषु गिरिषु वनेषु च सरस्सु च। वानरा वानरान्सर्वान्रामहेतोरचोदयन्।।4.37.18।।",
+              "themes": [
+                "exile",
+                "service",
+                "dedication"
+              ],
+              "translation": "ते वानराः set his foot those monkeys, समुद्रेषु on the sea shore, गिरिषु on the mountains, वनेषु च in the forests, सरस्सु च  on the banks of lakes, सर्वान् all over, वानरान् monkeys, रामहेतोः  to serve Rama's cause, अचोदयन् driven."
+            }
+          },
+          {
+            "id": "bala-kanda-1-80",
+            "score": 0.466309547,
+            "metadata": {
+              "characters": [
+                "rama",
+                "nala"
+              ],
+              "comments": "",
+              "events": [
+                "rama_army",
+                "bridge_construction"
+              ],
+              "explanation": "Samudra, lord of rivers, (afraid of Rama's anger) and having appeared in his own form, and on his advice got a bridge built with the help of Nala.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Bala Kanda",
+              "kanda_number": 1,
+              "sarga": 1,
+              "shloka": 80,
+              "shloka_text": "दर्शयामास चात्मानं समुद्रस्सरितां पति: । समुद्रवचनाच्चैव नलं सेतुमकारयत् ।।1.1.80।।",
+              "themes": [
+                "anger",
+                "cooperation",
+                "problem_solving"
+              ],
+              "translation": "सरितां पति: lord of rivers, समुद्र: Samudra, आत्मानम् in his own form, दर्शयामास appeared (to Rama), समुद्रवचनात् च एव on the advice of Samudra , नलम् through Nala, सेतुम् a bridge, अकारयत् got it built."
+            }
+          },
+          {
+            "id": "sundara-kanda-43-20",
+            "score": 0.466035843,
+            "metadata": {
+              "characters": [
+                "sugriva"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "sugriva_alliance",
+                "vali_duel",
+                "vanara_search",
+                "rama_army",
+                "rama_coronation",
+                "monkey_recruitment"
+              ],
+              "explanation": "\"Thousands of huge and mighty monkeys, equal to me, loyal to king Sugriva, are coming under the orders and have been recruited from the entire earth. They  are the best among monkeys.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 43,
+              "shloka": 20,
+              "shloka_text": "मादृशानां सहस्राणि विसृष्टानि महात्मनाम्।।5.43.20।। बलिनां वानरेन्द्राणां सुग्रीववशवर्तिनाम्। अटन्ति वसुधां कृत्स्नां वयमन्ये च वानराः।।5.43.21।।",
+              "themes": [
+                "rajadharma",
+                "loyalty",
+                "strength"
+              ],
+              "translation": "महात्मनाम् huge, बलिनाम् of mighty, सुग्रीववशवर्तिनाम् of those loyal to Sugriva, मादृशानाम् of people like me, वानरेन्द्राणाम् of the best of  vanara leaders, सहस्राणि in thousands, विसृष्टानि are despatched, वयम् we, अन्ये others, वानराश्च and vanaras, कृत्स्नाम् entire, वसुधाम् the earth, अटन्ति we are wandering."
+            }
+          },
+          {
+            "id": "sundara-kanda-43-21",
+            "score": 0.465958595,
+            "metadata": {
+              "characters": [
+                "sugriva"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "sugriva_alliance",
+                "vali_duel",
+                "vanara_search",
+                "rama_army",
+                "rama_coronation",
+                "monkey_recruitment"
+              ],
+              "explanation": "\"Thousands of huge and mighty monkeys, equal to me, loyal to king Sugriva, are coming under the orders and have been recruited from the entire earth. They  are the best among monkeys.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 43,
+              "shloka": 21,
+              "shloka_text": "मादृशानां सहस्राणि विसृष्टानि महात्मनाम्।।5.43.20।। बलिनां वानरेन्द्राणां सुग्रीववशवर्तिनाम्। अटन्ति वसुधां कृत्स्नां वयमन्ये च वानराः।।5.43.21।।",
+              "themes": [
+                "rajadharma",
+                "loyalty",
+                "strength"
+              ],
+              "translation": "महात्मनाम् huge, बलिनाम् of mighty, सुग्रीववशवर्तिनाम् of those loyal to Sugriva, मादृशानाम् of people like me, वानरेन्द्राणाम् of the best of  vanara leaders, सहस्राणि in thousands, विसृष्टानि are despatched, वयम् we, अन्ये others, वानराश्च and vanaras, कृत्स्नाम् entire, वसुधाम् the earth, अटन्ति we are wandering."
+            }
+          },
+          {
+            "id": "kishkindha-kanda-41-1",
+            "score": 0.464389801,
+            "metadata": {
+              "characters": [
+                "sugriva"
+              ],
+              "comments": "Sugriva sends another troop including Hanuaman, Nila, Angada and Jambavan in the southern direction",
+              "events": [
+                "coronation_plan",
+                "sugriva_alliance",
+                "vali_duel",
+                "vanara_search",
+                "rama_army",
+                "dispatch_monkey_army"
+              ],
+              "explanation": "Sugriva then sends in the southern direction another vanara army known for their excellence.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Kishkindha Kanda",
+              "kanda_number": 4,
+              "sarga": 41,
+              "shloka": 1,
+              "shloka_text": "ततः प्रस्थाप्य सुग्रीवस्तन्महद्वानरं बलम्। दक्षिणां प्रेषयामास वानरानभिलक्षितान्।।4.41.1।।",
+              "themes": [
+                "leadership",
+                "strategy"
+              ],
+              "translation": "सुग्रीवः Sugriva, महत् great, तत् that, वानरं बलम् monkey army, प्रस्थाप्य after despatching, ततः then, अभिलक्षितान् those recognised for excellence, वानरान् monkeys, दक्षिणाम् southern direction, प्रेषयामास sent forth."
+            }
+          },
+          {
+            "id": "yuddha-kanda-29-5",
+            "score": 0.464359283,
+            "metadata": {
+              "characters": [
+                "lakshmana",
+                "hanuman",
+                "ravana",
+                "sugriva",
+                "vali",
+                "angada",
+                "jambavan",
+                "nala",
+                "nila",
+                "indra"
+              ],
+              "comments": "Ravana rebukes the spies, Suka and Saarana from the Rakshasa army for praising Vanara army and sends Saardula, another spy who also reports about the strength of Vanara army.",
+              "events": [
+                "bow_breaking",
+                "coronation_plan",
+                "sita_abduction",
+                "meet_hanuman",
+                "sugriva_alliance",
+                "vali_duel",
+                "vali_death",
+                "vanara_search",
+                "ocean_crossing",
+                "rama_army",
+                "bridge_construction",
+                "ravana_death",
+                "rama_coronation",
+                "army_inspection"
+              ],
+              "explanation": "There after Ravana having heard the words spoken by Suka about the army of Vanara heroes, seeing Lakshmana of extraordinary valour, the right shoulder of Rama standing close by Rama his own brother Vibheeshana close by  the king of Vanaras, Sugriva of fierce valour and Angada the son of Vali (the son of Indra who wields thunderbolt)  and valiant Hanuman Jambavan who is difficult to conquer Sushena, Nila, Kumuda, bull among the leaping animals Nala likewise Gaja, Gavaksha, Sarabha, Mainda and Dwivida got a little broken hearted and mixed with fury started to rebuke both the heroes Suka and Saarana.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 29,
+              "shloka": 5,
+              "shloka_text": "शुकेनतुसमाख्यातान्दृष्ट्वासहरियूथपान् । समीपस्थंचरामस्यभ्रातरंस्वंविभीषणम् ।।6.29.1।। लक्ष्मणंचमहावीर्यंभुजंरामस्यदक्षिणं । सर्ववानरराजंचसुग्रीवंभीमविक्रमम् ।।6.29.2।। अङ्गदंचापिबलिनंवज्रहस्तात्मजात्मजम् । हनूमन्तंचविक्रान्तंजाम्बवन्तंचदुर्जयम् ।।6.29.3।। सुषेणंकुमुदंनीलंनलंचप्लवगर्षभम् । गजंगवाक्षंशरभंमैन्दंचद्विविदंतथा ।।6.29.4।। किञ्चिदाविग्नहृदयोजातक्रोधश्चरावणः । भर्त्सयामासतौवीरौकथान्तेशुकसारणौ ।।6.29.5।।",
+              "themes": [
+                "dharma",
+                "rajadharma",
+                "filial_dharma",
+                "brotherhood",
+                "justice",
+                "anger",
+                "valor",
+                "leadership"
+              ],
+              "translation": "सःरावण that Ravana, शुकेन by Suka, समाख्यातान् spoken that way, हरियूथपान् about the army of monkeys, रामस्य Rama's, दक्षिणंभुजम् right shoulder, महावीर्यम् extraordinary valour, लक्ष्मणंच at Lakshmana, रामस्य Rama's, समीपस्थम् close by, भ्रातरम् the brother, विभीषणम् Vibheeshana, सर्ववानरराजम् King of all Vanaras, भीमविक्रमम् one of fierce valour, सुग्रीवंच Sugriva, बलिनम् the strong, वज्रहस्तात्मजात्मजम् the son of Vali (son of Indra who wields a thunderbolt ), अङ्गदंचापि and also Angada, विक्रान्तम् the valiant, हनूमन्तम् Hanuman, दुर्जयम् difficult to conquer, जाम्बवन्तम् Jambavan, सुषेणम् Sushena, कुमुदम् Kumuda, नीलम् Nila, प्लवगर्षभम् bull among leaping ones, नलंच that Nala, गजम् Gaja, गवाक्षम् at Gavaksha, शरभम् Sarabha, मैन्दम् Mainda, तथा likewise, द्विविदम् Dwiv i da, दृष्टवा seeing, किञ्चित् a little, आविग्नहृदय broken hearted, जातक्रोधश्च with fury, कथांते aforesaid, वीरौ heroes, तौ both, शुकसारणौ Suka and Saarana, भर्त्सयामास started to rebuke."
+            }
+          },
+          {
+            "id": "yuddha-kanda-22-62",
+            "score": 0.463713646,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "jatayu_fight",
+                "vanara_search",
+                "rama_army",
+                "bridge_construction",
+                "rama_command"
+              ],
+              "explanation": "Others held sticks and some held logs of wood and reeds following the command of Rama, hundreds of Vanaras who looked like clouds and mountain tops built the bridge.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 22,
+              "shloka": 62,
+              "shloka_text": "दण्डानन्येप्रगृह्णन्तिविचिन्वन्तितथापरे ।।6.22.62।। वानरैश्शतशस्तत्ररामस्याज्ञापुरस्सराः । मेघाभैःपर्वताग्रैश्चतृणैःकाष्ठैर्बबन्धिरे ।।6.22.63।।",
+              "themes": [
+                "search",
+                "victory",
+                "obedience",
+                "collective_action"
+              ],
+              "translation": "अन्ये others, दण्डान् sticks, प्रगृह्णन्ति holding, तथा in the same way, अपरे some others, विचिन्वन्ति following, रामस्य of Rama, आज्ञापुरस्सरैः the command in front, शतशः in hundreds, मेघाभिः like clouds, पर्वताग्रैश्च like top of mountains, वानरैः with Vanaras, तृणैः reeds, काष्ठैश्च logs of wood, बबन्धिरे built."
+            }
+          },
+          {
+            "id": "yuddha-kanda-22-63",
+            "score": 0.462839127,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "",
+              "events": [
+                "jatayu_fight",
+                "vanara_search",
+                "rama_army",
+                "bridge_construction",
+                "rama_command"
+              ],
+              "explanation": "Others held sticks and some held logs of wood and reeds following the command of Rama, hundreds of Vanaras who looked like clouds and mountain tops built the bridge.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 22,
+              "shloka": 63,
+              "shloka_text": "दण्डानन्येप्रगृह्णन्तिविचिन्वन्तितथापरे ।।6.22.62।। वानरैश्शतशस्तत्ररामस्याज्ञापुरस्सराः । मेघाभैःपर्वताग्रैश्चतृणैःकाष्ठैर्बबन्धिरे ।।6.22.63।।",
+              "themes": [
+                "search",
+                "victory",
+                "obedience",
+                "collective_action"
+              ],
+              "translation": "अन्ये others, दण्डान् sticks, प्रगृह्णन्ति holding, तथा in the same way, अपरे some others, विचिन्वन्ति following, रामस्य of Rama, आज्ञापुरस्सरैः the command in front, शतशः in hundreds, मेघाभिः like clouds, पर्वताग्रैश्च like top of mountains, वानरैः with Vanaras, तृणैः reeds, काष्ठैश्च logs of wood, बबन्धिरे built."
+            }
+          },
+          {
+            "id": "yuddha-kanda-59-145",
+            "score": 0.462553978,
+            "metadata": {
+              "characters": [
+                "rama",
+                "lakshmana"
+              ],
+              "comments": "",
+              "events": [
+                "sita_marriage",
+                "coronation_plan",
+                "vali_death",
+                "lanka_entry",
+                "lanka_burning",
+                "battle_begins",
+                "rama_coronation",
+                "rama_lakshmana_aid_monkeys"
+              ],
+              "explanation": "After the king of prowlers, the enemy of Danavas and Devas entered Lanka, Rama and Lakshmana also drew out the arrows from monkeys in the forefront of the battlefield and went.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 59,
+              "shloka": 145,
+              "shloka_text": "प्रविष्टेरजनीचरेन्द्रेमहाबलेदाववदेवशत्रौ । हरीन् विशल्यान् सहलक्ष्मणेनचकाररामःपरमाहवाग्रे ।।6.59.145।।",
+              "themes": [
+                "rajadharma",
+                "brotherhood",
+                "war",
+                "support"
+              ],
+              "translation": "महाबले endowed with great prowess, दानवदेवशत्रौ enemy of Danavas and Devas, तस्मिन् his, रजनीचरेन्द्रे king night prowlers, प्रविष्टे entering, रामः Rama, परमाहवाग्रे in the forefront, लक्ष्मणेनसह with Lakshmana, हरीन् monkeys ', विशल्यान् removed, चकार went."
+            }
+          },
+          {
+            "id": "yuddha-kanda-129-49",
+            "score": 0.46208477,
+            "metadata": {
+              "characters": [
+                "nala"
+              ],
+              "comments": "",
+              "events": [
+                "ocean_crossing",
+                "rama_army",
+                "bridge_construction"
+              ],
+              "explanation": "\"Then Nala constructed the bridge, and the monkey heroes crossed the bridge.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 129,
+              "shloka": 49,
+              "shloka_text": "ततस्समुद्रमासाद्यनलंसेतुमकारयत् ।।6.129.49।। अतरत्कपिवीराणां वाहिनी तेन सेतुना ।",
+              "themes": [
+                "engineering",
+                "teamwork"
+              ],
+              "translation": "ततः then, समुद्रम् ocean, आसाद्य reached, नलम् Nala, सेतुम् bridge, अकारयत् constructed, कपिवीराणाम् monkey heroes, वाहिनी troops, तेनसेतुना by that bridge, अतरत् crossed"
+            }
+          },
+          {
+            "id": "yuddha-kanda-22-45",
+            "score": 0.46137619,
+            "metadata": {
+              "characters": [],
+              "comments": "",
+              "events": [
+                "vanara_search",
+                "rama_army",
+                "bridge_construction",
+                "nala_builds_bridge"
+              ],
+              "explanation": "\"This monkey is full of zeal. He will build a bridge over me, and I will bear it. In that way he is like his father.\"",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 22,
+              "shloka": 45,
+              "shloka_text": "एषसेतुंमहोत्साहःकरोतुमयिवानरः । तमहंधारयिष्यामियथाह्येषपितातथा ।।6.22.45।।",
+              "themes": [
+                "filial_dharma",
+                "zeal",
+                "creativity"
+              ],
+              "translation": "महोत्साहः full of zeal, एषःवानरः this Vanara, मयि over me, सेतुम् bridge, करोतु will built, तम् him, अहम् I, धारयिष्यामि will bear, पिता father, यथा that way, एषः he is, तथा like him."
+            }
+          },
+          {
+            "id": "sundara-kanda-35-55",
+            "score": 0.461292297,
+            "metadata": {
+              "characters": [
+                "sugriva"
+              ],
+              "comments": "",
+              "events": [
+                "jatayu_fight",
+                "sugriva_alliance",
+                "vali_duel",
+                "vanara_search",
+                "ocean_crossing",
+                "rama_army",
+                "bridge_construction",
+                "search_mission"
+              ],
+              "explanation": "\"Following Sugriva's orders, we, the monkeys, since then are moving about searching the entire earth eager to find you or to carry out Sugriva's orders.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 35,
+              "shloka": 55,
+              "shloka_text": "ततस्ते मार्गमाणा वै सुग्रीववचनातुराः। चरन्ति वसुधां कृत्स्नां वयमन्ये च वानराः।।5.35.55।।",
+              "themes": [
+                "search",
+                "victory",
+                "dedication",
+                "perseverance"
+              ],
+              "translation": "ततः then, ते they, वयम् we, अन्ये others, वानराः च and the vanaras, सुग्रीववचनातुराः eager to carry out Sugriva's order, मार्गमाणाः while searching, कृत्स्नाम् entire, वसुधाम् the earth, चरन्ति we are moving about."
+            }
+          },
+          {
+            "id": "sundara-kanda-46-10",
+            "score": 0.460887909,
+            "metadata": {
+              "characters": [
+                "sugriva",
+                "vali",
+                "jambavan",
+                "nila"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "sugriva_alliance",
+                "vali_duel",
+                "vali_death",
+                "rama_army",
+                "ravana_comparing_monkeys"
+              ],
+              "explanation": "\"Earlier I have seen monkeys of immense prowess, like Vali and Sugriva as well as Jambavan, the bear. Also I have seen the army general, Nila, Dvivida and others. They do not have such tremendous splendour or movement valour, intellect and strength and energy. They did not have such ability to change form at their will.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 46,
+              "shloka": 10,
+              "shloka_text": "दृष्टा हि हरयः पूर्वं मया विपुलविक्रमाः। वाली च सहसुग्रीवो जाम्बवांश्च महाबलः।।5.46.10।। नीलस्सेनापतिश्चैव ये चान्ये द्विविदादयः। नैवं तेषां गतिर्भीमा न तेजो न पराक्रमः।।5.46.11।। न मतिर्न बलोत्साहौ न रूपपरिकल्पनम्।",
+              "themes": [
+                "strength",
+                "comparison"
+              ],
+              "translation": "पूर्वम् earlier, मया by me, विपुलविक्रमाः of immense prowess, हरयः monkeys, सहसुग्रीवः with Sugriva, वाली च and Vali, महाबलः mighty, जाम्बवांश्च and Jambavan, सेनापतिः army chief, नीलः Nila, द्विविदादयः Dvivida and others, अन्ये च and others, ये those, दृष्टाः हि have seen, तेषाम् for them, गतिः movement, एवम् that way, भीमा tremendous, न not, तेजः splendour, पराक्रमः valour, न not, मतिः intellect, न not, बलोत्साहौ strength and energy, रूपपरिकल्पनम् ability to change form at will."
+            }
+          },
+          {
+            "id": "yuddha-kanda-29-3",
+            "score": 0.460868865,
+            "metadata": {
+              "characters": [
+                "rama"
+              ],
+              "comments": "Ravana rebukes the spies, Suka and Saarana from the Rakshasa army for praising Vanara army and sends Saardula, another spy who also reports about the strength of Vanara army.",
+              "events": [
+                "bow_breaking",
+                "coronation_plan",
+                "sita_abduction",
+                "meet_hanuman",
+                "sugriva_alliance",
+                "vali_duel",
+                "vali_death",
+                "vanara_search",
+                "ocean_crossing",
+                "rama_army",
+                "bridge_construction",
+                "ravana_death",
+                "rama_coronation",
+                "army_inspection"
+              ],
+              "explanation": "There after Ravana having heard the words spoken by Suka about the army of Vanara heroes, seeing Lakshmana of extraordinary valour, the right shoulder of Rama standing close by Rama his own brother Vibheeshana close by  the king of Vanaras, Sugriva of fierce valour and Angada the son of Vali (the son of Indra who wields thunderbolt)  and valiant Hanuman Jambavan who is difficult to conquer Sushena, Nila, Kumuda, bull among the leaping animals Nala likewise Gaja, Gavaksha, Sarabha, Mainda and Dwivida got a little broken hearted and mixed with fury started to rebuke both the heroes Suka and Saarana.",
+              "has_comments": true,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Yuddha Kanda",
+              "kanda_number": 6,
+              "sarga": 29,
+              "shloka": 3,
+              "shloka_text": "शुकेनतुसमाख्यातान्दृष्ट्वासहरियूथपान् । समीपस्थंचरामस्यभ्रातरंस्वंविभीषणम् ।।6.29.1।। लक्ष्मणंचमहावीर्यंभुजंरामस्यदक्षिणं । सर्ववानरराजंचसुग्रीवंभीमविक्रमम् ।।6.29.2।। अङ्गदंचापिबलिनंवज्रहस्तात्मजात्मजम् । हनूमन्तंचविक्रान्तंजाम्बवन्तंचदुर्जयम् ।।6.29.3।। सुषेणंकुमुदंनीलंनलंचप्लवगर्षभम् । गजंगवाक्षंशरभंमैन्दंचद्विविदंतथा ।।6.29.4।। किञ्चिदाविग्नहृदयोजातक्रोधश्चरावणः । भर्त्सयामासतौवीरौकथान्तेशुकसारणौ ।।6.29.5।।",
+              "themes": [
+                "dharma",
+                "rajadharma",
+                "filial_dharma",
+                "brotherhood",
+                "justice",
+                "anger",
+                "valor",
+                "leadership"
+              ],
+              "translation": "सःरावण that Ravana, शुकेन by Suka, समाख्यातान् spoken that way, हरियूथपान् about the army of monkeys, रामस्य Rama's, दक्षिणंभुजम् right shoulder, महावीर्यम् extraordinary valour, लक्ष्मणंच at Lakshmana, रामस्य Rama's, समीपस्थम् close by, भ्रातरम् the brother, विभीषणम् Vibheeshana, सर्ववानरराजम् King of all Vanaras, भीमविक्रमम् one of fierce valour, सुग्रीवंच Sugriva, बलिनम् the strong, वज्रहस्तात्मजात्मजम् the son of Vali (son of Indra who wields a thunderbolt ), अङ्गदंचापि and also Angada, विक्रान्तम् the valiant, हनूमन्तम् Hanuman, दुर्जयम् difficult to conquer, जाम्बवन्तम् Jambavan, सुषेणम् Sushena, कुमुदम् Kumuda, नीलम् Nila, प्लवगर्षभम् bull among leaping ones, नलंच that Nala, गजम् Gaja, गवाक्षम् at Gavaksha, शरभम् Sarabha, मैन्दम् Mainda, तथा likewise, द्विविदम् Dwiv i da, दृष्टवा seeing, किञ्चित् a little, आविग्नहृदय broken hearted, जातक्रोधश्च with fury, कथांते aforesaid, वीरौ heroes, तौ both, शुकसारणौ Suka and Saarana, भर्त्सयामास started to rebuke."
+            }
+          },
+          {
+            "id": "sundara-kanda-46-11",
+            "score": 0.460823059,
+            "metadata": {
+              "characters": [
+                "sugriva",
+                "vali",
+                "jambavan",
+                "nila"
+              ],
+              "comments": "",
+              "events": [
+                "coronation_plan",
+                "sugriva_alliance",
+                "vali_duel",
+                "vali_death",
+                "rama_army",
+                "ravana_comparing_monkeys"
+              ],
+              "explanation": "\"Earlier I have seen monkeys of immense prowess, like Vali and Sugriva as well as Jambavan, the bear. Also I have seen the army general, Nila, Dvivida and others. They do not have such tremendous splendour or movement valour, intellect and strength and energy. They did not have such ability to change form at their will.",
+              "has_comments": false,
+              "has_explanation": true,
+              "has_translation": true,
+              "kanda": "Sundara Kanda",
+              "kanda_number": 5,
+              "sarga": 46,
+              "shloka": 11,
+              "shloka_text": "दृष्टा हि हरयः पूर्वं मया विपुलविक्रमाः। वाली च सहसुग्रीवो जाम्बवांश्च महाबलः।।5.46.10।। नीलस्सेनापतिश्चैव ये चान्ये द्विविदादयः। नैवं तेषां गतिर्भीमा न तेजो न पराक्रमः।।5.46.11।। न मतिर्न बलोत्साहौ न रूपपरिकल्पनम्।",
+              "themes": [
+                "strength",
+                "comparison"
+              ],
+              "translation": "पूर्वम् earlier, मया by me, विपुलविक्रमाः of immense prowess, हरयः monkeys, सहसुग्रीवः with Sugriva, वाली च and Vali, महाबलः mighty, जाम्बवांश्च and Jambavan, सेनापतिः army chief, नीलः Nila, द्विविदादयः Dvivida and others, अन्ये च and others, ये those, दृष्टाः हि have seen, तेषाम् for them, गतिः movement, एवम् that way, भीमा tremendous, न not, तेजः splendour, पराक्रमः valour, न not, मतिः intellect, न not, बलोत्साहौ strength and energy, रूपपरिकल्पनम् ability to change form at will."
+            }
+          }
+        ],
+        "totalRetrieved": 15,
+        "expandedQuery": "The squirrel refers to the small creature that assisted Lord Rama's army by carrying small stones to build the bridge to Lanka. This act symbolizes devotion and contribution, regardless of size."
+      },
+      "retrieval_latency_ms": 0,
+      "classification_result": {
+        "model": "gpt-4o",
+        "category": "Minor episodes",
+        "category_id": 7,
+        "confidence": 1,
+        "template_selected": "T1"
+      },
+      "classification_latency_ms": 0,
+      "generation_result": {
+        "model": "gpt-4o",
+        "template_used": "T1",
+        "answer": "**Answer:** The provided citations do not mention the episode of the squirrel contributing to the building of the bridge. The text specifically details the role of Nala in the construction of the bridge over the ocean, aided by the Vanaras, as advised by the lord of the ocean, Samudra [Yuddha Kanda 22.62-63]. The citations describe the great effort by the Vanaras in gathering materials for the bridge [Yuddha Kanda 22.62].",
+        "citations_in_answer": [
+          "Yuddha Kanda 22.62",
+          "Yuddha Kanda 22.63"
+        ]
+      },
+      "generation_latency_ms": 10485,
+      "total_latency_ms": 20593,
+      "full_response": {
+        "templateType": "T1",
+        "answer": "**Answer:** The provided citations do not mention the episode of the squirrel contributing to the building of the bridge. The text specifically details the role of Nala in the construction of the bridge over the ocean, aided by the Vanaras, as advised by the lord of the ocean, Samudra [Yuddha Kanda 22.62-63]. The citations describe the great effort by the Vanaras in gathering materials for the bridge [Yuddha Kanda 22.62].",
+        "textualBasis": {
+          "kanda": "Yuddha Kanda",
+          "sarga": [
+            22,
+            22
+          ],
+          "shloka": [
+            62,
+            63
+          ],
+          "citations": [
+            "Yuddha Kanda 22.62",
+            "Yuddha Kanda 22.63"
+          ]
+        },
+        "explanation": "The citations focus on the large-scale construction efforts led by the Vanaras, specifically mentioning Nala's key role in the bridge's construction, as instructed by Samudra. There is a detailed description of how the Vanaras collected logs and reeds to build the bridge, but no mention of a squirrel [Yuddha Kanda 22.62-63]."
+      }
+    }
+  }
+]

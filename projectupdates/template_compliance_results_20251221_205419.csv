@@ -1,0 +1,3 @@
+index,user_query,system_model,assigned_template,structural_result,semantic_result,overall_compliance,failures,summary
+14,Why was the killing of Sambuka performed by Rama in Uttara Kanda?,openai,T1,FAIL,PASS,FAIL,"- Missing citation for absence of evidence claim.
+</evaluation_results>","The answer adheres to the semantic constraints of T1, accurately reflecting the lack of information about Shambuka's killing in the provided text. However, the answer fails structurally because while claiming no explicit mention, it should have included citations, even if ""None."""

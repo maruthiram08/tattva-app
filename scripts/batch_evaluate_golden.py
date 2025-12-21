@@ -13,6 +13,7 @@ import re
 import time
 from datetime import datetime
 import os
+import argparse
 
 # Configuration
 API_URL = "http://localhost:3000/api/answer"
@@ -20,8 +21,36 @@ GOLDEN_DATASET_PATH = "projectdocs/golden_dataset.csv"
 OUTPUT_DIR = "projectupdates"
 TIMESTAMP = datetime.now().strftime('%Y_%m_%d_%H%M')
 
-# Citation regex pattern - matches both [Bala-Kanda X.Y] and [Bala Kanda X.Y]
-CITATION_PATTERN = r'\[[A-Za-z]+[ -]Kanda\s+\d+\.\d+\]'
+# Citation regex pattern - improved to handle:
+# - [Bala-Kanda X.Y] and [Bala Kanda X.Y] (hyphen/space format)
+# - [Aranya Kanda 14.33-35] (shloka ranges)
+# - [Ayodhya Kanda 26.1-2, 64.72] (comma-separated)
+KANDA_NAMES = r'(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)'
+CITATION_PATTERN = (
+    r'\[' +                           # Opening bracket
+    KANDA_NAMES +                     # Kanda name
+    r'[\s\-]?' +                       # Optional space or hyphen
+    r'Kanda' +                        # Literal "Kanda"
+    r'[\s\-]?' +                       # Optional space or hyphen
+    r'\d+' +                          # Sarga number
+    r'[\.\-\s]' +                     # Dot, hyphen, or space separator
+    r'\d+' +                          # First shloka number
+    r'(?:[\-,\s]*\d+)*' +             # Optional additional shlokas (ranges or lists)
+    r'\]'                             # Closing bracket
+)
+CITATION_REGEX = re.compile(CITATION_PATTERN, re.IGNORECASE)
+
+def extract_citations(text: str) -> list:
+    """Extract all citations from text using improved regex patterns."""
+    citations = CITATION_REGEX.findall(text)
+    # Fallback: check for brackets containing Kanda names
+    if not citations:
+        bracket_contents = re.findall(r'\[([^\]]+)\]', text)
+        for content in bracket_contents:
+            if re.search(KANDA_NAMES, content, re.IGNORECASE):
+                citations.append(f'[{content}]')
+    return citations
+
 
 def load_golden_dataset():
     """Load the 60-question golden dataset."""
@@ -79,9 +108,9 @@ def extract_answer_info(trace: dict, provider: str) -> dict:
     full_response = trace.get('full_response', {})
     whatTextStates = full_response.get('whatTextStates', '')
     
-    # Find inline citations in BOTH fields
-    answer_citations = re.findall(CITATION_PATTERN, answer)
-    wts_citations = re.findall(CITATION_PATTERN, whatTextStates)
+    # Find inline citations in BOTH fields using improved regex
+    answer_citations = extract_citations(answer)
+    wts_citations = extract_citations(whatTextStates)
     all_citations = list(set(answer_citations + wts_citations))  # Dedupe
     
     # Also get citations from textualBasis
@@ -103,6 +132,12 @@ def extract_answer_info(trace: dict, provider: str) -> dict:
     }
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--limit", type=int, help="Limit number of questions")
+    parser.add_argument("--index", type=int, help="Run specific index (1-based)")
+    parser.add_argument("--sample", type=int, help="Run a random sample of N questions")
+    args = parser.parse_args()
+
     print("=" * 70)
     print("BATCH EVALUATION: Golden Dataset (60 Questions)")
     print(f"Timestamp: {TIMESTAMP}")
@@ -111,6 +146,29 @@ def main():
     
     # Load questions
     questions = load_golden_dataset()
+    
+    if args.sample:
+        import random
+        count = min(args.sample, len(questions))
+        print(f"Selecting random sample of {count} questions")
+        questions = random.sample(questions, count)
+        # Sort by expected template or index? Index not reliable if random.
+        # But we want to maintain some order? No need.
+        pass
+
+    if args.index:
+        idx = args.index - 1
+        if 0 <= idx < len(questions):
+            questions = [questions[idx]]
+            questions[0]['original_index'] = args.index
+            print(f"Limiting to specific question index: {args.index}")
+        else:
+            print(f"Index {args.index} out of bounds")
+            return
+
+    if args.limit and not args.index:
+        questions = questions[:args.limit]
+        print(f"Limiting to first {args.limit} questions")
     
     # Results storage
     all_results = []
@@ -123,6 +181,9 @@ def main():
     
     # Process each question
     for i, q in enumerate(questions, 1):
+        # Restore original index if filtering
+        idx = q.get('original_index', i) if args.index else i
+        
         question = q['user_query']
         expected_template = q['expected_template']
         
@@ -140,7 +201,7 @@ def main():
         # Minimal delay between providers (0.5s)
         time.sleep(0.5)
         
-        # Call Claude
+        # 2. Claude
         print(f"  Calling Claude...", end=" ", flush=True)
         start = time.time()
         claude_trace = call_api(question, 'anthropic')

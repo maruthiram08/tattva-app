@@ -1,0 +1,4 @@
+index,user_query,system_model,assigned_template,structural_result,semantic_result,overall_compliance,failures,summary
+23,What happens to Vibhishana's wife?,openai,T1,FAIL,SKIP,FAIL,"- Missing inline citations
+- Missing citations/references section
+</evaluation_results>","The answer states that the text does not contain the requested information, but does not include citations and/or a 'Citations' section. This violates the T1 structural requirements."

@@ -1,0 +1,3 @@
+index,user_query,system_model,assigned_template,structural_result,semantic_result,overall_compliance,failures,summary
+1,Where did Sita live during her second exile?,openai,T1,PASS,FAIL,FAIL,"Lack of shloka database to validate claims.
+</evaluation_results>","The response adheres to the structural requirements of the T1 template. However, due to the lack of a shloka database, semantic validation could not be performed, and therefore, it is marked as a FAIL. The claims might be supported by the cited verses, but this cannot be confirmed without the relevant text."
