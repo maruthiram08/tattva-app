@@ -1,4 +1,4 @@
-import { TattvaResponse } from '../types/response';
+
 
 export interface ValidationResult {
     valid: boolean;
@@ -13,8 +13,8 @@ export class VerificationService {
      */
     static validateAndFixT2(response: any): ValidationResult {
         const errors: string[] = [];
-        let fixed = { ...response };
-        let wasModified = false;
+        const fixed = { ...response };
+        // wasModified removed to satisfy linter (unused)
 
         // Check for Answer
         if (!fixed.answer || typeof fixed.answer !== 'string' || fixed.answer.length < 10) {
@@ -33,7 +33,6 @@ export class VerificationService {
             errors.push("Missing 'limitOfCertainty'");
             // Auto-fix: Inject a generic safe disclaimer
             fixed.limitOfCertainty = "The text provided describes the events and actions but does not explicitly detail the internal motivations or alternate possibilities in this specific excerpt. Interpretations may vary based on different scholarly traditions.";
-            wasModified = true;
         }
 
         // Check for What Text States
@@ -42,7 +41,6 @@ export class VerificationService {
             // Auto-fix: Use citations or part of answer? Difficult.
             // Fallback: Copy first sentence of answer? risky.
             fixed.whatTextStates = "Specific textual details not separately extracted.";
-            wasModified = true;
         }
 
         return {

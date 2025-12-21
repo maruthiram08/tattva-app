@@ -146,7 +146,7 @@ export async function POST(req: Request) {
       prompt: "IMPORTANT: You MUST output the 'templateType' field FIRST. " + context.prompt,
       mode: 'json',
       preferredProvider: preferredProvider as 'openai' | 'anthropic',
-      onFinish: async ({ object, usage }) => {
+      onFinish: async ({ object }) => {
         try {
           const totalLatency = Date.now() - startTotal;
           const generationLatency = totalLatency - contextLatency; // Approximate

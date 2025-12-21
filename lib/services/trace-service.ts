@@ -5,6 +5,8 @@ import { TraceData, TraceRepository } from '@/lib/types/trace';
 const LOG_DIR = path.join(process.cwd(), 'logs');
 const TRACE_FILE = path.join(LOG_DIR, 'traces.jsonl');
 
+import { sql } from '@vercel/postgres';
+
 export class FileTraceRepository implements TraceRepository {
     constructor() {
         // Ensure log directory exists
@@ -20,8 +22,21 @@ export class FileTraceRepository implements TraceRepository {
     }
 }
 
-// Placeholder for Postgres implementation
-// export class PostgresTraceRepository implements TraceRepository { ... }
+export class PostgresTraceRepository implements TraceRepository {
+    async saveTrace(trace: TraceData): Promise<void> {
+        try {
+            await sql`
+                INSERT INTO traces (trace_id, timestamp, data)
+                VALUES (${trace.trace_id}, ${trace.timestamp}, ${JSON.stringify(trace)}::jsonb)
+            `;
+            console.log(`[TraceService] Saved trace ${trace.trace_id} to DB`);
+        } catch (error) {
+            console.error('[TraceService] DB Save Error:', error);
+            // Fallback to console if DB fails
+            console.log('[TraceService Fallback]', JSON.stringify(trace));
+        }
+    }
+}
 
 class TraceService {
     private repository: TraceRepository;
@@ -35,11 +50,12 @@ class TraceService {
             await this.repository.saveTrace(trace);
         } catch (error) {
             console.error('[TraceService] Failed to save trace:', error);
-            // Non-blocking error handling - don't crash the user request
         }
     }
 }
 
-// Singleton Trace Service
-// In production, we can swap this with new PostgresTraceRepository()
-export const traceService = new TraceService(new FileTraceRepository());
+// Factory: Use Postgres in Prod, File in Dev
+const isProd = process.env.NODE_ENV === 'production';
+export const traceService = new TraceService(
+    isProd ? new PostgresTraceRepository() : new FileTraceRepository()
+);

@@ -14,10 +14,11 @@ Tattva is a RAG (Retrieval-Augmented Generation) application that provides schol
 
 - **Frontend**: Next.js 14 (App Router), TypeScript, Tailwind CSS, shadcn/ui
 - **Vector Database**: Pinecone (Serverless)
+- **Retrieval Enhancement**: Cohere Reranker (`rerank-english-v3.0`)
 - **LLMs**:
-  - OpenAI GPT-4 (Question classification)
-  - Claude 3.5 Sonnet (Answer assembly)
-  - OpenAI text-embedding-3-large (Embeddings)
+  - OpenAI GPT-4o (Question classification, T1 generation, Embeddings)
+  - Claude 3 Haiku (Alternative generator)
+  - OpenAI text-embedding-3-small (Embeddings)
 - **Hosting**: Vercel
 - **Dataset**: 23,402 shlokas from Valmiki's Ramayana
 
@@ -28,6 +29,15 @@ Tattva is a RAG (Retrieval-Augmented Generation) application that provides schol
   - OpenAI
   - Anthropic (Claude)
   - Pinecone
+  - Cohere (for Reranking)
+
+## 🏗️ Architecture Pipeline
+
+1. **Classification** - Categorizes questions into 45 predefined categories.
+2. **Retrieval** - Fetches top 50 candidates from Pinecone vector database.
+3. **Reranking** - Cohere Rerank model re-scores candidates for semantic relevance (Text & Translation).
+4. **Assembly** - Generates answers using locked templates (T1/T2/T3).
+5. **Verification** - `VerificationService` intercepts responses to ensure structural integrity (e.g., disclaimer injection).
 
 ## 🚀 Getting Started
 
@@ -50,18 +60,40 @@ Edit `.env.local` and add your API keys:
 
 ```env
 # OpenAI API Configuration
-OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_API_KEY=your_key
 
 # Anthropic API Configuration
-ANTHROPIC_API_KEY=your_anthropic_api_key_here
+ANTHROPIC_API_KEY=your_key
 
 # Pinecone Configuration
-PINECONE_API_KEY=your_pinecone_api_key_here
-PINECONE_ENVIRONMENT=your_pinecone_environment_here
+PINECONE_API_KEY=your_key
+PINECONE_ENVIRONMENT=your_env
 PINECONE_INDEX_NAME=tattva-shlokas
+
+# Cohere Configuration (Required for Reranking)
+COHERE_API_KEY=your_key
+
+# Vercel Postgres Configuration (For Production Tracing)
+POSTGRES_URL=your_postgres_connection_string
+POSTGRES_PRISMA_URL=your_postgres_prisma_url
+POSTGRES_URL_NON_POOLING=your_postgres_non_pooling_url
+POSTGRES_USER=default
+POSTGRES_HOST=your_host
+POSTGRES_PASSWORD=your_password
+POSTGRES_DATABASE=verceldb
 ```
 
-### 3. Run Development Server
+### 3. Setup Production Database (Optional for Dev, Required for Prod)
+
+If deploying to Vercel, create a Postgres database and run the initialization script to enable trace logging:
+
+1. Create Database in Vercel Storage.
+2. Link to Project (`vercel env pull`).
+3. Run initialization SQL:
+   ```bash
+   cat scripts/db/init_traces.sql
+   # Execute in Vercel Dashboard Query Runner
+   ```
 
 ```bash
 npm run dev
@@ -69,150 +101,57 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to see the application.
 
+## 🧪 Testing & Evaluation
+
+### Batched Regression Testing
+Run the full 60-question Golden Dataset evaluation:
+
+```bash
+# Run full evaluation
+python3 scripts/batch_evaluate_golden.py
+
+# Run on a random sample of 10 questions (Weekly Monitor)
+python3 scripts/batch_evaluate_golden.py --sample 10
+```
+
+### Semantic Verification (Prototype)
+Check for hallucinations using the NLI-based verifier:
+
+```bash
+python3 scripts/verify_semantics.py --input projectupdates/your_results.json
+```
+
 ## 📦 Project Structure
 
 ```
 tattvaapp/
 ├── app/                      # Next.js App Router
-│   ├── api/                 # API routes
-│   ├── layout.tsx           # Root layout
-│   ├── page.tsx             # Landing page
-│   └── globals.css          # Global styles
-├── components/              # React components
-│   └── ui/                 # shadcn/ui components
-├── lib/                     # Utility functions
-│   └── utils.ts            # Helper functions
-├── Valmiki_Ramayan_Dataset/ # Source data (23,402 shlokas)
-├── projectdocs/             # Documentation
-│   ├── PRD.md              # Product Requirements
-│   ├── IMPLEMENTATION_PLAN.md
-│   └── prompt.md
-├── .env.example             # Environment template
-├── next.config.js           # Next.js config
-├── tailwind.config.ts       # Tailwind config
-└── tsconfig.json            # TypeScript config
+├── components/               # React components
+├── lib/                      # Utility functions
+│   ├── services/             # Core Services (Answer, Retrieval, Verification)
+│   ├── pinecone/             # Vector DB Client
+│   └── prompts/              # LLM System Prompts
+├── scripts/                  # Evaluation & Maintenance Scripts
+├── projectdocs/              # Documentation & Architecture
+│   ├── launch_complete/      # Final Launch Reports & Baselines
+│   └── ...
+├── .env.example              # Environment template
+└── ...
 ```
 
 ## 🔧 Development Phases
 
 This project follows a 9-phase implementation plan:
 
-- ✅ **Phase 0**: Project Setup (COMPLETED)
-- ⏳ **Phase 1**: Data Ingestion & Vector Database (NEXT)
-- 🔜 **Phase 2**: Category Routing & Template Engine
-- 🔜 **Phase 3**: Retrieval Pipeline
-- 🔜 **Phase 4**: Answer Assembly Engine
-- ✅ **Phase 5**: Frontend UI & UX (COMPLETED)
-  - Home Page UX Refinements (Spacing, Typography, Animations)
-  - Typewriter Effect for Search
-  - Mobile Navigation Enhancements
-  - Explorer Page Layout
-- 🔜 **Phase 6**: Evaluation System
-- 🔜 **Phase 7**: Integration, Testing & Optimization
-- 🔜 **Phase 8**: Deployment & Launch
+- ✅ **Phase 0-4**: Core Pipeline (Completed)
+- ✅ **Phase 5**: Frontend UI & UX (Completed)
+- ✅ **Phase B+**: Post-Launch Improvements (Completed)
+  - **Structural Verification Layer** (Live)
+  - **Semantic Verification** (Prototyped)
+  - **Retrieval Reranker** (Live)
+- 🔜 **Phase C**: Advanced Faithfulness (Future)
 
-See [IMPLEMENTATION_PLAN.md](projectdocs/IMPLEMENTATION_PLAN.md) for detailed roadmap.
-
-## 🚀 Deploying to Vercel
-
-### Option 1: Deploy via Vercel CLI
-
-1. **Install Vercel CLI**:
-   ```bash
-   npm install -g vercel
-   ```
-
-2. **Login to Vercel**:
-   ```bash
-   vercel login
-   ```
-
-3. **Deploy**:
-   ```bash
-   vercel
-   ```
-
-4. **Add Environment Variables**:
-   ```bash
-   vercel env add OPENAI_API_KEY
-   vercel env add ANTHROPIC_API_KEY
-   vercel env add PINECONE_API_KEY
-   vercel env add PINECONE_ENVIRONMENT
-   vercel env add PINECONE_INDEX_NAME
-   ```
-
-5. **Deploy to Production**:
-   ```bash
-   vercel --prod
-   ```
-
-### Option 2: Deploy via Vercel Dashboard
-
-1. **Push to GitHub**:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit - Phase 0 complete"
-   git branch -M main
-   git remote add origin <your-repo-url>
-   git push -u origin main
-   ```
-
-2. **Import to Vercel**:
-   - Go to [vercel.com](https://vercel.com)
-   - Click "Add New Project"
-   - Import your GitHub repository
-   - Configure environment variables in the dashboard
-   - Click "Deploy"
-
-3. **Environment Variables to Add**:
-   - `OPENAI_API_KEY`
-   - `ANTHROPIC_API_KEY`
-   - `PINECONE_API_KEY`
-   - `PINECONE_ENVIRONMENT`
-   - `PINECONE_INDEX_NAME`
-
-## 📝 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-
-## 🔑 API Keys Setup
-
-### OpenAI API Key
-1. Visit [platform.openai.com](https://platform.openai.com/)
-2. Go to API Keys section
-3. Create new secret key
-4. Add to `.env.local`
-
-### Anthropic API Key
-1. Visit [console.anthropic.com](https://console.anthropic.com/)
-2. Go to API Keys section
-3. Create new key
-4. Add to `.env.local`
-
-### Pinecone API Key
-1. Visit [app.pinecone.io](https://app.pinecone.io/)
-2. Create a new project (free tier)
-3. Get API key from "API Keys" section
-4. Create a serverless index named `tattva-shlokas`
-5. Add credentials to `.env.local`
-
-## 📚 Documentation
-
-- [Product Requirements Document (PRD)](projectdocs/PRD.md)
-- [Implementation Plan](projectdocs/IMPLEMENTATION_PLAN.md)
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Pinecone Documentation](https://docs.pinecone.io/)
-
-## 🔒 Security Notes
-
-- Never commit `.env.local` or `.env` files
-- Keep API keys secure and rotate them regularly
-- Use environment variables for all sensitive data
-- Enable CORS and rate limiting before production deployment
+See [launch_complete/final_launch_report.md](projectdocs/launch_complete/final_launch_report.md) for detailed release notes.
 
 ## 📄 License
 
@@ -220,4 +159,4 @@ This project is for educational and research purposes.
 
 ---
 
-**Current Status**: Phase 5 Complete ✅ | Next: Evaluation System
+**Current Status**: Phase B+ Complete ✅ | Launch Ready 🚀
