@@ -61,6 +61,12 @@ export interface T3Answer {
 export type Answer = T1Answer | T2Answer | T3Answer;
 
 /**
+ * 4W1H Question Intent Types
+ * Detects the user's question intent to tailor answers appropriately
+ */
+export type QuestionIntent = 'who' | 'what' | 'when' | 'where' | 'why' | 'how' | 'general';
+
+/**
  * Classification result from the classify API
  */
 export interface ClassificationResult {
@@ -70,6 +76,7 @@ export interface ClassificationResult {
   confidence: number;
   reasoning: string;
   shouldAnswer: boolean; // false = refuse with T3
+  questionIntent?: QuestionIntent; // 4W1H intent detection
 }
 
 /**

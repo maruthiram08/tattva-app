@@ -115,8 +115,9 @@ export async function POST(req: Request) {
           model: 'gpt-4o', // Hardcoded as services use openai directly for now
           category: context.classification.categoryName,
           category_id: context.classification.categoryId,
-          confidence: 1.0,
+          confidence: context.classification.confidence || 1.0,
           template_selected: context.classification.template,
+          question_intent: context.classification.questionIntent,
         },
         classification_latency_ms: 0,
         generation_result: {
@@ -169,8 +170,9 @@ export async function POST(req: Request) {
               model: 'gpt-4o', // Hardcoded for now based on service
               category: context.classification.categoryName,
               category_id: context.classification.categoryId,
-              confidence: 1.0, // Mock for now
+              confidence: context.classification.confidence || 1.0,
               template_selected: context.classification.template,
+              question_intent: context.classification.questionIntent,
             },
             classification_latency_ms: 0, // Embedded
 

@@ -1,4 +1,4 @@
-import { CategoryId } from '@/lib/types/templates';
+import { CategoryId, QuestionIntent } from '@/lib/types/templates';
 import { RetrievalResult } from '@/lib/types/retrieval';
 import { buildT1Prompt } from '@/lib/prompts/t1-textual-prompt';
 import { buildT2Prompt } from '@/lib/prompts/t2-interpretive-prompt';
@@ -16,7 +16,8 @@ export function buildPrompt(
     question: string,
     categoryName: string,
     retrieval: RetrievalResult,
-    metadataResponse?: string
+    metadataResponse?: string,
+    questionIntent?: QuestionIntent
 ): string {
     // If this is a metadata question with a pre-defined answer, include it
     if (metadataResponse) {
@@ -34,9 +35,9 @@ Simply output the JSON above. This is a metadata question that doesn't require v
 
     switch (template) {
         case 'T1':
-            return buildT1Prompt(question, categoryName, retrieval.shlokas);
+            return buildT1Prompt(question, categoryName, retrieval.shlokas, questionIntent);
         case 'T2':
-            return buildT2Prompt(question, categoryName, retrieval.shlokas);
+            return buildT2Prompt(question, categoryName, retrieval.shlokas, questionIntent);
         case 'T3':
             return buildT3Prompt(question, categoryName);
         default:
@@ -52,11 +53,14 @@ export type AnswerContext = {
         template: 'T1' | 'T2' | 'T3';
         shouldAnswer: boolean;
         reasoning: string;
+        confidence?: number;
+        questionIntent?: QuestionIntent;
     };
     retrieval: RetrievalResult;
     isMetadata?: boolean;
     isEtymology?: boolean;
 }
+
 
 /**
  * Prepare all context needed for generation (Classify -> Retrieve -> Prompt)
@@ -149,13 +153,23 @@ export async function prepareAnswerContext(question: string, existingRetrieval?:
             : `LOW CITATION COUNT: Only ${retrieval.shlokas.length} shlokas available. If insufficient evidence, state this clearly.`;
     }
 
-    // Step 4: Build Prompt
+    // Step 4: Build Prompt (with questionIntent for 4W1H handling)
     const prompt = buildPrompt(
         classification.template,
         question,
         classification.categoryName,
-        retrieval
+        retrieval,
+        undefined, // metadataResponse
+        classification.questionIntent
     );
 
-    return { prompt, classification, retrieval };
+    return {
+        prompt,
+        classification: {
+            ...classification,
+            confidence: classification.confidence,
+            questionIntent: classification.questionIntent
+        },
+        retrieval
+    };
 }

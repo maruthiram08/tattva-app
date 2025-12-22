@@ -4,11 +4,69 @@
  */
 
 import { RetrievedShloka } from '@/lib/types/retrieval';
+import { QuestionIntent } from '@/lib/types/templates';
+
+/**
+ * Build intent-specific answer focus instructions for 4W1H questions
+ */
+function getIntentInstructions(intent: QuestionIntent | undefined): string {
+  switch (intent) {
+    case 'why':
+      return `
+QUESTION INTENT: WHY (Motivation/Reason)
+Focus your answer on:
+- PURPOSE and MOTIVATION behind the action
+- REASONS and CAUSES explicitly stated in the text
+- DUTY (dharma), LOYALTY, VALUES that drove the decision
+- DO NOT just describe HOW something happened - explain WHY it happened
+- Look for phrases indicating motive: "in order to", "because", "for the sake of", "motivated by"
+`;
+    case 'how':
+      return `
+QUESTION INTENT: HOW (Method/Process)
+Focus your answer on:
+- METHOD and MANNER of the action
+- STEPS, PROCESS, TECHNIQUES used
+- WEAPONS, TOOLS, STRATEGIES employed
+- SEQUENCE of events in the process
+- Describe the mechanism, not just the motivation
+`;
+    case 'when':
+      return `
+QUESTION INTENT: WHEN (Timing/Sequence)
+Focus your answer on:
+- TIMING and TEMPORAL CONTEXT
+- SEQUENCE relative to other events (before/after)
+- PERIOD or PHASE of the narrative (during exile, during war, etc.)
+- DURATION if mentioned
+`;
+    case 'where':
+      return `
+QUESTION INTENT: WHERE (Location/Place)
+Focus your answer on:
+- LOCATIONS and SETTINGS where events occurred
+- GEOGRAPHY (forests, kingdoms, cities, ashrams)
+- SPATIAL context and movement
+`;
+    case 'who':
+      return `
+QUESTION INTENT: WHO (Identity/Character)
+Focus your answer on:
+- CHARACTER IDENTITY and DESCRIPTION
+- RELATIONSHIPS and LINEAGE
+- ROLES and POSITIONS
+- Defining characteristics as stated in text
+`;
+    default:
+      return '';
+  }
+}
 
 export function buildT1Prompt(
   question: string,
   categoryName: string,
-  shlokas: RetrievedShloka[]
+  shlokas: RetrievedShloka[],
+  questionIntent?: QuestionIntent
 ): string {
   // Build citations from retrieved shlokas
   const citations = shlokas
@@ -38,6 +96,10 @@ export function buildT1Prompt(
   const answerInstruction = isNarrativeRequest
     ? "Write a coherent, flowy narrative summary (6-8 sentences) that tells the story chronologically. Do not just list events."
     : "Comprehensive direct answer (4-6 sentences) incorporating key details (names, numbers, places) from the citations.";
+
+  // Get intent-specific instructions
+  const intentInstructions = getIntentInstructions(questionIntent);
+
 
 
   return `You are Tattva, a scholarly interpreter of Valmiki's Ramayana. Your role is to provide TEXTUAL, fact-based answers grounded ONLY in the provided text.
@@ -82,11 +144,11 @@ CRITICAL RULES FOR T1 (TEXTUAL ANSWERS):
 
 QUESTION CATEGORY: ${categoryName}
 USER QUESTION: ${question}
-
+${intentInstructions}
 RETRIEVED CITATIONS:
 ${citations}
 ${zeroCitationMessage}${lowCitationWarning}
-TASK: Answer the question using ONLY the information above.
+TASK: Answer the question using ONLY the information above.${intentInstructions ? ' Pay close attention to the QUESTION INTENT section above.' : ''}
 
 MANDATORY CITATION FORMAT: Your "answer" field MUST contain inline citations in [Kanda-Name Sarga.Shloka] format. 
 - WRONG: "Rama was born in Ayodhya." (no citation)

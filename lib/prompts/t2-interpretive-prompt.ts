@@ -4,11 +4,13 @@
  */
 
 import { RetrievedShloka } from '@/lib/types/retrieval';
+import { QuestionIntent } from '@/lib/types/templates';
 
 export function buildT2Prompt(
   question: string,
   categoryName: string,
-  shlokas: RetrievedShloka[]
+  shlokas: RetrievedShloka[],
+  questionIntent?: QuestionIntent
 ): string {
   // Build citations from retrieved shlokas
   const citations = shlokas

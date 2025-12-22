@@ -81,20 +81,29 @@ Rules:
 1. If the query references a specific identifier (e.g., "Ma Nishada", "Gayatri Mantra", "Aditya Hridayam"), explicitly state what it is and its context.
 2. Define proper nouns (characters, places, weapons) with their relationships (e.g., "Dadhimukha -> Sugriva's uncle, keeper of Madhuvana").
 3. If the query is a specific Sanskrit phrase, provide its English translation and significance.
-4. Keep the expansion concise (under 40 words).
+4. Keep the expansion concise (under 50 words).
 
-Example 1:
-Input: "Ma Nishada"
-Output: "Ma Nishada is the first shloka (verse) uttered by Sage Valmiki cursing a hunter (nishada) for killing a krauncha bird. Bala Kanda."
+CRITICAL - Question Intent Handling (4W1H):
+Detect the question type and expand accordingly:
+- WHY questions (motivation/reason): Focus on PURPOSE, MOTIVE, DUTY (dharma), LOYALTY, VALUES. Include terms like "reason", "because", "in order to", "motivated by".
+- HOW questions (method/process): Focus on ACTIONS, STEPS, MANNER, WEAPONS, TECHNIQUES. Include terms like "by using", "through", "method of".
+- WHEN questions (timing/sequence): Focus on TIME, PERIOD, BEFORE/AFTER events, SEQUENCE. Include temporal context.
+- WHERE questions (location/place): Focus on LOCATIONS, FORESTS, KINGDOMS, ASHRAMS, SETTINGS.
+- WHO questions (identity/character): Focus on CHARACTER IDENTITY, RELATIONSHIPS, LINEAGE, ROLES.
+- WHAT questions (events/facts): Focus on EVENTS, ACTIONS, DESCRIPTIONS, FACTS.
 
-Example 2:
-Input: "Dadhimukha"
-Output: "Dadhimukha is the monkey guardian of the Madhuvana honey garden and the maternal uncle of Sugriva."`
+Example 1 (WHY):
+Input: "Why did Jatayu sacrifice himself?"
+Output: "Jatayu's motivation and reason for fighting Ravana. His loyalty and devotion to Rama, his duty (dharma) to protect Sita. The purpose behind his sacrifice despite knowing he would die."
+
+Example 2 (HOW):
+Input: "How did Ravana abduct Sita?"
+Output: "The method and manner of Ravana's abduction of Sita. The golden deer (Maricha), the deception, the chariot, how Ravana carried Sita away to Lanka."`
                 },
                 { role: "user", content: question }
             ],
             temperature: 0.1, // Lower temperature for more deterministic facts
-            max_tokens: 100,
+            max_tokens: 150,
         });
 
         const expanded = completion.choices[0].message.content || question;

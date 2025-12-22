@@ -1,4 +1,4 @@
-import { CategoryId } from "./templates";
+import { CategoryId, QuestionIntent } from "./templates";
 import { RetrievalResult } from "./retrieval";
 
 export interface TraceData {
@@ -19,9 +19,10 @@ export interface TraceData {
     classification_result?: {
         model: string;
         category: string;
-        category_id: CategoryId;
+        category_id?: CategoryId;
         confidence: number;
         template_selected: string;
+        question_intent?: QuestionIntent; // 4W1H intent
     };
     classification_latency_ms?: number;
 

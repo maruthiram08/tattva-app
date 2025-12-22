@@ -5,7 +5,7 @@ import {
     buildClassificationUserMessage,
     getCategoryDetails,
 } from '@/lib/prompts/classification-prompt';
-import { ClassificationResult, CategoryId } from '@/lib/types/templates';
+import { ClassificationResult, CategoryId, QuestionIntent } from '@/lib/types/templates';
 
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
@@ -22,6 +22,39 @@ const LLMClassificationSchema = z.object({
     reasoning: z.string(),
     shouldAnswer: z.boolean(),
 });
+
+/**
+ * 4W1H Question Intent Detection
+ * Detects the primary intent of the question to tailor answer generation
+ */
+function detectQuestionIntent(question: string): QuestionIntent {
+    const q = question.toLowerCase().trim();
+
+    // Check question starters (strongest signal)
+    if (/^(who|whose)\b/.test(q)) return 'who';
+    if (/^what\b/.test(q)) return 'what';
+    if (/^when\b/.test(q)) return 'when';
+    if (/^where\b/.test(q)) return 'where';
+    if (/^why\b/.test(q)) return 'why';
+    if (/^how\b/.test(q)) return 'how';
+
+    // Check mid-sentence patterns (weaker but still relevant)
+    if (/\bwhy (did|does|do|was|were|is|are|would|could|should)\b/.test(q)) return 'why';
+    if (/\bhow (did|does|do|was|were|is|are|would|could|should|can|could)\b/.test(q)) return 'how';
+    if (/\bwhen (did|does|do|was|were|is|are)\b/.test(q)) return 'when';
+    if (/\bwhere (did|does|do|was|were|is|are)\b/.test(q)) return 'where';
+    if (/\bwho (did|does|do|was|were|is|are)\b/.test(q)) return 'who';
+
+    // Check for intent-specific keywords
+    if (/\b(reason|motivation|purpose|cause|because)\b/.test(q)) return 'why';
+    if (/\b(method|manner|way|process|step)\b/.test(q)) return 'how';
+    if (/\b(time|year|age|period|before|after|during)\b/.test(q)) return 'when';
+    if (/\b(place|location|forest|kingdom|city|ashram)\b/.test(q)) return 'where';
+    if (/\b(character|person|identity|son of|daughter of)\b/.test(q)) return 'who';
+
+    return 'general';
+}
+
 
 /**
  * Rule-based pre-filtering
@@ -156,12 +189,16 @@ async function llmClassification(question: string): Promise<ClassificationResult
  * Unified classification function
  */
 export async function classifyQuestion(question: string): Promise<ClassificationResult> {
+    // Detect question intent (4W1H)
+    const questionIntent = detectQuestionIntent(question);
+
     // Try rule-based classification first (fast path)
     const ruleResult = ruleBasedClassification(question);
     if (ruleResult) {
-        return ruleResult;
+        return { ...ruleResult, questionIntent };
     }
 
     // Fallback to LLM classification
-    return await llmClassification(question);
+    const llmResult = await llmClassification(question);
+    return { ...llmResult, questionIntent };
 }
