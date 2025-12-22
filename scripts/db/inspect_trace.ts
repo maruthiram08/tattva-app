@@ -43,8 +43,10 @@ async function main() {
         console.log("\n───────────────────────────────────────────────────────────────");
         console.log("📊 CLASSIFICATION:");
         console.log("   Category:", trace.classification_result?.category);
-        console.log("   Template:", trace.classification_result?.template_type);
+        console.log("   Template:", trace.classification_result?.template_selected || trace.classification_result?.template_type);
         console.log("   Model:", trace.classification_result?.model);
+        console.log("   Confidence:", trace.classification_result?.confidence);
+        console.log("   🎯 Question Intent (4W1H):", trace.classification_result?.question_intent || "N/A");
 
         console.log("\n───────────────────────────────────────────────────────────────");
         console.log("🔎 RETRIEVAL:");
