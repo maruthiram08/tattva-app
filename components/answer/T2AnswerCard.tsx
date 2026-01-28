@@ -7,6 +7,7 @@ import { RetrievalResult, ShlokaMetadata } from '@/lib/types/retrieval';
 import { MessageCircle, Feather, AlertCircle, Copy, Share2, Library } from 'lucide-react';
 import { CitationTooltip } from './CitationTooltip';
 import { SourceList } from './SourceList';
+import ReactMarkdown from 'react-markdown';
 
 interface T2AnswerCardProps {
     data: T2Answer;
@@ -22,10 +23,10 @@ export function T2AnswerCard({ data, question, retrieval, onCitationClick }: T2A
     const renderWithCitations = (text: string) => {
         if (!text) return null;
         // Regex to capture [Source X.Y], (Source X.Y) or inline Source X.Y patterns. Explicit Kanda names.
-        const parts = text.split(/([\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)\s+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?)/g);
+        const parts = text.split(/([\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)[\s\-]+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?)/g);
 
         return parts.map((part, index) => {
-            const isCitation = /^[\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)\s+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?$/.test(part);
+            const isCitation = /^[\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)[\s\-]+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?$/.test(part);
 
             if (isCitation) {
                 const citationText = part.replace(/^[\[\(]|[\]\)]$/g, '');
@@ -46,7 +47,7 @@ export function T2AnswerCard({ data, question, retrieval, onCitationClick }: T2A
                     />
                 );
             }
-            return part;
+            return <ReactMarkdown key={index} components={{ p: 'span' }}>{part}</ReactMarkdown>;
         });
     };
 
@@ -122,7 +123,7 @@ export function T2AnswerCard({ data, question, retrieval, onCitationClick }: T2A
 
                 <SourceList citations={(() => {
                     const allText = (data.answer || '') + (data.whatTextStates || '');
-                    const matches = allText.match(/([\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)\s+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?)/g);
+                    const matches = allText.match(/([\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)[\s\-]+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?)/g);
                     return matches ? Array.from(new Set(matches.map(s => s.replace(/^[\[\(]|[\]\)]$/g, '')))) : [];
                 })()} retrieval={retrieval} onCitationClick={onCitationClick} />
 

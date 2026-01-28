@@ -7,6 +7,7 @@ import { RetrievalResult, ShlokaMetadata } from '@/lib/types/retrieval';
 import { MessageCircle, Feather, Copy, Share2 } from 'lucide-react';
 import { CitationTooltip } from './CitationTooltip';
 import { SourceList } from './SourceList';
+import ReactMarkdown from 'react-markdown';
 
 interface T1AnswerCardProps {
     data: T1Answer;
@@ -24,11 +25,11 @@ export function T1AnswerCard({ data, question, retrieval, onCitationClick }: T1A
         if (!text) return null;
         // Regex to capture [Source X.Y], (Source X.Y) or inline Source X.Y patterns.
         // matches explicit Kanda names to avoid capturing preceding text like "as stated in".
-        const parts = text.split(/([\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)\s+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?)/g);
+        const parts = text.split(/([\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)[\s\-]+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?)/g);
 
         return parts.map((part, index) => {
             // Check if this part is a citation tag
-            const isCitation = /^[\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)\s+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?$/.test(part);
+            const isCitation = /^[\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)[\s\-]+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?$/.test(part);
 
             if (isCitation) {
                 // Remove brackets/parentheses
@@ -53,7 +54,7 @@ export function T1AnswerCard({ data, question, retrieval, onCitationClick }: T1A
                     />
                 );
             }
-            return part;
+            return <ReactMarkdown key={index} components={{ p: 'span' }}>{part}</ReactMarkdown>;
         });
     };
 
