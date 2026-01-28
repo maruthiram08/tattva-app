@@ -104,7 +104,7 @@ export function T1AnswerCard({ data, question, retrieval, onCitationClick }: T1A
 
             {/* Footer */}
             <div className="bg-stone-50 px-6 py-4 border-t border-stone-100 flex justify-between items-center text-xs">
-                <span className="text-stone-400 font-medium bg-stone-100 px-2 py-1 rounded">Textual Answer (T1)</span>
+                <span className="text-stone-400 font-medium bg-stone-100 px-2 py-1 rounded">Textual (T1)</span>
                 <div className="flex gap-2">
                     <button className="p-2 rounded-lg hover:bg-white hover:shadow-sm text-stone-400 hover:text-stone-900 transition-all" title="Copy Answer">
                         <Copy className="w-3.5 h-3.5" />

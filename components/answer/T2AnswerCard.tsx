@@ -131,7 +131,7 @@ export function T2AnswerCard({ data, question, retrieval, onCitationClick }: T2A
 
             {/* Footer */}
             <div className="bg-stone-50 px-6 py-4 border-t border-stone-100 flex justify-between items-center text-xs">
-                <span className="text-stone-400 font-medium bg-stone-100 px-2 py-1 rounded">Interpretive Answer (T2)</span>
+                <span className="text-stone-400 font-medium bg-stone-100 px-2 py-1 rounded">Interpretive (T2)</span>
                 <div className="flex gap-2">
                     <button className="p-2 rounded-lg hover:bg-white hover:shadow-sm text-stone-400 hover:text-stone-900 transition-all" title="Copy">
                         <Copy className="w-3.5 h-3.5" />
