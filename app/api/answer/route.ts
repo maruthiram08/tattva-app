@@ -5,6 +5,14 @@ import { VerificationService } from '@/lib/services/verification-service';
 import { traceService } from '@/lib/services/trace-service';
 import { TraceData } from '@/lib/types/trace';
 import { randomUUID } from 'crypto';
+import { rateLimit } from '@/lib/rate-limit';
+import { headers } from 'next/headers';
+
+// Rate Limiter: 5 queries per hour
+const limiter = rateLimit({
+  interval: 60 * 60 * 1000, // 1 hour
+  uniqueTokenPerInterval: 500, // Max 500 unique IPs tracked in memory
+});
 
 // Define schemas matching our types (Duplicated for now, or export from a shared schema file)
 // Schemas are defined in UnifiedSchema below to avoid union issues
@@ -70,6 +78,16 @@ export async function POST(req: Request) {
   console.log('API /api/answer called');
   try {
     const { question, retrieval: clientRetrieval, preferredProvider, stream = true } = await req.json();
+
+    // Check Rate Limit
+    const ip = headers().get('x-forwarded-for') ?? '127.0.0.1';
+    try {
+      await limiter.check(new Response(), 5, ip); // Limit: 5 requests per token
+    } catch {
+      return new Response(JSON.stringify({
+        error: "To ensure fair usage for everyone, we limit inquiries to 5 per hour. Please return shortly to continue your journey through the Ramayana."
+      }), { status: 429 });
+    }
 
     const startTotal = Date.now();
     const startContext = Date.now();

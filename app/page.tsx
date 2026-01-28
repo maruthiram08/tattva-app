@@ -197,7 +197,13 @@ export default function HomePage() {
         body: JSON.stringify({ question })
       });
 
-      if (!retrieveRes.ok) throw new Error("Retrieval failed");
+      if (!retrieveRes.ok) {
+        if (retrieveRes.status === 429) {
+          const errorData = await retrieveRes.json();
+          throw new Error(errorData.error || "Too many requests. Please try again later.");
+        }
+        throw new Error("Retrieval failed");
+      }
 
       const data = await retrieveRes.json();
       const retrieval = data.retrieval;
@@ -208,8 +214,15 @@ export default function HomePage() {
       // Step 2: Generate Answer
       submit({ question, retrieval });
     } catch (e) {
-      console.error("Search flow failed:", e);
       setIsRetrieving(false);
+      // Ensure header stays visible on error
+      window.dispatchEvent(new CustomEvent('toggle-focus-mode', { detail: { hidden: false } }));
+      // Set error state manually if not using useObject's error
+      // Note: useObject handles stream errors, but here we catch fetch errors.
+      // We need a way to show this error. 
+      // For now, let's alert or set a temporary error state if we had one.
+      // Since we rely on `error` from `useObject`, we might need a local error state for fetch failures.
+      alert(e instanceof Error ? e.message : "Something went wrong");
     } finally {
       setIsRetrieving(false);
     }
