@@ -1,6 +1,6 @@
 import { getKandas } from "@/lib/data/ramayana";
 import { KandaCard } from "@/components/explorer/KandaCard";
-import { FloatingSearch } from "@/components/explorer/FloatingSearch";
+
 
 export const metadata = {
     title: 'Ramayana Explorer | Tattva',
@@ -68,8 +68,5 @@ export default async function ExplorerPage() {
 
             </div>
 
-            {/* Sticky Footer Search */}
-            <FloatingSearch />
-        </div>
-    );
+            );
 }
