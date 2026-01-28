@@ -62,10 +62,10 @@ export function LeadCaptureModal({ isOpen, onComplete }: LeadCaptureModalProps) 
                         <Mail className="w-6 h-6" />
                     </div>
                     <h2 className="text-2xl font-serif font-medium text-stone-900">
-                        Begin Your Journey into the Adi Kavya
+                        Begin Your Journey
                     </h2>
                     <p className="text-stone-500 text-sm leading-relaxed">
-                        Tattva is a research project dedicated to verifiable AI. To continue exploring the Ramayana and save your conversation history, please share your email. We respect your privacy and will never spam.
+                        Tattva is a research project exploring verifiable AI. Please share your email to access the interpreter. We respect your privacy and will never spam.
                     </p>
                 </div>
 
