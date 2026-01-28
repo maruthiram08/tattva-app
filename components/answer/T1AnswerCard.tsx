@@ -23,9 +23,10 @@ export function T1AnswerCard({ data, question, retrieval, onCitationClick }: T1A
     // Helper to render text with interactive citations
     const renderAnswerWithCitations = (text: string) => {
         if (!text) return null;
+        const cleanText = text.replace(/^(?:\*\*Answer:\*\*|Answer:)\s*/i, '');
         // Regex to capture [Source X.Y], (Source X.Y) or inline Source X.Y patterns.
         // matches explicit Kanda names to avoid capturing preceding text like "as stated in".
-        const parts = text.split(/([\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)[\s\-]+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?)/g);
+        const parts = cleanText.split(/([\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)[\s\-]+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?)/g);
 
         return parts.map((part, index) => {
             // Check if this part is a citation tag

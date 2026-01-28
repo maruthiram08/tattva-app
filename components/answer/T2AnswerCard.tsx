@@ -22,8 +22,9 @@ export function T2AnswerCard({ data, question, retrieval, onCitationClick }: T2A
     // Helper to render text with interactive citations
     const renderWithCitations = (text: string) => {
         if (!text) return null;
+        const cleanText = text.replace(/^(?:\*\*Answer:\*\*|Answer:)\s*/i, '');
         // Regex to capture [Source X.Y], (Source X.Y) or inline Source X.Y patterns. Explicit Kanda names.
-        const parts = text.split(/([\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)[\s\-]+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?)/g);
+        const parts = cleanText.split(/([\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)[\s\-]+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?)/g);
 
         return parts.map((part, index) => {
             const isCitation = /^[\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)[\s\-]+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?$/.test(part);
