@@ -10,6 +10,7 @@ import { FloatingQuestionInput } from '@/components/question/FloatingQuestionInp
 import { DailyWisdom } from '@/components/home/DailyWisdom';
 import { AnswerDisplay } from '@/components/answer/AnswerDisplay';
 import { AnswerSkeleton } from '@/components/answer/AnswerSkeleton';
+import { LeadCaptureModal } from '@/components/home/LeadCaptureModal';
 
 // Define minimal schema for client-side typing/validation
 const AnswerSchema = z.any();
@@ -71,6 +72,10 @@ export default function HomePage() {
   // Track if we're in content mode to prevent header hide on home return
   const isInContentMode = useRef(false);
   const posthog = usePostHog();
+
+  // Lead Gen State
+  const [showLeadModal, setShowLeadModal] = useState(false);
+  const [pendingQuery, setPendingQuery] = useState<string | null>(null);
 
   // Initialize Streaming Hook
   const { object, submit, isLoading, error, stop } = useObject({
@@ -176,6 +181,14 @@ export default function HomePage() {
   };
 
   const handleSearch = async (question: string) => {
+    // 1. Check for Lead Gate
+    const hasEmail = localStorage.getItem('user_email');
+    if (!hasEmail) {
+      setPendingQuery(question);
+      setShowLeadModal(true);
+      return;
+    }
+
     saveCurrentToHistory(); // Save current before starting a new search
     setStaticAnswer(null); // Clear static so streaming takes over
     setRetrievalData(undefined);
@@ -247,6 +260,17 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen flex flex-col relative">
+
+      <LeadCaptureModal
+        isOpen={showLeadModal}
+        onComplete={() => {
+          setShowLeadModal(false);
+          if (pendingQuery) {
+            handleSearch(pendingQuery); // Recursively call, this time email will exist
+            setPendingQuery(null);
+          }
+        }}
+      />
 
       {/* History Slide-over / Modal */}
       {showHistory && (
