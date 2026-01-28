@@ -25,7 +25,6 @@ export function T1AnswerCard({ data, question, retrieval, onCitationClick }: T1A
         if (!text) return null;
         const cleanText = text.replace(/^(?:\*\*Answer:\*\*|Answer:)\s*/i, '');
         // Regex to capture [Source X.Y], (Source X.Y) or inline Source X.Y patterns.
-        // matches explicit Kanda names to avoid capturing preceding text like "as stated in".
         const parts = cleanText.split(/([\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)[\s\-]+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?)/g);
 
         return parts.map((part, index) => {
@@ -38,7 +37,6 @@ export function T1AnswerCard({ data, question, retrieval, onCitationClick }: T1A
 
                 // Find matching shloka data if available
                 const shlokaData = retrieval?.shlokas.find(s => {
-                    // Normalize to check text
                     const kandaMatch = citationText.toLowerCase().includes(s.metadata.kanda.toLowerCase().split(' ')[0]);
                     const sargaMatch = citationText.includes(String(s.metadata.sarga));
                     const shlokaMatch = citationText.includes(String(s.metadata.shloka));
@@ -59,6 +57,9 @@ export function T1AnswerCard({ data, question, retrieval, onCitationClick }: T1A
         });
     };
 
+    // Determine if we have the new "Synthesis" format or legacy "Block Answer"
+    const hasSynthesis = !!data.summary;
+
     return (
         <div className="bg-white rounded-3xl shadow-medium border border-stone-100 overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-700">
 
@@ -77,24 +78,50 @@ export function T1AnswerCard({ data, question, retrieval, onCitationClick }: T1A
 
             <div className="p-5 md:p-8 space-y-8">
 
-                {/* Main Answer */}
-                <div className="prose prose-stone prose-lg max-w-none">
-                    <div className="font-serif text-xl md:text-2xl font-medium leading-relaxed text-stone-900 whitespace-pre-wrap">
-                        {renderAnswerWithCitations(data.answer)}
-                    </div>
-                </div>
-
-
-                {/* Textual Basis / Explanations - Progressive Disclosure */}
-                {data.explanation && data.explanation.length > 10 && (
-                    <div className="bg-stone-50 rounded-2xl p-5 border border-stone-100 animate-in fade-in slide-in-from-bottom-2 duration-700">
-                        <div className="flex items-center gap-2 mb-3">
-                            <Feather className="w-4 h-4 text-amber-700" />
-                            <span className="text-xs font-semibold text-stone-900 uppercase tracking-wide">Scriptural Authority</span>
+                {/* 1. Synthesis Summary (Clean, No Citations) */}
+                {hasSynthesis && (
+                    <div className="prose prose-stone prose-lg max-w-none">
+                        <div className="font-serif text-xl md:text-2xl font-medium leading-relaxed text-stone-900">
+                            <ReactMarkdown components={{ p: 'div' }}>{data.summary}</ReactMarkdown>
                         </div>
-                        <p className="text-sm text-stone-600 leading-relaxed italic">
-                            {data.explanation}
-                        </p>
+                    </div>
+                )}
+
+                {/* 2. Key Points / Traits */}
+                {hasSynthesis && data.keyPoints && data.keyPoints.length > 0 && (
+                    <div className="space-y-3">
+                        {data.keyPoints.map((point, i) => (
+                            <div key={i} className="flex gap-3 items-start animate-in fade-in slide-in-from-bottom-2" style={{ animationDelay: `${i * 100}ms` }}>
+                                <div className="mt-1.5 h-1.5 w-1.5 rounded-full bg-amber-500 flex-shrink-0" />
+                                <p className="text-stone-700 leading-relaxed font-sans">{point.replace(/^- /, '')}</p>
+                            </div>
+                        ))}
+                    </div>
+                )}
+
+                {/* Legacy Fallback: Main Answer if no synthesis */}
+                {!hasSynthesis && (
+                    <div className="prose prose-stone prose-lg max-w-none">
+                        <div className="font-serif text-xl md:text-2xl font-medium leading-relaxed text-stone-900 whitespace-pre-wrap">
+                            {renderAnswerWithCitations(data.answer || '')}
+                        </div>
+                    </div>
+                )}
+
+                {/* 3. Scriptural Foundation (The Evidence - Collapsible or Card) */}
+                {(data.scripturalEvidence || data.explanation || !hasSynthesis) && (
+                    <div className="bg-stone-50 rounded-2xl p-6 border border-stone-100 animate-in fade-in slide-in-from-bottom-2 duration-700">
+                        <div className="flex items-center gap-2 mb-4">
+                            <Feather className="w-4 h-4 text-amber-700" />
+                            <span className="text-xs font-semibold text-stone-900 uppercase tracking-wide">Scriptural Foundation</span>
+                        </div>
+                        <div className="text-sm md:text-base text-stone-600 leading-relaxed font-serif">
+                            {/* If new format, render the evidence text with citations. 
+                                 If legacy format, render explanation if it exists */}
+                            {hasSynthesis
+                                ? renderAnswerWithCitations(data.scripturalEvidence)
+                                : data.explanation}
+                        </div>
                     </div>
                 )}
 

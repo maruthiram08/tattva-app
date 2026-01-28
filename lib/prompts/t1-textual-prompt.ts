@@ -150,55 +150,42 @@ ${citations}
 ${zeroCitationMessage}${lowCitationWarning}
 TASK: Answer the question using ONLY the information above.${intentInstructions ? ' Pay close attention to the QUESTION INTENT section above.' : ''}
 
-MANDATORY CITATION FORMAT: Your "answer" field MUST contain inline citations in [Kanda-Name Sarga.Shloka] format. 
-- WRONG: "Rama was born in Ayodhya." (no citation)
-- CORRECT: "Rama was born in Ayodhya [Bala-Kanda 5.12]." (has citation)
-
-Every sentence with a factual claim must include at least one inline citation.
-
 Structure your response as valid JSON:
 
 {
   "templateType": "T1",
-  "answer": "Your answer text with inline citations like [Bala-Kanda 1.23] embedded throughout. ${answerInstruction} Every factual claim must have a citation in brackets immediately following it.",
+  "summary": "Clear, direct answer (3-5 sentences) written in plain language. NO INLINE CITATIONS here. Focus on synthesis.",
+  "keyPoints": [
+    "Core trait 1 or key fact",
+    "Supporting detail",
+    "Another key point"
+  ],
+  "scripturalEvidence": "Detailed textual evidence. THIS section MUST have inline citations like [Bala-Kanda 1.23] for every claim. This is the rigorous proof.",
   "textualBasis": {
-    "kanda": "Primary Kanda name (e.g., Bala-Kanda)",
-    "sarga": [1, 2, 3],
-    "shloka": [23, 45, 67],
-    "citations": ["Bala-Kanda 1.23", "Bala-Kanda 2.45", "Bala-Kanda 3.67"]
-  },
-  "explanation": "Detailed explanation connecting the citations to the answer. Quote specific phrases from the text. 3-5 sentences."
+    "kanda": "Primary Kanda name",
+    "sarga": [1, 2],
+    "shloka": [23, 45],
+    "citations": ["Bala-Kanda 1.23", "Bala-Kanda 2.45"]
+  }
 }
 
 BEFORE RESPONDING, PERFORM THIS SEMANTIC SELF-CHECK:
-1. Can I point to a specific phrase in a shloka for EACH claim?
-2. Am I stating exactly what the shloka says, or adding interpretation/sequence? (If adding, STOP).
-3. If connecting multiple shlokas, does a single shloka state the connection?
-4. Would a scholar reading ONLY this shloka agree with my claim?
+1. Is the Summary clean and readable (NO citations)?
+2. Does the Scriptural Evidence contain ALL the rigor and citations?
+3. Am I stating exactly what the shloka says?
 
-If ANY answer is "No" -> Rephrase or state "text does not specify".
-
-VALIDATION CHECKLIST (verify ALL before responding):
-- [ ] INLINE CITATIONS: The "answer" field contains at least 2 citations in [Kanda-Name Sarga.Shloka] format embedded in prose
-- [ ] CITATION PLACEMENT: Every factual claim has a citation immediately after it
-- [ ] NO OVERREACH: Every claim is directly stated in cited verse, not inferred or concluded
-- [ ] NO ABSENCE CLAIMS: Never say "X is not in the text" - say "The provided citations do not mention X"
-- [ ] CONSERVATIVE: Uses "the text describes/mentions" rather than "the text proves/shows"
-- [ ] CITATION COVERAGE: Every factual claim in the answer has an inline citation
-- [ ] NO SPECULATION: No speculative language (might, could, possibly, perhaps, probably, likely, seems, appears, suggests, implies)
-- [ ] SOURCE VALIDITY: All citations are from the provided retrieved citations only
-- [ ] SUPPORT: Answer is directly supported by the textual basis
-- [ ] NO MODERN: No modern interpretations or external comparisons
-- [ ] TONE: Neutral, scholarly tone maintained
-- [ ] SPECIFICS: Answer includes specific names/places
-- [ ] SEMANTIC CHECK: No inference chains, no assumed sequence, no added context
-- [ ] UNCERTAINTY: "Text does not state" used when info is missing
-- [ ] NO COMMENTARY: Cites only text/translation, not commentary
+VALIDATION CHECKLIST:
+- [ ] SUMMARY: Clean, readable, no citations
+- [ ] EVIDENCE: Contains strict inline citations in [Kanda-Name Sarga.Shloka] format
+- [ ] CITATION PLACEMENT: Every claim in 'scripturalEvidence' has a citation
+- [ ] NO OVERREACH: Every claim is directly stated in cited verse
+- [ ] NO ABSENCE CLAIMS: Never say "X is not in the text"
+- [ ] CONSERVATIVE: Uses "the text describes" rather than "the text proves"
+- [ ] NO SPECULATION: No might/could/probably
+- [ ] SOURCE VALIDITY: All citations are from retrieved text
 
 RESPOND WITH ONLY THE JSON, NO ADDITIONAL TEXT.
-
-IMPORTANT FORMATTING RULE: The "answer" field MUST start with the bold header "**Answer:**". Do not omit this.
-Example: "answer": "**Answer:** Rama was born in..."`;
+`;
 }
 
 /**
@@ -210,5 +197,6 @@ export function buildT1ContextSummary(shlokas: RetrievedShloka[]): string {
   const kandas = Array.from(new Set(shlokas.map((s) => s.metadata.kanda)));
   const sargas = Array.from(new Set(shlokas.map((s) => s.metadata.sarga)));
 
-  return `Retrieved ${shlokas.length} shlokas from ${kandas.join(', ')} (Sargas: ${sargas.join(', ')})`;
+  return `Retrieved ${shlokas.length} shlokas from ${kandas.join(', ')} (Sargas: ${sargas.join(', ')
+    })`;
 }

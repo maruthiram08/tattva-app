@@ -24,8 +24,13 @@ export const runtime = 'nodejs';
 // Unified Schema to handle all template types without Union blocking
 const UnifiedSchema = z.object({
   templateType: z.enum(['T1', 'T2', 'T3']),
+  // Common Synthesis Fields (T1 & T2)
+  summary: z.string().optional(),
+  keyPoints: z.array(z.string()).optional(),
+  scripturalEvidence: z.string().optional(),
+
   // T1 Fields
-  answer: z.string().optional(), // Shared with T2
+  answer: z.string().optional(), // LEGACY/Fallback
   textualBasis: z.object({
     kanda: z.string(),
     sarga: z.union([z.number(), z.array(z.number())]).optional(),
@@ -33,10 +38,12 @@ const UnifiedSchema = z.object({
     citations: z.array(z.string()),
   }).optional(),
   explanation: z.string().optional(),
+
   // T2 Fields
-  whatTextStates: z.string().optional(),
+  whatTextStates: z.string().optional(), // LEGACY/Fallback -> scripturalEvidence
   traditionalInterpretations: z.string().optional(),
   limitOfCertainty: z.string().optional(),
+
   // T3 Fields
   outOfScopeNotice: z.string().optional(),
   why: z.string().optional(),
@@ -44,7 +51,8 @@ const UnifiedSchema = z.object({
     introduction: z.string(),
     alternatives: z.array(z.string())
   }).optional(),
-  // Legacy field support (optional for backward compat if needed, but we typically drop it)
+
+  // Legacy field support
   whatICanHelpWith: z.array(z.string()).optional(),
 });
 
@@ -64,6 +72,15 @@ function constructFullAnswer(obj: z.infer<typeof UnifiedSchema>) {
     return text;
   }
   if (obj.templateType === 'T2') {
+    // New Format Preference
+    if (obj.summary) {
+      let text = obj.summary;
+      if (obj.keyPoints && obj.keyPoints.length > 0) text += '\n\n**Key Points:**\n- ' + obj.keyPoints.join('\n- ');
+      if (obj.scripturalEvidence) text += '\n\n**Scriptural Evidence:**\n' + obj.scripturalEvidence;
+      if (obj.traditionalInterpretations) text += '\n\n**Interpretations:**\n' + obj.traditionalInterpretations;
+      return text;
+    }
+    // Legacy Fallback
     let text = obj.answer || '';
     if (obj.whatTextStates) text += '\n\n**Textual Basis:**\n' + obj.whatTextStates;
     if (obj.traditionalInterpretations) text += '\n\n**Interpretations:**\n' + obj.traditionalInterpretations;
@@ -71,6 +88,12 @@ function constructFullAnswer(obj: z.infer<typeof UnifiedSchema>) {
     return text;
   }
   // T1
+  if (obj.summary) {
+    let text = obj.summary;
+    if (obj.keyPoints && obj.keyPoints.length > 0) text += '\n\n**Key Points:**\n- ' + obj.keyPoints.join('\n- ');
+    if (obj.scripturalEvidence) text += '\n\n**Scriptural Evidence:**\n' + obj.scripturalEvidence;
+    return text;
+  }
   return obj.answer || obj.explanation || '';
 }
 

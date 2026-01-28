@@ -25,14 +25,18 @@ export interface Category {
  */
 export interface T1Answer {
   templateType: 'T1';
-  answer: string;
+  summary: string; // Plain language summary, NO inline citations
+  keyPoints: string[]; // Bullet points
+  scripturalEvidence: string; // Detailed text WITH inline citations
+  // Legacy support or fallback
+  answer?: string;
   textualBasis: {
     kanda: string;
     sarga?: number | number[];
     shloka?: number | number[];
     citations: string[];
   };
-  explanation: string;
+  explanation?: string; // Optional/Deprecated in favor of specific fields
 }
 
 /**
@@ -41,10 +45,14 @@ export interface T1Answer {
  */
 export interface T2Answer {
   templateType: 'T2';
-  answer: string;
-  whatTextStates: string;
+  summary: string; // Synthesis of the interpretation
+  keyPoints: string[]; // Key interpretive arguments
+  scripturalEvidence: string; // The textual basis (was whatTextStates)
   traditionalInterpretations: string;
-  limitOfCertainty: string; // MANDATORY - must be present
+  limitOfCertainty: string;
+  // Legacy
+  answer?: string;
+  whatTextStates?: string;
 }
 
 /**
