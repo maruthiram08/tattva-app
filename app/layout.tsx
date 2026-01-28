@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { Navigation } from "@/components/navigation";
+import { CSPostHogProvider } from "@/components/providers/posthog-provider";
+import PostHogPageView from "@/components/providers/posthog-page-view";
 import "./globals.css";
 
 const inter = Inter({
@@ -34,9 +36,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="antialiased">
       <body className={`${inter.variable} ${playfair.variable} font-sans`}>
-        <div className="noise-bg"></div>
-        <Navigation />
-        {children}
+        <CSPostHogProvider>
+          <PostHogPageView />
+          <div className="noise-bg"></div>
+          <Navigation />
+          {children}
+        </CSPostHogProvider>
       </body>
     </html>
   );

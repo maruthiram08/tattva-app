@@ -37,6 +37,7 @@
     "lucide-react": "^0.561.0",
     "next": "^14.2.0",
     "openai": "^4.75.0",
+    "posthog-js": "^1.335.5",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
     "react-hook-form": "^7.54.0",

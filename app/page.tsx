@@ -4,6 +4,7 @@ import { experimental_useObject as useObject } from '@ai-sdk/react';
 import { z } from 'zod';
 import { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, Clock, X, ArrowRight } from 'lucide-react';
+import { usePostHog } from 'posthog-js/react';
 import { Answer } from '@/lib/types/templates';
 import { FloatingQuestionInput } from '@/components/question/FloatingQuestionInput';
 import { DailyWisdom } from '@/components/home/DailyWisdom';
@@ -69,6 +70,7 @@ export default function HomePage() {
 
   // Track if we're in content mode to prevent header hide on home return
   const isInContentMode = useRef(false);
+  const posthog = usePostHog();
 
   // Initialize Streaming Hook
   const { object, submit, isLoading, error, stop } = useObject({
@@ -179,6 +181,9 @@ export default function HomePage() {
     setRetrievalData(undefined);
     setDisplayedQuestion(question);
     isInContentMode.current = true; // Enter content mode
+
+    // Track search event
+    posthog?.capture('search', { question });
 
     // Ensure header is visible during loading (start)
     window.dispatchEvent(new CustomEvent('toggle-focus-mode', { detail: { hidden: false } }));
