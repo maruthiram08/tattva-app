@@ -67,6 +67,6 @@ export default async function ExplorerPage() {
                 </div>
 
             </div>
-
-            );
+        </div>
+    );
 }
