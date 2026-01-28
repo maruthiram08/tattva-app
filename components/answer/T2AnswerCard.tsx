@@ -52,6 +52,10 @@ export function T2AnswerCard({ data, question, retrieval, onCitationClick }: T2A
         });
     };
 
+    // Determine if we have the new "Synthesis" format or legacy "Block Answer"
+    const hasSynthesis = !!data.summary;
+    const evidenceText = data.scripturalEvidence || data.whatTextStates || '';
+
     return (
         <div className="bg-white rounded-3xl shadow-medium border border-stone-100 overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-700">
 
@@ -70,8 +74,29 @@ export function T2AnswerCard({ data, question, retrieval, onCitationClick }: T2A
 
             <div className="p-5 md:p-8 space-y-8">
 
-                {/* Main Answer (Hero) */}
-                {data.answer && (
+                {/* 1. Synthesis Summary (Clean, No Citations) */}
+                {hasSynthesis && (
+                    <div className="prose prose-stone prose-lg max-w-none">
+                        <div className="font-serif text-xl md:text-2xl font-medium leading-relaxed text-stone-900">
+                            <ReactMarkdown components={{ p: 'div' }}>{data.summary}</ReactMarkdown>
+                        </div>
+                    </div>
+                )}
+
+                {/* 2. Key Points / Arguments */}
+                {hasSynthesis && data.keyPoints && data.keyPoints.length > 0 && (
+                    <div className="space-y-3">
+                        {data.keyPoints.map((point, i) => (
+                            <div key={i} className="flex gap-3 items-start animate-in fade-in slide-in-from-bottom-2" style={{ animationDelay: `${i * 100}ms` }}>
+                                <div className="mt-1.5 h-1.5 w-1.5 rounded-full bg-violet-500 flex-shrink-0" />
+                                <p className="text-stone-700 leading-relaxed font-sans">{point.replace(/^- /, '')}</p>
+                            </div>
+                        ))}
+                    </div>
+                )}
+
+                {/* Legacy Fallback: Main Answer if no synthesis */}
+                {!hasSynthesis && data.answer && (
                     <div className="prose prose-stone prose-lg max-w-none">
                         <div className="font-serif text-xl md:text-2xl font-medium leading-relaxed text-stone-900 whitespace-pre-wrap">
                             {renderWithCitations(data.answer)}
@@ -80,17 +105,18 @@ export function T2AnswerCard({ data, question, retrieval, onCitationClick }: T2A
                 )}
 
 
-                {/* Main Answer Layout: Side-by-Side on Desktop - Progressive Disclosure */}
-                {(data.whatTextStates?.length > 10 || data.traditionalInterpretations?.length > 10) && (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-bottom-2 duration-700">
-                        {/* Column 1: What Text States */}
-                        {data.whatTextStates && data.whatTextStates.length > 5 && (
+                {/* Main Evidence Layout: Side-by-Side on Desktop */}
+                {/* Render if we have evidence OR interpretations */}
+                {(evidenceText.length > 5 || (data.traditionalInterpretations && data.traditionalInterpretations.length > 5)) && (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-bottom-2 duration-700 bg-stone-50/50 p-6 rounded-2xl border border-stone-100">
+                        {/* Column 1: Scriptural Evidence / What Text States */}
+                        {evidenceText.length > 5 && (
                             <div className="space-y-4">
-                                <h4 className="text-xs font-semibold text-stone-900 uppercase tracking-wide flex items-center gap-2 border-b border-stone-100 pb-2">
-                                    <Feather className="w-3.5 h-3.5 text-stone-400" /> What the Text States
+                                <h4 className="text-xs font-semibold text-stone-900 uppercase tracking-wide flex items-center gap-2 border-b border-stone-200 pb-2">
+                                    <Feather className="w-3.5 h-3.5 text-stone-500" /> Scriptural Evidence
                                 </h4>
-                                <div className="font-serif text-lg leading-relaxed text-stone-700 whitespace-pre-wrap">
-                                    {renderWithCitations(data.whatTextStates)}
+                                <div className="font-serif text-sm md:text-base leading-relaxed text-stone-700 whitespace-pre-wrap">
+                                    {renderWithCitations(evidenceText)}
                                 </div>
                             </div>
                         )}
@@ -98,10 +124,10 @@ export function T2AnswerCard({ data, question, retrieval, onCitationClick }: T2A
                         {/* Column 2: Interpretations */}
                         {data.traditionalInterpretations && data.traditionalInterpretations.length > 5 && (
                             <div className="space-y-4">
-                                <h4 className="text-xs font-semibold text-stone-900 uppercase tracking-wide flex items-center gap-2 border-b border-stone-100 pb-2">
+                                <h4 className="text-xs font-semibold text-stone-900 uppercase tracking-wide flex items-center gap-2 border-b border-stone-200 pb-2">
                                     <Library className="w-3.5 h-3.5 text-violet-500" /> Interpretations
                                 </h4>
-                                <div className="text-sm text-stone-600 leading-relaxed">
+                                <div className="text-sm md:text-base text-stone-600 leading-relaxed font-sans">
                                     {renderWithCitations(data.traditionalInterpretations)}
                                 </div>
                             </div>
@@ -123,7 +149,7 @@ export function T2AnswerCard({ data, question, retrieval, onCitationClick }: T2A
                 )}
 
                 <SourceList citations={(() => {
-                    const allText = (data.answer || '') + (data.whatTextStates || '');
+                    const allText = (data.summary || '') + (data.answer || '') + (data.scripturalEvidence || '') + (data.whatTextStates || '');
                     const matches = allText.match(/([\[\(]?(?:Bala|Ayodhya|Aranya|Kishkindha|Sundara|Yuddha|Uttara)[\s\-]+Kanda\s+\d+(?:[\.\-\s;,]+\d+)*[\]\)]?)/g);
                     return matches ? Array.from(new Set(matches.map(s => s.replace(/^[\[\(]|[\]\)]$/g, '')))) : [];
                 })()} retrieval={retrieval} onCitationClick={onCitationClick} />

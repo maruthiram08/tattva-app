@@ -23,16 +23,23 @@ import {
 /**
  * Zod Schema for T1 (Textual Answer)
  */
+// Updated T1 Schema for Synthesis First
 export const T1AnswerSchema = z.object({
   templateType: z.literal('T1'),
-  answer: z.string().min(1, 'Answer is required'),
+  // New Fields
+  summary: z.string().optional(),
+  keyPoints: z.array(z.string()).optional(),
+  scripturalEvidence: z.string().optional(),
+  // Legacy
+  answer: z.string().optional(),
+
   textualBasis: z.object({
     kanda: z.string().min(1, 'Kanda is required'),
     sarga: z.union([z.number(), z.array(z.number())]).optional(),
     shloka: z.union([z.number(), z.array(z.number())]).optional(),
     citations: z.array(z.string()).min(1, 'At least one citation is required'),
   }),
-  explanation: z.string().min(1, 'Explanation is required'),
+  explanation: z.string().optional(),
 });
 
 /**
@@ -40,8 +47,14 @@ export const T1AnswerSchema = z.object({
  */
 export const T2AnswerSchema = z.object({
   templateType: z.literal('T2'),
-  answer: z.string().min(1, 'Answer is required'),
-  whatTextStates: z.string().min(1, 'What the Text States is required'),
+  answer: z.string().optional(),
+
+  // New Fields
+  summary: z.string().optional(),
+  keyPoints: z.array(z.string()).optional(),
+  scripturalEvidence: z.string().optional(),
+
+  whatTextStates: z.string().optional(),
   traditionalInterpretations: z.string().min(1, 'Traditional Interpretations is required'),
   limitOfCertainty: z.string().min(1, 'Limit of Certainty is MANDATORY for T2'),
 });
@@ -54,6 +67,10 @@ export const T3AnswerSchema = z.object({
   outOfScopeNotice: z.string().min(1, 'Out-of-scope notice is required'),
   why: z.string().min(1, 'Explanation of why is required'),
   whatICanHelpWith: z.array(z.string()).min(1, 'At least one alternative suggestion is required'),
+  redirect: z.object({
+    introduction: z.string(),
+    alternatives: z.array(z.string())
+  }).optional(),
 });
 
 /**
@@ -96,12 +113,8 @@ function containsApology(text: string): boolean {
   return APOLOGY_PATTERNS.some((pattern) => pattern.test(text));
 }
 
-/**
- * Validate T1 Answer (Textual)
- * HARD CONSTRAINTS:
- * 1. Must not contain speculation
- * 2. Must have valid citations
- */
+// ... (T2 and T3 schemas remain similar)
+
 export function validateT1Answer(answer: T1Answer): ValidationResult {
   const errors: TemplateValidationError[] = [];
   const warnings: string[] = [];
@@ -118,19 +131,31 @@ export function validateT1Answer(answer: T1Answer): ValidationResult {
     });
   }
 
-  // HARD CONSTRAINT: T1 may not contain speculation
-  if (containsSpeculation(answer.answer)) {
+  // LOGIC: specific fields
+  const primaryText = answer.scripturalEvidence || answer.answer;
+  const secondaryText = answer.summary || answer.explanation;
+
+  if (!primaryText) {
     errors.push({
-      field: 'answer',
-      message: 'T1 answers must not contain speculative language (might, could, possibly, etc.)',
+      field: 'scripturalEvidence',
+      message: 'Either scripturalEvidence or answer (legacy) is required',
+      constraint: 'missing_content'
+    });
+  }
+
+  // HARD CONSTRAINT: T1 may not contain speculation (checked in rigorous evidence section)
+  if (primaryText && containsSpeculation(primaryText)) {
+    errors.push({
+      field: 'scripturalEvidence',
+      message: 'T1 evidence must not contain speculative language (might, could, possibly, etc.)',
       constraint: 'no_speculation',
     });
   }
 
-  if (containsSpeculation(answer.explanation)) {
+  if (secondaryText && containsSpeculation(secondaryText)) {
     errors.push({
-      field: 'explanation',
-      message: 'T1 explanations must not contain speculative language',
+      field: 'summary',
+      message: 'T1 summary/explanation must not contain speculative language',
       constraint: 'no_speculation',
     });
   }
@@ -146,8 +171,8 @@ export function validateT1Answer(answer: T1Answer): ValidationResult {
     }
   });
 
-  // Warning: Check if answer is too short
-  if (answer.answer.length < 50) {
+  // Warning: Check if answer is too short (use summary or primary text)
+  if ((answer.summary?.length || 0) + (primaryText?.length || 0) < 50) {
     warnings.push('Answer seems too brief. Consider providing more detail.');
   }
 
@@ -189,12 +214,18 @@ export function validateT2Answer(answer: T2Answer): ValidationResult {
     });
   }
 
-  // Check that "What Text States" doesn't contain speculation
-  if (containsSpeculation(answer.whatTextStates)) {
+  // Check evidence fields for speculation
+  const evidenceText = answer.scripturalEvidence || answer.whatTextStates;
+  if (evidenceText && containsSpeculation(evidenceText)) {
     warnings.push(
-      'Warning: "What the Text States" should be purely factual, but contains speculative language'
+      'Warning: Scriptural evidence should be purely factual, but contains speculative language'
     );
   }
+
+  // Check summary/interpretation
+  const interpretationText = answer.summary || answer.traditionalInterpretations;
+  // (Interpretations CAN contain speculation/inference, so we generally don't block it there, 
+  // but we might warn if it's excessive in the summary - skipping for now to be permissive on T2)
 
   // Warning: Check sections are substantive
   if (answer.limitOfCertainty.length < 30) {

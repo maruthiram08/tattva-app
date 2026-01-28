@@ -7,9 +7,6 @@ import {
 } from '@/lib/prompts/classification-prompt';
 import { ClassificationResult, CategoryId, QuestionIntent } from '@/lib/types/templates';
 
-const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
-});
 
 /**
  * LLM Response schema (for parsing JSON response)
@@ -127,11 +124,21 @@ function ruleBasedClassification(question: string): ClassificationResult | null 
     return null; // No rule matched, proceed to LLM
 }
 
+// Lazy initialization to prevent build-time errors if API key is missing
+function getOpenAIClient() {
+    const apiKey = process.env.OPENAI_API_KEY;
+    if (!apiKey) {
+        throw new Error('OPENAI_API_KEY is not defined');
+    }
+    return new OpenAI({ apiKey });
+}
+
 /**
  * LLM-based classification using GPT-4
  */
 async function llmClassification(question: string): Promise<ClassificationResult> {
     try {
+        const openai = getOpenAIClient();
         const completion = await openai.chat.completions.create({
             model: 'gpt-4o', // Fast and accurate for structured outputs
             messages: [
